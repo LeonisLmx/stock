@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form name="punchout_form" method="post" action="https://openapi.alipaydev.com/gateway.do?charset=utf-8&method=alipay.trade.wap.pay&sign=ndip4K%2FV75HA2ic9pIp%2FNERY5eLisj9nNNJAV1Jh3L6jGsMcjoX0hwIeETsczqYphnUr8nYC6BFFQ06Hf6NDIFNxBffe6LINHKJY%2FjHRjqd%2B85GAC3dMs96il5D%2FoQICrZ2B%2FObq3RvFoBnWSuGmFQ6OC4kFDmb%2FzVicI3I14DlXGG0IFEl9tdMQjdGaOdjGj831tJKa3vF8dePDIIaQooeF6DT%2B9VKbpp%2B5QI9OUholRVeq0qUsxANFBsyiIC3AznIxQ302c8PmCjPnnIJ9RCiW8sS5S4Dh%2FqWw68iZ6xkxA9A7H45gsHhWQMmpqkRMEOMrzp1w6qC3mKkBkmUjMw%3D%3D&return_url=http%3A%2F%2F101.132.137.156%3A8999%2Ftest.html&notify_url=http%3A%2F%2F101.132.137.156%3A8999%2Fapi%2Falipay%2FalipayNotify&version=1.0&app_id=2016092400588821&sign_type=RSA2&timestamp=2019-01-18+18%3A19%3A12&alipay_sdk=alipay-sdk-java-3.4.49.ALL&format=json">
+    <input type="hidden" name="biz_content" value="{&quot;out_trade_no&quot;:&quot;15478067521612110z&quot;,&quot;product_code&quot;:&quot;QUICK_WAP_PAY&quot;,&quot;subject&quot;:&quot;测试买课程&quot;,&quot;timeout_express&quot;:&quot;30m&quot;,&quot;total_amount&quot;:&quot;200.11&quot;}">
+    <input type="submit" value="立即支付" style="display:none" >
+</form>
+<script>document.forms[0].submit();</script>
+
+</body>
+<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+<script>
+    // window.onload = function(){
+    //     $.ajax({
+    //         url:"http://101.132.137.156:8999/api/alipay/alipayOrder",
+    //         type:"POST",
+    //         contentType:"application/json",
+    //         token:"bdb5bc83-b8c5-4871-bd2a-417ec8939395",
+    //         dataType:"json",
+    //         data:JSON.stringify({
+    //             "typeId":"5",
+    //             "totalAmount":"2",
+    //             "type":"1",
+    //             "subject":"课程5号",
+    //             "successHtml":"/test.html",
+    //             "body":"测试的api"
+    //         }),
+    //         success:function (data) {
+    //         }
+    //     })
+    // }
+</script>
+</html>
