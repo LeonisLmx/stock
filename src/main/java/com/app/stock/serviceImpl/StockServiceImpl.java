@@ -33,7 +33,7 @@ public class StockServiceImpl implements StockService {
     }
 
     @Override
-    public List<Map<String, Object>> selectInfoByCode(String stockCode) {
-        return stockDataSelfMapper.selectStockInfoByCode(stockCode);
+    public List<Map<String, Object>> selectInfoByCode(String stockCode,String market) {
+        return stockDataSelfMapper.selectStockInfoByCode(stockCode,market);
     }
 }

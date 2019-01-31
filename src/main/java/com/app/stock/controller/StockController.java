@@ -36,10 +36,10 @@ public class StockController {
 
     @RequestMapping(value = "/getInfo",method = {RequestMethod.GET,RequestMethod.POST})
     public Response getInfo(@RequestBody Map<String,String> map){
-        if(StringUtils.isBlank(map.get("stockCode"))){
-            return Response.ok(null,"stockCode不能为空",1);
+        if(StringUtils.isBlank(map.get("stockCode")) || StringUtils.isBlank(map.get("market"))){
+            return Response.ok(null,"股票代码或股票市场不能为空",1);
         }
-        return Response.ok(stockService.selectInfoByCode(map.get("stockCode")),"操作成功");
+        return Response.ok(stockService.selectInfoByCode(map.get("stockCode"),map.get("market")),"操作成功");
     }
 
     @RequestMapping("/yangLine")
@@ -49,7 +49,7 @@ public class StockController {
             @Override
             public void run() {
                 try {
-                    scheduleCrossService.MACD();
+                    scheduleCrossService.pullingData();
                 } catch (Exception e) {
                     e.printStackTrace();
                 }

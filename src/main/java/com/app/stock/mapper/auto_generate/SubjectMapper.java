@@ -20,64 +20,62 @@ public interface SubjectMapper {
     int deleteByPrimaryKey(Long id);
 
     @Insert({
-        "insert into subject (teacher_id, content, ",
-        "type, title, small_img, ",
-        "detail, common_price, ",
-        "vip_price, play_count, ",
+        "insert into subject (subject_type_id, teacher_id, ",
+        "title, content, ",
+        "small_img, detail, ",
+        "common_price, vip_price, ",
         "is_delete, create_time, ",
         "modify_time)",
-        "values (#{teacherId,jdbcType=BIGINT}, #{content,jdbcType=VARCHAR}, ",
-        "#{type,jdbcType=VARCHAR}, #{title,jdbcType=VARCHAR}, #{smallImg,jdbcType=VARCHAR}, ",
-        "#{detail,jdbcType=VARCHAR}, #{commonPrice,jdbcType=DECIMAL}, ",
-        "#{vipPrice,jdbcType=DECIMAL}, #{playCount,jdbcType=BIGINT}, ",
+        "values (#{subjectTypeId,jdbcType=BIGINT}, #{teacherId,jdbcType=BIGINT}, ",
+        "#{title,jdbcType=VARCHAR}, #{content,jdbcType=VARCHAR}, ",
+        "#{smallImg,jdbcType=VARCHAR}, #{detail,jdbcType=VARCHAR}, ",
+        "#{commonPrice,jdbcType=DECIMAL}, #{vipPrice,jdbcType=DECIMAL}, ",
         "#{isDelete,jdbcType=INTEGER}, #{createTime,jdbcType=TIMESTAMP}, ",
         "#{modifyTime,jdbcType=TIMESTAMP})"
     })
     @Options(useGeneratedKeys=true,keyProperty="id")
     int insert(Subject record);
 
-    @InsertProvider(type=SubjectSqlProvider.class, method="insertSelective")
+    @InsertProvider(type= com.app.stock.mapper.SubjectSqlProvider.class, method="insertSelective")
     @Options(useGeneratedKeys=true,keyProperty="id")
     int insertSelective(Subject record);
 
     @Select({
         "select",
-        "id, teacher_id, content, type, title, small_img, detail, common_price, vip_price, ",
-        "play_count, is_delete, create_time, modify_time",
+        "id, subject_type_id, teacher_id, title, content, small_img, detail, common_price, ",
+        "vip_price, is_delete, create_time, modify_time",
         "from subject",
         "where id = #{id,jdbcType=BIGINT}"
     })
     @Results({
         @Result(column="id", property="id", jdbcType=JdbcType.BIGINT, id=true),
+        @Result(column="subject_type_id", property="subjectTypeId", jdbcType=JdbcType.BIGINT),
         @Result(column="teacher_id", property="teacherId", jdbcType=JdbcType.BIGINT),
-        @Result(column="content", property="content", jdbcType=JdbcType.VARCHAR),
-        @Result(column="type", property="type", jdbcType=JdbcType.VARCHAR),
         @Result(column="title", property="title", jdbcType=JdbcType.VARCHAR),
+        @Result(column="content", property="content", jdbcType=JdbcType.VARCHAR),
         @Result(column="small_img", property="smallImg", jdbcType=JdbcType.VARCHAR),
         @Result(column="detail", property="detail", jdbcType=JdbcType.VARCHAR),
         @Result(column="common_price", property="commonPrice", jdbcType=JdbcType.DECIMAL),
         @Result(column="vip_price", property="vipPrice", jdbcType=JdbcType.DECIMAL),
-        @Result(column="play_count", property="playCount", jdbcType=JdbcType.BIGINT),
         @Result(column="is_delete", property="isDelete", jdbcType=JdbcType.INTEGER),
         @Result(column="create_time", property="createTime", jdbcType=JdbcType.TIMESTAMP),
         @Result(column="modify_time", property="modifyTime", jdbcType=JdbcType.TIMESTAMP)
     })
     Subject selectByPrimaryKey(Long id);
 
-    @UpdateProvider(type=SubjectSqlProvider.class, method="updateByPrimaryKeySelective")
+    @UpdateProvider(type= com.app.stock.mapper.SubjectSqlProvider.class, method="updateByPrimaryKeySelective")
     int updateByPrimaryKeySelective(Subject record);
 
     @Update({
         "update subject",
-        "set teacher_id = #{teacherId,jdbcType=BIGINT},",
-          "content = #{content,jdbcType=VARCHAR},",
-          "type = #{type,jdbcType=VARCHAR},",
+        "set subject_type_id = #{subjectTypeId,jdbcType=BIGINT},",
+          "teacher_id = #{teacherId,jdbcType=BIGINT},",
           "title = #{title,jdbcType=VARCHAR},",
+          "content = #{content,jdbcType=VARCHAR},",
           "small_img = #{smallImg,jdbcType=VARCHAR},",
           "detail = #{detail,jdbcType=VARCHAR},",
           "common_price = #{commonPrice,jdbcType=DECIMAL},",
           "vip_price = #{vipPrice,jdbcType=DECIMAL},",
-          "play_count = #{playCount,jdbcType=BIGINT},",
           "is_delete = #{isDelete,jdbcType=INTEGER},",
           "create_time = #{createTime,jdbcType=TIMESTAMP},",
           "modify_time = #{modifyTime,jdbcType=TIMESTAMP}",

@@ -1,7 +1,8 @@
 package com.app.stock.serviceImpl;
 
+import com.app.stock.mapper.SubjectDetailSelfMapper;
 import com.app.stock.mapper.SubjectSelfMapper;
-import com.app.stock.mapper.auto_generate.UserSubjectDetailSelfMapper;
+import com.app.stock.mapper.UserSubjectDetailSelfMapper;
 import com.app.stock.model.User;
 import com.app.stock.model.request.PrimarykeyIdRequest;
 import com.app.stock.model.request.SubjectListRequest;
@@ -32,6 +33,9 @@ public class SubjectServiceImpl implements SubjectService {
     @Autowired
     private UserSubjectDetailSelfMapper userSubjectDetailSelfMapper;
 
+    @Autowired
+    private SubjectDetailSelfMapper subjectDetailSelfMapper;
+
     @Override
     public Map<String, Object> list(SubjectListRequest subjectListRequest) {
         PageHelper.startPage(subjectListRequest.getPage(),subjectListRequest.getPage_size());
@@ -57,6 +61,8 @@ public class SubjectServiceImpl implements SubjectService {
     @Override
     public Map<String, Object> detail(PrimarykeyIdRequest isPayRequest) {
         Map<String,Object> map = subjectSelfMapper.detail(isPayRequest.getId());
+        List<Map<String,Object>> vedioList = subjectDetailSelfMapper.vedioList(isPayRequest.getId());
+        map.put("list",vedioList);
         return map;
     }
 

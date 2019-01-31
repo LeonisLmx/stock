@@ -1,4 +1,4 @@
-package com.app.stock.mapper.auto_generate;
+package com.app.stock.mapper;
 
 import static org.apache.ibatis.jdbc.SqlBuilder.BEGIN;
 import static org.apache.ibatis.jdbc.SqlBuilder.INSERT_INTO;
@@ -16,20 +16,20 @@ public class SubjectSqlProvider {
         BEGIN();
         INSERT_INTO("subject");
         
+        if (record.getSubjectTypeId() != null) {
+            VALUES("subject_type_id", "#{subjectTypeId,jdbcType=BIGINT}");
+        }
+        
         if (record.getTeacherId() != null) {
             VALUES("teacher_id", "#{teacherId,jdbcType=BIGINT}");
         }
         
-        if (record.getContent() != null) {
-            VALUES("content", "#{content,jdbcType=VARCHAR}");
-        }
-        
-        if (record.getType() != null) {
-            VALUES("type", "#{type,jdbcType=VARCHAR}");
-        }
-        
         if (record.getTitle() != null) {
             VALUES("title", "#{title,jdbcType=VARCHAR}");
+        }
+        
+        if (record.getContent() != null) {
+            VALUES("content", "#{content,jdbcType=VARCHAR}");
         }
         
         if (record.getSmallImg() != null) {
@@ -46,10 +46,6 @@ public class SubjectSqlProvider {
         
         if (record.getVipPrice() != null) {
             VALUES("vip_price", "#{vipPrice,jdbcType=DECIMAL}");
-        }
-        
-        if (record.getPlayCount() != null) {
-            VALUES("play_count", "#{playCount,jdbcType=BIGINT}");
         }
         
         if (record.getIsDelete() != null) {
@@ -71,20 +67,20 @@ public class SubjectSqlProvider {
         BEGIN();
         UPDATE("subject");
         
+        if (record.getSubjectTypeId() != null) {
+            SET("subject_type_id = #{subjectTypeId,jdbcType=BIGINT}");
+        }
+        
         if (record.getTeacherId() != null) {
             SET("teacher_id = #{teacherId,jdbcType=BIGINT}");
         }
         
-        if (record.getContent() != null) {
-            SET("content = #{content,jdbcType=VARCHAR}");
-        }
-        
-        if (record.getType() != null) {
-            SET("type = #{type,jdbcType=VARCHAR}");
-        }
-        
         if (record.getTitle() != null) {
             SET("title = #{title,jdbcType=VARCHAR}");
+        }
+        
+        if (record.getContent() != null) {
+            SET("content = #{content,jdbcType=VARCHAR}");
         }
         
         if (record.getSmallImg() != null) {
@@ -101,10 +97,6 @@ public class SubjectSqlProvider {
         
         if (record.getVipPrice() != null) {
             SET("vip_price = #{vipPrice,jdbcType=DECIMAL}");
-        }
-        
-        if (record.getPlayCount() != null) {
-            SET("play_count = #{playCount,jdbcType=BIGINT}");
         }
         
         if (record.getIsDelete() != null) {

@@ -50,9 +50,9 @@ public interface StockDataSelfMapper extends StockDataMapper {
 
     @Select({
             "select a.stock_code,a.stock_name,b.open,b.close,b.high,b.low,b.volume,b.trading_day from stock a left join",
-            "stock_data b on a.id = b.stock_id where a.stock_code = #{stockCode} order by b.trading_day"
+            "stock_data b on a.id = b.stock_id where a.stock_code = #{stockCode} and a.market = #{market} order by b.trading_day"
     })
-    List<Map<String,Object>> selectStockInfoByCode(@Param("stockCode")String stockCode);
+    List<Map<String,Object>> selectStockInfoByCode(@Param("stockCode")String stockCode,@Param("market")String market);
 
     @Select({
             "select stock_id,open,close,high,low,trading_day from stock_data where stock_id = #{stockId} order by trading_day desc"

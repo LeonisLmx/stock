@@ -6,13 +6,13 @@ import java.util.Date;
 public class Subject {
     private Long id;
 
+    private Long subjectTypeId;
+
     private Long teacherId;
 
-    private String content;
-
-    private String type;
-
     private String title;
+
+    private String content;
 
     private String smallImg;
 
@@ -21,8 +21,6 @@ public class Subject {
     private BigDecimal commonPrice;
 
     private BigDecimal vipPrice;
-
-    private Long playCount;
 
     private Integer isDelete;
 
@@ -38,6 +36,14 @@ public class Subject {
         this.id = id;
     }
 
+    public Long getSubjectTypeId() {
+        return subjectTypeId;
+    }
+
+    public void setSubjectTypeId(Long subjectTypeId) {
+        this.subjectTypeId = subjectTypeId;
+    }
+
     public Long getTeacherId() {
         return teacherId;
     }
@@ -46,28 +52,20 @@ public class Subject {
         this.teacherId = teacherId;
     }
 
-    public String getContent() {
-        return content;
-    }
-
-    public void setContent(String content) {
-        this.content = content;
-    }
-
-    public String getType() {
-        return type;
-    }
-
-    public void setType(String type) {
-        this.type = type;
-    }
-
     public String getTitle() {
         return title;
     }
 
     public void setTitle(String title) {
         this.title = title;
+    }
+
+    public String getContent() {
+        return content;
+    }
+
+    public void setContent(String content) {
+        this.content = content;
     }
 
     public String getSmallImg() {
@@ -100,14 +98,6 @@ public class Subject {
 
     public void setVipPrice(BigDecimal vipPrice) {
         this.vipPrice = vipPrice;
-    }
-
-    public Long getPlayCount() {
-        return playCount;
-    }
-
-    public void setPlayCount(Long playCount) {
-        this.playCount = playCount;
     }
 
     public Integer getIsDelete() {

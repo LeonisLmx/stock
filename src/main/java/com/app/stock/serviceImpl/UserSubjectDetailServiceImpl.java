@@ -1,6 +1,6 @@
 package com.app.stock.serviceImpl;
 
-import com.app.stock.mapper.auto_generate.UserSubjectDetailSelfMapper;
+import com.app.stock.mapper.UserSubjectDetailSelfMapper;
 import com.app.stock.model.CostDetail;
 import com.app.stock.model.UserSubjectDetail;
 import com.app.stock.service.UserDetailService;

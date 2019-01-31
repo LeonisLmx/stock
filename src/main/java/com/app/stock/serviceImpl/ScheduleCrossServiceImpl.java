@@ -118,7 +118,7 @@ public class ScheduleCrossServiceImpl implements ScheduleCrossService {
                 e.printStackTrace();
             }
             automicInteger.incrementAndGet();
-            String url = "https://api.shenjian.io/?appid=25a308aa0f9fe382bbfad6b40e922cc8&code=" + str.get("stock_code") + "&index=false&k_type=day&fq_type=qfq&start_date="+date;
+            String url = "https://api.shenjian.io/?appid=25a308aa0f9fe382bbfad6b40e922cc8&code=" + str.get("stock_code") + "&index=false&k_type=day&fq_type=qfq&start_date=2019-01-29";
             String response = null;
             try {
                 response = HttpClient.Get(url);
