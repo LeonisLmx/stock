@@ -1,10 +1,11 @@
 package com.app.stock.model;
 
+import javax.validation.constraints.NotNull;
 import java.util.Date;
 
 public class Teacher {
     private Long id;
-
+    @NotNull(message = "名字不能为空")
     private String name;
 
     private String description;

@@ -7,10 +7,28 @@ import javax.validation.constraints.NotNull;
  * Date 2019/1/15
  */
 public class SubjectListRequest extends VerifyRequest{
+    private Integer type; // 课程分类
+    private Integer isFree; // 是否免费课程
     private String orderType;    // 排序类型
     private String order;     // 排序规则
     private Integer page;
     private Integer page_size;
+
+    public Integer getType() {
+        return type;
+    }
+
+    public void setType(Integer type) {
+        this.type = type;
+    }
+
+    public Integer getIsFree() {
+        return isFree;
+    }
+
+    public void setIsFree(Integer isFree) {
+        this.isFree = isFree;
+    }
 
     public String getOrderType() {
         return orderType;

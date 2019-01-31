@@ -3,6 +3,7 @@ package com.app.stock.serviceImpl;
 import com.app.stock.mapper.SubjectDetailSelfMapper;
 import com.app.stock.mapper.SubjectSelfMapper;
 import com.app.stock.mapper.UserSubjectDetailSelfMapper;
+import com.app.stock.model.Subject;
 import com.app.stock.model.User;
 import com.app.stock.model.request.PrimarykeyIdRequest;
 import com.app.stock.model.request.SubjectListRequest;
@@ -13,6 +14,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import javax.servlet.http.HttpServletRequest;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -39,7 +41,8 @@ public class SubjectServiceImpl implements SubjectService {
     @Override
     public Map<String, Object> list(SubjectListRequest subjectListRequest) {
         PageHelper.startPage(subjectListRequest.getPage(),subjectListRequest.getPage_size());
-        List<Map<String,Object>> list = subjectSelfMapper.list(subjectListRequest.getOrderType(),subjectListRequest.getOrder());
+        List<Map<String,Object>> list = subjectSelfMapper.list(subjectListRequest.getType(),subjectListRequest.getIsFree(),
+                subjectListRequest.getOrderType(),subjectListRequest.getOrder());
         PageInfo pageInfo = new PageInfo(list);
         Map<String,Object> map = new HashMap<>();
         map.put("list",pageInfo.getList());
@@ -66,4 +69,14 @@ public class SubjectServiceImpl implements SubjectService {
         return map;
     }
 
+    @Override
+    public void addSubject(Subject subject) {
+        subject.setCreateTime(new Date());
+        subjectSelfMapper.insertSelective(subject);
+    }
+
+    @Override
+    public int editSubject(Subject subject) {
+        return subjectSelfMapper.updateByPrimaryKeySelective(subject);
+    }
 }

@@ -38,17 +38,27 @@ public class AdvertiseServiceImpl implements AdvertiseService {
             }
         }
         Map<String,Object> map = new HashMap<>();
-        String path = type == 1?imagePath.getImagePathAvatar():imagePath.getImagePathAdvertise();
+        String path = "";
+        String url = "";
+        if(type == 1){
+            path = imagePath.getImagePathAvatar();
+            url = "/avatar/";
+        }else if(type == 2){
+            path = imagePath.getImagePathAdvertise();
+            url = "/advertise/";
+        }else if(type == 3){
+            path = imagePath.getImagePathVedio();
+            url = "/vedio/";
+        }
         String fileName = new Date().getTime() + "_" + UUID.randomUUID().toString() + "." + style;
         String imgPath = path + fileName;
-        System.out.println(imgPath);
         OutputStream os = null;
         try {
             os = new FileOutputStream(imgPath);
             os.write(data);
             os.flush();
             os.close();
-            map.put("url",(type == 1?"/avatar/":"/advertise/") + fileName);
+            map.put("url",url + fileName);
             return map;
         } catch (FileNotFoundException e) {
             e.printStackTrace();
@@ -57,18 +67,6 @@ public class AdvertiseServiceImpl implements AdvertiseService {
             e.printStackTrace();
             return null;
         }
-        /*//获取文件名
-        String fileName = file.getOriginalFilename();
-        //获取文件后缀名
-        String suffixName = "." + fileName.split("\\.")[1];
-        //重新生成文件名
-        fileName = fileName.split("\\.")[0] + "-_-" +UUID.randomUUID()+suffixName;
-        String filePath = type == 1?imagePath.getImagePathAvatar():imagePath.getImagePathAdvertise();
-        File targetFile = new File(filePath);
-        if(!targetFile.exists()){
-            targetFile.mkdirs();
-        }
-        file.transferTo(new File(filePath+fileName));*/
     }
 
     @Override

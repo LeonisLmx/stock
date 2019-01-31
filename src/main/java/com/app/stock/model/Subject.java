@@ -1,25 +1,27 @@
 package com.app.stock.model;
 
+import javax.validation.constraints.NotNull;
 import java.math.BigDecimal;
 import java.util.Date;
 
 public class Subject {
     private Long id;
 
+    @NotNull(message = "课程类别不能为空")
     private Long subjectTypeId;
-
+    @NotNull(message = "老师不能为空")
     private Long teacherId;
-
+    @NotNull(message = "课程名字不能为空")
     private String title;
-
+    @NotNull(message = "课程简介不能为空")
     private String content;
 
     private String smallImg;
-
+    @NotNull(message = "课程详情不能为空")
     private String detail;
-
+    @NotNull(message = "课程普通价格不能为空")
     private BigDecimal commonPrice;
-
+    @NotNull(message = "课程会员价格不能为空")
     private BigDecimal vipPrice;
 
     private Integer isDelete;

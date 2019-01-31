@@ -45,7 +45,7 @@ public interface SubjectMapper {
         "id, subject_type_id, teacher_id, title, content, small_img, detail, common_price, ",
         "vip_price, is_delete, create_time, modify_time",
         "from subject",
-        "where id = #{id,jdbcType=BIGINT}"
+        "where id = #{id,jdbcType=BIGINT} and is_delete = 0"
     })
     @Results({
         @Result(column="id", property="id", jdbcType=JdbcType.BIGINT, id=true),

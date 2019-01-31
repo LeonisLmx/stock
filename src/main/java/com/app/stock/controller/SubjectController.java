@@ -4,6 +4,7 @@ import com.app.stock.common.Response;
 import com.app.stock.model.request.PrimarykeyIdRequest;
 import com.app.stock.model.request.SubjectListRequest;
 import com.app.stock.service.SubjectService;
+import com.app.stock.service.SubjectTypeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -24,6 +25,15 @@ public class SubjectController {
 
     @Autowired
     private SubjectService subjectService;
+
+    @Autowired
+    private SubjectTypeService subjectTypeService;
+
+    // 获取所有的课程分类列表
+    @RequestMapping(value = "/type_list",method = RequestMethod.POST)
+    public Response typeList(){
+        return Response.ok(subjectTypeService.typeList(),"操作成功");
+    }
 
     // 获取list列表，包含排序规则
     @RequestMapping(value = "/list",method = {RequestMethod.GET,RequestMethod.POST})
@@ -47,11 +57,5 @@ public class SubjectController {
             return Response.ok(bindingResult.getFieldError().getDefaultMessage());
         }
         return Response.ok(subjectService.detail(primarykeyIdRequest),"查询成功");
-    }
-
-    // 支付vip
-    @RequestMapping(value = "/pay_vip",method = {RequestMethod.GET,RequestMethod.POST})
-    public Response payVip(){
-        return Response.ok("支付成功");
     }
 }

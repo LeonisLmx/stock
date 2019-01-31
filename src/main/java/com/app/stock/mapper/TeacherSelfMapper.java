@@ -1,6 +1,6 @@
 package com.app.stock.mapper;
 
-import com.app.stock.mapper.auto_generate.SubjectDetailMapper;
+import com.app.stock.mapper.auto_generate.TeacherMapper;
 import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.Select;
 import org.apache.ibatis.annotations.Update;
@@ -12,19 +12,20 @@ import java.util.Map;
  * Created by lmx
  * Date 2019/1/31
  */
-public interface SubjectDetailSelfMapper extends SubjectDetailMapper {
+public interface TeacherSelfMapper extends TeacherMapper {
 
     @Select({
-            "select vedio_url,play_count from subject_detail where is_delete = 0 and subject_id = #{subjectId}"
+            "select id,name,description,avatar from teacher where is_delete = 0"
     })
-    List<Map<String,Object>> vedioList(@Param("subjectId")Long subjectId);
+    List<Map<String,Object>> teacherList();
 
     @Update({
             "<script>",
             "<foreach collection='list' item='entity' open='' close='' separator=';'>",
-            "update subject_detail set is_delete = 1 where id = #{entity}",
+            "update teacher set is_delete = 1 where id = #{entity}",
             "</foreach>",
             "</script>"
     })
-    int batchUpdate(@Param("list")List<Long> list);
+    int batchDelete(@Param("list")List<Long> list);
+
 }
