@@ -17,5 +17,5 @@ public interface AdvertiseService {
 
     public int uploadAdvertise(String imgStr, Advertise advertise) throws IOException;
 
-    public List<Advertise> list();
+    public List<Map<String,Object>> list();
 }

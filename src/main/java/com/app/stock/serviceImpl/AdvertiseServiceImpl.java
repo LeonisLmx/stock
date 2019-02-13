@@ -78,7 +78,7 @@ public class AdvertiseServiceImpl implements AdvertiseService {
     }
 
     @Override
-    public List<Advertise> list() {
+    public List<Map<String,Object>> list() {
         return advertiseSelfMapper.selectList();
     }
 }

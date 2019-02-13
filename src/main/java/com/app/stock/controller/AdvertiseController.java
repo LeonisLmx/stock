@@ -34,7 +34,7 @@ public class AdvertiseController {
     }
 
     // 广告列表
-    @RequestMapping(value = "/list",method = RequestMethod.POST)
+    @RequestMapping(value = "/list",method = {RequestMethod.GET,RequestMethod.POST})
     public Response advertiseList(){
         return Response.ok(advertiseService.list(),"操作成功");
     }
