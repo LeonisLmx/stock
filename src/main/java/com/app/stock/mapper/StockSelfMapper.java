@@ -24,8 +24,8 @@ public interface StockSelfMapper extends StockMapper {
             "select * from stock where 1 = 1",
             "<if test=\"keywords != null and keywords != ''\">",
             "and (stock_code like '%${keywords}%' or stock_name like '%${keywords}%')",
-            "order by stock_code",
             "</if>",
+            "order by stock_code limit 20",
             "</script>"
     })
     List<Stock> selectAllByKeywords(@Param("keywords")String keywords);

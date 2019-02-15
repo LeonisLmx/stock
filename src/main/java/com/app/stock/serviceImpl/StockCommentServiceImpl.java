@@ -84,9 +84,9 @@ public class StockCommentServiceImpl implements StockCommentService {
         PageInfo pageInfo = new PageInfo(list);
         Map<String,Object> map = new HashMap<>();
         map.put("list",pageInfo.getList());
-        map.put("page",page);
+        /*map.put("page",page);
         map.put("per_page",page_size);
-        map.put("count",pageInfo.getTotal());
+        map.put("count",pageInfo.getTotal());*/
         return map;
     }
 }

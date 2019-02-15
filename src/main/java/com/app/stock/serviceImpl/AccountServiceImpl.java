@@ -108,9 +108,9 @@ public class AccountServiceImpl  implements AccountService {
         List<Map<String,Object>> list = accountBookSelfMapper.selectAllAccountByCondition(accountListRequest);
         PageInfo pageInfo = new PageInfo(list);
         map.put("list",pageInfo.getList());
-        map.put("total",pageInfo.getTotal());
+        /*map.put("total",pageInfo.getTotal());
         map.put("page",accountListRequest.getPage());
-        map.put("page_size",accountListRequest.getPage_size());
+        map.put("page_size",accountListRequest.getPage_size());*/
         return map;
     }
 

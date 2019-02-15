@@ -46,9 +46,9 @@ public class SubjectServiceImpl implements SubjectService {
         PageInfo pageInfo = new PageInfo(list);
         Map<String,Object> map = new HashMap<>();
         map.put("list",pageInfo.getList());
-        map.put("total",pageInfo.getTotal());
+        /*map.put("total",pageInfo.getTotal());
         map.put("page",subjectListRequest.getPage());
-        map.put("page_size",subjectListRequest.getPage_size());
+        map.put("page_size",subjectListRequest.getPage_size());*/
         return map;
     }
 
