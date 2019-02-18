@@ -30,7 +30,7 @@ public class StockDataSchedule {
         logger.info("更新redis的交易日期结束");
     }
 
-    // 数据拉取 每天凌晨1点开始执行
+    // 数据拉取 每天下午16点开始执行
     @Scheduled(cron = "0 0 16 * * ?")
     public void pullingData() throws Exception {
         logger.info("开始拉取数据");
@@ -38,8 +38,87 @@ public class StockDataSchedule {
     }
 
 
-    //@Scheduled(cron = "0 0 16 * * ?")
+    @Scheduled(cron = "0 0 18 * * ?")
     public void calcCross(){
+        logger.info("开始计算十字星");
+        scheduleCrossService.calcCorss();
+        logger.info("十字星计算结束");
+    }
 
+    @Scheduled(cron = "0 0 18 * * ?")
+    public void calcYangLine(){
+        logger.info("开始计算阳线");
+        scheduleCrossService.calcYangLine();
+        logger.info("阳线计算结束");
+    }
+
+    @Scheduled(cron = "0 0 18 * * ?")
+    public void longUnderLine(){
+        logger.info("开始计算长下影线");
+        scheduleCrossService.longUnderLine();
+        logger.info("长下影线计算结束");
+    }
+
+    @Scheduled(cron = "0 0 18 * * ?")
+    public void hammerLine(){
+        logger.info("开始计算锤子线");
+        scheduleCrossService.hammerLine();
+        logger.info("锤子线计算结束");
+    }
+
+    @Scheduled(cron = "0 20 18 * * ?")
+    public void KDJ(){
+        logger.info("开始计算KDJ");
+        scheduleCrossService.KDJ();
+        logger.info("KDJ计算结束");
+    }
+
+    @Scheduled(cron = "0 25 18 * * ?")
+    public void MACD(){
+        logger.info("开始计算MACD");
+        scheduleCrossService.MACD();
+        logger.info("MACD计算结束");
+    }
+
+    @Scheduled(cron = "0 30 18 * * ?")
+    public void BOLL(){
+        logger.info("开始计算BOLL");
+        scheduleCrossService.BOLL();
+        logger.info("BOLL计算结束");
+    }
+
+    @Scheduled(cron = "0 35 18 * * ?")
+    public void WR(){
+        logger.info("开始计算WR");
+        scheduleCrossService.WR();
+        logger.info("WR计算结束");
+    }
+
+    @Scheduled(cron = "0 40 18 * * ?")
+    public void V(){
+        logger.info("开始计算V");
+        scheduleCrossService.V();
+        logger.info("V计算结束");
+    }
+
+    @Scheduled(cron = "0 45 18 * * ?")
+    public void SEA(){
+        logger.info("开始计算海底捞月");
+        scheduleCrossService.SEA();
+        logger.info("海底捞月计算结束");
+    }
+
+    @Scheduled(cron = "0 50 18 * * ?")
+    public void MORE(){
+        logger.info("开始计算均线多头");
+        scheduleCrossService.MORE();
+        logger.info("均线多头计算结束");
+    }
+
+    @Scheduled(cron = "0 55 18 * * ?")
+    public void THREEARMY(){
+        logger.info("开始计算三红兵");
+        scheduleCrossService.THREEARMY();
+        logger.info("三红兵计算结束");
     }
 }
