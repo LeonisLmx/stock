@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.List;
 import java.util.Map;
 import java.util.concurrent.Executor;
 import java.util.concurrent.Executors;
@@ -40,6 +41,14 @@ public class StockController {
             return Response.ok(null,"股票代码或股票市场不能为空",1);
         }
         return Response.ok(stockService.selectInfoByCode(map.get("stockCode"),map.get("market")),"操作成功");
+    }
+
+    @RequestMapping(value = "/filter",method = {RequestMethod.GET,RequestMethod.POST})
+    public Response filterStock(@RequestBody Map<String,Object> map){
+        if(map.get("condition") == null || !(map.get("condition") instanceof List) || ((List)map.get("condition")).size() == 0){
+            return Response.ok(null,"搜索条件不能为空",1);
+        }
+        return Response.ok(stockService.selectStockByCondition(map),"操作成功");
     }
 
     @RequestMapping("/yangLine")

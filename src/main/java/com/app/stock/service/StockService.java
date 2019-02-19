@@ -14,4 +14,6 @@ public interface StockService {
     public List<Stock> selectAllByKeywords(String keywords);
 
     public List<Map<String,Object>> selectInfoByCode(String stockCode,String market);
+
+    public List<Map<String,Object>> selectStockByCondition(Map<String,Object> map);
 }
