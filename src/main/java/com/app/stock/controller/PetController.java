@@ -39,7 +39,7 @@ public class PetController {
         return Response.ok(flag?"新增成功":"新增失败");
     }
 
-    // 喂宠物
+    // 喂宠物（买入股票）
     @RequestMapping(value = "/feed",method = RequestMethod.POST)
     @PostVerify
     public Response feedPet(@Valid @RequestBody FeedPetRequest map, BindingResult bindingResult, HttpServletRequest request){
@@ -47,6 +47,16 @@ public class PetController {
             return Response.ok(bindingResult.getFieldError().getDefaultMessage());
         }
         return Response.ok(petService.feedPet(map,request));
+    }
+
+    // 卖出股票
+    @RequestMapping(value = "/sale",method = RequestMethod.POST)
+    @PostVerify
+    public Response saleStock(@Valid @RequestBody FeedPetRequest map, BindingResult bindingResult, HttpServletRequest request){
+        if(bindingResult.hasErrors()){
+            return Response.ok(bindingResult.getFieldError().getDefaultMessage());
+        }
+        return Response.ok(petService.saleStock(map,request));
     }
 
     // 查询宠物信息

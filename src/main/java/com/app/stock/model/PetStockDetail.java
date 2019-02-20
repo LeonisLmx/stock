@@ -8,11 +8,17 @@ public class PetStockDetail {
 
     private Long petId;
 
+    private Long stockId;
+
     private String stockName;
 
-    private String stockCode;
+    private BigDecimal bPrice;
 
-    private BigDecimal price;
+    private Date bTime;
+
+    private BigDecimal sPrice;
+
+    private Date sTime;
 
     private Integer isDelete;
 
@@ -36,6 +42,14 @@ public class PetStockDetail {
         this.petId = petId;
     }
 
+    public Long getStockId() {
+        return stockId;
+    }
+
+    public void setStockId(Long stockId) {
+        this.stockId = stockId;
+    }
+
     public String getStockName() {
         return stockName;
     }
@@ -44,20 +58,36 @@ public class PetStockDetail {
         this.stockName = stockName;
     }
 
-    public String getStockCode() {
-        return stockCode;
+    public BigDecimal getbPrice() {
+        return bPrice;
     }
 
-    public void setStockCode(String stockCode) {
-        this.stockCode = stockCode;
+    public void setbPrice(BigDecimal bPrice) {
+        this.bPrice = bPrice;
     }
 
-    public BigDecimal getPrice() {
-        return price;
+    public Date getbTime() {
+        return bTime;
     }
 
-    public void setPrice(BigDecimal price) {
-        this.price = price;
+    public void setbTime(Date bTime) {
+        this.bTime = bTime;
+    }
+
+    public BigDecimal getsPrice() {
+        return sPrice;
+    }
+
+    public void setsPrice(BigDecimal sPrice) {
+        this.sPrice = sPrice;
+    }
+
+    public Date getsTime() {
+        return sTime;
+    }
+
+    public void setsTime(Date sTime) {
+        this.sTime = sTime;
     }
 
     public Integer getIsDelete() {

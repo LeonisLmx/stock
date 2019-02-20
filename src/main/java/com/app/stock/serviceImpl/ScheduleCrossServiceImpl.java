@@ -118,7 +118,7 @@ public class ScheduleCrossServiceImpl implements ScheduleCrossService {
                 e.printStackTrace();
             }
             automicInteger.incrementAndGet();
-            String url = "https://api.shenjian.io/?appid=25a308aa0f9fe382bbfad6b40e922cc8&code=" + str.get("stock_code") + "&index=false&k_type=day&fq_type=qfq&start_date=2019-01-29";
+            String url = "https://api.shenjian.io/?appid=25a308aa0f9fe382bbfad6b40e922cc8&code=" + str.get("stock_code") + "&index=false&k_type=day&fq_type=qfq&start_date=" + date;
             String response = null;
             try {
                 response = HttpClient.Get(url);
@@ -419,7 +419,7 @@ public class ScheduleCrossServiceImpl implements ScheduleCrossService {
             todayD = (todayK.add(beforeD.multiply(new BigDecimal(2)))).divide(new BigDecimal(3),5,BigDecimal.ROUND_HALF_UP);
             BigDecimal todayJ = todayK.multiply(new BigDecimal(3)).subtract(todayD.multiply(new BigDecimal(2)));
             redisUtil.addMap("KDJ",entity.getKey().toString(),todayK + "_" + todayD + "_" + todayJ);
-           /* // 金叉
+            // 金叉
             if(beforeK.compareTo(new BigDecimal(20)) < 0 &&
               beforeK.compareTo(beforeD) < 0 &&
                 todayK.compareTo(todayD) > 0){
@@ -431,14 +431,14 @@ public class ScheduleCrossServiceImpl implements ScheduleCrossService {
               beforeK.compareTo(beforeD) < 0 &&
               todayK.compareTo(todayD) < 0){
                 DeadSet.add(entity.getKey().toString());
-            }*/
+            }
         }
         Long endTime = System.currentTimeMillis();
         logger.info("股票KDJ计算结束:耗时：" + (endTime - startTime)/1000);
-        /*List<Map<String,Object>> goldStock = stockDataSelfMapper.selectStocksByList(glodSet);
+        List<Map<String,Object>> goldStock = stockDataSelfMapper.selectStocksByList(glodSet);
         List<Map<String,Object>> deadStock = stockDataSelfMapper.selectStocksByList(DeadSet);
         redisUtil.addMap("CALC","GOLDCROSS",goldStock);
-        redisUtil.addMap("CALC","DEADCROSS",deadStock);*/
+        redisUtil.addMap("CALC","DEADCROSS",deadStock);
     }
 
     @Override

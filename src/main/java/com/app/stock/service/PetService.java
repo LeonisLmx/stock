@@ -20,4 +20,6 @@ public interface PetService {
     public Map<String,Object> petInfo(HttpServletRequest request);
 
     public String resetPet(HttpServletRequest request);
+
+    public String saleStock(FeedPetRequest map, HttpServletRequest request);
 }

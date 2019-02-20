@@ -20,16 +20,28 @@ public class PetStockDetailSqlProvider {
             VALUES("pet_id", "#{petId,jdbcType=BIGINT}");
         }
         
+        if (record.getStockId() != null) {
+            VALUES("stock_id", "#{stockId,jdbcType=BIGINT}");
+        }
+        
         if (record.getStockName() != null) {
             VALUES("stock_name", "#{stockName,jdbcType=VARCHAR}");
         }
         
-        if (record.getStockCode() != null) {
-            VALUES("stock_code", "#{stockCode,jdbcType=VARCHAR}");
+        if (record.getbPrice() != null) {
+            VALUES("b_price", "#{bPrice,jdbcType=DECIMAL}");
         }
         
-        if (record.getPrice() != null) {
-            VALUES("price", "#{price,jdbcType=DECIMAL}");
+        if (record.getbTime() != null) {
+            VALUES("b_time", "#{bTime,jdbcType=TIMESTAMP}");
+        }
+        
+        if (record.getsPrice() != null) {
+            VALUES("s_price", "#{sPrice,jdbcType=DECIMAL}");
+        }
+        
+        if (record.getsTime() != null) {
+            VALUES("s_time", "#{sTime,jdbcType=TIMESTAMP}");
         }
         
         if (record.getIsDelete() != null) {
@@ -55,16 +67,28 @@ public class PetStockDetailSqlProvider {
             SET("pet_id = #{petId,jdbcType=BIGINT}");
         }
         
+        if (record.getStockId() != null) {
+            SET("stock_id = #{stockId,jdbcType=BIGINT}");
+        }
+        
         if (record.getStockName() != null) {
             SET("stock_name = #{stockName,jdbcType=VARCHAR}");
         }
         
-        if (record.getStockCode() != null) {
-            SET("stock_code = #{stockCode,jdbcType=VARCHAR}");
+        if (record.getbPrice() != null) {
+            SET("b_price = #{bPrice,jdbcType=DECIMAL}");
         }
         
-        if (record.getPrice() != null) {
-            SET("price = #{price,jdbcType=DECIMAL}");
+        if (record.getbTime() != null) {
+            SET("b_time = #{bTime,jdbcType=TIMESTAMP}");
+        }
+        
+        if (record.getsPrice() != null) {
+            SET("s_price = #{sPrice,jdbcType=DECIMAL}");
+        }
+        
+        if (record.getsTime() != null) {
+            SET("s_time = #{sTime,jdbcType=TIMESTAMP}");
         }
         
         if (record.getIsDelete() != null) {

@@ -20,14 +20,16 @@ public interface PetStockDetailMapper {
     int deleteByPrimaryKey(Long id);
 
     @Insert({
-        "insert into pet_stock_detail (pet_id, stock_name, ",
-        "stock_code, price, ",
-        "is_delete, create_time, ",
-        "modify_time)",
-        "values (#{petId,jdbcType=BIGINT}, #{stockName,jdbcType=VARCHAR}, ",
-        "#{stockCode,jdbcType=VARCHAR}, #{price,jdbcType=DECIMAL}, ",
-        "#{isDelete,jdbcType=INTEGER}, #{createTime,jdbcType=TIMESTAMP}, ",
-        "#{modifyTime,jdbcType=TIMESTAMP})"
+        "insert into pet_stock_detail (pet_id, stock_id, ",
+        "stock_name, b_price, ",
+        "b_time, s_price, ",
+        "s_time, is_delete, ",
+        "create_time, modify_time)",
+        "values (#{petId,jdbcType=BIGINT}, #{stockId,jdbcType=BIGINT}, ",
+        "#{stockName,jdbcType=VARCHAR}, #{bPrice,jdbcType=DECIMAL}, ",
+        "#{bTime,jdbcType=TIMESTAMP}, #{sPrice,jdbcType=DECIMAL}, ",
+        "#{sTime,jdbcType=TIMESTAMP}, #{isDelete,jdbcType=INTEGER}, ",
+        "#{createTime,jdbcType=TIMESTAMP}, #{modifyTime,jdbcType=TIMESTAMP})"
     })
     @Options(useGeneratedKeys=true,keyProperty="id")
     int insert(PetStockDetail record);
@@ -38,16 +40,20 @@ public interface PetStockDetailMapper {
 
     @Select({
         "select",
-        "id, pet_id, stock_name, stock_code, price, is_delete, create_time, modify_time",
+        "id, pet_id, stock_id, stock_name, b_price, b_time, s_price, s_time, is_delete, ",
+        "create_time, modify_time",
         "from pet_stock_detail",
         "where id = #{id,jdbcType=BIGINT}"
     })
     @Results({
         @Result(column="id", property="id", jdbcType=JdbcType.BIGINT, id=true),
         @Result(column="pet_id", property="petId", jdbcType=JdbcType.BIGINT),
+        @Result(column="stock_id", property="stockId", jdbcType=JdbcType.BIGINT),
         @Result(column="stock_name", property="stockName", jdbcType=JdbcType.VARCHAR),
-        @Result(column="stock_code", property="stockCode", jdbcType=JdbcType.VARCHAR),
-        @Result(column="price", property="price", jdbcType=JdbcType.DECIMAL),
+        @Result(column="b_price", property="bPrice", jdbcType=JdbcType.DECIMAL),
+        @Result(column="b_time", property="bTime", jdbcType=JdbcType.TIMESTAMP),
+        @Result(column="s_price", property="sPrice", jdbcType=JdbcType.DECIMAL),
+        @Result(column="s_time", property="sTime", jdbcType=JdbcType.TIMESTAMP),
         @Result(column="is_delete", property="isDelete", jdbcType=JdbcType.INTEGER),
         @Result(column="create_time", property="createTime", jdbcType=JdbcType.TIMESTAMP),
         @Result(column="modify_time", property="modifyTime", jdbcType=JdbcType.TIMESTAMP)
@@ -60,9 +66,12 @@ public interface PetStockDetailMapper {
     @Update({
         "update pet_stock_detail",
         "set pet_id = #{petId,jdbcType=BIGINT},",
+          "stock_id = #{stockId,jdbcType=BIGINT},",
           "stock_name = #{stockName,jdbcType=VARCHAR},",
-          "stock_code = #{stockCode,jdbcType=VARCHAR},",
-          "price = #{price,jdbcType=DECIMAL},",
+          "b_price = #{bPrice,jdbcType=DECIMAL},",
+          "b_time = #{bTime,jdbcType=TIMESTAMP},",
+          "s_price = #{sPrice,jdbcType=DECIMAL},",
+          "s_time = #{sTime,jdbcType=TIMESTAMP},",
           "is_delete = #{isDelete,jdbcType=INTEGER},",
           "create_time = #{createTime,jdbcType=TIMESTAMP},",
           "modify_time = #{modifyTime,jdbcType=TIMESTAMP}",

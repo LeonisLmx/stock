@@ -6,6 +6,7 @@ import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.Select;
 
+import java.math.BigDecimal;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
@@ -58,4 +59,9 @@ public interface StockDataSelfMapper extends StockDataMapper {
             "select stock_id,open,close,high,low,trading_day from stock_data where stock_id = #{stockId} order by trading_day desc"
     })
     List<StockData> selectStocksByStockId(@Param("stockId")Long stockId);
+
+    @Select({
+            "select close from stock_data where stock_id = #{stockId} and trading_day = #{date}"
+    })
+    BigDecimal selectClosePrice(@Param("stockId")Long stockId, @Param("date")String date);
 }

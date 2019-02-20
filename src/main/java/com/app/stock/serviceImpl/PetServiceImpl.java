@@ -12,6 +12,7 @@ import com.app.stock.model.User;
 import com.app.stock.model.request.FeedPetRequest;
 import com.app.stock.service.PetService;
 import com.app.stock.service.ScoreDetailService;
+import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Propagation;
@@ -72,10 +73,11 @@ public class PetServiceImpl  implements PetService {
         if(petStockDetailSelfMapper.selectCountByDateAndPetId(pet.getId(),sdf.format(new Date())) > 0){
             return "当日已喂养过宠物";
         }
-        petStockDetail.setPrice(BigDecimal.valueOf(Double.valueOf(map.getPrice())));
-        petStockDetail.setStockCode(map.getStockCode());
+        petStockDetail.setbPrice(BigDecimal.valueOf(Double.valueOf(map.getPrice())));
+        petStockDetail.setStockId(map.getStockId());
         petStockDetail.setStockName(map.getStockName());
         petStockDetail.setCreateTime(new Date());
+        petStockDetail.setbTime(petStockDetail.getCreateTime());
         petStockDetailSelfMapper.insertSelective(petStockDetail);
         int score = calcScore(pet.getLevel());
         if(score > 0){
@@ -100,8 +102,8 @@ public class PetServiceImpl  implements PetService {
         for(PetStockDetail entity:list){
             Map<String,Object> map = new HashMap<>();
             map.put("stock_name",entity.getStockName());
-            map.put("stock_code",entity.getStockCode());
-            map.put("price",entity.getPrice());
+            map.put("stock_id",entity.getStockId());
+            map.put("price",entity.getbPrice());
             stocks.add(map);
         }
         result.put("list",stocks);
@@ -124,6 +126,25 @@ public class PetServiceImpl  implements PetService {
         petStockDetailSelfMapper.deleteAllStockByPetId(pet.getId());
         scoreDetailService.addScore(user.getId(),-RESET_PET,ScoreEnum.getName(2));
         return "重置成功";
+    }
+
+    @Override
+    public String saleStock(FeedPetRequest map, HttpServletRequest request) {
+        User user = commonservice.getCurrentInfo(request);
+        PetStockDetail petStockDetail = petStockDetailSelfMapper.selectIsHaveStock(map.getStockId(),user.getId());
+        if(petStockDetail == null){
+            return "未持有该股票";
+        }
+        petStockDetail.setsPrice(new BigDecimal(map.getPrice()));
+        petStockDetail.setsTime(new Date());
+        // 计算宠物等级
+        Pet pet = petSelfMapper.selectPrimarykeyByUserId(user.getId());
+        BigDecimal percent = (new BigDecimal(map.getPrice()).subtract(petStockDetail.getbPrice())).multiply(new BigDecimal(100)).divide(petStockDetail.getbPrice(),2,BigDecimal.ROUND_HALF_UP);
+        BigDecimal level = (new BigDecimal(100)).multiply(new BigDecimal(map.getPrice()).subtract(petStockDetail.getbPrice())).divide(petStockDetail.getbPrice(),4).divide(new BigDecimal(3),0,BigDecimal.ROUND_HALF_UP);
+        pet.setLevel(pet.getLevel() + Integer.valueOf(level + ""));
+        pet.setPercent(percent + "");
+        petSelfMapper.updateByPrimaryKeySelective(pet);
+        return "卖出成功";
     }
 
     protected int calcScore(int level){
