@@ -6,6 +6,10 @@
     <settings>
         <!-- 数据库列 user_name将自动映射到pojo中的userName -->
         <setting name="mapUnderscoreToCamelCase" value="true"/>
+        <!-- 开启缓存,默认就是开启的,2层开关,需要在Mapper文件中也指定 cache 标签才会真正使用缓存 -->
+        <setting name="cacheEnabled" value="true"/>
+        <!-- 在null时也调用 setter,适应于返回Map,3.2版本以上可用 -->
+        <setting name="callSettersOnNulls" value="true"/>
     </settings>
     <plugins>
         <!-- com.github.pagehelper为PageHelper类所在包名 -->

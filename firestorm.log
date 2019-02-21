@@ -1,94 +1,64 @@
-DEBUG pool-1-thread-1 druid.sql.Statement - {conn-10005, pstmt-21764} Parameters : [8084]
-DEBUG pool-1-thread-1 druid.sql.Statement - {conn-10005, pstmt-21764} Types : [BIGINT]
-DEBUG pool-1-thread-1 druid.sql.Statement - {conn-10005, pstmt-21764} executed. 35.659501 millis. select stock_id,open,close,high,low,trading_day from stock_data where stock_id = ? order by trading_day desc
-DEBUG pool-1-thread-1 druid.sql.ResultSet - {conn-10005, pstmt-21764, rs-51764} open
-DEBUG pool-1-thread-1 druid.sql.ResultSet - {conn-10005, pstmt-21764, rs-51764} Header: [stock_id, open, close, high, low, trading_day]
-DEBUG pool-1-thread-1 druid.sql.ResultSet - {conn-10005, pstmt-21764, rs-51764} Result: [8084, 4.890, 4.860, 4.910, 4.810, 2019-02-20]
-DEBUG pool-1-thread-1 druid.sql.ResultSet - {conn-10005, pstmt-21764, rs-51764} Result: [8084, 4.920, 4.880, 4.990, 4.800, 2019-02-19]
-DEBUG pool-1-thread-1 druid.sql.ResultSet - {conn-10005, pstmt-21764, rs-51764} Result: [8084, 4.790, 4.900, 4.910, 4.790, 2019-02-18]
-DEBUG pool-1-thread-1 druid.sql.ResultSet - {conn-10005, pstmt-21764, rs-51764} Result: [8084, 4.810, 4.780, 4.850, 4.760, 2019-02-15]
-DEBUG pool-1-thread-1 druid.sql.ResultSet - {conn-10005, pstmt-21764, rs-51764} Result: [8084, 4.850, 4.810, 4.870, 4.790, 2019-02-14]
-DEBUG pool-1-thread-1 druid.sql.ResultSet - {conn-10005, pstmt-21764, rs-51764} Result: [8084, 4.800, 4.870, 4.880, 4.770, 2019-02-13]
-DEBUG pool-1-thread-1 druid.sql.ResultSet - {conn-10005, pstmt-21764, rs-51764} Result: [8084, 4.800, 4.800, 4.830, 4.760, 2019-02-12]
-DEBUG pool-1-thread-1 druid.sql.ResultSet - {conn-10005, pstmt-21764, rs-51764} Result: [8084, 4.730, 4.790, 4.820, 4.710, 2019-02-11]
-DEBUG pool-1-thread-1 druid.sql.ResultSet - {conn-10005, pstmt-21764, rs-51764} Result: [8084, 4.600, 4.710, 4.780, 4.560, 2019-02-01]
-DEBUG pool-1-thread-1 druid.sql.ResultSet - {conn-10005, pstmt-21764, rs-51764} Result: [8084, 4.680, 4.580, 4.720, 4.540, 2019-01-31]
-DEBUG pool-1-thread-1 druid.sql.ResultSet - {conn-10005, pstmt-21764, rs-51764} Result: [8084, 4.690, 4.680, 4.770, 4.670, 2019-01-30]
-DEBUG pool-1-thread-1 druid.sql.ResultSet - {conn-10005, pstmt-21764, rs-51764} Result: [8084, 4.790, 4.750, 4.800, 4.660, 2019-01-29]
-DEBUG pool-1-thread-1 druid.sql.ResultSet - {conn-10005, pstmt-21764, rs-51764} Result: [8084, 4.910, 4.860, 4.920, 4.840, 2019-01-25]
-DEBUG pool-1-thread-1 druid.sql.ResultSet - {conn-10005, pstmt-21764, rs-51764} Result: [8084, 4.900, 4.910, 4.940, 4.870, 2019-01-24]
-DEBUG pool-1-thread-1 druid.sql.ResultSet - {conn-10005, pstmt-21764, rs-51764} Result: [8084, 4.900, 4.910, 4.930, 4.860, 2019-01-23]
-DEBUG pool-1-thread-1 druid.sql.ResultSet - {conn-10005, pstmt-21764, rs-51764} Result: [8084, 5.020, 4.900, 5.020, 4.860, 2019-01-22]
-DEBUG pool-1-thread-1 druid.sql.ResultSet - {conn-10005, pstmt-21764, rs-51764} Result: [8084, 5.000, 5.000, 5.050, 4.990, 2019-01-21]
-DEBUG pool-1-thread-1 druid.sql.ResultSet - {conn-10005, pstmt-21764, rs-51764} Result: [8084, 5.040, 5.010, 5.060, 4.970, 2019-01-18]
-DEBUG pool-1-thread-1 druid.sql.ResultSet - {conn-10005, pstmt-21764, rs-51764} Result: [8084, 5.040, 5.020, 5.090, 5.010, 2019-01-17]
-DEBUG pool-1-thread-1 druid.sql.ResultSet - {conn-10005, pstmt-21764, rs-51764} Result: [8084, 5.050, 5.060, 5.160, 5.010, 2019-01-16]
-DEBUG pool-1-thread-1 druid.sql.ResultSet - {conn-10005, pstmt-21764, rs-51764} Result: [8084, 5.030, 5.030, 5.070, 4.980, 2019-01-15]
-DEBUG pool-1-thread-1 druid.sql.ResultSet - {conn-10005, pstmt-21764, rs-51764} Result: [8084, 5.020, 5.030, 5.080, 5.010, 2019-01-14]
-DEBUG pool-1-thread-1 druid.sql.ResultSet - {conn-10005, pstmt-21764, rs-51764} Result: [8084, 4.970, 5.030, 5.050, 4.960, 2019-01-11]
-DEBUG pool-1-thread-1 druid.sql.ResultSet - {conn-10005, pstmt-21764, rs-51764} Result: [8084, 4.980, 5.000, 5.060, 4.970, 2019-01-10]
-DEBUG pool-1-thread-1 druid.sql.ResultSet - {conn-10005, pstmt-21764, rs-51764} Result: [8084, 5.040, 4.980, 5.130, 4.960, 2019-01-09]
-DEBUG pool-1-thread-1 druid.sql.ResultSet - {conn-10005, pstmt-21764, rs-51764} Result: [8084, 4.980, 5.030, 5.080, 4.920, 2019-01-08]
-DEBUG pool-1-thread-1 druid.sql.ResultSet - {conn-10005, pstmt-21764, rs-51764} Result: [8084, 4.920, 4.960, 5.010, 4.890, 2019-01-07]
-DEBUG pool-1-thread-1 druid.sql.ResultSet - {conn-10005, pstmt-21764, rs-51764} Result: [8084, 4.800, 4.930, 4.930, 4.800, 2019-01-04]
-DEBUG pool-1-thread-1 druid.sql.ResultSet - {conn-10005, pstmt-21764, rs-51764} Result: [8084, 4.820, 4.840, 4.910, 4.820, 2019-01-03]
-DEBUG pool-1-thread-1 druid.sql.ResultSet - {conn-10005, pstmt-21764, rs-51764} Result: [8084, 4.900, 4.840, 4.930, 4.810, 2019-01-02]
-DEBUG pool-1-thread-1 druid.sql.ResultSet - {conn-10005, pstmt-21764, rs-51764} Result: [8084, 4.760, 4.950, 4.980, 4.760, 2018-12-28]
-DEBUG pool-1-thread-1 druid.sql.ResultSet - {conn-10005, pstmt-21764, rs-51764} Result: [8084, 4.850, 4.760, 4.890, 4.750, 2018-12-27]
-DEBUG pool-1-thread-1 druid.sql.ResultSet - {conn-10005, pstmt-21764, rs-51764} closed
-DEBUG pool-1-thread-1 druid.sql.Statement - {conn-10005, pstmt-21764} closed
-DEBUG pool-1-thread-1 druid.sql.Connection - {conn-10005} pool-recycle
-DEBUG pool-1-thread-1 druid.sql.Connection - {conn-10005} pool-connect
-DEBUG pool-1-thread-1 druid.sql.Statement - {conn-10005, pstmt-21765} created. select stock_id,open,close,high,low,trading_day from stock_data where stock_id = ? order by trading_day desc
-DEBUG pool-1-thread-1 druid.sql.Statement - {conn-10005, pstmt-21765} Parameters : [8085]
-DEBUG pool-1-thread-1 druid.sql.Statement - {conn-10005, pstmt-21765} Types : [BIGINT]
-DEBUG pool-1-thread-1 druid.sql.Statement - {conn-10005, pstmt-21765} executed. 36.68248 millis. select stock_id,open,close,high,low,trading_day from stock_data where stock_id = ? order by trading_day desc
-DEBUG pool-1-thread-1 druid.sql.ResultSet - {conn-10005, pstmt-21765, rs-51765} open
-DEBUG pool-1-thread-1 druid.sql.ResultSet - {conn-10005, pstmt-21765, rs-51765} Header: [stock_id, open, close, high, low, trading_day]
-DEBUG pool-1-thread-1 druid.sql.ResultSet - {conn-10005, pstmt-21765, rs-51765} Result: [8085, 10.500, 10.720, 10.760, 10.500, 2019-02-20]
-DEBUG pool-1-thread-1 druid.sql.ResultSet - {conn-10005, pstmt-21765, rs-51765} Result: [8085, 10.530, 10.440, 10.730, 10.350, 2019-02-19]
-DEBUG pool-1-thread-1 druid.sql.ResultSet - {conn-10005, pstmt-21765, rs-51765} Result: [8085, 10.260, 10.510, 10.540, 10.230, 2019-02-18]
-DEBUG pool-1-thread-1 druid.sql.ResultSet - {conn-10005, pstmt-21765, rs-51765} Result: [8085, 10.290, 10.220, 10.310, 10.170, 2019-02-15]
-DEBUG pool-1-thread-1 druid.sql.ResultSet - {conn-10005, pstmt-21765, rs-51765} Result: [8085, 10.260, 10.270, 10.380, 10.230, 2019-02-14]
-DEBUG pool-1-thread-1 druid.sql.ResultSet - {conn-10005, pstmt-21765, rs-51765} Result: [8085, 10.100, 10.290, 10.340, 10.060, 2019-02-13]
-DEBUG pool-1-thread-1 druid.sql.ResultSet - {conn-10005, pstmt-21765, rs-51765} Result: [8085, 10.070, 10.100, 10.160, 10.020, 2019-02-12]
-DEBUG pool-1-thread-1 druid.sql.ResultSet - {conn-10005, pstmt-21765, rs-51765} Result: [8085, 9.900, 10.090, 10.110, 9.870, 2019-02-11]
-DEBUG pool-1-thread-1 druid.sql.ResultSet - {conn-10005, pstmt-21765, rs-51765} Result: [8085, 9.700, 9.830, 9.850, 9.680, 2019-02-01]
-DEBUG pool-1-thread-1 druid.sql.ResultSet - {conn-10005, pstmt-21765, rs-51765} Result: [8085, 9.940, 9.660, 9.960, 9.650, 2019-01-31]
-DEBUG pool-1-thread-1 druid.sql.ResultSet - {conn-10005, pstmt-21765, rs-51765} Result: [8085, 9.930, 9.920, 10.050, 9.860, 2019-01-30]
-DEBUG pool-1-thread-1 druid.sql.ResultSet - {conn-10005, pstmt-21765, rs-51765} Result: [8085, 10.140, 10.060, 10.170, 9.900, 2019-01-29]
-DEBUG pool-1-thread-1 druid.sql.ResultSet - {conn-10005, pstmt-21765, rs-51765} Result: [8085, 10.430, 10.320, 10.470, 10.310, 2019-01-25]
-DEBUG pool-1-thread-1 druid.sql.ResultSet - {conn-10005, pstmt-21765, rs-51765} Result: [8085, 10.500, 10.490, 10.690, 10.430, 2019-01-24]
-DEBUG pool-1-thread-1 druid.sql.ResultSet - {conn-10005, pstmt-21765, rs-51765} Result: [8085, 10.380, 10.680, 10.720, 10.340, 2019-01-23]
-DEBUG pool-1-thread-1 druid.sql.ResultSet - {conn-10005, pstmt-21765, rs-51765} Result: [8085, 10.220, 10.540, 10.690, 10.160, 2019-01-22]
-DEBUG pool-1-thread-1 druid.sql.ResultSet - {conn-10005, pstmt-21765, rs-51765} Result: [8085, 10.310, 10.240, 10.370, 10.150, 2019-01-21]
-DEBUG pool-1-thread-1 druid.sql.ResultSet - {conn-10005, pstmt-21765, rs-51765} Result: [8085, 10.530, 10.250, 10.900, 10.160, 2019-01-18]
-DEBUG pool-1-thread-1 druid.sql.ResultSet - {conn-10005, pstmt-21765, rs-51765} Result: [8085, 10.050, 9.910, 10.060, 9.790, 2019-01-17]
-DEBUG pool-1-thread-1 druid.sql.ResultSet - {conn-10005, pstmt-21765, rs-51765} Result: [8085, 10.130, 10.050, 10.160, 9.980, 2019-01-16]
-DEBUG pool-1-thread-1 druid.sql.ResultSet - {conn-10005, pstmt-21765, rs-51765} Result: [8085, 10.060, 10.120, 10.140, 9.930, 2019-01-15]
-DEBUG pool-1-thread-1 druid.sql.ResultSet - {conn-10005, pstmt-21765, rs-51765} Result: [8085, 10.130, 10.050, 10.160, 10.030, 2019-01-14]
-DEBUG pool-1-thread-1 druid.sql.ResultSet - {conn-10005, pstmt-21765, rs-51765} Result: [8085, 10.080, 10.150, 10.160, 10.000, 2019-01-11]
-DEBUG pool-1-thread-1 druid.sql.ResultSet - {conn-10005, pstmt-21765, rs-51765} Result: [8085, 10.190, 10.060, 10.200, 10.030, 2019-01-10]
-DEBUG pool-1-thread-1 druid.sql.ResultSet - {conn-10005, pstmt-21765, rs-51765} Result: [8085, 10.150, 10.170, 10.350, 10.130, 2019-01-09]
-DEBUG pool-1-thread-1 druid.sql.ResultSet - {conn-10005, pstmt-21765, rs-51765} Result: [8085, 10.320, 10.140, 10.320, 10.100, 2019-01-08]
-DEBUG pool-1-thread-1 druid.sql.ResultSet - {conn-10005, pstmt-21765, rs-51765} Result: [8085, 10.400, 10.340, 10.400, 10.190, 2019-01-07]
-DEBUG pool-1-thread-1 druid.sql.ResultSet - {conn-10005, pstmt-21765, rs-51765} Result: [8085, 9.990, 10.290, 10.320, 9.970, 2019-01-04]
-DEBUG pool-1-thread-1 druid.sql.ResultSet - {conn-10005, pstmt-21765, rs-51765} Result: [8085, 10.150, 10.130, 10.280, 10.070, 2019-01-03]
-DEBUG pool-1-thread-1 druid.sql.ResultSet - {conn-10005, pstmt-21765, rs-51765} Result: [8085, 10.320, 10.120, 10.380, 10.100, 2019-01-02]
-DEBUG pool-1-thread-1 druid.sql.ResultSet - {conn-10005, pstmt-21765, rs-51765} Result: [8085, 10.460, 10.290, 10.480, 10.230, 2018-12-28]
-DEBUG pool-1-thread-1 druid.sql.ResultSet - {conn-10005, pstmt-21765, rs-51765} Result: [8085, 10.590, 10.440, 10.670, 10.380, 2018-12-27]
-DEBUG pool-1-thread-1 druid.sql.ResultSet - {conn-10005, pstmt-21765, rs-51765} closed
-DEBUG pool-1-thread-1 druid.sql.Statement - {conn-10005, pstmt-21765} closed
-DEBUG pool-1-thread-1 druid.sql.Connection - {conn-10005} pool-recycle
-DEBUG pool-1-thread-1 druid.sql.Connection - {conn-10005} pool-connect
-DEBUG pool-1-thread-1 druid.sql.Statement - {conn-10005, pstmt-21766} created. select stock_code,stock_name,market from stock where id in  (   ?  ,  ?  )
-DEBUG pool-1-thread-1 druid.sql.Statement - {conn-10005, pstmt-21766} Parameters : [7980, 2485]
-DEBUG pool-1-thread-1 druid.sql.Statement - {conn-10005, pstmt-21766} Types : [VARCHAR, VARCHAR]
-DEBUG pool-1-thread-1 druid.sql.Statement - {conn-10005, pstmt-21766} executed. 6.546786 millis. select stock_code,stock_name,market from stock where id in  (   ?  ,  ?  )
-DEBUG pool-1-thread-1 druid.sql.ResultSet - {conn-10005, pstmt-21766, rs-51766} open
-DEBUG pool-1-thread-1 druid.sql.ResultSet - {conn-10005, pstmt-21766, rs-51766} Header: [stock_code, stock_name, market]
-DEBUG pool-1-thread-1 druid.sql.ResultSet - {conn-10005, pstmt-21766, rs-51766} Result: [000688, 建新矿业, zh]
-DEBUG pool-1-thread-1 druid.sql.ResultSet - {conn-10005, pstmt-21766, rs-51766} Result: [600262, 北方股份, sh]
-DEBUG pool-1-thread-1 druid.sql.ResultSet - {conn-10005, pstmt-21766, rs-51766} closed
-DEBUG pool-1-thread-1 druid.sql.Statement - {conn-10005, pstmt-21766} closed
-DEBUG pool-1-thread-1 druid.sql.Connection - {conn-10005} pool-recycle
+DEBUG http-nio-8999-exec-1 druid.sql.Statement - {conn-10005, pstmt-20001} Parameters : [0, 10]
+DEBUG http-nio-8999-exec-1 druid.sql.Statement - {conn-10005, pstmt-20001} Types : [INTEGER, INTEGER]
+DEBUG http-nio-8999-exec-1 druid.sql.Statement - {conn-10005, pstmt-20001} executed. 8.521654 millis. select a.id,c.name as type,a.content,a.title,a.small_img,a.detail,a.common_price,a.vip_price,DATE_FORMAT(a.create_time,'%Y-%m-%d %T') as create_time, b.name as teacher_name,b.description,b.avatar,d.play_count from subject a left join teacher b on a.teacher_id = b.id left join subject_type c on a.subject_type_id = c.id left join subject_detail d on a.id = d.subject_id where a.is_delete = 0 and b.is_delete = 0 and c.is_delete = 0 and d.is_delete = 0      and a.common_price != 0 limit ?,?
+DEBUG http-nio-8999-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} open
+DEBUG http-nio-8999-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Header: [id, name, content, title, small_img, detail, common_price, vip_price, create_time, name, description, avatar, play_count]
+DEBUG http-nio-8999-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [1, 股票, 详情, 测试的第一个, null, 第一个课程, 100.00, 80.00, 2019-01-31 10:08:38, 张健, 鉴黄大师, null, 8]
+DEBUG http-nio-8999-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} closed
+DEBUG http-nio-8999-exec-1 druid.sql.Statement - {conn-10005, pstmt-20001} closed
+DEBUG http-nio-8999-exec-1 druid.sql.Connection - {conn-10005} pool-recycle
+DEBUG http-nio-8999-exec-3 druid.sql.Connection - {conn-10005} pool-connect
+DEBUG http-nio-8999-exec-3 druid.sql.Statement - {conn-10005, pstmt-20002} created. SELECT count(0) FROM (SELECT a.id, c.name AS type, a.content, a.title, a.small_img, a.detail, a.common_price, a.vip_price, DATE_FORMAT(a.create_time, '%Y-%m-%d %T') AS create_time, b.name AS teacher_name, b.description, b.avatar, d.play_count FROM subject a LEFT JOIN teacher b ON a.teacher_id = b.id LEFT JOIN subject_type c ON a.subject_type_id = c.id LEFT JOIN subject_detail d ON a.id = d.subject_id WHERE a.is_delete = 0 AND b.is_delete = 0 AND c.is_delete = 0 AND d.is_delete = 0 AND a.common_price != 0) table_count
+DEBUG http-nio-8999-exec-3 druid.sql.Statement - {conn-10005, pstmt-20002} Parameters : []
+DEBUG http-nio-8999-exec-3 druid.sql.Statement - {conn-10005, pstmt-20002} Types : []
+DEBUG http-nio-8999-exec-3 druid.sql.Statement - {conn-10005, pstmt-20002} executed. 8.745694 millis. SELECT count(0) FROM (SELECT a.id, c.name AS type, a.content, a.title, a.small_img, a.detail, a.common_price, a.vip_price, DATE_FORMAT(a.create_time, '%Y-%m-%d %T') AS create_time, b.name AS teacher_name, b.description, b.avatar, d.play_count FROM subject a LEFT JOIN teacher b ON a.teacher_id = b.id LEFT JOIN subject_type c ON a.subject_type_id = c.id LEFT JOIN subject_detail d ON a.id = d.subject_id WHERE a.is_delete = 0 AND b.is_delete = 0 AND c.is_delete = 0 AND d.is_delete = 0 AND a.common_price != 0) table_count
+DEBUG http-nio-8999-exec-3 druid.sql.ResultSet - {conn-10005, pstmt-20002, rs-50002} open
+DEBUG http-nio-8999-exec-3 druid.sql.ResultSet - {conn-10005, pstmt-20002, rs-50002} Header: [count(0)]
+DEBUG http-nio-8999-exec-3 druid.sql.ResultSet - {conn-10005, pstmt-20002, rs-50002} Result: [1]
+DEBUG http-nio-8999-exec-3 druid.sql.ResultSet - {conn-10005, pstmt-20002, rs-50002} closed
+DEBUG http-nio-8999-exec-3 druid.sql.Statement - {conn-10005, pstmt-20002} closed
+DEBUG http-nio-8999-exec-3 druid.sql.Statement - {conn-10005, pstmt-20003} created. select a.id,c.name as type,a.content,a.title,a.small_img,a.detail,a.common_price,a.vip_price,DATE_FORMAT(a.create_time,'%Y-%m-%d %T') as create_time, b.name as teacher_name,b.description,b.avatar,d.play_count from subject a left join teacher b on a.teacher_id = b.id left join subject_type c on a.subject_type_id = c.id left join subject_detail d on a.id = d.subject_id where a.is_delete = 0 and b.is_delete = 0 and c.is_delete = 0 and d.is_delete = 0      and a.common_price != 0 limit ?,?
+DEBUG http-nio-8999-exec-3 druid.sql.Statement - {conn-10005, pstmt-20003} Parameters : [0, 10]
+DEBUG http-nio-8999-exec-3 druid.sql.Statement - {conn-10005, pstmt-20003} Types : [INTEGER, INTEGER]
+DEBUG http-nio-8999-exec-3 druid.sql.Statement - {conn-10005, pstmt-20003} executed. 9.269195 millis. select a.id,c.name as type,a.content,a.title,a.small_img,a.detail,a.common_price,a.vip_price,DATE_FORMAT(a.create_time,'%Y-%m-%d %T') as create_time, b.name as teacher_name,b.description,b.avatar,d.play_count from subject a left join teacher b on a.teacher_id = b.id left join subject_type c on a.subject_type_id = c.id left join subject_detail d on a.id = d.subject_id where a.is_delete = 0 and b.is_delete = 0 and c.is_delete = 0 and d.is_delete = 0      and a.common_price != 0 limit ?,?
+DEBUG http-nio-8999-exec-3 druid.sql.ResultSet - {conn-10005, pstmt-20003, rs-50003} open
+DEBUG http-nio-8999-exec-3 druid.sql.ResultSet - {conn-10005, pstmt-20003, rs-50003} Header: [id, name, content, title, small_img, detail, common_price, vip_price, create_time, name, description, avatar, play_count]
+DEBUG http-nio-8999-exec-3 druid.sql.ResultSet - {conn-10005, pstmt-20003, rs-50003} Result: [1, 股票, 详情, 测试的第一个, null, 第一个课程, 100.00, 80.00, 2019-01-31 10:08:38, 张健, 鉴黄大师, null, 8]
+DEBUG http-nio-8999-exec-3 druid.sql.ResultSet - {conn-10005, pstmt-20003, rs-50003} closed
+DEBUG http-nio-8999-exec-3 druid.sql.Statement - {conn-10005, pstmt-20003} closed
+DEBUG http-nio-8999-exec-3 druid.sql.Connection - {conn-10005} pool-recycle
+DEBUG Thread-17 druid.sql.Connection - {conn-10001} closed
+DEBUG Thread-17 druid.sql.Connection - {conn-10002} closed
+DEBUG Thread-17 druid.sql.Connection - {conn-10003} closed
+DEBUG Thread-17 druid.sql.Connection - {conn-10004} closed
+DEBUG Thread-17 druid.sql.Connection - {conn-10005} closed
+DEBUG http-nio-8999-exec-2 druid.sql.Connection - {conn-10001} connected
+DEBUG http-nio-8999-exec-2 druid.sql.Connection - {conn-10002} connected
+DEBUG http-nio-8999-exec-2 druid.sql.Connection - {conn-10003} connected
+DEBUG http-nio-8999-exec-2 druid.sql.Connection - {conn-10004} connected
+DEBUG http-nio-8999-exec-2 druid.sql.Connection - {conn-10005} connected
+DEBUG http-nio-8999-exec-2 druid.sql.Connection - {conn-10005} pool-connect
+DEBUG http-nio-8999-exec-2 druid.sql.Statement - {conn-10005, pstmt-20000} created. SELECT count(0) FROM (SELECT a.id, c.name AS type, a.content, a.title, a.small_img, a.detail, a.common_price, a.vip_price, DATE_FORMAT(a.create_time, '%Y-%m-%d %T') AS create_time, b.name AS teacher_name, b.description, b.avatar, d.play_count FROM subject a LEFT JOIN teacher b ON a.teacher_id = b.id LEFT JOIN subject_type c ON a.subject_type_id = c.id LEFT JOIN subject_detail d ON a.id = d.subject_id WHERE a.is_delete = 0 AND b.is_delete = 0 AND c.is_delete = 0 AND d.is_delete = 0 AND a.common_price != 0) table_count
+DEBUG http-nio-8999-exec-2 druid.sql.Statement - {conn-10005, pstmt-20000} Parameters : []
+DEBUG http-nio-8999-exec-2 druid.sql.Statement - {conn-10005, pstmt-20000} Types : []
+DEBUG http-nio-8999-exec-2 druid.sql.Statement - {conn-10005, pstmt-20000} executed. 33.066929 millis. SELECT count(0) FROM (SELECT a.id, c.name AS type, a.content, a.title, a.small_img, a.detail, a.common_price, a.vip_price, DATE_FORMAT(a.create_time, '%Y-%m-%d %T') AS create_time, b.name AS teacher_name, b.description, b.avatar, d.play_count FROM subject a LEFT JOIN teacher b ON a.teacher_id = b.id LEFT JOIN subject_type c ON a.subject_type_id = c.id LEFT JOIN subject_detail d ON a.id = d.subject_id WHERE a.is_delete = 0 AND b.is_delete = 0 AND c.is_delete = 0 AND d.is_delete = 0 AND a.common_price != 0) table_count
+DEBUG http-nio-8999-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} open
+DEBUG http-nio-8999-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Header: [count(0)]
+DEBUG http-nio-8999-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [1]
+DEBUG http-nio-8999-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} closed
+DEBUG http-nio-8999-exec-2 druid.sql.Statement - {conn-10005, pstmt-20000} closed
+DEBUG http-nio-8999-exec-2 druid.sql.Statement - {conn-10005, pstmt-20001} created. select a.id,c.name as type,a.content,a.title,a.small_img,a.detail,a.common_price,a.vip_price,DATE_FORMAT(a.create_time,'%Y-%m-%d %T') as create_time, b.name as teacher_name,b.description,b.avatar,d.play_count from subject a left join teacher b on a.teacher_id = b.id left join subject_type c on a.subject_type_id = c.id left join subject_detail d on a.id = d.subject_id where a.is_delete = 0 and b.is_delete = 0 and c.is_delete = 0 and d.is_delete = 0      and a.common_price != 0 limit ?,?
+DEBUG http-nio-8999-exec-2 druid.sql.Statement - {conn-10005, pstmt-20001} Parameters : [0, 10]
+DEBUG http-nio-8999-exec-2 druid.sql.Statement - {conn-10005, pstmt-20001} Types : [INTEGER, INTEGER]
+DEBUG http-nio-8999-exec-2 druid.sql.Statement - {conn-10005, pstmt-20001} executed. 13.796982 millis. select a.id,c.name as type,a.content,a.title,a.small_img,a.detail,a.common_price,a.vip_price,DATE_FORMAT(a.create_time,'%Y-%m-%d %T') as create_time, b.name as teacher_name,b.description,b.avatar,d.play_count from subject a left join teacher b on a.teacher_id = b.id left join subject_type c on a.subject_type_id = c.id left join subject_detail d on a.id = d.subject_id where a.is_delete = 0 and b.is_delete = 0 and c.is_delete = 0 and d.is_delete = 0      and a.common_price != 0 limit ?,?
+DEBUG http-nio-8999-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} open
+DEBUG http-nio-8999-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Header: [id, name, content, title, small_img, detail, common_price, vip_price, create_time, name, description, avatar, play_count]
+DEBUG http-nio-8999-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [1, 股票, 详情, 测试的第一个, null, 第一个课程, 100.00, 80.00, 2019-01-31 10:08:38, 张健, 鉴黄大师, null, 8]
+DEBUG http-nio-8999-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} closed
+DEBUG http-nio-8999-exec-2 druid.sql.Statement - {conn-10005, pstmt-20001} closed
+DEBUG http-nio-8999-exec-2 druid.sql.Connection - {conn-10005} pool-recycle
+DEBUG Thread-19 druid.sql.Connection - {conn-10001} closed
+DEBUG Thread-19 druid.sql.Connection - {conn-10002} closed
+DEBUG Thread-19 druid.sql.Connection - {conn-10003} closed
+DEBUG Thread-19 druid.sql.Connection - {conn-10004} closed
+DEBUG Thread-19 druid.sql.Connection - {conn-10005} closed
