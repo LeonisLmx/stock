@@ -17,6 +17,7 @@ import org.springframework.stereotype.Service;
 
 import java.math.BigDecimal;
 import java.text.Bidi;
+import java.text.ParsePosition;
 import java.text.SimpleDateFormat;
 import java.util.*;
 import java.util.concurrent.atomic.AtomicInteger;
@@ -46,7 +47,7 @@ public class ScheduleCrossServiceImpl implements ScheduleCrossService {
         String response = null;
         /*// 如果redis为空，那么先存redis
         if(redisUtil.getMap("common","trading_date") == null){*/
-            // 获得最近的10个交易日
+            // 获得最近的60个交易日
             String url = "https://api.shenjian.io/?appid=25a308aa0f9fe382bbfad6b40e922cc8&code=000001&index=true&k_type=day&fq_type=qfq";
             try {
                 response = HttpClient.Get(url);
@@ -61,7 +62,7 @@ public class ScheduleCrossServiceImpl implements ScheduleCrossService {
                     return o2.get("date").toString().compareTo(o1.get("date").toString());
                 }
             });
-            List<Map<String,Object>> dateList = list.subList(0,10);
+            List<Map<String,Object>> dateList = list.subList(0,60);
             Collections.sort(dateList, new Comparator<Map<String, Object>>() {
                 @Override
                 public int compare(Map<String, Object> o1, Map<String, Object> o2) {
@@ -225,6 +226,8 @@ public class ScheduleCrossServiceImpl implements ScheduleCrossService {
     // 计算股票十字星
     @Override
     public void calcCorss() {
+        Long start = System.currentTimeMillis();
+        logger.info("开始计算十字星");
         Set<String> set = new HashSet<>();
         Map<String,Object> map = getStockDatas(3);
         if(map == null){
@@ -249,11 +252,14 @@ public class ScheduleCrossServiceImpl implements ScheduleCrossService {
         }
         List<Map<String,Object>> stockInfo = stockDataSelfMapper.selectStocksByList(set);
         redisUtil.addMap("CALC","CROSS",stockInfo);
+        Long end = System.currentTimeMillis();
+        logger.info("计算结束十字星，总耗时" + (end - start) / 1000);
     }
 
     // 股票阳线
     @Override
     public void calcYangLine() {
+        logger.info("开始计算股票阳线");
         Long startTime = System.currentTimeMillis();
         Set<String> set = new HashSet<>();
         Map<String,Object> map = getStockDatas(4);
@@ -282,6 +288,7 @@ public class ScheduleCrossServiceImpl implements ScheduleCrossService {
     // 长下影线
     @Override
     public void longUnderLine() {
+        logger.info("开始计算长下影线");
         Long startTime = System.currentTimeMillis();
         Set<String> set = new HashSet<>();
         Map<String,Object> map = getStockDatas(3);
@@ -310,6 +317,7 @@ public class ScheduleCrossServiceImpl implements ScheduleCrossService {
     // 锤子线
     @Override
     public void hammerLine() {
+        logger.info("开始计算锤子线");
         Long startTime = System.currentTimeMillis();
         Set<String> set = new HashSet<>();
         Map<String,Object> map = getStockDatas(3);
@@ -343,6 +351,7 @@ public class ScheduleCrossServiceImpl implements ScheduleCrossService {
 
     @Override
     public void KDJ() {
+        logger.info("开始计算KDJ");
         Long startTime = System.currentTimeMillis();
         Set<String> glodSet = new HashSet<>();
         Set<String> DeadSet = new HashSet<>();
@@ -411,7 +420,7 @@ public class ScheduleCrossServiceImpl implements ScheduleCrossService {
                 beforeK = (beforeRSV.add(new BigDecimal(100))).divide(new BigDecimal(3),5,BigDecimal.ROUND_HALF_UP);
                 beforeD = (beforeK.add(new BigDecimal(100))).divide(new BigDecimal(3),5,BigDecimal.ROUND_HALF_UP);
             }else{
-                String value = redisUtil.getMap("JDK",entity.getKey().toString());
+                String value = redisUtil.getMap("KDJ",entity.getKey().toString());
                 beforeK = new BigDecimal(value.split("_")[0]);
                 beforeD = new BigDecimal(value.split("_")[1]);
             }
@@ -443,6 +452,7 @@ public class ScheduleCrossServiceImpl implements ScheduleCrossService {
 
     @Override
     public void MACD() {
+        logger.info("开始计算MACD");
         Long startTime = System.currentTimeMillis();
         Set<String> set = new HashSet<>();
         Map<String,Object> map = getStockDatas(2);
@@ -461,31 +471,40 @@ public class ScheduleCrossServiceImpl implements ScheduleCrossService {
                 EMA12 = dataList.get(1).getClose().add((dataList.get(0).getClose().subtract(dataList.get(1).getClose())).multiply(new BigDecimal(2)).divide(new BigDecimal(13), 5, BigDecimal.ROUND_HALF_UP));
                 EMA26 = dataList.get(1).getClose().add((dataList.get(0).getClose().subtract(dataList.get(1).getClose())).multiply(new BigDecimal(2)).divide(new BigDecimal(27), 5, BigDecimal.ROUND_HALF_UP));
             }else{
-                EMA12 = new BigDecimal(redisUtil.getMap("EMA",current.getKey().toString().split("_")[0])).multiply(new BigDecimal(11)).divide(new BigDecimal(13),5,BigDecimal.ROUND_HALF_UP).add(dataList.get(0).getClose().multiply(new BigDecimal(2).divide(new BigDecimal(13),5,BigDecimal.ROUND_HALF_UP)));
-                EMA26 = new BigDecimal(redisUtil.getMap("EMA",current.getKey().toString().split("_")[1])).multiply(new BigDecimal(25)).divide(new BigDecimal(27),5,BigDecimal.ROUND_HALF_UP).add(dataList.get(0).getClose().multiply(new BigDecimal(2).divide(new BigDecimal(27),5,BigDecimal.ROUND_HALF_UP)));
+                EMA12 = new BigDecimal(redisUtil.getMap("EMA",current.getKey().toString()).split("_")[0]).multiply(new BigDecimal(11)).divide(new BigDecimal(13),5,BigDecimal.ROUND_HALF_UP).add(dataList.get(0).getClose().multiply(new BigDecimal(2).divide(new BigDecimal(13),5,BigDecimal.ROUND_HALF_UP)));
+                EMA26 = new BigDecimal(redisUtil.getMap("EMA",current.getKey().toString()).split("_")[1]).multiply(new BigDecimal(25)).divide(new BigDecimal(27),5,BigDecimal.ROUND_HALF_UP).add(dataList.get(0).getClose().multiply(new BigDecimal(2).divide(new BigDecimal(27),5,BigDecimal.ROUND_HALF_UP)));
             }
             redisUtil.addMap("EMA",current.getKey().toString(),EMA12 + "_" + EMA26);
             BigDecimal DIFF = EMA12.subtract(EMA26);
             BigDecimal beforeDEA ;
+            BigDecimal beforeMACD = new BigDecimal(0);
             if(redisUtil.getMap("MACD",current.getKey().toString()) == null) {
                 beforeDEA = new BigDecimal(0);
             }else{
                 String result = redisUtil.getMap("MACD",current.getKey().toString());
                 beforeDEA = new BigDecimal(result.split("_")[1]);
+                beforeMACD = new BigDecimal(redisUtil.getMap("MACD",current.getKey().toString()).split("_")[2]);
             }
             BigDecimal DEA = beforeDEA.multiply(new BigDecimal(0.8)).add(DIFF.multiply(new BigDecimal(0.2))).setScale(4,BigDecimal.ROUND_HALF_UP);
             BigDecimal MACD = (DIFF.subtract(DEA)).multiply(new BigDecimal(2)).setScale(4,BigDecimal.ROUND_HALF_UP);
             redisUtil.addMap("MACD",current.getKey().toString(),DIFF + "_" + DEA + "_" + MACD);
+            if(beforeMACD.compareTo(new BigDecimal(0)) < 0 && MACD.compareTo(new BigDecimal(0)) > 0){
+                set.add(current.getKey().toString());
+            }
         }
+        List<Map<String,Object>> MACDList = stockDataSelfMapper.selectStocksByList(set);
+        redisUtil.addMap("CALC","MACD",MACDList);
         Long endTime = System.currentTimeMillis();
         logger.info("股票MACD计算结束:耗时：" + (endTime - startTime)/1000);
     }
 
     @Override
     public void BOLL() {
+        logger.info("开始计算BOLL");
         Long startTime = System.currentTimeMillis();
         Set<String> set = new HashSet<>();
         Map<String,Object> map = getStockDatas(20);
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
         if(map == null){
             logger.info("股票数据不足");
             return;
@@ -495,31 +514,50 @@ public class ScheduleCrossServiceImpl implements ScheduleCrossService {
                 continue;
             }
             List<StockData> dataList = (List) current.getValue();
+            Collections.sort(dataList, new Comparator<StockData>() {
+                @Override
+                public int compare(StockData o1, StockData o2) {
+                    return sdf.parse(o1.getTradingDay(),new ParsePosition(0)).before(sdf.parse(o2.getTradingDay(),new ParsePosition(0))) ? -1: 1;
+                }
+            });
             BigDecimal sum = new BigDecimal(0);
             for(StockData stockData:dataList){
                 sum = sum.add(stockData.getClose());
             }
             BigDecimal MA = sum.divide(new BigDecimal(20),5,BigDecimal.ROUND_HALF_UP);
-            BigDecimal MB = sum.divide(new BigDecimal(19),5,BigDecimal.ROUND_HALF_UP);
+            // 中线
+            BigDecimal MB = (sum.subtract(dataList.get(dataList.size()-1).getClose())).divide(new BigDecimal(19),5,BigDecimal.ROUND_HALF_UP);
             BigDecimal MDSUM = new BigDecimal(0);
             for(StockData stockData:dataList){
                 MDSUM = MDSUM.add(new BigDecimal(Math.pow(stockData.getClose().subtract(MA).doubleValue(),2)));
             }
             BigDecimal MD = new BigDecimal(Math.sqrt(MDSUM.divide(new BigDecimal(20),5,BigDecimal.ROUND_HALF_UP).doubleValue()));
-            // k默认为2
+            // 上线
             BigDecimal UP = MB.add(MD.multiply(new BigDecimal(2)));
+            // 下线
             BigDecimal DN = MB.subtract(MD.multiply(new BigDecimal(2)));
-            redisUtil.addMap("BOLL",current.getKey().toString(),MA + "_" + MB + "_" + UP + "_" +DN);
+            if(dataList.get(dataList.size() - 2).getClose().compareTo(MB) < 0 &&
+            dataList.get(dataList.size() - 1).getClose().compareTo(MB) > 0 &&
+                    (UP.subtract(DN)).multiply(new BigDecimal(100)).divide(MB,4,BigDecimal.ROUND_HALF_UP).compareTo(new BigDecimal(10)) < 0){
+                set.add(current.getKey().toString());
+            }
+            //redisUtil.addMap("BOLL",current.getKey().toString(),MA + "_" + MB + "_" + UP + "_" +DN);
         }
+        List<Map<String, Object>> BOLLList = stockDataSelfMapper.selectStocksByList(set);
+        // 稳健买点
+        redisUtil.addMap("CALC", "BOLL", BOLLList);
         Long endTime = System.currentTimeMillis();
         logger.info("股票BOLL计算结束:耗时：" + (endTime - startTime)/1000);
     }
 
     @Override
     public void WR() {
+        Long start = System.currentTimeMillis();
+        logger.info("开始计算WR");
         Set<String> RADICALBUYSet = new HashSet<>();
         Set<String> ROBUSTBUYSet = new HashSet<>();
         Map<String,Object> map = getStockDatas(29);
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
         if(map == null){
             logger.info("股票数据不足");
             return;
@@ -533,6 +571,15 @@ public class ScheduleCrossServiceImpl implements ScheduleCrossService {
                 continue;
             }
             List<StockData> dataList = (List) current.getValue();
+            if(dataList.size() < 29){
+                continue;
+            }
+            Collections.sort(dataList, new Comparator<StockData>() {
+                @Override
+                public int compare(StockData o1, StockData o2) {
+                    return sdf.parse(o1.getTradingDay(),new ParsePosition(0)).before(sdf.parse(o2.getTradingDay(),new ParsePosition(0))) ? -1: 1;
+                }
+            });
             List<StockData> twentyList = dataList.subList(9,29);
             BigDecimal todayClose = twentyList.get(twentyList.size()-1).getClose();
             BigDecimal twentySum = new BigDecimal(0);
@@ -543,13 +590,17 @@ public class ScheduleCrossServiceImpl implements ScheduleCrossService {
                 continue;
             }
             List<StockData> todayList = dataList.subList(1,29);
+            BigDecimal closeOne = todayList.get(todayList.size()-1).getClose();
             List<StockData> beforeList = dataList.subList(0,28);
+            BigDecimal closeTwo = beforeList.get(beforeList.size()-1).getClose();
             List<StockData> today14List = dataList.subList(15,29);
+            BigDecimal closeThree = today14List.get(today14List.size()-1).getClose();
             List<StockData> before14List = dataList.subList(14,28);
-            TodayWR28 = calcWR(todayList);
-            beforeWR28 = calcWR(beforeList);
-            TodayWR14 = calcWR(today14List);
-            beforeWR14 = calcWR(before14List);
+            BigDecimal closeFour = before14List.get(before14List.size()-1).getClose();
+            TodayWR28 = calcWR(todayList,closeOne);
+            beforeWR28 = calcWR(beforeList,closeTwo);
+            TodayWR14 = calcWR(today14List,closeThree);
+            beforeWR14 = calcWR(before14List,closeFour);
             if(beforeWR14.add(beforeWR28).compareTo(new BigDecimal(50)) > 0 &&
             TodayWR14.add(TodayWR28).compareTo(new BigDecimal(50)) < 0){
                 RADICALBUYSet.add(current.getKey().toString());
@@ -560,16 +611,21 @@ public class ScheduleCrossServiceImpl implements ScheduleCrossService {
                 ROBUSTBUYSet.add(current.getKey().toString());
             }
         }
-        List<Map<String,Object>> RADICALBUY = stockDataSelfMapper.selectStocksByList(RADICALBUYSet);
-        List<Map<String,Object>> ROBUSTBUY = stockDataSelfMapper.selectStocksByList(ROBUSTBUYSet);
-        // 激进买点
-        redisUtil.addMap("CALC","RADICALBUY",RADICALBUY);
-        // 稳健买点
-        redisUtil.addMap("CALC","ROBUSTBUY",ROBUSTBUY);
+        if(RADICALBUYSet.size() > 0) {
+            List<Map<String, Object>> RADICALBUY = stockDataSelfMapper.selectStocksByList(RADICALBUYSet);
+            // 激进买点
+            redisUtil.addMap("CALC", "RADICALBUY", RADICALBUY);
+        }
+        if(ROBUSTBUYSet.size() > 0) {
+            List<Map<String, Object>> ROBUSTBUY = stockDataSelfMapper.selectStocksByList(ROBUSTBUYSet);
+            // 稳健买点
+            redisUtil.addMap("CALC", "ROBUSTBUY", ROBUSTBUY);
+        }
+        Long end = System.currentTimeMillis();
+        logger.info("计算WR完成,总耗时" + (end - start) / 1000);
     }
 
-    protected BigDecimal calcWR(List<StockData> todayList){
-        BigDecimal todayClose = todayList.get(todayList.size()-1).getClose();
+    protected BigDecimal calcWR(List<StockData> todayList,BigDecimal todayClose){
         Collections.sort(todayList, new Comparator<StockData>() {
             @Override
             public int compare(StockData o1, StockData o2) {
@@ -584,11 +640,13 @@ public class ScheduleCrossServiceImpl implements ScheduleCrossService {
             }
         });
         BigDecimal maxHigh28 = todayList.get(todayList.size()-1).getHigh();
-        return new BigDecimal(100).subtract(todayClose.subtract(minLow28).divide(maxHigh28.subtract(minLow28),5,BigDecimal.ROUND_HALF_UP).multiply(new BigDecimal(100)));
+        return new BigDecimal(100).subtract((todayClose.subtract(minLow28)).divide((maxHigh28.subtract(minLow28)),5,BigDecimal.ROUND_HALF_UP).multiply(new BigDecimal(100)));
     }
 
     @Override
     public void V() {
+        Long start = System.currentTimeMillis();
+        logger.info("开始计算V");
         Set<String> set = new HashSet<>();
         Map<String,Object> map = getStockDatas(60);
         if(map == null){
@@ -616,6 +674,8 @@ public class ScheduleCrossServiceImpl implements ScheduleCrossService {
         }
         List<Map<String,Object>> V = stockDataSelfMapper.selectStocksByList(set);
         redisUtil.addMap("CALC","V",V);
+        Long end = System.currentTimeMillis();
+        logger.info("计算V结束，总耗时" + (end - start) / 1000);
     }
 
     protected  BigDecimal calcMA(List<StockData> stockData){
@@ -628,6 +688,8 @@ public class ScheduleCrossServiceImpl implements ScheduleCrossService {
 
     @Override
     public void SEA() {
+        Long start = System.currentTimeMillis();
+        logger.info("开始计算海底捞月");
         Set<String> set = new HashSet<>();
         Map<String,Object> map = getStockDatas(60);
         if(map == null){
@@ -667,10 +729,14 @@ public class ScheduleCrossServiceImpl implements ScheduleCrossService {
         }
         List<Map<String,Object>> stockInfo = stockDataSelfMapper.selectStocksByList(set);
         redisUtil.addMap("CALC","SEA",stockInfo);
+        Long end = System.currentTimeMillis();
+        logger.info("海底捞月计算完成，总耗时：" + (end - start) /1000);
     }
 
     @Override
     public void MORE() {
+        Long start = System.currentTimeMillis();
+        logger.info("开始计算均线多头");
         Set<String> set = new HashSet<>();
         Map<String,Object> map = getStockDatas(21);
         if(map == null){
@@ -702,10 +768,14 @@ public class ScheduleCrossServiceImpl implements ScheduleCrossService {
         }
         List<Map<String,Object>> stockInfo = stockDataSelfMapper.selectStocksByList(set);
         redisUtil.addMap("CALC","MORE",stockInfo);
+        Long end = System.currentTimeMillis();
+        logger.info("计算多头均线结束，总耗时：" + (end - start) / 1000);
     }
 
     @Override
     public void THREEARMY() {
+        Long start = System.currentTimeMillis();
+        logger.info("开始计算三红兵");
         Set<String> set = new HashSet<>();
         Map<String,Object> map = getStockDatas(60);
         if(map == null){
@@ -744,5 +814,7 @@ public class ScheduleCrossServiceImpl implements ScheduleCrossService {
         }
         List<Map<String,Object>> stockInfo = stockDataSelfMapper.selectStocksByList(set);
         redisUtil.addMap("CALC","THREEARMY",stockInfo);
+        Long end = System.currentTimeMillis();
+        logger.info("计算三红兵结束，总耗时：" + (end - start) / 1000);
     }
 }

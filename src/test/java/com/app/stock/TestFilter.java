@@ -36,10 +36,4 @@ public class TestFilter {
         System.out.println(str.substring(str.indexOf(";base64,") + 8));
         System.out.println(str.substring(str.indexOf("/") + 1,str.indexOf(";")));
     }
-
-    @Test
-    public void testBig(){
-        BigDecimal result = new BigDecimal(8.73).subtract(new BigDecimal(9.24));
-        System.out.println(result.multiply(new BigDecimal(100)).divide(new BigDecimal(9.24),2,BigDecimal.ROUND_HALF_UP));
-    }
 }

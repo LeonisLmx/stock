@@ -32,6 +32,10 @@ public class MyInterceptor implements HandlerInterceptor {
             "/api/user/login/message_code",
             "/api/user/find_password",
             "/api/alipay/alipayNotify",
+            "/api/advertise/list",
+            "/api/comment/get_comment",
+            "/api/subject/type_list",
+            "/api/subject/list",
             "/error"
     };
 

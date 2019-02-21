@@ -84,19 +84,22 @@ public class StockServiceImpl implements StockService {
         }else  if(num == 7){
             // 稳健买点
             redisList = gson.fromJson(redisExecutor.getMap("CALC","ROBUSTBUY"),List.class);
-        }else if(num == 8){
+        }else if(num == 8) {
             // 激进买点
-            redisList = gson.fromJson(redisExecutor.getMap("CALC","RADICALBUY"),List.class);
+            redisList = gson.fromJson(redisExecutor.getMap("CALC", "RADICALBUY"), List.class);
         }else if(num == 9){
+            // BOLL
+            redisList = gson.fromJson(redisExecutor.getMap("CALC","BOLL"),List.class);
+        }else if(num == 10){
             // V字底
             redisList = gson.fromJson(redisExecutor.getMap("CALC","V"),List.class);
-        }else if(num == 10){
+        }else if(num == 11){
             // 海底捞月
             redisList = gson.fromJson(redisExecutor.getMap("CALC","SEA"),List.class);
-        }else if(num == 11){
+        }else if(num == 12){
             // 均线多头
             redisList = gson.fromJson(redisExecutor.getMap("CALC","MORE"),List.class);
-        }else if(num == 12){
+        }else if(num == 13){
             // 红三兵
             redisList = gson.fromJson(redisExecutor.getMap("CALC","THREEARMY"),List.class);
         }
