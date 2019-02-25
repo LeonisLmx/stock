@@ -70,7 +70,7 @@ public class StockController {
             @Override
             public void run() {
                 try {
-                    scheduleCrossService.BOLL();
+                    scheduleCrossService.calcCorss();
                 } catch (Exception e) {
                     e.printStackTrace();
                 }

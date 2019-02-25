@@ -15,7 +15,7 @@ import java.util.Map;
 public interface SubjectDetailSelfMapper extends SubjectDetailMapper {
 
     @Select({
-            "select vedio_url,play_count from subject_detail where is_delete = 0 and subject_id = #{subjectId}"
+            "select id,vedio_url,play_count from subject_detail where is_delete = 0 and subject_id = #{subjectId}"
     })
     List<Map<String,Object>> vedioList(@Param("subjectId")Long subjectId);
 

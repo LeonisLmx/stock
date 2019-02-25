@@ -1,64 +1,260 @@
-DEBUG http-nio-8999-exec-1 druid.sql.Statement - {conn-10005, pstmt-20001} Parameters : [0, 10]
-DEBUG http-nio-8999-exec-1 druid.sql.Statement - {conn-10005, pstmt-20001} Types : [INTEGER, INTEGER]
-DEBUG http-nio-8999-exec-1 druid.sql.Statement - {conn-10005, pstmt-20001} executed. 8.521654 millis. select a.id,c.name as type,a.content,a.title,a.small_img,a.detail,a.common_price,a.vip_price,DATE_FORMAT(a.create_time,'%Y-%m-%d %T') as create_time, b.name as teacher_name,b.description,b.avatar,d.play_count from subject a left join teacher b on a.teacher_id = b.id left join subject_type c on a.subject_type_id = c.id left join subject_detail d on a.id = d.subject_id where a.is_delete = 0 and b.is_delete = 0 and c.is_delete = 0 and d.is_delete = 0      and a.common_price != 0 limit ?,?
-DEBUG http-nio-8999-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} open
-DEBUG http-nio-8999-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Header: [id, name, content, title, small_img, detail, common_price, vip_price, create_time, name, description, avatar, play_count]
-DEBUG http-nio-8999-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [1, 股票, 详情, 测试的第一个, null, 第一个课程, 100.00, 80.00, 2019-01-31 10:08:38, 张健, 鉴黄大师, null, 8]
-DEBUG http-nio-8999-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} closed
-DEBUG http-nio-8999-exec-1 druid.sql.Statement - {conn-10005, pstmt-20001} closed
+DEBUG http-nio-8999-exec-1 druid.sql.Statement - {conn-10005, pstmt-20003} Parameters : []
+DEBUG http-nio-8999-exec-1 druid.sql.Statement - {conn-10005, pstmt-20003} Types : []
+DEBUG http-nio-8999-exec-1 druid.sql.Statement - {conn-10005, pstmt-20003} executed. 6.649186 millis. select id,user_id,wish,wish_month,is_delete from wish_tree where 1 = 1         order by wish_month
+DEBUG http-nio-8999-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20003, rs-50003} open
+DEBUG http-nio-8999-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20003, rs-50003} Header: [id, user_id, wish, wish_month, is_delete]
+DEBUG http-nio-8999-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20003, rs-50003} Result: [1, 4, 大盘连续上涨！, 2019-02, 0]
+DEBUG http-nio-8999-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20003, rs-50003} closed
+DEBUG http-nio-8999-exec-1 druid.sql.Statement - {conn-10005, pstmt-20003} closed
 DEBUG http-nio-8999-exec-1 druid.sql.Connection - {conn-10005} pool-recycle
 DEBUG http-nio-8999-exec-3 druid.sql.Connection - {conn-10005} pool-connect
-DEBUG http-nio-8999-exec-3 druid.sql.Statement - {conn-10005, pstmt-20002} created. SELECT count(0) FROM (SELECT a.id, c.name AS type, a.content, a.title, a.small_img, a.detail, a.common_price, a.vip_price, DATE_FORMAT(a.create_time, '%Y-%m-%d %T') AS create_time, b.name AS teacher_name, b.description, b.avatar, d.play_count FROM subject a LEFT JOIN teacher b ON a.teacher_id = b.id LEFT JOIN subject_type c ON a.subject_type_id = c.id LEFT JOIN subject_detail d ON a.id = d.subject_id WHERE a.is_delete = 0 AND b.is_delete = 0 AND c.is_delete = 0 AND d.is_delete = 0 AND a.common_price != 0) table_count
-DEBUG http-nio-8999-exec-3 druid.sql.Statement - {conn-10005, pstmt-20002} Parameters : []
-DEBUG http-nio-8999-exec-3 druid.sql.Statement - {conn-10005, pstmt-20002} Types : []
-DEBUG http-nio-8999-exec-3 druid.sql.Statement - {conn-10005, pstmt-20002} executed. 8.745694 millis. SELECT count(0) FROM (SELECT a.id, c.name AS type, a.content, a.title, a.small_img, a.detail, a.common_price, a.vip_price, DATE_FORMAT(a.create_time, '%Y-%m-%d %T') AS create_time, b.name AS teacher_name, b.description, b.avatar, d.play_count FROM subject a LEFT JOIN teacher b ON a.teacher_id = b.id LEFT JOIN subject_type c ON a.subject_type_id = c.id LEFT JOIN subject_detail d ON a.id = d.subject_id WHERE a.is_delete = 0 AND b.is_delete = 0 AND c.is_delete = 0 AND d.is_delete = 0 AND a.common_price != 0) table_count
+DEBUG http-nio-8999-exec-3 druid.sql.Statement - {conn-10005, pstmt-20004} created. select * from user where   token = ? and is_delete = 0
+DEBUG http-nio-8999-exec-3 druid.sql.Statement - {conn-10005, pstmt-20004} Parameters : [e6ccf915-9852-47e8-b918-1a4e300e152e]
+DEBUG http-nio-8999-exec-3 druid.sql.Statement - {conn-10005, pstmt-20004} Types : [VARCHAR]
+DEBUG http-nio-8999-exec-3 druid.sql.Statement - {conn-10005, pstmt-20004} executed. 6.2587 millis. select * from user where   token = ? and is_delete = 0
+DEBUG http-nio-8999-exec-3 druid.sql.ResultSet - {conn-10005, pstmt-20004, rs-50004} open
+DEBUG http-nio-8999-exec-3 druid.sql.ResultSet - {conn-10005, pstmt-20004, rs-50004} Header: [id, nickname, phone, password, address, score, descriptions, headerImg, token, is_admin, is_shield, is_delete, create_time, modify_time]
+DEBUG http-nio-8999-exec-3 druid.sql.ResultSet - {conn-10005, pstmt-20004, rs-50004} Result: [4, qaz123, 13581997174, e9aca15ce5ee544691657de668944f9, null, 0, null, null, e6ccf915-9852-47e8-b918-1a4e300e152e, 0, 0, 0, 2019-02-21 14:04:55.0, 2019-02-21 14:04:55.0]
+DEBUG http-nio-8999-exec-3 druid.sql.ResultSet - {conn-10005, pstmt-20004, rs-50004} closed
+DEBUG http-nio-8999-exec-3 druid.sql.Statement - {conn-10005, pstmt-20004} closed
+DEBUG http-nio-8999-exec-3 druid.sql.Connection - {conn-10005} pool-recycle
+DEBUG http-nio-8999-exec-3 druid.sql.Connection - {conn-10005} pool-connect
+DEBUG http-nio-8999-exec-3 druid.sql.Statement - {conn-10005, pstmt-20005} created. SELECT count(0) FROM user WHERE token = ? AND is_delete = 0
+DEBUG http-nio-8999-exec-3 druid.sql.Statement - {conn-10005, pstmt-20005} Parameters : [e6ccf915-9852-47e8-b918-1a4e300e152e]
+DEBUG http-nio-8999-exec-3 druid.sql.Statement - {conn-10005, pstmt-20005} Types : [VARCHAR]
+DEBUG http-nio-8999-exec-3 druid.sql.Statement - {conn-10005, pstmt-20005} executed. 5.057204 millis. SELECT count(0) FROM user WHERE token = ? AND is_delete = 0
+DEBUG http-nio-8999-exec-3 druid.sql.ResultSet - {conn-10005, pstmt-20005, rs-50005} open
+DEBUG http-nio-8999-exec-3 druid.sql.ResultSet - {conn-10005, pstmt-20005, rs-50005} Header: [count(0)]
+DEBUG http-nio-8999-exec-3 druid.sql.ResultSet - {conn-10005, pstmt-20005, rs-50005} Result: [1]
+DEBUG http-nio-8999-exec-3 druid.sql.ResultSet - {conn-10005, pstmt-20005, rs-50005} closed
+DEBUG http-nio-8999-exec-3 druid.sql.Statement - {conn-10005, pstmt-20005} closed
+DEBUG http-nio-8999-exec-3 druid.sql.Statement - {conn-10005, pstmt-20006} created. select * from user where   token = ? and is_delete = 0 limit ?,?
+DEBUG http-nio-8999-exec-3 druid.sql.Statement - {conn-10005, pstmt-20006} Parameters : [e6ccf915-9852-47e8-b918-1a4e300e152e, 0, 20]
+DEBUG http-nio-8999-exec-3 druid.sql.Statement - {conn-10005, pstmt-20006} Types : [VARCHAR, INTEGER, INTEGER]
+DEBUG http-nio-8999-exec-3 druid.sql.Statement - {conn-10005, pstmt-20006} executed. 5.897568 millis. select * from user where   token = ? and is_delete = 0 limit ?,?
+DEBUG http-nio-8999-exec-3 druid.sql.ResultSet - {conn-10005, pstmt-20006, rs-50006} open
+DEBUG http-nio-8999-exec-3 druid.sql.ResultSet - {conn-10005, pstmt-20006, rs-50006} Header: [id, nickname, phone, password, address, score, descriptions, headerImg, token, is_admin, is_shield, is_delete, create_time, modify_time]
+DEBUG http-nio-8999-exec-3 druid.sql.ResultSet - {conn-10005, pstmt-20006, rs-50006} Result: [4, qaz123, 13581997174, e9aca15ce5ee544691657de668944f9, null, 0, null, null, e6ccf915-9852-47e8-b918-1a4e300e152e, 0, 0, 0, 2019-02-21 14:04:55.0, 2019-02-21 14:04:55.0]
+DEBUG http-nio-8999-exec-3 druid.sql.ResultSet - {conn-10005, pstmt-20006, rs-50006} closed
+DEBUG http-nio-8999-exec-3 druid.sql.Statement - {conn-10005, pstmt-20006} closed
+DEBUG http-nio-8999-exec-3 druid.sql.Connection - {conn-10005} pool-recycle
+DEBUG http-nio-8999-exec-3 druid.sql.Connection - {conn-10005} pool-connect
+DEBUG http-nio-8999-exec-3 druid.sql.Statement - {conn-10005, pstmt-20007} created. select id,user_id,wish,wish_month,is_delete from wish_tree where 1 = 1       and SUBST(wish_month,1,4) = ?     order by wish_month
+DEBUG http-nio-8999-exec-3 druid.sql.Statement - {conn-10005, pstmt-20007} Parameters : [2018]
+DEBUG http-nio-8999-exec-3 druid.sql.Statement - {conn-10005, pstmt-20007} Types : [VARCHAR]
+ERROR http-nio-8999-exec-3 druid.sql.Statement - {conn-10005, pstmt-20007} execute error. select id,user_id,wish,wish_month,is_delete from wish_tree where 1 = 1       and SUBST(wish_month,1,4) = ?     order by wish_month
+java.sql.SQLSyntaxErrorException: FUNCTION stock.SUBST does not exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:974)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:391)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3409)
+	at com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(FilterEventAdapter.java:440)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3407)
+	at com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(FilterEventAdapter.java:440)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3407)
+	at com.alibaba.druid.proxy.jdbc.PreparedStatementProxyImpl.execute(PreparedStatementProxyImpl.java:167)
+	at com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(DruidPooledPreparedStatement.java:498)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59)
+	at com.sun.proxy.$Proxy130.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:63)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:79)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:63)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:326)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:83)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.plugin.Invocation.proceed(Invocation.java:49)
+	at com.github.pagehelper.SqlUtil._processPage(SqlUtil.java:401)
+	at com.github.pagehelper.SqlUtil.processPage(SqlUtil.java:374)
+	at com.github.pagehelper.PageHelper.intercept(PageHelper.java:255)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:61)
+	at com.sun.proxy.$Proxy128.query(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:148)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:141)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433)
+	at com.sun.proxy.$Proxy72.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:230)
+	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:139)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:76)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:59)
+	at com.sun.proxy.$Proxy105.selectAllInfoByCondition(Unknown Source)
+	at com.app.stock.serviceImpl.WishTreeImpl.getAllInfo(WishTreeImpl.java:40)
+	at com.app.stock.controller.WishTreeController.allInfo(WishTreeController.java:32)
+	at com.app.stock.controller.WishTreeController$$FastClassBySpringCGLIB$$2ae5d481.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:88)
+	at com.app.stock.config.RequestAop.around(RequestAop.java:64)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:644)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:633)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:70)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:93)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688)
+	at com.app.stock.controller.WishTreeController$$EnhancerBySpringCGLIB$$8f6d4536.allInfo(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:908)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:791)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1417)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+DEBUG http-nio-8999-exec-3 druid.sql.Statement - {conn-10005, pstmt-20007} closed
+DEBUG http-nio-8999-exec-3 druid.sql.Connection - {conn-10005} pool-recycle
+DEBUG http-nio-8999-exec-3 druid.sql.Connection - {conn-10005} pool-connect
+DEBUG http-nio-8999-exec-3 druid.sql.Connection - {conn-10005} pool-recycle
+DEBUG http-nio-8999-exec-3 druid.sql.Connection - {conn-10001} connected
+DEBUG http-nio-8999-exec-3 druid.sql.Connection - {conn-10002} connected
+DEBUG http-nio-8999-exec-3 druid.sql.Connection - {conn-10003} connected
+DEBUG http-nio-8999-exec-3 druid.sql.Connection - {conn-10004} connected
+DEBUG http-nio-8999-exec-3 druid.sql.Connection - {conn-10005} connected
+DEBUG http-nio-8999-exec-3 druid.sql.Connection - {conn-10005} pool-connect
+DEBUG http-nio-8999-exec-3 druid.sql.Statement - {conn-10005, pstmt-20000} created. select * from user where   token = ? and is_delete = 0
+DEBUG http-nio-8999-exec-3 druid.sql.Statement - {conn-10005, pstmt-20000} Parameters : [e6ccf915-9852-47e8-b918-1a4e300e152e]
+DEBUG http-nio-8999-exec-3 druid.sql.Statement - {conn-10005, pstmt-20000} Types : [VARCHAR]
+DEBUG http-nio-8999-exec-3 druid.sql.Statement - {conn-10005, pstmt-20000} executed. 16.239646 millis. select * from user where   token = ? and is_delete = 0
+DEBUG http-nio-8999-exec-3 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} open
+DEBUG http-nio-8999-exec-3 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Header: [id, nickname, phone, password, address, score, descriptions, headerImg, token, is_admin, is_shield, is_delete, create_time, modify_time]
+DEBUG http-nio-8999-exec-3 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [4, qaz123, 13581997174, e9aca15ce5ee544691657de668944f9, null, 0, null, null, e6ccf915-9852-47e8-b918-1a4e300e152e, 0, 0, 0, 2019-02-21 14:04:55.0, 2019-02-21 14:04:55.0]
+DEBUG http-nio-8999-exec-3 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} closed
+DEBUG http-nio-8999-exec-3 druid.sql.Statement - {conn-10005, pstmt-20000} closed
+DEBUG http-nio-8999-exec-3 druid.sql.Connection - {conn-10005} pool-recycle
+DEBUG http-nio-8999-exec-3 druid.sql.Connection - {conn-10005} pool-connect
+DEBUG http-nio-8999-exec-3 druid.sql.Statement - {conn-10005, pstmt-20001} created. SELECT count(0) FROM user WHERE token = ? AND is_delete = 0
+DEBUG http-nio-8999-exec-3 druid.sql.Statement - {conn-10005, pstmt-20001} Parameters : [e6ccf915-9852-47e8-b918-1a4e300e152e]
+DEBUG http-nio-8999-exec-3 druid.sql.Statement - {conn-10005, pstmt-20001} Types : [VARCHAR]
+DEBUG http-nio-8999-exec-3 druid.sql.Statement - {conn-10005, pstmt-20001} executed. 8.213178 millis. SELECT count(0) FROM user WHERE token = ? AND is_delete = 0
+DEBUG http-nio-8999-exec-3 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} open
+DEBUG http-nio-8999-exec-3 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Header: [count(0)]
+DEBUG http-nio-8999-exec-3 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [1]
+DEBUG http-nio-8999-exec-3 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} closed
+DEBUG http-nio-8999-exec-3 druid.sql.Statement - {conn-10005, pstmt-20001} closed
+DEBUG http-nio-8999-exec-3 druid.sql.Statement - {conn-10005, pstmt-20002} created. select * from user where   token = ? and is_delete = 0 limit ?,?
+DEBUG http-nio-8999-exec-3 druid.sql.Statement - {conn-10005, pstmt-20002} Parameters : [e6ccf915-9852-47e8-b918-1a4e300e152e, 0, 20]
+DEBUG http-nio-8999-exec-3 druid.sql.Statement - {conn-10005, pstmt-20002} Types : [VARCHAR, INTEGER, INTEGER]
+DEBUG http-nio-8999-exec-3 druid.sql.Statement - {conn-10005, pstmt-20002} executed. 6.329356 millis. select * from user where   token = ? and is_delete = 0 limit ?,?
 DEBUG http-nio-8999-exec-3 druid.sql.ResultSet - {conn-10005, pstmt-20002, rs-50002} open
-DEBUG http-nio-8999-exec-3 druid.sql.ResultSet - {conn-10005, pstmt-20002, rs-50002} Header: [count(0)]
-DEBUG http-nio-8999-exec-3 druid.sql.ResultSet - {conn-10005, pstmt-20002, rs-50002} Result: [1]
+DEBUG http-nio-8999-exec-3 druid.sql.ResultSet - {conn-10005, pstmt-20002, rs-50002} Header: [id, nickname, phone, password, address, score, descriptions, headerImg, token, is_admin, is_shield, is_delete, create_time, modify_time]
+DEBUG http-nio-8999-exec-3 druid.sql.ResultSet - {conn-10005, pstmt-20002, rs-50002} Result: [4, qaz123, 13581997174, e9aca15ce5ee544691657de668944f9, null, 0, null, null, e6ccf915-9852-47e8-b918-1a4e300e152e, 0, 0, 0, 2019-02-21 14:04:55.0, 2019-02-21 14:04:55.0]
 DEBUG http-nio-8999-exec-3 druid.sql.ResultSet - {conn-10005, pstmt-20002, rs-50002} closed
 DEBUG http-nio-8999-exec-3 druid.sql.Statement - {conn-10005, pstmt-20002} closed
-DEBUG http-nio-8999-exec-3 druid.sql.Statement - {conn-10005, pstmt-20003} created. select a.id,c.name as type,a.content,a.title,a.small_img,a.detail,a.common_price,a.vip_price,DATE_FORMAT(a.create_time,'%Y-%m-%d %T') as create_time, b.name as teacher_name,b.description,b.avatar,d.play_count from subject a left join teacher b on a.teacher_id = b.id left join subject_type c on a.subject_type_id = c.id left join subject_detail d on a.id = d.subject_id where a.is_delete = 0 and b.is_delete = 0 and c.is_delete = 0 and d.is_delete = 0      and a.common_price != 0 limit ?,?
-DEBUG http-nio-8999-exec-3 druid.sql.Statement - {conn-10005, pstmt-20003} Parameters : [0, 10]
-DEBUG http-nio-8999-exec-3 druid.sql.Statement - {conn-10005, pstmt-20003} Types : [INTEGER, INTEGER]
-DEBUG http-nio-8999-exec-3 druid.sql.Statement - {conn-10005, pstmt-20003} executed. 9.269195 millis. select a.id,c.name as type,a.content,a.title,a.small_img,a.detail,a.common_price,a.vip_price,DATE_FORMAT(a.create_time,'%Y-%m-%d %T') as create_time, b.name as teacher_name,b.description,b.avatar,d.play_count from subject a left join teacher b on a.teacher_id = b.id left join subject_type c on a.subject_type_id = c.id left join subject_detail d on a.id = d.subject_id where a.is_delete = 0 and b.is_delete = 0 and c.is_delete = 0 and d.is_delete = 0      and a.common_price != 0 limit ?,?
+DEBUG http-nio-8999-exec-3 druid.sql.Connection - {conn-10005} pool-recycle
+DEBUG http-nio-8999-exec-3 druid.sql.Connection - {conn-10005} pool-connect
+DEBUG http-nio-8999-exec-3 druid.sql.Statement - {conn-10005, pstmt-20003} created. select id,user_id,wish,wish_month,is_delete from wish_tree where 1 = 1       and SUBSTR(wish_month,1,4) = ?     order by wish_month
+DEBUG http-nio-8999-exec-3 druid.sql.Statement - {conn-10005, pstmt-20003} Parameters : [2018]
+DEBUG http-nio-8999-exec-3 druid.sql.Statement - {conn-10005, pstmt-20003} Types : [VARCHAR]
+DEBUG http-nio-8999-exec-3 druid.sql.Statement - {conn-10005, pstmt-20003} executed. 5.752843 millis. select id,user_id,wish,wish_month,is_delete from wish_tree where 1 = 1       and SUBSTR(wish_month,1,4) = ?     order by wish_month
 DEBUG http-nio-8999-exec-3 druid.sql.ResultSet - {conn-10005, pstmt-20003, rs-50003} open
-DEBUG http-nio-8999-exec-3 druid.sql.ResultSet - {conn-10005, pstmt-20003, rs-50003} Header: [id, name, content, title, small_img, detail, common_price, vip_price, create_time, name, description, avatar, play_count]
-DEBUG http-nio-8999-exec-3 druid.sql.ResultSet - {conn-10005, pstmt-20003, rs-50003} Result: [1, 股票, 详情, 测试的第一个, null, 第一个课程, 100.00, 80.00, 2019-01-31 10:08:38, 张健, 鉴黄大师, null, 8]
+DEBUG http-nio-8999-exec-3 druid.sql.ResultSet - {conn-10005, pstmt-20003, rs-50003} Header: [id, user_id, wish, wish_month, is_delete]
 DEBUG http-nio-8999-exec-3 druid.sql.ResultSet - {conn-10005, pstmt-20003, rs-50003} closed
 DEBUG http-nio-8999-exec-3 druid.sql.Statement - {conn-10005, pstmt-20003} closed
 DEBUG http-nio-8999-exec-3 druid.sql.Connection - {conn-10005} pool-recycle
-DEBUG Thread-17 druid.sql.Connection - {conn-10001} closed
-DEBUG Thread-17 druid.sql.Connection - {conn-10002} closed
-DEBUG Thread-17 druid.sql.Connection - {conn-10003} closed
-DEBUG Thread-17 druid.sql.Connection - {conn-10004} closed
-DEBUG Thread-17 druid.sql.Connection - {conn-10005} closed
-DEBUG http-nio-8999-exec-2 druid.sql.Connection - {conn-10001} connected
-DEBUG http-nio-8999-exec-2 druid.sql.Connection - {conn-10002} connected
-DEBUG http-nio-8999-exec-2 druid.sql.Connection - {conn-10003} connected
-DEBUG http-nio-8999-exec-2 druid.sql.Connection - {conn-10004} connected
-DEBUG http-nio-8999-exec-2 druid.sql.Connection - {conn-10005} connected
-DEBUG http-nio-8999-exec-2 druid.sql.Connection - {conn-10005} pool-connect
-DEBUG http-nio-8999-exec-2 druid.sql.Statement - {conn-10005, pstmt-20000} created. SELECT count(0) FROM (SELECT a.id, c.name AS type, a.content, a.title, a.small_img, a.detail, a.common_price, a.vip_price, DATE_FORMAT(a.create_time, '%Y-%m-%d %T') AS create_time, b.name AS teacher_name, b.description, b.avatar, d.play_count FROM subject a LEFT JOIN teacher b ON a.teacher_id = b.id LEFT JOIN subject_type c ON a.subject_type_id = c.id LEFT JOIN subject_detail d ON a.id = d.subject_id WHERE a.is_delete = 0 AND b.is_delete = 0 AND c.is_delete = 0 AND d.is_delete = 0 AND a.common_price != 0) table_count
-DEBUG http-nio-8999-exec-2 druid.sql.Statement - {conn-10005, pstmt-20000} Parameters : []
-DEBUG http-nio-8999-exec-2 druid.sql.Statement - {conn-10005, pstmt-20000} Types : []
-DEBUG http-nio-8999-exec-2 druid.sql.Statement - {conn-10005, pstmt-20000} executed. 33.066929 millis. SELECT count(0) FROM (SELECT a.id, c.name AS type, a.content, a.title, a.small_img, a.detail, a.common_price, a.vip_price, DATE_FORMAT(a.create_time, '%Y-%m-%d %T') AS create_time, b.name AS teacher_name, b.description, b.avatar, d.play_count FROM subject a LEFT JOIN teacher b ON a.teacher_id = b.id LEFT JOIN subject_type c ON a.subject_type_id = c.id LEFT JOIN subject_detail d ON a.id = d.subject_id WHERE a.is_delete = 0 AND b.is_delete = 0 AND c.is_delete = 0 AND d.is_delete = 0 AND a.common_price != 0) table_count
-DEBUG http-nio-8999-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} open
-DEBUG http-nio-8999-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Header: [count(0)]
-DEBUG http-nio-8999-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [1]
-DEBUG http-nio-8999-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} closed
-DEBUG http-nio-8999-exec-2 druid.sql.Statement - {conn-10005, pstmt-20000} closed
-DEBUG http-nio-8999-exec-2 druid.sql.Statement - {conn-10005, pstmt-20001} created. select a.id,c.name as type,a.content,a.title,a.small_img,a.detail,a.common_price,a.vip_price,DATE_FORMAT(a.create_time,'%Y-%m-%d %T') as create_time, b.name as teacher_name,b.description,b.avatar,d.play_count from subject a left join teacher b on a.teacher_id = b.id left join subject_type c on a.subject_type_id = c.id left join subject_detail d on a.id = d.subject_id where a.is_delete = 0 and b.is_delete = 0 and c.is_delete = 0 and d.is_delete = 0      and a.common_price != 0 limit ?,?
-DEBUG http-nio-8999-exec-2 druid.sql.Statement - {conn-10005, pstmt-20001} Parameters : [0, 10]
-DEBUG http-nio-8999-exec-2 druid.sql.Statement - {conn-10005, pstmt-20001} Types : [INTEGER, INTEGER]
-DEBUG http-nio-8999-exec-2 druid.sql.Statement - {conn-10005, pstmt-20001} executed. 13.796982 millis. select a.id,c.name as type,a.content,a.title,a.small_img,a.detail,a.common_price,a.vip_price,DATE_FORMAT(a.create_time,'%Y-%m-%d %T') as create_time, b.name as teacher_name,b.description,b.avatar,d.play_count from subject a left join teacher b on a.teacher_id = b.id left join subject_type c on a.subject_type_id = c.id left join subject_detail d on a.id = d.subject_id where a.is_delete = 0 and b.is_delete = 0 and c.is_delete = 0 and d.is_delete = 0      and a.common_price != 0 limit ?,?
-DEBUG http-nio-8999-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} open
-DEBUG http-nio-8999-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Header: [id, name, content, title, small_img, detail, common_price, vip_price, create_time, name, description, avatar, play_count]
-DEBUG http-nio-8999-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [1, 股票, 详情, 测试的第一个, null, 第一个课程, 100.00, 80.00, 2019-01-31 10:08:38, 张健, 鉴黄大师, null, 8]
-DEBUG http-nio-8999-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} closed
-DEBUG http-nio-8999-exec-2 druid.sql.Statement - {conn-10005, pstmt-20001} closed
-DEBUG http-nio-8999-exec-2 druid.sql.Connection - {conn-10005} pool-recycle
-DEBUG Thread-19 druid.sql.Connection - {conn-10001} closed
-DEBUG Thread-19 druid.sql.Connection - {conn-10002} closed
-DEBUG Thread-19 druid.sql.Connection - {conn-10003} closed
-DEBUG Thread-19 druid.sql.Connection - {conn-10004} closed
-DEBUG Thread-19 druid.sql.Connection - {conn-10005} closed
+DEBUG http-nio-8999-exec-4 druid.sql.Connection - {conn-10005} pool-connect
+DEBUG http-nio-8999-exec-4 druid.sql.Statement - {conn-10005, pstmt-20004} created. select * from user where   token = ? and is_delete = 0
+DEBUG http-nio-8999-exec-4 druid.sql.Statement - {conn-10005, pstmt-20004} Parameters : [e6ccf915-9852-47e8-b918-1a4e300e152e]
+DEBUG http-nio-8999-exec-4 druid.sql.Statement - {conn-10005, pstmt-20004} Types : [VARCHAR]
+DEBUG http-nio-8999-exec-4 druid.sql.Statement - {conn-10005, pstmt-20004} executed. 5.428234 millis. select * from user where   token = ? and is_delete = 0
+DEBUG http-nio-8999-exec-4 druid.sql.ResultSet - {conn-10005, pstmt-20004, rs-50004} open
+DEBUG http-nio-8999-exec-4 druid.sql.ResultSet - {conn-10005, pstmt-20004, rs-50004} Header: [id, nickname, phone, password, address, score, descriptions, headerImg, token, is_admin, is_shield, is_delete, create_time, modify_time]
+DEBUG http-nio-8999-exec-4 druid.sql.ResultSet - {conn-10005, pstmt-20004, rs-50004} Result: [4, qaz123, 13581997174, e9aca15ce5ee544691657de668944f9, null, 0, null, null, e6ccf915-9852-47e8-b918-1a4e300e152e, 0, 0, 0, 2019-02-21 14:04:55.0, 2019-02-21 14:04:55.0]
+DEBUG http-nio-8999-exec-4 druid.sql.ResultSet - {conn-10005, pstmt-20004, rs-50004} closed
+DEBUG http-nio-8999-exec-4 druid.sql.Statement - {conn-10005, pstmt-20004} closed
+DEBUG http-nio-8999-exec-4 druid.sql.Connection - {conn-10005} pool-recycle
+DEBUG http-nio-8999-exec-4 druid.sql.Connection - {conn-10005} pool-connect
+DEBUG http-nio-8999-exec-4 druid.sql.Statement - {conn-10005, pstmt-20005} created. SELECT count(0) FROM user WHERE token = ? AND is_delete = 0
+DEBUG http-nio-8999-exec-4 druid.sql.Statement - {conn-10005, pstmt-20005} Parameters : [e6ccf915-9852-47e8-b918-1a4e300e152e]
+DEBUG http-nio-8999-exec-4 druid.sql.Statement - {conn-10005, pstmt-20005} Types : [VARCHAR]
+DEBUG http-nio-8999-exec-4 druid.sql.Statement - {conn-10005, pstmt-20005} executed. 5.155509 millis. SELECT count(0) FROM user WHERE token = ? AND is_delete = 0
+DEBUG http-nio-8999-exec-4 druid.sql.ResultSet - {conn-10005, pstmt-20005, rs-50005} open
+DEBUG http-nio-8999-exec-4 druid.sql.ResultSet - {conn-10005, pstmt-20005, rs-50005} Header: [count(0)]
+DEBUG http-nio-8999-exec-4 druid.sql.ResultSet - {conn-10005, pstmt-20005, rs-50005} Result: [1]
+DEBUG http-nio-8999-exec-4 druid.sql.ResultSet - {conn-10005, pstmt-20005, rs-50005} closed
+DEBUG http-nio-8999-exec-4 druid.sql.Statement - {conn-10005, pstmt-20005} closed
+DEBUG http-nio-8999-exec-4 druid.sql.Statement - {conn-10005, pstmt-20006} created. select * from user where   token = ? and is_delete = 0 limit ?,?
+DEBUG http-nio-8999-exec-4 druid.sql.Statement - {conn-10005, pstmt-20006} Parameters : [e6ccf915-9852-47e8-b918-1a4e300e152e, 0, 20]
+DEBUG http-nio-8999-exec-4 druid.sql.Statement - {conn-10005, pstmt-20006} Types : [VARCHAR, INTEGER, INTEGER]
+DEBUG http-nio-8999-exec-4 druid.sql.Statement - {conn-10005, pstmt-20006} executed. 4.578653 millis. select * from user where   token = ? and is_delete = 0 limit ?,?
+DEBUG http-nio-8999-exec-4 druid.sql.ResultSet - {conn-10005, pstmt-20006, rs-50006} open
+DEBUG http-nio-8999-exec-4 druid.sql.ResultSet - {conn-10005, pstmt-20006, rs-50006} Header: [id, nickname, phone, password, address, score, descriptions, headerImg, token, is_admin, is_shield, is_delete, create_time, modify_time]
+DEBUG http-nio-8999-exec-4 druid.sql.ResultSet - {conn-10005, pstmt-20006, rs-50006} Result: [4, qaz123, 13581997174, e9aca15ce5ee544691657de668944f9, null, 0, null, null, e6ccf915-9852-47e8-b918-1a4e300e152e, 0, 0, 0, 2019-02-21 14:04:55.0, 2019-02-21 14:04:55.0]
+DEBUG http-nio-8999-exec-4 druid.sql.ResultSet - {conn-10005, pstmt-20006, rs-50006} closed
+DEBUG http-nio-8999-exec-4 druid.sql.Statement - {conn-10005, pstmt-20006} closed
+DEBUG http-nio-8999-exec-4 druid.sql.Connection - {conn-10005} pool-recycle
+DEBUG http-nio-8999-exec-4 druid.sql.Connection - {conn-10005} pool-connect
+DEBUG http-nio-8999-exec-4 druid.sql.Statement - {conn-10005, pstmt-20007} created. select id,user_id,wish,wish_month,is_delete from wish_tree where 1 = 1         order by wish_month
+DEBUG http-nio-8999-exec-4 druid.sql.Statement - {conn-10005, pstmt-20007} Parameters : []
+DEBUG http-nio-8999-exec-4 druid.sql.Statement - {conn-10005, pstmt-20007} Types : []
+DEBUG http-nio-8999-exec-4 druid.sql.Statement - {conn-10005, pstmt-20007} executed. 6.805175 millis. select id,user_id,wish,wish_month,is_delete from wish_tree where 1 = 1         order by wish_month
+DEBUG http-nio-8999-exec-4 druid.sql.ResultSet - {conn-10005, pstmt-20007, rs-50007} open
+DEBUG http-nio-8999-exec-4 druid.sql.ResultSet - {conn-10005, pstmt-20007, rs-50007} Header: [id, user_id, wish, wish_month, is_delete]
+DEBUG http-nio-8999-exec-4 druid.sql.ResultSet - {conn-10005, pstmt-20007, rs-50007} Result: [1, 4, 大盘连续上涨！, 2019-02, 0]
+DEBUG http-nio-8999-exec-4 druid.sql.ResultSet - {conn-10005, pstmt-20007, rs-50007} closed
+DEBUG http-nio-8999-exec-4 druid.sql.Statement - {conn-10005, pstmt-20007} closed
+DEBUG http-nio-8999-exec-4 druid.sql.Connection - {conn-10005} pool-recycle

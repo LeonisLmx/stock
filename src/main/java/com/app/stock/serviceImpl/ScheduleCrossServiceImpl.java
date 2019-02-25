@@ -33,6 +33,8 @@ public class ScheduleCrossServiceImpl implements ScheduleCrossService {
 
     private static Logger logger = LoggerFactory.getLogger(StockServiceImpl.class);
 
+    private SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+
     @Autowired
     private StockSelfMapper stockSelfMapper;
 
@@ -250,7 +252,7 @@ public class ScheduleCrossServiceImpl implements ScheduleCrossService {
                 }
             }
         }
-        List<Map<String,Object>> stockInfo = stockDataSelfMapper.selectStocksByList(set);
+        List<Map<String,Object>> stockInfo = stockDataSelfMapper.selectStocksByList(set,sdf.format(new Date()));
         redisUtil.addMap("CALC","CROSS",stockInfo);
         Long end = System.currentTimeMillis();
         logger.info("计算结束十字星，总耗时" + (end - start) / 1000);
@@ -279,7 +281,7 @@ public class ScheduleCrossServiceImpl implements ScheduleCrossService {
                 }
             }
         }
-        List<Map<String,Object>> stockInfo = stockDataSelfMapper.selectStocksByList(set);
+        List<Map<String,Object>> stockInfo = stockDataSelfMapper.selectStocksByList(set,sdf.format(new Date()));
         redisUtil.addMap("CALC","YANGLINE",stockInfo);
         Long endTime = System.currentTimeMillis();
         logger.info("股票阳线计算结束:耗时：" + (endTime - startTime)/1000);
@@ -308,7 +310,7 @@ public class ScheduleCrossServiceImpl implements ScheduleCrossService {
                 }
             }
         }
-        List<Map<String,Object>> stockInfo = stockDataSelfMapper.selectStocksByList(set);
+        List<Map<String,Object>> stockInfo = stockDataSelfMapper.selectStocksByList(set,sdf.format(new Date()));
         redisUtil.addMap("CALC","LONGUNDERLINE",stockInfo);
         Long endTime = System.currentTimeMillis();
         logger.info("股票长下影线计算结束:耗时：" + (endTime - startTime)/1000);
@@ -343,7 +345,7 @@ public class ScheduleCrossServiceImpl implements ScheduleCrossService {
                 }
             }
         }
-        List<Map<String,Object>> stockInfo = stockDataSelfMapper.selectStocksByList(set);
+        List<Map<String,Object>> stockInfo = stockDataSelfMapper.selectStocksByList(set,sdf.format(new Date()));
         redisUtil.addMap("CALC","HAMMERLINE",stockInfo);
         Long endTime = System.currentTimeMillis();
         logger.info("股票锤子线计算结束:耗时：" + (endTime - startTime)/1000);
@@ -444,8 +446,8 @@ public class ScheduleCrossServiceImpl implements ScheduleCrossService {
         }
         Long endTime = System.currentTimeMillis();
         logger.info("股票KDJ计算结束:耗时：" + (endTime - startTime)/1000);
-        List<Map<String,Object>> goldStock = stockDataSelfMapper.selectStocksByList(glodSet);
-        List<Map<String,Object>> deadStock = stockDataSelfMapper.selectStocksByList(DeadSet);
+        List<Map<String,Object>> goldStock = stockDataSelfMapper.selectStocksByList(glodSet,sdf.format(new Date()));
+        List<Map<String,Object>> deadStock = stockDataSelfMapper.selectStocksByList(DeadSet,sdf.format(new Date()));
         redisUtil.addMap("CALC","GOLDCROSS",goldStock);
         redisUtil.addMap("CALC","DEADCROSS",deadStock);
     }
@@ -492,7 +494,7 @@ public class ScheduleCrossServiceImpl implements ScheduleCrossService {
                 set.add(current.getKey().toString());
             }
         }
-        List<Map<String,Object>> MACDList = stockDataSelfMapper.selectStocksByList(set);
+        List<Map<String,Object>> MACDList = stockDataSelfMapper.selectStocksByList(set,sdf.format(new Date()));
         redisUtil.addMap("CALC","MACD",MACDList);
         Long endTime = System.currentTimeMillis();
         logger.info("股票MACD计算结束:耗时：" + (endTime - startTime)/1000);
@@ -543,7 +545,7 @@ public class ScheduleCrossServiceImpl implements ScheduleCrossService {
             }
             //redisUtil.addMap("BOLL",current.getKey().toString(),MA + "_" + MB + "_" + UP + "_" +DN);
         }
-        List<Map<String, Object>> BOLLList = stockDataSelfMapper.selectStocksByList(set);
+        List<Map<String, Object>> BOLLList = stockDataSelfMapper.selectStocksByList(set,sdf.format(new Date()));
         // 稳健买点
         redisUtil.addMap("CALC", "BOLL", BOLLList);
         Long endTime = System.currentTimeMillis();
@@ -612,12 +614,12 @@ public class ScheduleCrossServiceImpl implements ScheduleCrossService {
             }
         }
         if(RADICALBUYSet.size() > 0) {
-            List<Map<String, Object>> RADICALBUY = stockDataSelfMapper.selectStocksByList(RADICALBUYSet);
+            List<Map<String, Object>> RADICALBUY = stockDataSelfMapper.selectStocksByList(RADICALBUYSet,sdf.format(new Date()));
             // 激进买点
             redisUtil.addMap("CALC", "RADICALBUY", RADICALBUY);
         }
         if(ROBUSTBUYSet.size() > 0) {
-            List<Map<String, Object>> ROBUSTBUY = stockDataSelfMapper.selectStocksByList(ROBUSTBUYSet);
+            List<Map<String, Object>> ROBUSTBUY = stockDataSelfMapper.selectStocksByList(ROBUSTBUYSet,sdf.format(new Date()));
             // 稳健买点
             redisUtil.addMap("CALC", "ROBUSTBUY", ROBUSTBUY);
         }
@@ -672,7 +674,7 @@ public class ScheduleCrossServiceImpl implements ScheduleCrossService {
                 set.add(current.getKey().toString());
             }
         }
-        List<Map<String,Object>> V = stockDataSelfMapper.selectStocksByList(set);
+        List<Map<String,Object>> V = stockDataSelfMapper.selectStocksByList(set,sdf.format(new Date()));
         redisUtil.addMap("CALC","V",V);
         Long end = System.currentTimeMillis();
         logger.info("计算V结束，总耗时" + (end - start) / 1000);
@@ -727,7 +729,7 @@ public class ScheduleCrossServiceImpl implements ScheduleCrossService {
                 set.add(current.getKey().toString());
             }
         }
-        List<Map<String,Object>> stockInfo = stockDataSelfMapper.selectStocksByList(set);
+        List<Map<String,Object>> stockInfo = stockDataSelfMapper.selectStocksByList(set,sdf.format(new Date()));
         redisUtil.addMap("CALC","SEA",stockInfo);
         Long end = System.currentTimeMillis();
         logger.info("海底捞月计算完成，总耗时：" + (end - start) /1000);
@@ -766,7 +768,7 @@ public class ScheduleCrossServiceImpl implements ScheduleCrossService {
                 set.add(current.getKey().toString());
             }
         }
-        List<Map<String,Object>> stockInfo = stockDataSelfMapper.selectStocksByList(set);
+        List<Map<String,Object>> stockInfo = stockDataSelfMapper.selectStocksByList(set,sdf.format(new Date()));
         redisUtil.addMap("CALC","MORE",stockInfo);
         Long end = System.currentTimeMillis();
         logger.info("计算多头均线结束，总耗时：" + (end - start) / 1000);
@@ -812,7 +814,7 @@ public class ScheduleCrossServiceImpl implements ScheduleCrossService {
                 set.add(current.getKey().toString());
             }
         }
-        List<Map<String,Object>> stockInfo = stockDataSelfMapper.selectStocksByList(set);
+        List<Map<String,Object>> stockInfo = stockDataSelfMapper.selectStocksByList(set,sdf.format(new Date()));
         redisUtil.addMap("CALC","THREEARMY",stockInfo);
         Long end = System.currentTimeMillis();
         logger.info("计算三红兵结束，总耗时：" + (end - start) / 1000);

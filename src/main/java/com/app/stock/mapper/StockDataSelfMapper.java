@@ -41,13 +41,14 @@ public interface StockDataSelfMapper extends StockDataMapper {
 
     @Select({
             "<script>",
-            "select stock_code,stock_name,market from stock where id in",
+            "select a.stock_code,a.stock_name,a.market,b.close,CONCAT(convert((b.close - b.open)*100/b.close,decimal(10,2)),'%') as percent,b.trading_day",
+            "from stock a left join stock_data b on a.id = b.stock_id where b.trading_day = #{date} and a.id in",
             "<foreach collection='list' item='entity' open='(' close=')' separator=','>",
             "#{entity}",
             "</foreach>",
             "</script>"
     })
-    List<Map<String,Object>> selectStocksByList(@Param("list") Set<String> list);
+    List<Map<String,Object>> selectStocksByList(@Param("list") Set<String> list,@Param("date")String date);
 
     @Select({
             "select a.stock_code,a.stock_name,b.open,b.close,b.high,b.low,b.volume,b.trading_day from stock a left join",
