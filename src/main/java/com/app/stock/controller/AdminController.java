@@ -8,10 +8,8 @@ import org.apache.commons.lang3.StringUtils;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.BindingResult;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
 
 import javax.validation.Valid;
 import java.io.IOException;
@@ -90,11 +88,8 @@ public class AdminController {
 
     // 上传视频
     @RequestMapping(value = "/upload_video",method = RequestMethod.POST)
-    public Response uploadVideo(@RequestBody Map<String,String> map) throws IOException {
-        if(StringUtils.isBlank(map.get("url")) || StringUtils.isBlank(map.get("subject_id"))){
-            return Response.ok("必要参数不能为空");
-        }
-        return Response.ok(subjectDetailService.uploadVideo(map),"上传成功");
+    public Response uploadVideo(@RequestParam("file") MultipartFile file) throws IOException {
+        return Response.ok(subjectDetailService.uploadVideo(file),"上传成功");
     }
 
     // 获取现有老师的列表

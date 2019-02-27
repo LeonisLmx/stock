@@ -38,6 +38,10 @@ spring:
     database: 1
   server:
     url: http://101.132.137.156:8999
+  servlet:
+    multipart:
+      max-file-size: -1
+      max-request-size: -1
 logging:
   config: classpath:logback.xml
 mybatis:

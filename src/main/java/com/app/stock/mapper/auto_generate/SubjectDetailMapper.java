@@ -20,10 +20,12 @@ public interface SubjectDetailMapper {
     int deleteByPrimaryKey(Long id);
 
     @Insert({
-        "insert into subject_detail (subject_id, vedio_url, ",
+        "insert into subject_detail (subject_id, title, ",
+        "duration, vedio_url, ",
         "play_count, is_delete, ",
         "create_time, modify_time)",
-        "values (#{subjectId,jdbcType=BIGINT}, #{vedioUrl,jdbcType=VARCHAR}, ",
+        "values (#{subjectId,jdbcType=BIGINT}, #{title,jdbcType=VARCHAR}, ",
+        "#{duration,jdbcType=BIGINT}, #{vedioUrl,jdbcType=VARCHAR}, ",
         "#{playCount,jdbcType=BIGINT}, #{isDelete,jdbcType=INTEGER}, ",
         "#{createTime,jdbcType=TIMESTAMP}, #{modifyTime,jdbcType=TIMESTAMP})"
     })
@@ -36,13 +38,16 @@ public interface SubjectDetailMapper {
 
     @Select({
         "select",
-        "id, subject_id, vedio_url, play_count, is_delete, create_time, modify_time",
+        "id, subject_id, title, duration, vedio_url, play_count, is_delete, create_time, ",
+        "modify_time",
         "from subject_detail",
         "where id = #{id,jdbcType=BIGINT}"
     })
     @Results({
         @Result(column="id", property="id", jdbcType=JdbcType.BIGINT, id=true),
         @Result(column="subject_id", property="subjectId", jdbcType=JdbcType.BIGINT),
+        @Result(column="title", property="title", jdbcType=JdbcType.VARCHAR),
+        @Result(column="duration", property="duration", jdbcType=JdbcType.BIGINT),
         @Result(column="vedio_url", property="vedioUrl", jdbcType=JdbcType.VARCHAR),
         @Result(column="play_count", property="playCount", jdbcType=JdbcType.BIGINT),
         @Result(column="is_delete", property="isDelete", jdbcType=JdbcType.INTEGER),
@@ -57,6 +62,8 @@ public interface SubjectDetailMapper {
     @Update({
         "update subject_detail",
         "set subject_id = #{subjectId,jdbcType=BIGINT},",
+          "title = #{title,jdbcType=VARCHAR},",
+          "duration = #{duration,jdbcType=BIGINT},",
           "vedio_url = #{vedioUrl,jdbcType=VARCHAR},",
           "play_count = #{playCount,jdbcType=BIGINT},",
           "is_delete = #{isDelete,jdbcType=INTEGER},",

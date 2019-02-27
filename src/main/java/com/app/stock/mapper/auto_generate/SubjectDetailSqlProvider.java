@@ -20,6 +20,14 @@ public class SubjectDetailSqlProvider {
             VALUES("subject_id", "#{subjectId,jdbcType=BIGINT}");
         }
         
+        if (record.getTitle() != null) {
+            VALUES("title", "#{title,jdbcType=VARCHAR}");
+        }
+        
+        if (record.getDuration() != null) {
+            VALUES("duration", "#{duration,jdbcType=BIGINT}");
+        }
+        
         if (record.getVedioUrl() != null) {
             VALUES("vedio_url", "#{vedioUrl,jdbcType=VARCHAR}");
         }
@@ -49,6 +57,14 @@ public class SubjectDetailSqlProvider {
         
         if (record.getSubjectId() != null) {
             SET("subject_id = #{subjectId,jdbcType=BIGINT}");
+        }
+        
+        if (record.getTitle() != null) {
+            SET("title = #{title,jdbcType=VARCHAR}");
+        }
+        
+        if (record.getDuration() != null) {
+            SET("duration = #{duration,jdbcType=BIGINT}");
         }
         
         if (record.getVedioUrl() != null) {

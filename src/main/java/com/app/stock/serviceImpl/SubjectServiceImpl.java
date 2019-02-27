@@ -39,17 +39,15 @@ public class SubjectServiceImpl implements SubjectService {
     private SubjectDetailSelfMapper subjectDetailSelfMapper;
 
     @Override
-    public Map<String, Object> list(SubjectListRequest subjectListRequest) {
+    public List<Map<String, Object>> list(SubjectListRequest subjectListRequest) {
         PageHelper.startPage(subjectListRequest.getPage(),subjectListRequest.getPage_size());
         List<Map<String,Object>> list = subjectSelfMapper.list(subjectListRequest.getType(),subjectListRequest.getIsFree(),
                 subjectListRequest.getOrderType(),subjectListRequest.getOrder());
         PageInfo pageInfo = new PageInfo(list);
-        Map<String,Object> map = new HashMap<>();
-        map.put("list",pageInfo.getList());
         /*map.put("total",pageInfo.getTotal());
         map.put("page",subjectListRequest.getPage());
         map.put("page_size",subjectListRequest.getPage_size());*/
-        return map;
+        return pageInfo.getList();
     }
 
     @Override

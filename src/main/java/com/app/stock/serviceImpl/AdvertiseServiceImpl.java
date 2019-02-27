@@ -46,9 +46,6 @@ public class AdvertiseServiceImpl implements AdvertiseService {
         }else if(type == 2){
             path = imagePath.getImagePathAdvertise();
             url = "/advertise/";
-        }else if(type == 3){
-            path = imagePath.getImagePathVedio();
-            url = "/vedio/";
         }
         String fileName = new Date().getTime() + "_" + UUID.randomUUID().toString() + "." + style;
         String imgPath = path + fileName;

@@ -36,6 +36,7 @@ public class MyInterceptor implements HandlerInterceptor {
             "/api/comment/get_comment",
             "/api/subject/type_list",
             "/api/subject/list",
+            "/api/admin/upload_video",
             "/error"
     };
 

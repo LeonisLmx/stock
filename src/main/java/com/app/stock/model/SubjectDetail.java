@@ -7,6 +7,10 @@ public class SubjectDetail {
 
     private Long subjectId;
 
+    private String title;
+
+    private Long duration;
+
     private String vedioUrl;
 
     private Long playCount;
@@ -31,6 +35,22 @@ public class SubjectDetail {
 
     public void setSubjectId(Long subjectId) {
         this.subjectId = subjectId;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public Long getDuration() {
+        return duration;
+    }
+
+    public void setDuration(Long duration) {
+        this.duration = duration;
     }
 
     public String getVedioUrl() {

@@ -15,7 +15,7 @@ import java.util.Map;
  */
 public interface SubjectService {
 
-    public Map<String,Object> list(SubjectListRequest subjectListRequest);
+    public List<Map<String,Object>> list(SubjectListRequest subjectListRequest);
 
     public Map<String,Object> isPay(PrimarykeyIdRequest isPayRequest, HttpServletRequest request);
 
