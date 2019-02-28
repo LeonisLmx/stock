@@ -60,7 +60,9 @@ public class SubjectDetailServiceImpl implements SubjectDetailService {
             subjectDetail.setFileName(uploadMap.get("fileName").toString());
             subjectDetail.setDuration(timeLength);
             subjectDetail.setSubjectId(Long.valueOf(map.get("subject_id")));
-            subjectDetail.setTitle(map.get("title"));
+            if(map.get("title") != null) {
+                subjectDetail.setTitle(map.get("title"));
+            }
             subjectDetail.setCreateTime(new Date());
             subjectDetailSelfMapper.insertSelective(subjectDetail);
         }else{
@@ -68,7 +70,12 @@ public class SubjectDetailServiceImpl implements SubjectDetailService {
             subjectDetail.setVedioUrl("/video/" + uploadMap.get("name"));
             subjectDetail.setDuration(timeLength);
             subjectDetail.setFileName(uploadMap.get("fileName").toString());
-            subjectDetail.setTitle(map.get("title"));
+            if(map.get("title") != null) {
+                subjectDetail.setTitle(map.get("title"));
+            }
+            if(map.get("subject_id") != null){
+                subjectDetail.setSubjectId(Long.valueOf(map.get("subject_id")));
+            }
             subjectDetail.setModifyTime(new Date());
             subjectDetailSelfMapper.updateByPrimaryKeySelective(subjectDetail);
         }
