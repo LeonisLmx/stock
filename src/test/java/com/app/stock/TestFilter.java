@@ -59,8 +59,8 @@ public class TestFilter {
 
     @Test
     public void test(){
-        List<String> days = new LinkedList<>();
-        getFourWordDay("2019-02-26",days);
-        System.out.println(days.get(3));
+        String file = "2af3799def43b8d79f06bac399c07f0d.mp4";
+        String format = file.substring(file.lastIndexOf("."));
+        System.out.println(format);
     }
 }

@@ -14,7 +14,7 @@ public interface SubjectDetailService {
 
     public int deleteVideo(List<Long> list);
 
-    public Map<String,Object> uploadVideo(Map<String,String> map) throws IOException;
+    public Map<String,Object> uploadVideo(MultipartFile file,Map<String,String> map) throws IOException;
 
-    public String uploadVideo(MultipartFile file);
+    public Map<String,Object> uploadVideo(MultipartFile file);
 }

@@ -25,11 +25,15 @@ public class SubjectDetailSqlProvider {
         }
         
         if (record.getDuration() != null) {
-            VALUES("duration", "#{duration,jdbcType=BIGINT}");
+            VALUES("duration", "#{duration,jdbcType=VARCHAR}");
         }
         
         if (record.getVedioUrl() != null) {
             VALUES("vedio_url", "#{vedioUrl,jdbcType=VARCHAR}");
+        }
+        
+        if (record.getFileName() != null) {
+            VALUES("file_name", "#{fileName,jdbcType=VARCHAR}");
         }
         
         if (record.getPlayCount() != null) {
@@ -64,11 +68,15 @@ public class SubjectDetailSqlProvider {
         }
         
         if (record.getDuration() != null) {
-            SET("duration = #{duration,jdbcType=BIGINT}");
+            SET("duration = #{duration,jdbcType=VARCHAR}");
         }
         
         if (record.getVedioUrl() != null) {
             SET("vedio_url = #{vedioUrl,jdbcType=VARCHAR}");
+        }
+        
+        if (record.getFileName() != null) {
+            SET("file_name = #{fileName,jdbcType=VARCHAR}");
         }
         
         if (record.getPlayCount() != null) {

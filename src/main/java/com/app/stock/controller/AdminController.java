@@ -13,6 +13,7 @@ import org.springframework.web.multipart.MultipartFile;
 
 import javax.validation.Valid;
 import java.io.IOException;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -88,8 +89,18 @@ public class AdminController {
 
     // 上传视频
     @RequestMapping(value = "/upload_video",method = RequestMethod.POST)
-    public Response uploadVideo(@RequestParam("file") MultipartFile file) throws IOException {
-        return Response.ok(subjectDetailService.uploadVideo(file),"上传成功");
+    public Response uploadVideo(@RequestParam("file") MultipartFile file,Long id,
+                                String title,Long subjectId) throws IOException {
+        Map<String,String> map = new HashMap<>();
+        map.put("id",id==null?null:id + "");
+        map.put("subject_id",subjectId==null?null:subjectId + "");
+        map.put("title",title);
+        Map<String,Object> resultMap = subjectDetailService.uploadVideo(file,map);
+        if((Boolean) resultMap.get("status")) {
+            return Response.ok(resultMap, "上传成功");
+        }else{
+            return Response.ok("文件不能为空");
+        }
     }
 
     // 获取现有老师的列表

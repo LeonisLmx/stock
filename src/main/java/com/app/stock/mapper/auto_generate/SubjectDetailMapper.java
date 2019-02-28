@@ -22,12 +22,14 @@ public interface SubjectDetailMapper {
     @Insert({
         "insert into subject_detail (subject_id, title, ",
         "duration, vedio_url, ",
-        "play_count, is_delete, ",
-        "create_time, modify_time)",
+        "file_name, play_count, ",
+        "is_delete, create_time, ",
+        "modify_time)",
         "values (#{subjectId,jdbcType=BIGINT}, #{title,jdbcType=VARCHAR}, ",
-        "#{duration,jdbcType=BIGINT}, #{vedioUrl,jdbcType=VARCHAR}, ",
-        "#{playCount,jdbcType=BIGINT}, #{isDelete,jdbcType=INTEGER}, ",
-        "#{createTime,jdbcType=TIMESTAMP}, #{modifyTime,jdbcType=TIMESTAMP})"
+        "#{duration,jdbcType=VARCHAR}, #{vedioUrl,jdbcType=VARCHAR}, ",
+        "#{fileName,jdbcType=VARCHAR}, #{playCount,jdbcType=BIGINT}, ",
+        "#{isDelete,jdbcType=INTEGER}, #{createTime,jdbcType=TIMESTAMP}, ",
+        "#{modifyTime,jdbcType=TIMESTAMP})"
     })
     @Options(useGeneratedKeys=true,keyProperty="id")
     int insert(SubjectDetail record);
@@ -38,8 +40,8 @@ public interface SubjectDetailMapper {
 
     @Select({
         "select",
-        "id, subject_id, title, duration, vedio_url, play_count, is_delete, create_time, ",
-        "modify_time",
+        "id, subject_id, title, duration, vedio_url, file_name, play_count, is_delete, ",
+        "create_time, modify_time",
         "from subject_detail",
         "where id = #{id,jdbcType=BIGINT}"
     })
@@ -47,8 +49,9 @@ public interface SubjectDetailMapper {
         @Result(column="id", property="id", jdbcType=JdbcType.BIGINT, id=true),
         @Result(column="subject_id", property="subjectId", jdbcType=JdbcType.BIGINT),
         @Result(column="title", property="title", jdbcType=JdbcType.VARCHAR),
-        @Result(column="duration", property="duration", jdbcType=JdbcType.BIGINT),
+        @Result(column="duration", property="duration", jdbcType=JdbcType.VARCHAR),
         @Result(column="vedio_url", property="vedioUrl", jdbcType=JdbcType.VARCHAR),
+        @Result(column="file_name", property="fileName", jdbcType=JdbcType.VARCHAR),
         @Result(column="play_count", property="playCount", jdbcType=JdbcType.BIGINT),
         @Result(column="is_delete", property="isDelete", jdbcType=JdbcType.INTEGER),
         @Result(column="create_time", property="createTime", jdbcType=JdbcType.TIMESTAMP),
@@ -63,8 +66,9 @@ public interface SubjectDetailMapper {
         "update subject_detail",
         "set subject_id = #{subjectId,jdbcType=BIGINT},",
           "title = #{title,jdbcType=VARCHAR},",
-          "duration = #{duration,jdbcType=BIGINT},",
+          "duration = #{duration,jdbcType=VARCHAR},",
           "vedio_url = #{vedioUrl,jdbcType=VARCHAR},",
+          "file_name = #{fileName,jdbcType=VARCHAR},",
           "play_count = #{playCount,jdbcType=BIGINT},",
           "is_delete = #{isDelete,jdbcType=INTEGER},",
           "create_time = #{createTime,jdbcType=TIMESTAMP},",

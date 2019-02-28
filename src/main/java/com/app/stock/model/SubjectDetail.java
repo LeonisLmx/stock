@@ -9,9 +9,11 @@ public class SubjectDetail {
 
     private String title;
 
-    private Long duration;
+    private String duration;
 
     private String vedioUrl;
+
+    private String fileName;
 
     private Long playCount;
 
@@ -45,11 +47,11 @@ public class SubjectDetail {
         this.title = title;
     }
 
-    public Long getDuration() {
+    public String getDuration() {
         return duration;
     }
 
-    public void setDuration(Long duration) {
+    public void setDuration(String duration) {
         this.duration = duration;
     }
 
@@ -59,6 +61,14 @@ public class SubjectDetail {
 
     public void setVedioUrl(String vedioUrl) {
         this.vedioUrl = vedioUrl;
+    }
+
+    public String getFileName() {
+        return fileName;
+    }
+
+    public void setFileName(String fileName) {
+        this.fileName = fileName;
     }
 
     public Long getPlayCount() {

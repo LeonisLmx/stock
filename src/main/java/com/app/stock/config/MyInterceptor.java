@@ -45,7 +45,7 @@ public class MyInterceptor implements HandlerInterceptor {
 
     private boolean isWhiteUrl(String url){
         for(String str:whiteUrl){
-            if(url.equals(str)){
+            if(url.contains(str)){
                 return true;
             }
         }
