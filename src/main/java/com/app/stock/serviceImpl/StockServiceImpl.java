@@ -11,10 +11,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 /**
  * Created by lmx
@@ -64,6 +61,12 @@ public class StockServiceImpl implements StockService {
                 list = addRepeatList(list,redisList);
             }
         }
+        Collections.sort(list, new Comparator<Map<String, Object>>() {
+            @Override
+            public int compare(Map<String, Object> o1, Map<String, Object> o2) {
+                return o1.get("stock_code").toString().compareTo(o2.get("stock_code").toString());
+            }
+        });
         return list;
     }
 
@@ -103,6 +106,12 @@ public class StockServiceImpl implements StockService {
             // 红三兵
             redisList = gson.fromJson(redisExecutor.getMap("CALC","THREEARMY"),List.class);
         }
+        Collections.sort(redisList, new Comparator<Map<String, Object>>() {
+            @Override
+            public int compare(Map<String, Object> o1, Map<String, Object> o2) {
+                return o1.get("stock_code").toString().compareTo(o2.get("stock_code").toString());
+            }
+        });
         return redisList;
     }
 

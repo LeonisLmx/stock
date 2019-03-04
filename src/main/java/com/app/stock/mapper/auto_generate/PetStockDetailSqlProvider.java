@@ -44,6 +44,10 @@ public class PetStockDetailSqlProvider {
             VALUES("s_time", "#{sTime,jdbcType=TIMESTAMP}");
         }
         
+        if (record.getIncrease() != null) {
+            VALUES("increase", "#{increase,jdbcType=DECIMAL}");
+        }
+        
         if (record.getIsDelete() != null) {
             VALUES("is_delete", "#{isDelete,jdbcType=INTEGER}");
         }
@@ -89,6 +93,10 @@ public class PetStockDetailSqlProvider {
         
         if (record.getsTime() != null) {
             SET("s_time = #{sTime,jdbcType=TIMESTAMP}");
+        }
+        
+        if (record.getIncrease() != null) {
+            SET("increase = #{increase,jdbcType=DECIMAL}");
         }
         
         if (record.getIsDelete() != null) {

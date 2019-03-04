@@ -36,4 +36,8 @@ public interface ScheduleCrossService {
 
     // 三红兵
     public void THREEARMY();
+
+
+    // 计算当前日期是否需要计算
+    public boolean calcToday();
 }

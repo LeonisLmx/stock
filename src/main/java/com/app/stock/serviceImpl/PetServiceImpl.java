@@ -92,21 +92,28 @@ public class PetServiceImpl  implements PetService {
     public Map<String,Object> petInfo(HttpServletRequest request) {
         User user = commonservice.getCurrentInfo(request);
         Pet pet = petSelfMapper.selectPrimarykeyByUserId(user.getId());
-        List<PetStockDetail> list = petStockDetailSelfMapper.selectListByPetId(pet.getId());
+        if(pet == null){
+            return null;
+        }
+        List<Map<String,Object>> list = petStockDetailSelfMapper.selectListByPetId(pet.getId(),0);
+        List<Map<String,Object>> historyList = petStockDetailSelfMapper.selectListByPetId(pet.getId(),1);
+        Integer successCount = 0;
+        BigDecimal increase = new BigDecimal(0);
+        for(Map<String,Object> map:historyList){
+            if(new BigDecimal(map.get("increase").toString()).compareTo(new BigDecimal("3")) > 0){
+                successCount++;
+            }
+            increase = increase.add(new BigDecimal(map.get("increase").toString()));
+        }
         Map<String,Object> result = new HashMap<>();
+        result.put("success",new BigDecimal(successCount + "").multiply(new BigDecimal(100)).divide(new BigDecimal(historyList.size() + ""),2,BigDecimal.ROUND_HALF_UP) + "%");
+        result.put("sum_increase",increase);
         result.put("name",pet.getName());
         result.put("level",pet.getLevel());
         result.put("change_score",pet.getChangeScore() == null?0:pet.getChangeScore());
         result.put("percent",pet.getPercent() == null ? 0:pet.getPercent());
-        List<Map<String,Object>> stocks = new LinkedList<>();
-        for(PetStockDetail entity:list){
-            Map<String,Object> map = new HashMap<>();
-            map.put("stock_name",entity.getStockName());
-            map.put("stock_id",entity.getStockId());
-            map.put("price",entity.getbPrice());
-            stocks.add(map);
-        }
-        result.put("list",stocks);
+        result.put("list",list);
+        result.put("history",historyList);
         return result;
     }
 
@@ -137,6 +144,7 @@ public class PetServiceImpl  implements PetService {
         }
         petStockDetail.setsPrice(new BigDecimal(map.getPrice()));
         petStockDetail.setsTime(new Date());
+        petStockDetail.setIncrease((petStockDetail.getsPrice().subtract(petStockDetail.getbPrice())).multiply(new BigDecimal(100)).divide(petStockDetail.getbPrice(),2,BigDecimal.ROUND_HALF_UP));
         // 计算宠物等级
         Pet pet = petSelfMapper.selectPrimarykeyByUserId(user.getId());
         BigDecimal percent = (new BigDecimal(map.getPrice()).subtract(petStockDetail.getbPrice())).multiply(new BigDecimal(100)).divide(petStockDetail.getbPrice(),2,BigDecimal.ROUND_HALF_UP);

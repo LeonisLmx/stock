@@ -62,7 +62,11 @@ public class PetController {
     // 查询宠物信息
     @RequestMapping(value = "/info",method = {RequestMethod.GET,RequestMethod.POST})
     public Response petInfo(HttpServletRequest request){
-        return Response.ok(petService.petInfo(request),"操作成功");
+        Map<String,Object> map = petService.petInfo(request);
+        if(map == null){
+            return Response.ok("该用户没有宠物");
+        }
+        return Response.ok(map,"操作成功");
     }
 
     // 重置宠物

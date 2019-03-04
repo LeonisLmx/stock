@@ -107,12 +107,12 @@ public class ScheduleCrossServiceImpl implements ScheduleCrossService {
     public void pullingData(){
         List<String> dateList = new Gson().fromJson(redisUtil.getMap("common","trading_date"), List.class);
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
-        List<Map<String,Object>> stocks = stockSelfMapper.selectAllStockCode();
         String date = sdf.format(new Date());
         // 说明今天不是交易日，就不用拉取数据
         if(!date.equals(dateList.get(dateList.size() - 1))){
             return;
         }
+        List<Map<String,Object>> stocks = stockSelfMapper.selectAllStockCode();
         AtomicInteger automicInteger = new AtomicInteger(0);
         for(Map<String,Object> str:stocks){
             try {
@@ -818,5 +818,16 @@ public class ScheduleCrossServiceImpl implements ScheduleCrossService {
         redisUtil.addMap("CALC","THREEARMY",stockInfo);
         Long end = System.currentTimeMillis();
         logger.info("计算三红兵结束，总耗时：" + (end - start) / 1000);
+    }
+
+    public boolean calcToday(){
+        List<String> dateList = new Gson().fromJson(redisUtil.getMap("common","trading_date"), List.class);
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+        String date = sdf.format(new Date());
+        // 说明今天不是交易日，就不用拉取数据
+        if(!date.equals(dateList.get(dateList.size() - 1))){
+            return false;
+        }
+        return true;
     }
 }

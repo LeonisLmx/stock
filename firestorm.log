@@ -1,179 +1,124 @@
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [7360, 2.900, 3.010, 3.070, 2.880, 2019-02-27]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [7359, 5.780, 5.600, 5.810, 5.480, 2019-02-27]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [7358, 8.960, 9.010, 9.280, 8.870, 2019-02-27]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [7357, 12.150, 11.670, 12.290, 11.440, 2019-02-27]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [7356, 12.930, 12.930, 13.340, 12.800, 2019-02-27]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [7355, 12.270, 12.090, 12.490, 12.030, 2019-02-27]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [7354, 1.610, 1.770, 1.770, 1.610, 2019-02-27]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [7352, 3.790, 3.820, 3.890, 3.780, 2019-02-27]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [7350, 9.940, 9.840, 10.130, 9.700, 2019-02-27]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [7348, 70.300, 69.980, 71.430, 68.990, 2019-02-27]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [7347, 6.370, 6.430, 6.520, 6.360, 2019-02-27]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [7346, 3.800, 3.840, 3.900, 3.790, 2019-02-27]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [7345, 50.000, 51.220, 52.800, 49.880, 2019-02-27]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [7344, 5.220, 5.190, 5.270, 5.150, 2019-02-27]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [7343, 6.620, 6.640, 6.720, 6.510, 2019-02-27]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [7342, 7.140, 7.120, 7.390, 6.930, 2019-02-27]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [7341, 2.510, 2.650, 2.680, 2.510, 2019-02-27]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [7340, 7.560, 7.440, 7.660, 7.360, 2019-02-27]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [7339, 5.780, 5.810, 5.930, 5.730, 2019-02-27]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [7338, 9.200, 8.910, 9.270, 8.810, 2019-02-27]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [7337, 3.280, 3.410, 3.450, 3.280, 2019-02-27]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [7336, 7.130, 7.130, 7.130, 7.130, 2019-02-27]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [7335, 9.650, 9.580, 10.000, 9.310, 2019-02-27]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [7334, 1.270, 1.340, 1.340, 1.270, 2019-02-27]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [7333, 14.000, 13.740, 14.020, 13.680, 2019-02-27]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [7332, 6.520, 6.550, 6.640, 6.490, 2019-02-27]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [7331, 3.370, 3.370, 3.480, 3.330, 2019-02-27]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [7330, 3.590, 3.630, 3.680, 3.560, 2019-02-27]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [7329, 4.230, 4.210, 4.300, 4.140, 2019-02-27]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [7328, 35.400, 34.850, 35.980, 34.180, 2019-02-27]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [7327, 18.620, 18.460, 18.840, 18.300, 2019-02-27]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [7326, 3.990, 3.990, 3.990, 3.990, 2019-02-27]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [7325, 4.180, 4.150, 4.250, 4.090, 2019-02-27]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [7324, 3.660, 3.530, 3.660, 3.470, 2019-02-27]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [7323, 28.170, 29.300, 30.000, 28.160, 2019-02-27]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [7322, 8.070, 7.900, 8.130, 7.810, 2019-02-27]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [7321, 4.410, 4.370, 4.490, 4.330, 2019-02-27]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [7320, 4.100, 4.080, 4.220, 4.050, 2019-02-27]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [7319, 6.280, 6.250, 6.390, 6.200, 2019-02-27]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [7318, 5.780, 5.700, 5.830, 5.640, 2019-02-27]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [7317, 10.020, 10.140, 10.280, 10.020, 2019-02-27]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [7316, 5.020, 5.070, 5.210, 5.010, 2019-02-27]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [7315, 23.880, 23.750, 24.580, 23.010, 2019-02-27]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [7314, 8.220, 8.290, 8.550, 8.150, 2019-02-27]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [7313, 8.610, 8.610, 8.610, 8.610, 2019-02-27]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [7312, 6.090, 6.070, 6.150, 6.030, 2019-02-27]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [7311, 3.950, 4.160, 4.320, 3.940, 2019-02-27]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [7310, 5.680, 5.600, 5.790, 5.520, 2019-02-27]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [7309, 9.580, 9.570, 9.730, 9.390, 2019-02-27]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [7308, 4.570, 4.530, 4.660, 4.490, 2019-02-27]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [7307, 14.200, 14.010, 14.680, 13.620, 2019-02-27]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [7306, 3.690, 3.670, 3.740, 3.620, 2019-02-27]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [7305, 5.430, 5.450, 5.520, 5.420, 2019-02-27]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [7304, 56.100, 56.200, 57.870, 56.000, 2019-02-27]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [7303, 12.460, 12.670, 12.970, 12.460, 2019-02-27]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [7302, 7.730, 7.670, 7.860, 7.580, 2019-02-27]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [7301, 9.750, 9.660, 9.880, 9.600, 2019-02-27]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [7300, 4.180, 4.260, 4.370, 4.170, 2019-02-27]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [7299, 7.780, 7.830, 7.940, 7.770, 2019-02-27]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [7298, 2.800, 3.000, 3.070, 2.800, 2019-02-27]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [7297, 4.620, 4.580, 4.720, 4.570, 2019-02-27]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [7296, 25.870, 25.390, 25.870, 25.230, 2019-02-27]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [7295, 2.410, 2.330, 2.410, 2.290, 2019-02-27]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [7294, 8.100, 8.020, 8.290, 7.950, 2019-02-27]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [7293, 62.400, 63.080, 64.220, 62.360, 2019-02-27]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [7292, 4.320, 4.730, 4.730, 4.290, 2019-02-27]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [7291, 5.140, 5.190, 5.330, 5.110, 2019-02-27]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [7290, 3.660, 3.630, 3.710, 3.590, 2019-02-27]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [7289, 7.750, 7.730, 8.040, 7.520, 2019-02-27]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [7288, 4.130, 4.100, 4.170, 4.070, 2019-02-27]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [7287, 3.380, 3.410, 3.500, 3.350, 2019-02-27]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [7286, 5.090, 5.080, 5.320, 5.030, 2019-02-27]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [7285, 8.340, 8.520, 8.750, 8.280, 2019-02-27]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [7284, 2.480, 2.510, 2.610, 2.460, 2019-02-27]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [7283, 8.850, 8.640, 8.920, 8.560, 2019-02-27]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [7282, 7.200, 7.250, 7.450, 7.150, 2019-02-27]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [7281, 6.940, 6.850, 7.050, 6.730, 2019-02-27]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [7280, 8.170, 7.910, 8.240, 7.800, 2019-02-27]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [7279, 3.840, 3.880, 3.940, 3.830, 2019-02-27]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [7278, 5.120, 5.260, 5.430, 5.120, 2019-02-27]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [7277, 3.350, 3.380, 3.420, 3.340, 2019-02-27]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [7276, 3.950, 3.920, 4.040, 3.860, 2019-02-27]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [7275, 3.360, 3.340, 3.410, 3.310, 2019-02-27]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [7274, 6.300, 6.450, 6.730, 6.260, 2019-02-27]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [7273, 6.150, 6.200, 6.350, 6.130, 2019-02-27]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [7272, 19.160, 18.310, 19.160, 16.700, 2019-02-27]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [7271, 11.040, 11.010, 11.170, 10.960, 2019-02-27]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [7270, 4.220, 4.140, 4.270, 4.090, 2019-02-27]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [7269, 7.920, 7.970, 8.140, 7.890, 2019-02-27]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [7268, 19.310, 18.980, 19.600, 18.700, 2019-02-27]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [7267, 10.100, 10.050, 10.250, 9.910, 2019-02-27]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [7266, 1.970, 1.960, 2.020, 1.930, 2019-02-27]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [7265, 6.310, 6.290, 6.420, 6.270, 2019-02-27]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [7264, 6.000, 5.990, 6.150, 5.920, 2019-02-27]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [7263, 9.470, 9.430, 9.540, 9.350, 2019-02-27]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [7262, 75.990, 76.340, 79.050, 75.300, 2019-02-27]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [7261, 10.310, 10.320, 10.570, 10.280, 2019-02-27]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [7260, 6.600, 6.760, 6.920, 6.560, 2019-02-27]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [7259, 4.630, 4.780, 4.900, 4.620, 2019-02-27]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [7258, 11.400, 11.700, 11.990, 11.320, 2019-02-27]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [7257, 6.580, 6.580, 6.790, 6.460, 2019-02-27]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [7256, 11.780, 11.650, 11.840, 11.590, 2019-02-27]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [7255, 5.050, 5.030, 5.150, 5.000, 2019-02-27]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [7254, 4.850, 4.800, 4.980, 4.700, 2019-02-27]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} closed
-DEBUG scheduling-1 druid.sql.Statement - {conn-10005, pstmt-20000} closed
-DEBUG scheduling-1 druid.sql.Connection - {conn-10005} pool-recycle
-DEBUG scheduling-1 druid.sql.Connection - {conn-10005} pool-connect
-DEBUG scheduling-1 druid.sql.Statement - {conn-10005, pstmt-20001} created. select stock_id,open,close,high,low,trading_day from stock_data where stock_id = ? order by trading_day desc
-DEBUG scheduling-1 druid.sql.Statement - {conn-10005, pstmt-20001} Parameters : [281]
-DEBUG scheduling-1 druid.sql.Statement - {conn-10005, pstmt-20001} Types : [BIGINT]
-DEBUG scheduling-1 druid.sql.Statement - {conn-10005, pstmt-20001} executed. 44.511657 millis. select stock_id,open,close,high,low,trading_day from stock_data where stock_id = ? order by trading_day desc
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} open
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Header: [stock_id, open, close, high, low, trading_day]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [281, 14.850, 14.530, 15.000, 14.410, 2019-02-26]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [281, 14.310, 14.920, 15.080, 14.110, 2019-02-25]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [281, 13.560, 14.160, 14.280, 13.490, 2019-02-22]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [281, 13.560, 14.160, 14.280, 13.490, 2019-02-22]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [281, 13.380, 13.680, 14.090, 13.280, 2019-02-21]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [281, 13.360, 13.420, 13.520, 13.080, 2019-02-20]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [281, 13.460, 13.360, 13.570, 13.230, 2019-02-19]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [281, 13.030, 13.440, 13.470, 12.980, 2019-02-18]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [281, 13.040, 12.920, 13.140, 12.910, 2019-02-15]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [281, 13.080, 13.050, 13.120, 12.930, 2019-02-14]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [281, 12.690, 13.120, 13.200, 12.600, 2019-02-13]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [281, 12.510, 12.670, 12.830, 12.450, 2019-02-12]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [281, 12.230, 12.530, 12.550, 12.230, 2019-02-11]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [281, 12.190, 12.290, 12.420, 12.150, 2019-02-01]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [281, 12.330, 12.200, 12.330, 12.010, 2019-01-31]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [281, 11.820, 12.300, 12.320, 11.640, 2019-01-30]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [281, 12.540, 12.200, 12.540, 11.790, 2019-01-29]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [281, 12.880, 12.540, 12.960, 12.460, 2019-01-28]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [281, 12.830, 12.860, 13.040, 12.710, 2019-01-25]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [281, 12.860, 12.820, 13.000, 12.680, 2019-01-24]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [281, 12.720, 12.790, 12.830, 12.680, 2019-01-23]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [281, 13.000, 12.790, 13.000, 12.790, 2019-01-22]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [281, 13.040, 13.000, 13.150, 12.910, 2019-01-21]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [281, 12.840, 13.000, 13.030, 12.710, 2019-01-18]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [281, 13.130, 12.780, 13.140, 12.680, 2019-01-17]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [281, 13.110, 13.130, 13.300, 13.070, 2019-01-16]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [281, 12.870, 13.130, 13.140, 12.840, 2019-01-15]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [281, 13.240, 12.870, 13.290, 12.820, 2019-01-14]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [281, 13.160, 13.240, 13.290, 13.110, 2019-01-11]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [281, 13.020, 13.190, 13.280, 13.020, 2019-01-10]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [281, 13.110, 13.070, 13.350, 13.060, 2019-01-09]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [281, 13.100, 13.080, 13.170, 13.020, 2019-01-08]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [281, 13.110, 13.230, 13.310, 13.020, 2019-01-07]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [281, 12.650, 13.070, 13.130, 12.580, 2019-01-04]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [281, 12.740, 12.700, 12.950, 12.610, 2019-01-03]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [281, 12.670, 12.670, 12.930, 12.620, 2019-01-02]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [281, 13.000, 12.710, 13.180, 12.500, 2018-12-28]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [281, 14.150, 13.000, 14.200, 12.920, 2018-12-27]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} closed
-DEBUG scheduling-1 druid.sql.Statement - {conn-10005, pstmt-20001} closed
-DEBUG scheduling-1 druid.sql.Connection - {conn-10005} pool-recycle
-DEBUG scheduling-1 druid.sql.Connection - {conn-10001} connected
-DEBUG scheduling-1 druid.sql.Connection - {conn-10002} connected
-DEBUG scheduling-1 druid.sql.Connection - {conn-10003} connected
-DEBUG scheduling-1 druid.sql.Connection - {conn-10004} connected
-DEBUG scheduling-1 druid.sql.Connection - {conn-10005} connected
-DEBUG scheduling-1 druid.sql.Connection - {conn-10005} pool-connect
-DEBUG scheduling-1 druid.sql.Statement - {conn-10005, pstmt-20000} created. select stock_id,open,close,high,low,trading_day from stock_data where trading_day in  (   ?  ,  ?  ,  ?  ,  ?  ,  ?  ,  ?  ,  ?  ,  ?  ,  ?  ,  ?  ,  ?  ,  ?  ,  ?  ,  ?  ,  ?  ,  ?  ,  ?  ,  ?  ,  ?  ,  ?  ,  ?  ,  ?  ,  ?  ,  ?  ,  ?  ,  ?  ,  ?  ,  ?  ,  ?  ,  ?  ,  ?  ,  ?  ,  ?  ,  ?  ,  ?  ,  ?  ,  ?  ,  ?  ,  ?  ,  ?  ,  ?  ,  ?  ,  ?  ,  ?  ,  ?  ,  ?  ,  ?  ,  ?  ,  ?  ,  ?  ,  ?  ,  ?  ,  ?  ,  ?  ,  ?  ,  ?  ,  ?  ,  ?  ,  ?  ,  ?  )  order by trading_day
-DEBUG scheduling-1 druid.sql.Statement - {conn-10005, pstmt-20000} Parameters : [2019-02-27, 2019-02-26, 2019-02-25, 2019-02-22, 2019-02-21, 2019-02-20, 2019-02-19, 2019-02-18, 2019-02-15, 2019-02-14, 2019-02-13, 2019-02-12, 2019-02-11, 2019-02-01, 2019-01-31, 2019-01-30, 2019-01-29, 2019-01-28, 2019-01-25, 2019-01-24, 2019-01-23, 2019-01-22, 2019-01-21, 2019-01-18, 2019-01-17, 2019-01-16, 2019-01-15, 2019-01-14, 2019-01-11, 2019-01-10, 2019-01-09, 2019-01-08, 2019-01-07, 2019-01-04, 2019-01-03, 2019-01-02, 2018-12-28, 2018-12-27, 2018-12-26, 2018-12-25, 2018-12-24, 2018-12-21, 2018-12-20, 2018-12-19, 2018-12-18, 2018-12-17, 2018-12-14, 2018-12-13, 2018-12-12, 2018-12-11, 2018-12-10, 2018-12-07, 2018-12-06, 2018-12-05, 2018-12-04, 2018-12-03, 2018-11-30, 2018-11-29, 2018-11-28, 2018-11-27]
-DEBUG scheduling-1 druid.sql.Statement - {conn-10005, pstmt-20000} Types : [VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR]
-DEBUG http-nio-8999-exec-9 druid.sql.Connection - {conn-10001} connected
-DEBUG http-nio-8999-exec-9 druid.sql.Connection - {conn-10002} connected
-DEBUG http-nio-8999-exec-9 druid.sql.Connection - {conn-10003} connected
-DEBUG http-nio-8999-exec-9 druid.sql.Connection - {conn-10004} connected
-DEBUG http-nio-8999-exec-9 druid.sql.Connection - {conn-10005} connected
-DEBUG http-nio-8999-exec-9 druid.sql.Connection - {conn-10005} pool-connect
-DEBUG http-nio-8999-exec-9 druid.sql.Statement - {conn-10005, pstmt-20000} created. select id, subject_id, title, duration, vedio_url, play_count, is_delete, create_time,  modify_time from subject_detail where id = ?
-DEBUG http-nio-8999-exec-9 druid.sql.Statement - {conn-10005, pstmt-20000} Parameters : [2]
-DEBUG http-nio-8999-exec-9 druid.sql.Statement - {conn-10005, pstmt-20000} Types : [BIGINT]
-DEBUG http-nio-8999-exec-9 druid.sql.Statement - {conn-10005, pstmt-20000} executed. 18.62796 millis. select id, subject_id, title, duration, vedio_url, play_count, is_delete, create_time,  modify_time from subject_detail where id = ?
-DEBUG http-nio-8999-exec-9 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} open
-DEBUG http-nio-8999-exec-9 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Header: [id, subject_id, title, duration, vedio_url, play_count, is_delete, create_time, modify_time]
-DEBUG http-nio-8999-exec-9 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} closed
-DEBUG http-nio-8999-exec-9 druid.sql.Statement - {conn-10005, pstmt-20000} closed
-DEBUG http-nio-8999-exec-9 druid.sql.Connection - {conn-10005} pool-recycle
+DEBUG http-nio-8999-exec-2 druid.sql.Connection - {conn-10005} pool-connect
+DEBUG http-nio-8999-exec-2 druid.sql.Statement - {conn-10005, pstmt-20004} created. select a.stock_name,b.stock_code,b.market,a.b_price,date_format(a.b_time,'%Y-%m-%d %H:%i:%s') as b_time   ,a.s_price,date_format(a.s_time,'%Y-%m-%d %H:%i:%s') as s_time,a.increase    from pet_stock_detail a left join stock b on a.stock_id = b.id where a.pet_id = ? and a.is_delete = ? order by a.create_time
+DEBUG http-nio-8999-exec-2 druid.sql.Statement - {conn-10005, pstmt-20004} Parameters : [1, 1]
+DEBUG http-nio-8999-exec-2 druid.sql.Statement - {conn-10005, pstmt-20004} Types : [BIGINT, INTEGER]
+DEBUG http-nio-8999-exec-2 druid.sql.Statement - {conn-10005, pstmt-20004} executed. 7.582375 millis. select a.stock_name,b.stock_code,b.market,a.b_price,date_format(a.b_time,'%Y-%m-%d %H:%i:%s') as b_time   ,a.s_price,date_format(a.s_time,'%Y-%m-%d %H:%i:%s') as s_time,a.increase    from pet_stock_detail a left join stock b on a.stock_id = b.id where a.pet_id = ? and a.is_delete = ? order by a.create_time
+DEBUG http-nio-8999-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20004, rs-50004} open
+DEBUG http-nio-8999-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20004, rs-50004} Header: [stock_name, stock_code, market, b_price, b_time, s_price, s_time, increase]
+DEBUG http-nio-8999-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20004, rs-50004} Result: [中通客车, 000957, zh, 8.12, 2019-03-01 09:49:52, 9.00, 2019-03-04 09:50:20, 2.84]
+DEBUG http-nio-8999-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20004, rs-50004} Result: [光环新网, 300383, zh, 15.20, 2019-02-22 09:49:58, 17.42, 2019-03-04 09:50:35, 14.61]
+DEBUG http-nio-8999-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20004, rs-50004} closed
+DEBUG http-nio-8999-exec-2 druid.sql.Statement - {conn-10005, pstmt-20004} closed
+DEBUG http-nio-8999-exec-2 druid.sql.Connection - {conn-10005} pool-recycle
+DEBUG http-nio-8999-exec-4 druid.sql.Connection - {conn-10005} pool-connect
+DEBUG http-nio-8999-exec-4 druid.sql.Statement - {conn-10005, pstmt-20005} created. select * from user where   token = ? and is_delete = 0
+DEBUG http-nio-8999-exec-4 druid.sql.Statement - {conn-10005, pstmt-20005} Parameters : [b101047a-3d61-42bb-9138-fdc8ff3cc17d]
+DEBUG http-nio-8999-exec-4 druid.sql.Statement - {conn-10005, pstmt-20005} Types : [VARCHAR]
+DEBUG http-nio-8999-exec-4 druid.sql.Statement - {conn-10005, pstmt-20005} executed. 6.582269 millis. select * from user where   token = ? and is_delete = 0
+DEBUG http-nio-8999-exec-4 druid.sql.ResultSet - {conn-10005, pstmt-20005, rs-50005} open
+DEBUG http-nio-8999-exec-4 druid.sql.ResultSet - {conn-10005, pstmt-20005, rs-50005} Header: [id, nickname, phone, password, address, score, descriptions, headerImg, token, is_admin, is_shield, is_delete, create_time, modify_time]
+DEBUG http-nio-8999-exec-4 druid.sql.ResultSet - {conn-10005, pstmt-20005, rs-50005} Result: [2, 第一人, 16621388063, 7a90f1a4da8c487325b54f83e29429dd, null, 0, null, null, b101047a-3d61-42bb-9138-fdc8ff3cc17d, 0, 0, 0, 2018-12-26 21:55:57.0, 2019-01-23 16:53:55.0]
+DEBUG http-nio-8999-exec-4 druid.sql.ResultSet - {conn-10005, pstmt-20005, rs-50005} closed
+DEBUG http-nio-8999-exec-4 druid.sql.Statement - {conn-10005, pstmt-20005} closed
+DEBUG http-nio-8999-exec-4 druid.sql.Connection - {conn-10005} pool-recycle
+DEBUG http-nio-8999-exec-4 druid.sql.Connection - {conn-10005} pool-connect
+DEBUG http-nio-8999-exec-4 druid.sql.Statement - {conn-10005, pstmt-20006} created. select * from user where   token = ? and is_delete = 0
+DEBUG http-nio-8999-exec-4 druid.sql.Statement - {conn-10005, pstmt-20006} Parameters : [b101047a-3d61-42bb-9138-fdc8ff3cc17d]
+DEBUG http-nio-8999-exec-4 druid.sql.Statement - {conn-10005, pstmt-20006} Types : [VARCHAR]
+DEBUG http-nio-8999-exec-4 druid.sql.Statement - {conn-10005, pstmt-20006} executed. 18.348364 millis. select * from user where   token = ? and is_delete = 0
+DEBUG http-nio-8999-exec-4 druid.sql.ResultSet - {conn-10005, pstmt-20006, rs-50006} open
+DEBUG http-nio-8999-exec-4 druid.sql.ResultSet - {conn-10005, pstmt-20006, rs-50006} Header: [id, nickname, phone, password, address, score, descriptions, headerImg, token, is_admin, is_shield, is_delete, create_time, modify_time]
+DEBUG http-nio-8999-exec-4 druid.sql.ResultSet - {conn-10005, pstmt-20006, rs-50006} Result: [2, 第一人, 16621388063, 7a90f1a4da8c487325b54f83e29429dd, null, 0, null, null, b101047a-3d61-42bb-9138-fdc8ff3cc17d, 0, 0, 0, 2018-12-26 21:55:57.0, 2019-01-23 16:53:55.0]
+DEBUG http-nio-8999-exec-4 druid.sql.ResultSet - {conn-10005, pstmt-20006, rs-50006} closed
+DEBUG http-nio-8999-exec-4 druid.sql.Statement - {conn-10005, pstmt-20006} closed
+DEBUG http-nio-8999-exec-4 druid.sql.Connection - {conn-10005} pool-recycle
+DEBUG http-nio-8999-exec-4 druid.sql.Connection - {conn-10005} pool-connect
+DEBUG http-nio-8999-exec-4 druid.sql.Statement - {conn-10005, pstmt-20007} created. select * from pet where user_id = ? and is_delete = 0
+DEBUG http-nio-8999-exec-4 druid.sql.Statement - {conn-10005, pstmt-20007} Parameters : [2]
+DEBUG http-nio-8999-exec-4 druid.sql.Statement - {conn-10005, pstmt-20007} Types : [BIGINT]
+DEBUG http-nio-8999-exec-4 druid.sql.Statement - {conn-10005, pstmt-20007} executed. 20.099062 millis. select * from pet where user_id = ? and is_delete = 0
+DEBUG http-nio-8999-exec-4 druid.sql.ResultSet - {conn-10005, pstmt-20007, rs-50007} open
+DEBUG http-nio-8999-exec-4 druid.sql.ResultSet - {conn-10005, pstmt-20007, rs-50007} Header: [id, user_id, name, level, change_score, percent, is_delete, create_time, modify_time]
+DEBUG http-nio-8999-exec-4 druid.sql.ResultSet - {conn-10005, pstmt-20007, rs-50007} Result: [1, 2, 牛牛, 11, 0, null, 0, 2018-12-29 15:04:12.0, 2018-12-29 15:04:12.0]
+DEBUG http-nio-8999-exec-4 druid.sql.ResultSet - {conn-10005, pstmt-20007, rs-50007} closed
+DEBUG http-nio-8999-exec-4 druid.sql.Statement - {conn-10005, pstmt-20007} closed
+DEBUG http-nio-8999-exec-4 druid.sql.Connection - {conn-10005} pool-recycle
+DEBUG http-nio-8999-exec-4 druid.sql.Connection - {conn-10005} pool-connect
+DEBUG http-nio-8999-exec-4 druid.sql.Statement - {conn-10005, pstmt-20008} created. select a.stock_name,b.stock_code,b.market,a.b_price,date_format(a.b_time,'%Y-%m-%d %H:%i:%s') as b_time    from pet_stock_detail a left join stock b on a.stock_id = b.id where a.pet_id = ? and a.is_delete = ? order by a.create_time
+DEBUG http-nio-8999-exec-4 druid.sql.Statement - {conn-10005, pstmt-20008} Parameters : [1, 0]
+DEBUG http-nio-8999-exec-4 druid.sql.Statement - {conn-10005, pstmt-20008} Types : [BIGINT, INTEGER]
+DEBUG http-nio-8999-exec-4 druid.sql.Statement - {conn-10005, pstmt-20008} executed. 5.944999 millis. select a.stock_name,b.stock_code,b.market,a.b_price,date_format(a.b_time,'%Y-%m-%d %H:%i:%s') as b_time    from pet_stock_detail a left join stock b on a.stock_id = b.id where a.pet_id = ? and a.is_delete = ? order by a.create_time
+DEBUG http-nio-8999-exec-4 druid.sql.ResultSet - {conn-10005, pstmt-20008, rs-50008} open
+DEBUG http-nio-8999-exec-4 druid.sql.ResultSet - {conn-10005, pstmt-20008, rs-50008} Header: [stock_name, stock_code, market, b_price, b_time]
+DEBUG http-nio-8999-exec-4 druid.sql.ResultSet - {conn-10005, pstmt-20008, rs-50008} Result: [斯莱克, 300382, zh, 6.12, 2019-02-27 09:51:05]
+DEBUG http-nio-8999-exec-4 druid.sql.ResultSet - {conn-10005, pstmt-20008, rs-50008} closed
+DEBUG http-nio-8999-exec-4 druid.sql.Statement - {conn-10005, pstmt-20008} closed
+DEBUG http-nio-8999-exec-4 druid.sql.Connection - {conn-10005} pool-recycle
+DEBUG http-nio-8999-exec-4 druid.sql.Connection - {conn-10005} pool-connect
+DEBUG http-nio-8999-exec-4 druid.sql.Statement - {conn-10005, pstmt-20009} created. select a.stock_name,b.stock_code,b.market,a.b_price,date_format(a.b_time,'%Y-%m-%d %H:%i:%s') as b_time   ,a.s_price,date_format(a.s_time,'%Y-%m-%d %H:%i:%s') as s_time,a.increase    from pet_stock_detail a left join stock b on a.stock_id = b.id where a.pet_id = ? and a.is_delete = ? order by a.create_time
+DEBUG http-nio-8999-exec-4 druid.sql.Statement - {conn-10005, pstmt-20009} Parameters : [1, 1]
+DEBUG http-nio-8999-exec-4 druid.sql.Statement - {conn-10005, pstmt-20009} Types : [BIGINT, INTEGER]
+DEBUG http-nio-8999-exec-4 druid.sql.Statement - {conn-10005, pstmt-20009} executed. 21.253451 millis. select a.stock_name,b.stock_code,b.market,a.b_price,date_format(a.b_time,'%Y-%m-%d %H:%i:%s') as b_time   ,a.s_price,date_format(a.s_time,'%Y-%m-%d %H:%i:%s') as s_time,a.increase    from pet_stock_detail a left join stock b on a.stock_id = b.id where a.pet_id = ? and a.is_delete = ? order by a.create_time
+DEBUG http-nio-8999-exec-4 druid.sql.ResultSet - {conn-10005, pstmt-20009, rs-50009} open
+DEBUG http-nio-8999-exec-4 druid.sql.ResultSet - {conn-10005, pstmt-20009, rs-50009} Header: [stock_name, stock_code, market, b_price, b_time, s_price, s_time, increase]
+DEBUG http-nio-8999-exec-4 druid.sql.ResultSet - {conn-10005, pstmt-20009, rs-50009} Result: [中通客车, 000957, zh, 8.12, 2019-03-01 09:49:52, 9.00, 2019-03-04 09:50:20, 2.84]
+DEBUG http-nio-8999-exec-4 druid.sql.ResultSet - {conn-10005, pstmt-20009, rs-50009} Result: [光环新网, 300383, zh, 15.20, 2019-02-22 09:49:58, 17.42, 2019-03-04 09:50:35, 14.61]
+DEBUG http-nio-8999-exec-4 druid.sql.ResultSet - {conn-10005, pstmt-20009, rs-50009} closed
+DEBUG http-nio-8999-exec-4 druid.sql.Statement - {conn-10005, pstmt-20009} closed
+DEBUG http-nio-8999-exec-4 druid.sql.Connection - {conn-10005} pool-recycle
+DEBUG http-nio-8999-exec-3 druid.sql.Connection - {conn-10005} pool-connect
+DEBUG http-nio-8999-exec-3 druid.sql.Statement - {conn-10005, pstmt-20010} created. select * from user where   token = ? and is_delete = 0
+DEBUG http-nio-8999-exec-3 druid.sql.Statement - {conn-10005, pstmt-20010} Parameters : [b101047a-3d61-42bb-9138-fdc8ff3cc17d]
+DEBUG http-nio-8999-exec-3 druid.sql.Statement - {conn-10005, pstmt-20010} Types : [VARCHAR]
+DEBUG http-nio-8999-exec-3 druid.sql.Statement - {conn-10005, pstmt-20010} executed. 6.606845 millis. select * from user where   token = ? and is_delete = 0
+DEBUG http-nio-8999-exec-3 druid.sql.ResultSet - {conn-10005, pstmt-20010, rs-50010} open
+DEBUG http-nio-8999-exec-3 druid.sql.ResultSet - {conn-10005, pstmt-20010, rs-50010} Header: [id, nickname, phone, password, address, score, descriptions, headerImg, token, is_admin, is_shield, is_delete, create_time, modify_time]
+DEBUG http-nio-8999-exec-3 druid.sql.ResultSet - {conn-10005, pstmt-20010, rs-50010} Result: [2, 第一人, 16621388063, 7a90f1a4da8c487325b54f83e29429dd, null, 0, null, null, b101047a-3d61-42bb-9138-fdc8ff3cc17d, 0, 0, 0, 2018-12-26 21:55:57.0, 2019-01-23 16:53:55.0]
+DEBUG http-nio-8999-exec-3 druid.sql.ResultSet - {conn-10005, pstmt-20010, rs-50010} closed
+DEBUG http-nio-8999-exec-3 druid.sql.Statement - {conn-10005, pstmt-20010} closed
+DEBUG http-nio-8999-exec-3 druid.sql.Connection - {conn-10005} pool-recycle
+DEBUG http-nio-8999-exec-3 druid.sql.Connection - {conn-10005} pool-connect
+DEBUG http-nio-8999-exec-3 druid.sql.Statement - {conn-10005, pstmt-20011} created. select * from user where   token = ? and is_delete = 0
+DEBUG http-nio-8999-exec-3 druid.sql.Statement - {conn-10005, pstmt-20011} Parameters : [b101047a-3d61-42bb-9138-fdc8ff3cc17d]
+DEBUG http-nio-8999-exec-3 druid.sql.Statement - {conn-10005, pstmt-20011} Types : [VARCHAR]
+DEBUG http-nio-8999-exec-3 druid.sql.Statement - {conn-10005, pstmt-20011} executed. 6.817447 millis. select * from user where   token = ? and is_delete = 0
+DEBUG http-nio-8999-exec-3 druid.sql.ResultSet - {conn-10005, pstmt-20011, rs-50011} open
+DEBUG http-nio-8999-exec-3 druid.sql.ResultSet - {conn-10005, pstmt-20011, rs-50011} Header: [id, nickname, phone, password, address, score, descriptions, headerImg, token, is_admin, is_shield, is_delete, create_time, modify_time]
+DEBUG http-nio-8999-exec-3 druid.sql.ResultSet - {conn-10005, pstmt-20011, rs-50011} Result: [2, 第一人, 16621388063, 7a90f1a4da8c487325b54f83e29429dd, null, 0, null, null, b101047a-3d61-42bb-9138-fdc8ff3cc17d, 0, 0, 0, 2018-12-26 21:55:57.0, 2019-01-23 16:53:55.0]
+DEBUG http-nio-8999-exec-3 druid.sql.ResultSet - {conn-10005, pstmt-20011, rs-50011} closed
+DEBUG http-nio-8999-exec-3 druid.sql.Statement - {conn-10005, pstmt-20011} closed
+DEBUG http-nio-8999-exec-3 druid.sql.Connection - {conn-10005} pool-recycle
+DEBUG http-nio-8999-exec-3 druid.sql.Connection - {conn-10005} pool-connect
+DEBUG http-nio-8999-exec-3 druid.sql.Statement - {conn-10005, pstmt-20012} created. select * from pet where user_id = ? and is_delete = 0
+DEBUG http-nio-8999-exec-3 druid.sql.Statement - {conn-10005, pstmt-20012} Parameters : [2]
+DEBUG http-nio-8999-exec-3 druid.sql.Statement - {conn-10005, pstmt-20012} Types : [BIGINT]
+DEBUG http-nio-8999-exec-3 druid.sql.Statement - {conn-10005, pstmt-20012} executed. 6.35221 millis. select * from pet where user_id = ? and is_delete = 0
+DEBUG http-nio-8999-exec-3 druid.sql.ResultSet - {conn-10005, pstmt-20012, rs-50012} open
+DEBUG http-nio-8999-exec-3 druid.sql.ResultSet - {conn-10005, pstmt-20012, rs-50012} Header: [id, user_id, name, level, change_score, percent, is_delete, create_time, modify_time]
+DEBUG http-nio-8999-exec-3 druid.sql.ResultSet - {conn-10005, pstmt-20012, rs-50012} Result: [1, 2, 牛牛, 11, 0, null, 0, 2018-12-29 15:04:12.0, 2018-12-29 15:04:12.0]
+DEBUG http-nio-8999-exec-3 druid.sql.ResultSet - {conn-10005, pstmt-20012, rs-50012} closed
+DEBUG http-nio-8999-exec-3 druid.sql.Statement - {conn-10005, pstmt-20012} closed
+DEBUG http-nio-8999-exec-3 druid.sql.Connection - {conn-10005} pool-recycle
+DEBUG http-nio-8999-exec-3 druid.sql.Connection - {conn-10005} pool-connect
+DEBUG http-nio-8999-exec-3 druid.sql.Statement - {conn-10005, pstmt-20013} created. select a.stock_name,b.stock_code,b.market,a.b_price,date_format(a.b_time,'%Y-%m-%d %H:%i:%s') as b_time    from pet_stock_detail a left join stock b on a.stock_id = b.id where a.pet_id = ? and a.is_delete = ? order by a.create_time
+DEBUG http-nio-8999-exec-3 druid.sql.Statement - {conn-10005, pstmt-20013} Parameters : [1, 0]
+DEBUG http-nio-8999-exec-3 druid.sql.Statement - {conn-10005, pstmt-20013} Types : [BIGINT, INTEGER]
+DEBUG http-nio-8999-exec-3 druid.sql.Statement - {conn-10005, pstmt-20013} executed. 6.449832 millis. select a.stock_name,b.stock_code,b.market,a.b_price,date_format(a.b_time,'%Y-%m-%d %H:%i:%s') as b_time    from pet_stock_detail a left join stock b on a.stock_id = b.id where a.pet_id = ? and a.is_delete = ? order by a.create_time
+DEBUG http-nio-8999-exec-3 druid.sql.ResultSet - {conn-10005, pstmt-20013, rs-50013} open
+DEBUG http-nio-8999-exec-3 druid.sql.ResultSet - {conn-10005, pstmt-20013, rs-50013} Header: [stock_name, stock_code, market, b_price, b_time]
+DEBUG http-nio-8999-exec-3 druid.sql.ResultSet - {conn-10005, pstmt-20013, rs-50013} Result: [斯莱克, 300382, zh, 6.12, 2019-02-27 09:51:05]
+DEBUG http-nio-8999-exec-3 druid.sql.ResultSet - {conn-10005, pstmt-20013, rs-50013} closed
+DEBUG http-nio-8999-exec-3 druid.sql.Statement - {conn-10005, pstmt-20013} closed
+DEBUG http-nio-8999-exec-3 druid.sql.Connection - {conn-10005} pool-recycle
+DEBUG http-nio-8999-exec-3 druid.sql.Connection - {conn-10005} pool-connect
+DEBUG http-nio-8999-exec-3 druid.sql.Statement - {conn-10005, pstmt-20014} created. select a.stock_name,b.stock_code,b.market,a.b_price,date_format(a.b_time,'%Y-%m-%d %H:%i:%s') as b_time   ,a.s_price,date_format(a.s_time,'%Y-%m-%d %H:%i:%s') as s_time,a.increase    from pet_stock_detail a left join stock b on a.stock_id = b.id where a.pet_id = ? and a.is_delete = ? order by a.create_time
+DEBUG http-nio-8999-exec-3 druid.sql.Statement - {conn-10005, pstmt-20014} Parameters : [1, 1]
+DEBUG http-nio-8999-exec-3 druid.sql.Statement - {conn-10005, pstmt-20014} Types : [BIGINT, INTEGER]
+DEBUG http-nio-8999-exec-3 druid.sql.Statement - {conn-10005, pstmt-20014} executed. 6.147069 millis. select a.stock_name,b.stock_code,b.market,a.b_price,date_format(a.b_time,'%Y-%m-%d %H:%i:%s') as b_time   ,a.s_price,date_format(a.s_time,'%Y-%m-%d %H:%i:%s') as s_time,a.increase    from pet_stock_detail a left join stock b on a.stock_id = b.id where a.pet_id = ? and a.is_delete = ? order by a.create_time
+DEBUG http-nio-8999-exec-3 druid.sql.ResultSet - {conn-10005, pstmt-20014, rs-50014} open
+DEBUG http-nio-8999-exec-3 druid.sql.ResultSet - {conn-10005, pstmt-20014, rs-50014} Header: [stock_name, stock_code, market, b_price, b_time, s_price, s_time, increase]
+DEBUG http-nio-8999-exec-3 druid.sql.ResultSet - {conn-10005, pstmt-20014, rs-50014} Result: [中通客车, 000957, zh, 8.12, 2019-03-01 09:49:52, 9.00, 2019-03-04 09:50:20, 2.84]
+DEBUG http-nio-8999-exec-3 druid.sql.ResultSet - {conn-10005, pstmt-20014, rs-50014} Result: [光环新网, 300383, zh, 15.20, 2019-02-22 09:49:58, 17.42, 2019-03-04 09:50:35, 14.61]
+DEBUG http-nio-8999-exec-3 druid.sql.ResultSet - {conn-10005, pstmt-20014, rs-50014} closed
+DEBUG http-nio-8999-exec-3 druid.sql.Statement - {conn-10005, pstmt-20014} closed
+DEBUG http-nio-8999-exec-3 druid.sql.Connection - {conn-10005} pool-recycle

@@ -7,6 +7,7 @@ import org.apache.ibatis.annotations.Select;
 import org.apache.ibatis.annotations.Update;
 
 import java.util.List;
+import java.util.Map;
 
 /**
  * Created by lmx
@@ -15,9 +16,16 @@ import java.util.List;
 public interface PetStockDetailSelfMapper extends PetStockDetailMapper {
 
     @Select({
-            "select * from pet_stock_detail where pet_id = #{petId} and is_delete = 0 order by create_time"
+            "<script>",
+            "select a.stock_name,b.stock_code,b.market,a.b_price,date_format(a.b_time,'%Y-%m-%d %H:%i:%s') as b_time",
+            "<if test=\"isDelete == 1\">",
+            ",a.s_price,date_format(a.s_time,'%Y-%m-%d %H:%i:%s') as s_time,a.increase",
+            "</if>",
+            " from pet_stock_detail a left join stock b on a.stock_id = b.id",
+            "where a.pet_id = #{petId} and a.is_delete = #{isDelete} order by a.create_time",
+            "</script>"
     })
-    List<PetStockDetail> selectListByPetId(@Param("petId")Long petId);
+    List<Map<String,Object>> selectListByPetId(@Param("petId")Long petId, @Param("isDelete") Integer isDelete);
 
     @Update({
             "update pet_stock_detail set is_delete = 1 where pet_id = #{petId}"

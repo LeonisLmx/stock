@@ -20,6 +20,8 @@ public class PetStockDetail {
 
     private Date sTime;
 
+    private BigDecimal increase;
+
     private Integer isDelete;
 
     private Date createTime;
@@ -88,6 +90,15 @@ public class PetStockDetail {
 
     public void setsTime(Date sTime) {
         this.sTime = sTime;
+    }
+
+
+    public BigDecimal getIncrease() {
+        return increase;
+    }
+
+    public void setIncrease(BigDecimal increase) {
+        this.increase = increase;
     }
 
     public Integer getIsDelete() {
