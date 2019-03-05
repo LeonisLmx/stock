@@ -19,7 +19,7 @@ public interface UserService {
 
     public Object loginByPassword(String phone,String password) throws NoSuchAlgorithmException;
 
-    public String LoginByToken(String phone,String token);
+    public Object LoginByToken(String phone,String token);
 
     public int editUser(Map<String,String> map, HttpServletRequest request);
 

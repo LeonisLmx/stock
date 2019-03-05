@@ -165,4 +165,9 @@ public class PetServiceImpl  implements PetService {
         }
         return 0;
     }
+
+    public Boolean isHavePeet(Long userId){
+        Pet pet = petSelfMapper.selectPrimarykeyByUserId(userId);
+        return pet == null?false:true;
+    }
 }

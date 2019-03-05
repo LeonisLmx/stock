@@ -1,6 +1,8 @@
 package com.app.stock.service;
 
+import com.app.stock.model.Pet;
 import com.app.stock.model.request.FeedPetRequest;
+import com.sun.org.apache.xpath.internal.operations.Bool;
 
 import javax.servlet.http.HttpServletRequest;
 import java.math.BigDecimal;
@@ -22,4 +24,6 @@ public interface PetService {
     public String resetPet(HttpServletRequest request);
 
     public String saleStock(FeedPetRequest map, HttpServletRequest request);
+
+    public Boolean isHavePeet(Long userId);
 }

@@ -9,6 +9,7 @@ import com.app.stock.model.User;
 import com.app.stock.model.UserVipDetail;
 import com.app.stock.model.request.UserRegisterRequest;
 import com.app.stock.service.AdvertiseService;
+import com.app.stock.service.PetService;
 import com.app.stock.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -41,6 +42,9 @@ public class UserServiceImpl implements UserService {
 
     @Autowired
     private UserVipDetailSelfMapper userVipDetailSelfMapper;
+
+    @Autowired
+    private PetService petService;
 
     // 根据类别获取短信验证码
     public String getMessageCode(String phone,int type){
@@ -99,13 +103,14 @@ public class UserServiceImpl implements UserService {
         returnMap.put("descriptions",user.getDescriptions());
         returnMap.put("headerImg",user.getHeaderimg());
         returnMap.put("token", user.getToken());
+        returnMap.put("pet",petService.isHavePeet(user.getId()));
         return returnMap;
     }
 
     // 用户登录，通过token登录
-    public String LoginByToken(String phone,String token){
+    public Object LoginByToken(String phone,String token){
         User user = userMapper.selectByPrimaryToken(phone,token);
-        return user == null?"登录失败":"登录成功";
+        return returnUserInfo(user);
     }
 
     @Override
@@ -125,22 +130,7 @@ public class UserServiceImpl implements UserService {
             return "验证码不正确或验证码已超时";
         }
         User user = userMapper.queryUserDetail(phone,null);
-        if(user != null) {
-            List<UserVipDetail> list = userVipDetailSelfMapper.selectAllVipDetailsByUserId(user.getId());
-            Map<String, Object> returnMap = new HashMap<>();
-            returnMap.put("id",user.getId());
-            returnMap.put("phone", user.getPhone());
-            returnMap.put("nickname", user.getNickname());
-            returnMap.put("address",user.getAddress());
-            returnMap.put("score",user.getScore());
-            returnMap.put("vip",list.size() == 0?0:1);
-            returnMap.put("descriptions",user.getDescriptions());
-            returnMap.put("headerImg",user.getHeaderimg());
-            returnMap.put("token", user.getToken());
-            return returnMap;
-        }else{
-            return "用户不存在";
-        }
+        return returnUserInfo(user);
     }
 
     // 验证码找回密码
@@ -196,6 +186,7 @@ public class UserServiceImpl implements UserService {
         returnMap.put("score",user.getScore());
         returnMap.put("isVip",0);
         returnMap.put("failure_time",null);
+        returnMap.put("pet",petService.isHavePeet(user.getId()));
         if(list.size() > 0){
             returnMap.put("isVip",1);
             returnMap.put("failure_time",sdf.format(list.get(0).getFailureTime()));
@@ -218,6 +209,7 @@ public class UserServiceImpl implements UserService {
         returnMap.put("score",user.getScore());
         returnMap.put("isVip",0);
         returnMap.put("failure_time",null);
+        returnMap.put("pet",petService.isHavePeet(user.getId()));
         if(list.size() > 0){
             returnMap.put("isVip",1);
             returnMap.put("failure_time",sdf.format(list.get(0).getFailureTime()));
@@ -228,5 +220,25 @@ public class UserServiceImpl implements UserService {
         returnMap.put("createTime",sdf.format(user.getCreateTime()));
         returnMap.put("modifyTime",sdf.format(user.getModifyTime()));
         return returnMap;
+    }
+
+    protected Object returnUserInfo(User user){
+        if(user != null) {
+            List<UserVipDetail> list = userVipDetailSelfMapper.selectAllVipDetailsByUserId(user.getId());
+            Map<String, Object> returnMap = new HashMap<>();
+            returnMap.put("id",user.getId());
+            returnMap.put("phone", user.getPhone());
+            returnMap.put("nickname", user.getNickname());
+            returnMap.put("address",user.getAddress());
+            returnMap.put("score",user.getScore());
+            returnMap.put("vip",list.size() == 0?0:1);
+            returnMap.put("descriptions",user.getDescriptions());
+            returnMap.put("headerImg",user.getHeaderimg());
+            returnMap.put("token", user.getToken());
+            returnMap.put("pet",petService.isHavePeet(user.getId()));
+            return returnMap;
+        }else{
+            return "用户不存在";
+        }
     }
 }

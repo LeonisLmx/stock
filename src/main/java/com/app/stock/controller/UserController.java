@@ -89,7 +89,12 @@ public class UserController {
         if(bindingResult.hasErrors()){
             return Response.ok(bindingResult.getFieldError().getDefaultMessage());
         }
-        return Response.ok(userService.LoginByToken(requestMap.getPhone(),requestMap.getToken()));
+        Object result = userService.LoginByToken(requestMap.getPhone(),requestMap.getToken());
+        if(result instanceof String){
+            return Response.ok(result.toString());
+        }else {
+            return Response.ok(result, "登录成功");
+        }
     }
 
     // 验证码登录
