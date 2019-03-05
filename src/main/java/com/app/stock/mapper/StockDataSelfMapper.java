@@ -41,7 +41,7 @@ public interface StockDataSelfMapper extends StockDataMapper {
 
     @Select({
             "<script>",
-            "select a.stock_code,a.stock_name,a.market,b.close,CONCAT(convert((b.close - b.open)*100/b.close,decimal(10,2)),'%') as percent,b.trading_day",
+            "select a.id,a.stock_code,a.stock_name,a.market,b.close,b.trading_day",
             "from stock a left join stock_data b on a.id = b.stock_id where b.trading_day = #{date} and a.id in",
             "<foreach collection='list' item='entity' open='(' close=')' separator=','>",
             "#{entity}",
@@ -65,4 +65,9 @@ public interface StockDataSelfMapper extends StockDataMapper {
             "select close from stock_data where stock_id = #{stockId} and trading_day = #{date}"
     })
     BigDecimal selectClosePrice(@Param("stockId")Long stockId, @Param("date")String date);
+
+    @Select({
+            "select close from stock_data where stock_id = #{id} and trading_day < #{date} order by id desc limit 1"
+    })
+    BigDecimal selectFrontClose(@Param("id")Long id,@Param("date")String date);
 }
