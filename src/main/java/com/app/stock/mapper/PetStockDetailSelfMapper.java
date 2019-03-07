@@ -33,7 +33,7 @@ public interface PetStockDetailSelfMapper extends PetStockDetailMapper {
     int deleteAllStockByPetId(@Param("petId")Long petId);
 
     @Select({
-            "select count(*) from pet_stock_detail where pet_id = #{petId} and DATE_FORMAT(create_time,'%Y-%m-%d') = #{date}"
+            "select count(*) from pet_stock_detail where pet_id = #{petId} and is_delete = 0"
     })
     int selectCountByDateAndPetId(@Param("petId")Long petId,@Param("date")String date);
 

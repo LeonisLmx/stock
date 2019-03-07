@@ -71,7 +71,7 @@ public class PetServiceImpl  implements PetService {
         PetStockDetail petStockDetail = new PetStockDetail();
         petStockDetail.setPetId(pet.getId());
         if(petStockDetailSelfMapper.selectCountByDateAndPetId(pet.getId(),sdf.format(new Date())) > 0){
-            return "当日已喂养过宠物";
+            return "当前宠物已经拥有股票";
         }
         petStockDetail.setbPrice(BigDecimal.valueOf(Double.valueOf(map.getPrice())));
         petStockDetail.setStockId(map.getStockId());
