@@ -106,7 +106,11 @@ public class PetServiceImpl  implements PetService {
             increase = increase.add(new BigDecimal(map.get("increase").toString()));
         }
         Map<String,Object> result = new HashMap<>();
-        result.put("success",new BigDecimal(successCount + "").multiply(new BigDecimal(100)).divide(new BigDecimal(historyList.size() + ""),2,BigDecimal.ROUND_HALF_UP) + "%");
+        if(historyList == null || historyList.size() == 0){
+            result.put("success",0);
+        }else {
+            result.put("success", new BigDecimal(successCount + "").multiply(new BigDecimal(100)).divide(new BigDecimal(historyList.size() + ""), 2, BigDecimal.ROUND_HALF_UP) + "%");
+        }
         result.put("sum_increase",increase);
         result.put("name",pet.getName());
         result.put("level",pet.getLevel());

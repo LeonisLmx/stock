@@ -59,8 +59,6 @@ public class TestFilter {
 
     @Test
     public void test(){
-        String file = "2af3799def43b8d79f06bac399c07f0d.mp4";
-        String format = file.substring(file.lastIndexOf("."));
-        System.out.println(format);
+        System.out.println("a".toUpperCase());
     }
 }
