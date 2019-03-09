@@ -818,3 +818,45 @@ DEBUG pool-2-thread-1 druid.sql.ResultSet - {conn-10005, pstmt-21481, rs-51481} 
 DEBUG pool-2-thread-1 druid.sql.ResultSet - {conn-10005, pstmt-21481, rs-51481} closed
 DEBUG pool-2-thread-1 druid.sql.Statement - {conn-10005, pstmt-21481} closed
 DEBUG pool-2-thread-1 druid.sql.Connection - {conn-10005} pool-recycle
+DEBUG scheduling-1 druid.sql.Connection - {conn-10001} connected
+DEBUG scheduling-1 druid.sql.Connection - {conn-10002} connected
+DEBUG scheduling-1 druid.sql.Connection - {conn-10003} connected
+DEBUG scheduling-1 druid.sql.Connection - {conn-10004} connected
+DEBUG scheduling-1 druid.sql.Connection - {conn-10005} connected
+DEBUG scheduling-1 druid.sql.Connection - {conn-10005} pool-connect
+DEBUG scheduling-1 druid.sql.Statement - {conn-10005, pstmt-20000} created. select * from pet_stock_detail where s_price is null and is_delete = 0
+DEBUG scheduling-1 druid.sql.Statement - {conn-10005, pstmt-20000} Parameters : []
+DEBUG scheduling-1 druid.sql.Statement - {conn-10005, pstmt-20000} Types : []
+DEBUG scheduling-1 druid.sql.Statement - {conn-10005, pstmt-20000} executed. 20.80628 millis. select * from pet_stock_detail where s_price is null and is_delete = 0
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} open
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Header: [id, pet_id, stock_id, stock_name, b_price, b_time, s_price, s_time, increase, is_delete, create_time, modify_time]
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [3, 1, 15, 斯莱克, 6.12, 2019-02-27 09:51:05.0, null, null, null, 0, 2019-03-04 09:51:15.0, 2019-03-04 09:51:17.0]
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} closed
+DEBUG scheduling-1 druid.sql.Statement - {conn-10005, pstmt-20000} closed
+DEBUG scheduling-1 druid.sql.Connection - {conn-10005} pool-recycle
+DEBUG scheduling-1 druid.sql.Connection - {conn-10005} pool-connect
+DEBUG scheduling-1 druid.sql.Statement - {conn-10005, pstmt-20001} created. select id, user_id, name, level, change_score, percent, is_delete, create_time, modify_time from pet where id = ?
+DEBUG scheduling-1 druid.sql.Statement - {conn-10005, pstmt-20001} Parameters : [1]
+DEBUG scheduling-1 druid.sql.Statement - {conn-10005, pstmt-20001} Types : [BIGINT]
+DEBUG scheduling-1 druid.sql.Statement - {conn-10005, pstmt-20001} executed. 8.565881 millis. select id, user_id, name, level, change_score, percent, is_delete, create_time, modify_time from pet where id = ?
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} open
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Header: [id, user_id, name, level, change_score, percent, is_delete, create_time, modify_time]
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [1, 2, 牛牛, 11, 0, null, 0, 2018-12-29 15:04:12.0, 2018-12-29 15:04:12.0]
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} closed
+DEBUG scheduling-1 druid.sql.Statement - {conn-10005, pstmt-20001} closed
+DEBUG scheduling-1 druid.sql.Connection - {conn-10005} pool-recycle
+DEBUG scheduling-1 druid.sql.Connection - {conn-10005} pool-connect
+DEBUG scheduling-1 druid.sql.Statement - {conn-10005, pstmt-20002} created. select close from stock_data where stock_id = ? and trading_day = ?
+DEBUG scheduling-1 druid.sql.Statement - {conn-10005, pstmt-20002} Parameters : [15, 2018-12-12]
+DEBUG scheduling-1 druid.sql.Statement - {conn-10005, pstmt-20002} Types : [BIGINT, VARCHAR]
+DEBUG scheduling-1 druid.sql.Statement - {conn-10005, pstmt-20002} executed. 38.416163 millis. select close from stock_data where stock_id = ? and trading_day = ?
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20002, rs-50002} open
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20002, rs-50002} Header: [close]
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20002, rs-50002} closed
+DEBUG scheduling-1 druid.sql.Statement - {conn-10005, pstmt-20002} closed
+DEBUG scheduling-1 druid.sql.Connection - {conn-10005} pool-recycle
+DEBUG Thread-9 druid.sql.Connection - {conn-10001} closed
+DEBUG Thread-9 druid.sql.Connection - {conn-10002} closed
+DEBUG Thread-9 druid.sql.Connection - {conn-10003} closed
+DEBUG Thread-9 druid.sql.Connection - {conn-10004} closed
+DEBUG Thread-9 druid.sql.Connection - {conn-10005} closed
