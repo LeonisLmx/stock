@@ -41,7 +41,8 @@ public class Response<T> {
     }
 
     public static Response ok(String reason){
-        if(reason.contains("不能为空")){
+        // 控制所有的返回状态码
+        if(reason.contains("不能为空") || !reason.contains("成功")){
             return ok(null,reason,1);
         }else{
             return ok(null, reason, 0);

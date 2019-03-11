@@ -82,7 +82,7 @@ public class PetServiceImpl  implements PetService {
         PetStockDetail petStockDetail = new PetStockDetail();
         petStockDetail.setPetId(pet.getId());
         if(petStockDetailSelfMapper.selectCountByDateAndPetId(pet.getId(),sdf.format(new Date())) > 0){
-            return "只能有一支持有股";
+            return "当前只能有一支持有股";
         }
         petStockDetail.setbPrice(BigDecimal.valueOf(Double.valueOf(map.getPrice())));
         petStockDetail.setStockId(map.getStockId());
@@ -141,7 +141,7 @@ public class PetServiceImpl  implements PetService {
             return "当前没有宠物，无法重置";
         }
         if(user.getScore() < RESET_PET){
-            return "积分不足，无法重置";
+            return "当前积分不足，无法重置";
         }
         pet.setLevel(DEFAULT_LEVEL);
         petSelfMapper.updateByPrimaryKeySelective(pet);
@@ -158,7 +158,7 @@ public class PetServiceImpl  implements PetService {
         User user = commonservice.getCurrentInfo(request);
         PetStockDetail petStockDetail = petStockDetailSelfMapper.selectIsHaveStock(map.getStockId(),user.getId());
         if(petStockDetail == null){
-            return "未持有该股票";
+            return "当前未持有该股票，无法操作";
         }
         petStockDetail.setsPrice(new BigDecimal(map.getPrice()));
         petStockDetail.setsTime(new Date());
