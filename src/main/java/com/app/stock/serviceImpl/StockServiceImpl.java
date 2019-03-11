@@ -67,6 +67,9 @@ public class StockServiceImpl implements StockService {
                 return o1.get("stock_code").toString().compareTo(o2.get("stock_code").toString());
             }
         });
+        for(Map<String,Object> entity:list){
+            entity.put("id",new Double(entity.get("id").toString()).intValue());
+        }
         return list;
     }
 
@@ -112,6 +115,9 @@ public class StockServiceImpl implements StockService {
                 return o1.get("stock_code").toString().compareTo(o2.get("stock_code").toString());
             }
         });
+        for(Map<String,Object> entity:redisList){
+            entity.put("id",new Double(entity.get("id").toString()).intValue());
+        }
         return redisList;
     }
 
