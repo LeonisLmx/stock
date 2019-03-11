@@ -11,7 +11,7 @@ public class FeedPetRequest extends VerifyRequest {
     @NotNull(message = "股票价格不能为空")
     private String price;
     @NotNull(message = "股票代码不能为空")
-    private Long StockId;
+    private Long stockId;
     @NotNull(message = "股票名称不能为空")
     private String stockName;
 
@@ -24,11 +24,11 @@ public class FeedPetRequest extends VerifyRequest {
     }
 
     public Long getStockId() {
-        return StockId;
+        return stockId;
     }
 
     public void setStockId(Long stockId) {
-        StockId = stockId;
+        this.stockId = stockId;
     }
 
     public String getStockName() {

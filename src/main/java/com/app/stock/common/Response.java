@@ -41,9 +41,9 @@ public class Response<T> {
     }
 
     public static Response ok(String reason){
-        if(reason.contains("不能为空")){
+        if(reason.contains("不能为空") || reason.equals("校验失败") || reason.equals("系统异常")){
             return ok(null,reason,1);
-        }else {
+        }else{
             return ok(null, reason, 0);
         }
     }

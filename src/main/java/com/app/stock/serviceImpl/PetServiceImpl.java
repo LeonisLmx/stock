@@ -22,6 +22,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import javax.servlet.http.HttpServletRequest;
 import java.math.BigDecimal;
+import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
@@ -67,7 +68,7 @@ public class PetServiceImpl  implements PetService {
 
     @Override
     @Transactional(propagation = Propagation.REQUIRED)
-    public String feedPet(FeedPetRequest map, HttpServletRequest request) {
+    public String feedPet(FeedPetRequest map, HttpServletRequest request) throws ParseException {
         if(!isTrading()){
             return "当前不是交易时间";
         }
@@ -75,10 +76,13 @@ public class PetServiceImpl  implements PetService {
         User user = commonservice.getCurrentInfo(request);
         Long userId = user.getId();
         Pet pet = petSelfMapper.selectPrimarykeyByUserId(userId);
+        if(pet == null){
+            return "当前用户未有宠物，无法交易";
+        }
         PetStockDetail petStockDetail = new PetStockDetail();
         petStockDetail.setPetId(pet.getId());
         if(petStockDetailSelfMapper.selectCountByDateAndPetId(pet.getId(),sdf.format(new Date())) > 0){
-            return "当前宠物已经拥有股票";
+            return "只能有一支持有股";
         }
         petStockDetail.setbPrice(BigDecimal.valueOf(Double.valueOf(map.getPrice())));
         petStockDetail.setStockId(map.getStockId());
@@ -147,7 +151,7 @@ public class PetServiceImpl  implements PetService {
     }
 
     @Override
-    public String saleStock(FeedPetRequest map, HttpServletRequest request) {
+    public String saleStock(FeedPetRequest map, HttpServletRequest request) throws ParseException {
         if(!isTrading()){
             return "当前不是交易时间";
         }
@@ -186,9 +190,10 @@ public class PetServiceImpl  implements PetService {
     }
 
     @Override
-    public Boolean isTrading() {
-        LocalDateTime now  = LocalDateTime.now();
-        String date = now.format(DateTimeFormatter.ofPattern("yyyy-MM-dd"));
+    public Boolean isTrading() throws ParseException {
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+        String date = sdf.format(new Date());
+        SimpleDateFormat sdfTime = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         String url = "https://api.shenjian.io/?appid=25a308aa0f9fe382bbfad6b40e922cc8&code=000001&index=true&k_type=day&fq_type=qfq&start_date=" + date;
         String response = "";
         try {
@@ -198,7 +203,12 @@ public class PetServiceImpl  implements PetService {
         }
         Map<String,Object> map = new Gson().fromJson(response,Map.class);
         if(map.get("data") != null){
-            return true;
+            if((sdfTime.parse(date + " 09:30:00").before(new Date())
+                    && sdfTime.parse(date + " 11:30:00").after(new Date())) ||
+                    (sdfTime.parse(date + " 13:00:00").before(new Date())
+                            && sdfTime.parse(date + " 15:00:00").after(new Date()))) {
+                return true;
+            }
         }
         return false;
     }
