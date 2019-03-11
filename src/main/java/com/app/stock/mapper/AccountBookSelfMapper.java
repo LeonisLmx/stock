@@ -16,7 +16,7 @@ public interface AccountBookSelfMapper extends AccountBookMapper {
 
     @Select({
             "<script>",
-            "select a.id,b.name,(case when b.income = '1' then '支出' when b.income = '0' then '收入' else '其他' end) as income,a.serial_number,a.pay_type,a.cost,a.content,DATE_FORMAT(a.create_time,'%Y-%m-%d %T') as create_time",
+            "select a.id,b.name,(case when b.income = '1' then '支出' when b.income = '2' then '收入' else '其他' end) as income,a.serial_number,a.pay_type,a.cost,a.content,DATE_FORMAT(a.create_time,'%Y-%m-%d %T') as create_time",
             "from account_book a left join store_type b on a.store_type_id = b.id",
             "where a.is_delete = 0 and b.is_delete = 0",
             "<if test=\"entity.storeTypeId != null and entity.storeTypeId.size() > 0\">",

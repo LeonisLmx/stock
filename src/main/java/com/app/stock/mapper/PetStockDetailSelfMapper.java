@@ -17,7 +17,7 @@ public interface PetStockDetailSelfMapper extends PetStockDetailMapper {
 
     @Select({
             "<script>",
-            "select a.stock_name,b.stock_code,b.market,a.b_price,date_format(a.b_time,'%Y-%m-%d %H:%i:%s') as b_time",
+            "select a.stock_id,a.stock_name,b.stock_code,b.market,a.b_price,date_format(a.b_time,'%Y-%m-%d %H:%i:%s') as b_time",
             "<if test=\"isDelete == 1\">",
             ",a.s_price,date_format(a.s_time,'%Y-%m-%d %H:%i:%s') as s_time,a.increase",
             "</if>",
