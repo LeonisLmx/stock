@@ -69,9 +69,11 @@ public class RequestAop {
             }
         }catch (VerifyException e){
             response.setReason("校验失败");
+            response.setError_code(1);
         }catch (Exception e){
             logger.error("异常信息",e);
             response.setReason("系统异常");
+            response.setError_code(1);
         }
         return response;
     }

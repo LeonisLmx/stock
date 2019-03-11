@@ -182,3 +182,355 @@ DEBUG http-nio-8999-exec-3 druid.sql.Statement - {conn-10005, pstmt-20006} close
 DEBUG http-nio-8999-exec-3 druid.sql.Connection - {conn 10005} rollback
 DEBUG http-nio-8999-exec-3 druid.sql.Connection - {conn-10005} setAutoCommit true
 DEBUG http-nio-8999-exec-3 druid.sql.Connection - {conn-10005} pool-recycle
+DEBUG http-nio-8999-exec-3 druid.sql.Connection - {conn-10001} connected
+DEBUG http-nio-8999-exec-3 druid.sql.Connection - {conn-10002} connected
+DEBUG http-nio-8999-exec-3 druid.sql.Connection - {conn-10003} connected
+DEBUG http-nio-8999-exec-3 druid.sql.Connection - {conn-10004} connected
+DEBUG http-nio-8999-exec-3 druid.sql.Connection - {conn-10005} connected
+DEBUG http-nio-8999-exec-3 druid.sql.Connection - {conn-10005} pool-connect
+DEBUG http-nio-8999-exec-3 druid.sql.Statement - {conn-10005, pstmt-20000} created. select * from user where   token = ? and is_delete = 0
+DEBUG http-nio-8999-exec-3 druid.sql.Statement - {conn-10005, pstmt-20000} Parameters : [bdb5bc83-b8c5-4871-bd2a-417ec8939395]
+DEBUG http-nio-8999-exec-3 druid.sql.Statement - {conn-10005, pstmt-20000} Types : [VARCHAR]
+DEBUG http-nio-8999-exec-3 druid.sql.Statement - {conn-10005, pstmt-20000} executed. 21.760672 millis. select * from user where   token = ? and is_delete = 0
+DEBUG http-nio-8999-exec-3 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} open
+DEBUG http-nio-8999-exec-3 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Header: [id, nickname, phone, password, address, score, descriptions, headerImg, token, is_admin, is_shield, is_delete, create_time, modify_time]
+DEBUG http-nio-8999-exec-3 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [1, 修改名字, 18262388063, 7a90f1a4da8c487325b54f83e29429dd, 上海市闵行区, 12, 自我介绍, null, bdb5bc83-b8c5-4871-bd2a-417ec8939395, 1, 0, 0, 2018-12-26 18:20:53.0, 2019-01-23 16:22:20.0]
+DEBUG http-nio-8999-exec-3 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} closed
+DEBUG http-nio-8999-exec-3 druid.sql.Statement - {conn-10005, pstmt-20000} closed
+DEBUG http-nio-8999-exec-3 druid.sql.Connection - {conn-10005} pool-recycle
+DEBUG http-nio-8999-exec-3 druid.sql.Connection - {conn-10005} pool-connect
+DEBUG http-nio-8999-exec-3 druid.sql.Connection - {conn-10005} setAutoCommit false
+DEBUG http-nio-8999-exec-3 druid.sql.Statement - {conn-10005, pstmt-20001} created. select * from user where   token = ? and is_delete = 0
+DEBUG http-nio-8999-exec-3 druid.sql.Statement - {conn-10005, pstmt-20001} Parameters : [bdb5bc83-b8c5-4871-bd2a-417ec8939395]
+DEBUG http-nio-8999-exec-3 druid.sql.Statement - {conn-10005, pstmt-20001} Types : [VARCHAR]
+DEBUG http-nio-8999-exec-3 druid.sql.Statement - {conn-10005, pstmt-20001} executed. 8.417617 millis. select * from user where   token = ? and is_delete = 0
+DEBUG http-nio-8999-exec-3 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} open
+DEBUG http-nio-8999-exec-3 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Header: [id, nickname, phone, password, address, score, descriptions, headerImg, token, is_admin, is_shield, is_delete, create_time, modify_time]
+DEBUG http-nio-8999-exec-3 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [1, 修改名字, 18262388063, 7a90f1a4da8c487325b54f83e29429dd, 上海市闵行区, 12, 自我介绍, null, bdb5bc83-b8c5-4871-bd2a-417ec8939395, 1, 0, 0, 2018-12-26 18:20:53.0, 2019-01-23 16:22:20.0]
+DEBUG http-nio-8999-exec-3 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} closed
+DEBUG http-nio-8999-exec-3 druid.sql.Statement - {conn-10005, pstmt-20001} closed
+DEBUG http-nio-8999-exec-3 druid.sql.Statement - {conn-10005, pstmt-20002} created. select * from pet where user_id = ? and is_delete = 0
+DEBUG http-nio-8999-exec-3 druid.sql.Statement - {conn-10005, pstmt-20002} Parameters : [1]
+DEBUG http-nio-8999-exec-3 druid.sql.Statement - {conn-10005, pstmt-20002} Types : [BIGINT]
+DEBUG http-nio-8999-exec-3 druid.sql.Statement - {conn-10005, pstmt-20002} executed. 7.086417 millis. select * from pet where user_id = ? and is_delete = 0
+DEBUG http-nio-8999-exec-3 druid.sql.ResultSet - {conn-10005, pstmt-20002, rs-50002} open
+DEBUG http-nio-8999-exec-3 druid.sql.ResultSet - {conn-10005, pstmt-20002, rs-50002} Header: [id, user_id, name, level, change_score, percent, is_delete, create_time, modify_time]
+DEBUG http-nio-8999-exec-3 druid.sql.ResultSet - {conn-10005, pstmt-20002, rs-50002} closed
+DEBUG http-nio-8999-exec-3 druid.sql.Statement - {conn-10005, pstmt-20002} closed
+DEBUG http-nio-8999-exec-3 druid.sql.Connection - {conn-10005} commited
+DEBUG http-nio-8999-exec-3 druid.sql.Connection - {conn-10005} setAutoCommit true
+DEBUG http-nio-8999-exec-3 druid.sql.Connection - {conn-10005} pool-recycle
+DEBUG http-nio-8999-exec-2 druid.sql.Connection - {conn-10005} pool-connect
+DEBUG http-nio-8999-exec-2 druid.sql.Statement - {conn-10005, pstmt-20003} created. select * from user where   token = ? and is_delete = 0
+DEBUG http-nio-8999-exec-2 druid.sql.Statement - {conn-10005, pstmt-20003} Parameters : [b101047a-3d61-42bb-9138-fdc8ff3cc17d]
+DEBUG http-nio-8999-exec-2 druid.sql.Statement - {conn-10005, pstmt-20003} Types : [VARCHAR]
+DEBUG http-nio-8999-exec-2 druid.sql.Statement - {conn-10005, pstmt-20003} executed. 7.217831 millis. select * from user where   token = ? and is_delete = 0
+DEBUG http-nio-8999-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20003, rs-50003} open
+DEBUG http-nio-8999-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20003, rs-50003} Header: [id, nickname, phone, password, address, score, descriptions, headerImg, token, is_admin, is_shield, is_delete, create_time, modify_time]
+DEBUG http-nio-8999-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20003, rs-50003} Result: [2, 第一人, 16621388063, 7a90f1a4da8c487325b54f83e29429dd, null, 0, null, null, b101047a-3d61-42bb-9138-fdc8ff3cc17d, 0, 0, 0, 2018-12-26 21:55:57.0, 2019-01-23 16:53:55.0]
+DEBUG http-nio-8999-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20003, rs-50003} closed
+DEBUG http-nio-8999-exec-2 druid.sql.Statement - {conn-10005, pstmt-20003} closed
+DEBUG http-nio-8999-exec-2 druid.sql.Connection - {conn-10005} pool-recycle
+DEBUG http-nio-8999-exec-2 druid.sql.Connection - {conn-10005} pool-connect
+DEBUG http-nio-8999-exec-2 druid.sql.Connection - {conn-10005} setAutoCommit false
+DEBUG http-nio-8999-exec-2 druid.sql.Statement - {conn-10005, pstmt-20004} created. select * from user where   token = ? and is_delete = 0
+DEBUG http-nio-8999-exec-2 druid.sql.Statement - {conn-10005, pstmt-20004} Parameters : [b101047a-3d61-42bb-9138-fdc8ff3cc17d]
+DEBUG http-nio-8999-exec-2 druid.sql.Statement - {conn-10005, pstmt-20004} Types : [VARCHAR]
+DEBUG http-nio-8999-exec-2 druid.sql.Statement - {conn-10005, pstmt-20004} executed. 8.675665 millis. select * from user where   token = ? and is_delete = 0
+DEBUG http-nio-8999-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20004, rs-50004} open
+DEBUG http-nio-8999-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20004, rs-50004} Header: [id, nickname, phone, password, address, score, descriptions, headerImg, token, is_admin, is_shield, is_delete, create_time, modify_time]
+DEBUG http-nio-8999-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20004, rs-50004} Result: [2, 第一人, 16621388063, 7a90f1a4da8c487325b54f83e29429dd, null, 0, null, null, b101047a-3d61-42bb-9138-fdc8ff3cc17d, 0, 0, 0, 2018-12-26 21:55:57.0, 2019-01-23 16:53:55.0]
+DEBUG http-nio-8999-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20004, rs-50004} closed
+DEBUG http-nio-8999-exec-2 druid.sql.Statement - {conn-10005, pstmt-20004} closed
+DEBUG http-nio-8999-exec-2 druid.sql.Statement - {conn-10005, pstmt-20005} created. select * from pet where user_id = ? and is_delete = 0
+DEBUG http-nio-8999-exec-2 druid.sql.Statement - {conn-10005, pstmt-20005} Parameters : [2]
+DEBUG http-nio-8999-exec-2 druid.sql.Statement - {conn-10005, pstmt-20005} Types : [BIGINT]
+DEBUG http-nio-8999-exec-2 druid.sql.Statement - {conn-10005, pstmt-20005} executed. 7.486802 millis. select * from pet where user_id = ? and is_delete = 0
+DEBUG http-nio-8999-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20005, rs-50005} open
+DEBUG http-nio-8999-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20005, rs-50005} Header: [id, user_id, name, level, change_score, percent, is_delete, create_time, modify_time]
+DEBUG http-nio-8999-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20005, rs-50005} Result: [1, 2, 牛牛, 11, 0, null, 0, 2018-12-29 15:04:12.0, 2018-12-29 15:04:12.0]
+DEBUG http-nio-8999-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20005, rs-50005} closed
+DEBUG http-nio-8999-exec-2 druid.sql.Statement - {conn-10005, pstmt-20005} closed
+DEBUG http-nio-8999-exec-2 druid.sql.Statement - {conn-10005, pstmt-20006} created. select count(*) from pet_stock_detail where pet_id = ? and is_delete = 0
+DEBUG http-nio-8999-exec-2 druid.sql.Statement - {conn-10005, pstmt-20006} Parameters : [1]
+DEBUG http-nio-8999-exec-2 druid.sql.Statement - {conn-10005, pstmt-20006} Types : [BIGINT]
+DEBUG http-nio-8999-exec-2 druid.sql.Statement - {conn-10005, pstmt-20006} executed. 8.114171 millis. select count(*) from pet_stock_detail where pet_id = ? and is_delete = 0
+DEBUG http-nio-8999-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20006, rs-50006} open
+DEBUG http-nio-8999-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20006, rs-50006} Header: [count(*)]
+DEBUG http-nio-8999-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20006, rs-50006} Result: [1]
+DEBUG http-nio-8999-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20006, rs-50006} closed
+DEBUG http-nio-8999-exec-2 druid.sql.Statement - {conn-10005, pstmt-20006} closed
+DEBUG http-nio-8999-exec-2 druid.sql.Connection - {conn-10005} commited
+DEBUG http-nio-8999-exec-2 druid.sql.Connection - {conn-10005} setAutoCommit true
+DEBUG http-nio-8999-exec-2 druid.sql.Connection - {conn-10005} pool-recycle
+DEBUG http-nio-8999-exec-4 druid.sql.Connection - {conn-10005} pool-connect
+DEBUG http-nio-8999-exec-4 druid.sql.Statement - {conn-10005, pstmt-20007} created. select * from user where   token = ? and is_delete = 0
+DEBUG http-nio-8999-exec-4 druid.sql.Statement - {conn-10005, pstmt-20007} Parameters : [e6ccf915-9852-47e8-b918-1a4e300e152e]
+DEBUG http-nio-8999-exec-4 druid.sql.Statement - {conn-10005, pstmt-20007} Types : [VARCHAR]
+DEBUG http-nio-8999-exec-4 druid.sql.Statement - {conn-10005, pstmt-20007} executed. 7.247186 millis. select * from user where   token = ? and is_delete = 0
+DEBUG http-nio-8999-exec-4 druid.sql.ResultSet - {conn-10005, pstmt-20007, rs-50007} open
+DEBUG http-nio-8999-exec-4 druid.sql.ResultSet - {conn-10005, pstmt-20007, rs-50007} Header: [id, nickname, phone, password, address, score, descriptions, headerImg, token, is_admin, is_shield, is_delete, create_time, modify_time]
+DEBUG http-nio-8999-exec-4 druid.sql.ResultSet - {conn-10005, pstmt-20007, rs-50007} Result: [4, qaz123, 13581997174, e9aca15ce5ee544691657de668944f9, null, 0, null, null, e6ccf915-9852-47e8-b918-1a4e300e152e, 0, 0, 0, 2019-02-21 14:04:55.0, 2019-02-21 14:04:55.0]
+DEBUG http-nio-8999-exec-4 druid.sql.ResultSet - {conn-10005, pstmt-20007, rs-50007} closed
+DEBUG http-nio-8999-exec-4 druid.sql.Statement - {conn-10005, pstmt-20007} closed
+DEBUG http-nio-8999-exec-4 druid.sql.Connection - {conn-10005} pool-recycle
+DEBUG http-nio-8999-exec-4 druid.sql.Connection - {conn-10005} pool-connect
+DEBUG http-nio-8999-exec-4 druid.sql.Connection - {conn-10005} setAutoCommit false
+DEBUG http-nio-8999-exec-4 druid.sql.Statement - {conn-10005, pstmt-20008} created. select * from user where   token = ? and is_delete = 0
+DEBUG http-nio-8999-exec-4 druid.sql.Statement - {conn-10005, pstmt-20008} Parameters : [e6ccf915-9852-47e8-b918-1a4e300e152e]
+DEBUG http-nio-8999-exec-4 druid.sql.Statement - {conn-10005, pstmt-20008} Types : [VARCHAR]
+DEBUG http-nio-8999-exec-4 druid.sql.Statement - {conn-10005, pstmt-20008} executed. 8.744956 millis. select * from user where   token = ? and is_delete = 0
+DEBUG http-nio-8999-exec-4 druid.sql.ResultSet - {conn-10005, pstmt-20008, rs-50008} open
+DEBUG http-nio-8999-exec-4 druid.sql.ResultSet - {conn-10005, pstmt-20008, rs-50008} Header: [id, nickname, phone, password, address, score, descriptions, headerImg, token, is_admin, is_shield, is_delete, create_time, modify_time]
+DEBUG http-nio-8999-exec-4 druid.sql.ResultSet - {conn-10005, pstmt-20008, rs-50008} Result: [4, qaz123, 13581997174, e9aca15ce5ee544691657de668944f9, null, 0, null, null, e6ccf915-9852-47e8-b918-1a4e300e152e, 0, 0, 0, 2019-02-21 14:04:55.0, 2019-02-21 14:04:55.0]
+DEBUG http-nio-8999-exec-4 druid.sql.ResultSet - {conn-10005, pstmt-20008, rs-50008} closed
+DEBUG http-nio-8999-exec-4 druid.sql.Statement - {conn-10005, pstmt-20008} closed
+DEBUG http-nio-8999-exec-4 druid.sql.Statement - {conn-10005, pstmt-20009} created. select * from pet where user_id = ? and is_delete = 0
+DEBUG http-nio-8999-exec-4 druid.sql.Statement - {conn-10005, pstmt-20009} Parameters : [4]
+DEBUG http-nio-8999-exec-4 druid.sql.Statement - {conn-10005, pstmt-20009} Types : [BIGINT]
+DEBUG http-nio-8999-exec-4 druid.sql.Statement - {conn-10005, pstmt-20009} executed. 7.826428 millis. select * from pet where user_id = ? and is_delete = 0
+DEBUG http-nio-8999-exec-4 druid.sql.ResultSet - {conn-10005, pstmt-20009, rs-50009} open
+DEBUG http-nio-8999-exec-4 druid.sql.ResultSet - {conn-10005, pstmt-20009, rs-50009} Header: [id, user_id, name, level, change_score, percent, is_delete, create_time, modify_time]
+DEBUG http-nio-8999-exec-4 druid.sql.ResultSet - {conn-10005, pstmt-20009, rs-50009} Result: [2, 4, 特土, 11, 0, null, 0, 2019-03-08 10:41:27.0, 2019-03-08 10:41:26.0]
+DEBUG http-nio-8999-exec-4 druid.sql.ResultSet - {conn-10005, pstmt-20009, rs-50009} closed
+DEBUG http-nio-8999-exec-4 druid.sql.Statement - {conn-10005, pstmt-20009} closed
+DEBUG http-nio-8999-exec-4 druid.sql.Statement - {conn-10005, pstmt-20010} created. select count(*) from pet_stock_detail where pet_id = ? and is_delete = 0
+DEBUG http-nio-8999-exec-4 druid.sql.Statement - {conn-10005, pstmt-20010} Parameters : [2]
+DEBUG http-nio-8999-exec-4 druid.sql.Statement - {conn-10005, pstmt-20010} Types : [BIGINT]
+DEBUG http-nio-8999-exec-4 druid.sql.Statement - {conn-10005, pstmt-20010} executed. 8.1879 millis. select count(*) from pet_stock_detail where pet_id = ? and is_delete = 0
+DEBUG http-nio-8999-exec-4 druid.sql.ResultSet - {conn-10005, pstmt-20010, rs-50010} open
+DEBUG http-nio-8999-exec-4 druid.sql.ResultSet - {conn-10005, pstmt-20010, rs-50010} Header: [count(*)]
+DEBUG http-nio-8999-exec-4 druid.sql.ResultSet - {conn-10005, pstmt-20010, rs-50010} Result: [0]
+DEBUG http-nio-8999-exec-4 druid.sql.ResultSet - {conn-10005, pstmt-20010, rs-50010} closed
+DEBUG http-nio-8999-exec-4 druid.sql.Statement - {conn-10005, pstmt-20010} closed
+DEBUG http-nio-8999-exec-4 druid.sql.Statement - {conn-10005, pstmt-20011} created. INSERT INTO pet_stock_detail
+ (pet_id, stock_id, stock_name, b_price, b_time, create_time)
+VALUES (?, ?, ?, ?, ?, ?)
+DEBUG http-nio-8999-exec-4 druid.sql.Statement - {conn-10005, pstmt-20011} Parameters : [2, 7828, 士兰微, 14.7, 2019-03-11 10:36:21.361, 2019-03-11 10:36:21.361]
+DEBUG http-nio-8999-exec-4 druid.sql.Statement - {conn-10005, pstmt-20011} Types : [BIGINT, BIGINT, VARCHAR, DECIMAL, TIMESTAMP, TIMESTAMP]
+DEBUG http-nio-8999-exec-4 druid.sql.Statement - {conn-10005, pstmt-20011} executed. 23.818228 millis. INSERT INTO pet_stock_detail
+ (pet_id, stock_id, stock_name, b_price, b_time, create_time)
+VALUES (?, ?, ?, ?, ?, ?)
+DEBUG http-nio-8999-exec-4 druid.sql.ResultSet - {conn-10005, pstmt-20011, rs-50011} open
+DEBUG http-nio-8999-exec-4 druid.sql.ResultSet - {conn-10005, pstmt-20011, rs-50011} Header: [GENERATED_KEY]
+DEBUG http-nio-8999-exec-4 druid.sql.ResultSet - {conn-10005, pstmt-20011, rs-50011} Result: [4]
+DEBUG http-nio-8999-exec-4 druid.sql.ResultSet - {conn-10005, pstmt-20011, rs-50011} closed
+DEBUG http-nio-8999-exec-4 druid.sql.Statement - {conn-10005, pstmt-20011} closed
+DEBUG http-nio-8999-exec-4 druid.sql.Connection - {conn-10005} commited
+DEBUG http-nio-8999-exec-4 druid.sql.Connection - {conn-10005} setAutoCommit true
+DEBUG http-nio-8999-exec-4 druid.sql.Connection - {conn-10005} pool-recycle
+DEBUG http-nio-8999-exec-8 druid.sql.Connection - {conn-10005} pool-connect
+DEBUG http-nio-8999-exec-8 druid.sql.Statement - {conn-10005, pstmt-20012} created. select * from user where   token = ? and is_delete = 0
+DEBUG http-nio-8999-exec-8 druid.sql.Statement - {conn-10005, pstmt-20012} Parameters : [e6ccf915-9852-47e8-b918-1a4e300e152e]
+DEBUG http-nio-8999-exec-8 druid.sql.Statement - {conn-10005, pstmt-20012} Types : [VARCHAR]
+DEBUG http-nio-8999-exec-8 druid.sql.Statement - {conn-10005, pstmt-20012} executed. 9.159675 millis. select * from user where   token = ? and is_delete = 0
+DEBUG http-nio-8999-exec-8 druid.sql.ResultSet - {conn-10005, pstmt-20012, rs-50012} open
+DEBUG http-nio-8999-exec-8 druid.sql.ResultSet - {conn-10005, pstmt-20012, rs-50012} Header: [id, nickname, phone, password, address, score, descriptions, headerImg, token, is_admin, is_shield, is_delete, create_time, modify_time]
+DEBUG http-nio-8999-exec-8 druid.sql.ResultSet - {conn-10005, pstmt-20012, rs-50012} Result: [4, qaz123, 13581997174, e9aca15ce5ee544691657de668944f9, null, 0, null, null, e6ccf915-9852-47e8-b918-1a4e300e152e, 0, 0, 0, 2019-02-21 14:04:55.0, 2019-02-21 14:04:55.0]
+DEBUG http-nio-8999-exec-8 druid.sql.ResultSet - {conn-10005, pstmt-20012, rs-50012} closed
+DEBUG http-nio-8999-exec-8 druid.sql.Statement - {conn-10005, pstmt-20012} closed
+DEBUG http-nio-8999-exec-8 druid.sql.Connection - {conn-10005} pool-recycle
+DEBUG http-nio-8999-exec-6 druid.sql.Connection - {conn-10005} pool-connect
+DEBUG http-nio-8999-exec-6 druid.sql.Statement - {conn-10005, pstmt-20013} created. select * from user where   token = ? and is_delete = 0
+DEBUG http-nio-8999-exec-6 druid.sql.Statement - {conn-10005, pstmt-20013} Parameters : [e6ccf915-9852-47e8-b918-1a4e300e152e]
+DEBUG http-nio-8999-exec-6 druid.sql.Statement - {conn-10005, pstmt-20013} Types : [VARCHAR]
+DEBUG http-nio-8999-exec-6 druid.sql.Statement - {conn-10005, pstmt-20013} executed. 8.795131 millis. select * from user where   token = ? and is_delete = 0
+DEBUG http-nio-8999-exec-6 druid.sql.ResultSet - {conn-10005, pstmt-20013, rs-50013} open
+DEBUG http-nio-8999-exec-6 druid.sql.ResultSet - {conn-10005, pstmt-20013, rs-50013} Header: [id, nickname, phone, password, address, score, descriptions, headerImg, token, is_admin, is_shield, is_delete, create_time, modify_time]
+DEBUG http-nio-8999-exec-6 druid.sql.ResultSet - {conn-10005, pstmt-20013, rs-50013} Result: [4, qaz123, 13581997174, e9aca15ce5ee544691657de668944f9, null, 0, null, null, e6ccf915-9852-47e8-b918-1a4e300e152e, 0, 0, 0, 2019-02-21 14:04:55.0, 2019-02-21 14:04:55.0]
+DEBUG http-nio-8999-exec-6 druid.sql.ResultSet - {conn-10005, pstmt-20013, rs-50013} closed
+DEBUG http-nio-8999-exec-6 druid.sql.Statement - {conn-10005, pstmt-20013} closed
+DEBUG http-nio-8999-exec-6 druid.sql.Connection - {conn-10005} pool-recycle
+DEBUG http-nio-8999-exec-1 druid.sql.Connection - {conn-10005} pool-connect
+DEBUG http-nio-8999-exec-1 druid.sql.Statement - {conn-10005, pstmt-20014} created. select * from user where   token = ? and is_delete = 0
+DEBUG http-nio-8999-exec-1 druid.sql.Statement - {conn-10005, pstmt-20014} Parameters : [e6ccf915-9852-47e8-b918-1a4e300e152e]
+DEBUG http-nio-8999-exec-1 druid.sql.Statement - {conn-10005, pstmt-20014} Types : [VARCHAR]
+DEBUG http-nio-8999-exec-1 druid.sql.Statement - {conn-10005, pstmt-20014} executed. 10.723664 millis. select * from user where   token = ? and is_delete = 0
+DEBUG http-nio-8999-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20014, rs-50014} open
+DEBUG http-nio-8999-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20014, rs-50014} Header: [id, nickname, phone, password, address, score, descriptions, headerImg, token, is_admin, is_shield, is_delete, create_time, modify_time]
+DEBUG http-nio-8999-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20014, rs-50014} Result: [4, qaz123, 13581997174, e9aca15ce5ee544691657de668944f9, null, 0, null, null, e6ccf915-9852-47e8-b918-1a4e300e152e, 0, 0, 0, 2019-02-21 14:04:55.0, 2019-02-21 14:04:55.0]
+DEBUG http-nio-8999-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20014, rs-50014} closed
+DEBUG http-nio-8999-exec-1 druid.sql.Statement - {conn-10005, pstmt-20014} closed
+DEBUG http-nio-8999-exec-1 druid.sql.Connection - {conn-10005} pool-recycle
+DEBUG http-nio-8999-exec-2 druid.sql.Connection - {conn-10005} pool-connect
+DEBUG http-nio-8999-exec-2 druid.sql.Statement - {conn-10005, pstmt-20015} created. select * from user where   token = ? and is_delete = 0
+DEBUG http-nio-8999-exec-2 druid.sql.Statement - {conn-10005, pstmt-20015} Parameters : [e6ccf915-9852-47e8-b918-1a4e300e152e]
+DEBUG http-nio-8999-exec-2 druid.sql.Statement - {conn-10005, pstmt-20015} Types : [VARCHAR]
+DEBUG http-nio-8999-exec-2 druid.sql.Statement - {conn-10005, pstmt-20015} executed. 9.375056 millis. select * from user where   token = ? and is_delete = 0
+DEBUG http-nio-8999-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20015, rs-50015} open
+DEBUG http-nio-8999-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20015, rs-50015} Header: [id, nickname, phone, password, address, score, descriptions, headerImg, token, is_admin, is_shield, is_delete, create_time, modify_time]
+DEBUG http-nio-8999-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20015, rs-50015} Result: [4, qaz123, 13581997174, e9aca15ce5ee544691657de668944f9, null, 0, null, null, e6ccf915-9852-47e8-b918-1a4e300e152e, 0, 0, 0, 2019-02-21 14:04:55.0, 2019-02-21 14:04:55.0]
+DEBUG http-nio-8999-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20015, rs-50015} closed
+DEBUG http-nio-8999-exec-2 druid.sql.Statement - {conn-10005, pstmt-20015} closed
+DEBUG http-nio-8999-exec-2 druid.sql.Connection - {conn-10005} pool-recycle
+DEBUG http-nio-8999-exec-7 druid.sql.Connection - {conn-10005} pool-connect
+DEBUG http-nio-8999-exec-7 druid.sql.Statement - {conn-10005, pstmt-20016} created. select * from user where   token = ? and is_delete = 0
+DEBUG http-nio-8999-exec-7 druid.sql.Statement - {conn-10005, pstmt-20016} Parameters : [e6ccf915-9852-47e8-b918-1a4e300e152e]
+DEBUG http-nio-8999-exec-7 druid.sql.Statement - {conn-10005, pstmt-20016} Types : [VARCHAR]
+DEBUG http-nio-8999-exec-7 druid.sql.Statement - {conn-10005, pstmt-20016} executed. 7.175165 millis. select * from user where   token = ? and is_delete = 0
+DEBUG http-nio-8999-exec-7 druid.sql.ResultSet - {conn-10005, pstmt-20016, rs-50016} open
+DEBUG http-nio-8999-exec-7 druid.sql.ResultSet - {conn-10005, pstmt-20016, rs-50016} Header: [id, nickname, phone, password, address, score, descriptions, headerImg, token, is_admin, is_shield, is_delete, create_time, modify_time]
+DEBUG http-nio-8999-exec-7 druid.sql.ResultSet - {conn-10005, pstmt-20016, rs-50016} Result: [4, qaz123, 13581997174, e9aca15ce5ee544691657de668944f9, null, 0, null, null, e6ccf915-9852-47e8-b918-1a4e300e152e, 0, 0, 0, 2019-02-21 14:04:55.0, 2019-02-21 14:04:55.0]
+DEBUG http-nio-8999-exec-7 druid.sql.ResultSet - {conn-10005, pstmt-20016, rs-50016} closed
+DEBUG http-nio-8999-exec-7 druid.sql.Statement - {conn-10005, pstmt-20016} closed
+DEBUG http-nio-8999-exec-7 druid.sql.Connection - {conn-10005} pool-recycle
+DEBUG http-nio-8999-exec-8 druid.sql.Connection - {conn-10005} pool-connect
+DEBUG http-nio-8999-exec-8 druid.sql.Statement - {conn-10005, pstmt-20017} created. select * from user where   token = ? and is_delete = 0
+DEBUG http-nio-8999-exec-8 druid.sql.Statement - {conn-10005, pstmt-20017} Parameters : [e6ccf915-9852-47e8-b918-1a4e300e152e]
+DEBUG http-nio-8999-exec-8 druid.sql.Statement - {conn-10005, pstmt-20017} Types : [VARCHAR]
+DEBUG http-nio-8999-exec-8 druid.sql.Statement - {conn-10005, pstmt-20017} executed. 8.250364 millis. select * from user where   token = ? and is_delete = 0
+DEBUG http-nio-8999-exec-8 druid.sql.ResultSet - {conn-10005, pstmt-20017, rs-50017} open
+DEBUG http-nio-8999-exec-8 druid.sql.ResultSet - {conn-10005, pstmt-20017, rs-50017} Header: [id, nickname, phone, password, address, score, descriptions, headerImg, token, is_admin, is_shield, is_delete, create_time, modify_time]
+DEBUG http-nio-8999-exec-8 druid.sql.ResultSet - {conn-10005, pstmt-20017, rs-50017} Result: [4, qaz123, 13581997174, e9aca15ce5ee544691657de668944f9, null, 0, null, null, e6ccf915-9852-47e8-b918-1a4e300e152e, 0, 0, 0, 2019-02-21 14:04:55.0, 2019-02-21 14:04:55.0]
+DEBUG http-nio-8999-exec-8 druid.sql.ResultSet - {conn-10005, pstmt-20017, rs-50017} closed
+DEBUG http-nio-8999-exec-8 druid.sql.Statement - {conn-10005, pstmt-20017} closed
+DEBUG http-nio-8999-exec-8 druid.sql.Connection - {conn-10005} pool-recycle
+DEBUG http-nio-8999-exec-10 druid.sql.Connection - {conn-10005} pool-connect
+DEBUG http-nio-8999-exec-10 druid.sql.Statement - {conn-10005, pstmt-20018} created. select * from user where   token = ? and is_delete = 0
+DEBUG http-nio-8999-exec-10 druid.sql.Statement - {conn-10005, pstmt-20018} Parameters : [e6ccf915-9852-47e8-b918-1a4e300e152e]
+DEBUG http-nio-8999-exec-10 druid.sql.Statement - {conn-10005, pstmt-20018} Types : [VARCHAR]
+DEBUG http-nio-8999-exec-10 druid.sql.Statement - {conn-10005, pstmt-20018} executed. 7.069009 millis. select * from user where   token = ? and is_delete = 0
+DEBUG http-nio-8999-exec-10 druid.sql.ResultSet - {conn-10005, pstmt-20018, rs-50018} open
+DEBUG http-nio-8999-exec-10 druid.sql.ResultSet - {conn-10005, pstmt-20018, rs-50018} Header: [id, nickname, phone, password, address, score, descriptions, headerImg, token, is_admin, is_shield, is_delete, create_time, modify_time]
+DEBUG http-nio-8999-exec-10 druid.sql.ResultSet - {conn-10005, pstmt-20018, rs-50018} Result: [4, qaz123, 13581997174, e9aca15ce5ee544691657de668944f9, null, 0, null, null, e6ccf915-9852-47e8-b918-1a4e300e152e, 0, 0, 0, 2019-02-21 14:04:55.0, 2019-02-21 14:04:55.0]
+DEBUG http-nio-8999-exec-10 druid.sql.ResultSet - {conn-10005, pstmt-20018, rs-50018} closed
+DEBUG http-nio-8999-exec-10 druid.sql.Statement - {conn-10005, pstmt-20018} closed
+DEBUG http-nio-8999-exec-10 druid.sql.Connection - {conn-10005} pool-recycle
+DEBUG http-nio-8999-exec-9 druid.sql.Connection - {conn-10005} pool-connect
+DEBUG http-nio-8999-exec-9 druid.sql.Statement - {conn-10005, pstmt-20019} created. select * from user where   token = ? and is_delete = 0
+DEBUG http-nio-8999-exec-9 druid.sql.Statement - {conn-10005, pstmt-20019} Parameters : [e6ccf915-9852-47e8-b918-1a4e300e152e]
+DEBUG http-nio-8999-exec-9 druid.sql.Statement - {conn-10005, pstmt-20019} Types : [VARCHAR]
+DEBUG http-nio-8999-exec-9 druid.sql.Statement - {conn-10005, pstmt-20019} executed. 15.091363 millis. select * from user where   token = ? and is_delete = 0
+DEBUG http-nio-8999-exec-9 druid.sql.ResultSet - {conn-10005, pstmt-20019, rs-50019} open
+DEBUG http-nio-8999-exec-9 druid.sql.ResultSet - {conn-10005, pstmt-20019, rs-50019} Header: [id, nickname, phone, password, address, score, descriptions, headerImg, token, is_admin, is_shield, is_delete, create_time, modify_time]
+DEBUG http-nio-8999-exec-9 druid.sql.ResultSet - {conn-10005, pstmt-20019, rs-50019} Result: [4, qaz123, 13581997174, e9aca15ce5ee544691657de668944f9, null, 0, null, null, e6ccf915-9852-47e8-b918-1a4e300e152e, 0, 0, 0, 2019-02-21 14:04:55.0, 2019-02-21 14:04:55.0]
+DEBUG http-nio-8999-exec-9 druid.sql.ResultSet - {conn-10005, pstmt-20019, rs-50019} closed
+DEBUG http-nio-8999-exec-9 druid.sql.Statement - {conn-10005, pstmt-20019} closed
+DEBUG http-nio-8999-exec-9 druid.sql.Connection - {conn-10005} pool-recycle
+DEBUG http-nio-8999-exec-6 druid.sql.Connection - {conn-10005} pool-connect
+DEBUG http-nio-8999-exec-6 druid.sql.Statement - {conn-10005, pstmt-20020} created. select * from user where   token = ? and is_delete = 0
+DEBUG http-nio-8999-exec-6 druid.sql.Statement - {conn-10005, pstmt-20020} Parameters : [e6ccf915-9852-47e8-b918-1a4e300e152e]
+DEBUG http-nio-8999-exec-6 druid.sql.Statement - {conn-10005, pstmt-20020} Types : [VARCHAR]
+DEBUG http-nio-8999-exec-6 druid.sql.Statement - {conn-10005, pstmt-20020} executed. 7.255036 millis. select * from user where   token = ? and is_delete = 0
+DEBUG http-nio-8999-exec-6 druid.sql.ResultSet - {conn-10005, pstmt-20020, rs-50020} open
+DEBUG http-nio-8999-exec-6 druid.sql.ResultSet - {conn-10005, pstmt-20020, rs-50020} Header: [id, nickname, phone, password, address, score, descriptions, headerImg, token, is_admin, is_shield, is_delete, create_time, modify_time]
+DEBUG http-nio-8999-exec-6 druid.sql.ResultSet - {conn-10005, pstmt-20020, rs-50020} Result: [4, qaz123, 13581997174, e9aca15ce5ee544691657de668944f9, null, 0, null, null, e6ccf915-9852-47e8-b918-1a4e300e152e, 0, 0, 0, 2019-02-21 14:04:55.0, 2019-02-21 14:04:55.0]
+DEBUG http-nio-8999-exec-6 druid.sql.ResultSet - {conn-10005, pstmt-20020, rs-50020} closed
+DEBUG http-nio-8999-exec-6 druid.sql.Statement - {conn-10005, pstmt-20020} closed
+DEBUG http-nio-8999-exec-6 druid.sql.Connection - {conn-10005} pool-recycle
+DEBUG http-nio-8999-exec-1 druid.sql.Connection - {conn-10005} pool-connect
+DEBUG http-nio-8999-exec-1 druid.sql.Statement - {conn-10005, pstmt-20021} created. select * from user where   token = ? and is_delete = 0
+DEBUG http-nio-8999-exec-1 druid.sql.Statement - {conn-10005, pstmt-20021} Parameters : [e6ccf915-9852-47e8-b918-1a4e300e152e]
+DEBUG http-nio-8999-exec-1 druid.sql.Statement - {conn-10005, pstmt-20021} Types : [VARCHAR]
+DEBUG http-nio-8999-exec-1 druid.sql.Statement - {conn-10005, pstmt-20021} executed. 8.56439 millis. select * from user where   token = ? and is_delete = 0
+DEBUG http-nio-8999-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20021, rs-50021} open
+DEBUG http-nio-8999-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20021, rs-50021} Header: [id, nickname, phone, password, address, score, descriptions, headerImg, token, is_admin, is_shield, is_delete, create_time, modify_time]
+DEBUG http-nio-8999-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20021, rs-50021} Result: [4, qaz123, 13581997174, e9aca15ce5ee544691657de668944f9, null, 0, null, null, e6ccf915-9852-47e8-b918-1a4e300e152e, 0, 0, 0, 2019-02-21 14:04:55.0, 2019-02-21 14:04:55.0]
+DEBUG http-nio-8999-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20021, rs-50021} closed
+DEBUG http-nio-8999-exec-1 druid.sql.Statement - {conn-10005, pstmt-20021} closed
+DEBUG http-nio-8999-exec-1 druid.sql.Connection - {conn-10005} pool-recycle
+DEBUG http-nio-8999-exec-3 druid.sql.Connection - {conn-10005} pool-connect
+DEBUG http-nio-8999-exec-3 druid.sql.Statement - {conn-10005, pstmt-20022} created. select * from user where   token = ? and is_delete = 0
+DEBUG http-nio-8999-exec-3 druid.sql.Statement - {conn-10005, pstmt-20022} Parameters : [e6ccf915-9852-47e8-b918-1a4e300e152e]
+DEBUG http-nio-8999-exec-3 druid.sql.Statement - {conn-10005, pstmt-20022} Types : [VARCHAR]
+DEBUG http-nio-8999-exec-3 druid.sql.Statement - {conn-10005, pstmt-20022} executed. 18.757281 millis. select * from user where   token = ? and is_delete = 0
+DEBUG http-nio-8999-exec-3 druid.sql.ResultSet - {conn-10005, pstmt-20022, rs-50022} open
+DEBUG http-nio-8999-exec-3 druid.sql.ResultSet - {conn-10005, pstmt-20022, rs-50022} Header: [id, nickname, phone, password, address, score, descriptions, headerImg, token, is_admin, is_shield, is_delete, create_time, modify_time]
+DEBUG http-nio-8999-exec-3 druid.sql.ResultSet - {conn-10005, pstmt-20022, rs-50022} Result: [4, qaz123, 13581997174, e9aca15ce5ee544691657de668944f9, null, 0, null, null, e6ccf915-9852-47e8-b918-1a4e300e152e, 0, 0, 0, 2019-02-21 14:04:55.0, 2019-02-21 14:04:55.0]
+DEBUG http-nio-8999-exec-3 druid.sql.ResultSet - {conn-10005, pstmt-20022, rs-50022} closed
+DEBUG http-nio-8999-exec-3 druid.sql.Statement - {conn-10005, pstmt-20022} closed
+DEBUG http-nio-8999-exec-3 druid.sql.Connection - {conn-10005} pool-recycle
+DEBUG http-nio-8999-exec-4 druid.sql.Connection - {conn-10005} pool-connect
+DEBUG http-nio-8999-exec-4 druid.sql.Statement - {conn-10005, pstmt-20023} created. select * from user where   token = ? and is_delete = 0
+DEBUG http-nio-8999-exec-4 druid.sql.Statement - {conn-10005, pstmt-20023} Parameters : [e6ccf915-9852-47e8-b918-1a4e300e152e]
+DEBUG http-nio-8999-exec-4 druid.sql.Statement - {conn-10005, pstmt-20023} Types : [VARCHAR]
+DEBUG http-nio-8999-exec-4 druid.sql.Statement - {conn-10005, pstmt-20023} executed. 14.11003 millis. select * from user where   token = ? and is_delete = 0
+DEBUG http-nio-8999-exec-4 druid.sql.ResultSet - {conn-10005, pstmt-20023, rs-50023} open
+DEBUG http-nio-8999-exec-4 druid.sql.ResultSet - {conn-10005, pstmt-20023, rs-50023} Header: [id, nickname, phone, password, address, score, descriptions, headerImg, token, is_admin, is_shield, is_delete, create_time, modify_time]
+DEBUG http-nio-8999-exec-4 druid.sql.ResultSet - {conn-10005, pstmt-20023, rs-50023} Result: [4, qaz123, 13581997174, e9aca15ce5ee544691657de668944f9, null, 0, null, null, e6ccf915-9852-47e8-b918-1a4e300e152e, 0, 0, 0, 2019-02-21 14:04:55.0, 2019-02-21 14:04:55.0]
+DEBUG http-nio-8999-exec-4 druid.sql.ResultSet - {conn-10005, pstmt-20023, rs-50023} closed
+DEBUG http-nio-8999-exec-4 druid.sql.Statement - {conn-10005, pstmt-20023} closed
+DEBUG http-nio-8999-exec-4 druid.sql.Connection - {conn-10005} pool-recycle
+DEBUG http-nio-8999-exec-2 druid.sql.Connection - {conn-10005} pool-connect
+DEBUG http-nio-8999-exec-2 druid.sql.Statement - {conn-10005, pstmt-20024} created. select * from user where   token = ? and is_delete = 0
+DEBUG http-nio-8999-exec-2 druid.sql.Statement - {conn-10005, pstmt-20024} Parameters : [e6ccf915-9852-47e8-b918-1a4e300e152e]
+DEBUG http-nio-8999-exec-2 druid.sql.Statement - {conn-10005, pstmt-20024} Types : [VARCHAR]
+DEBUG http-nio-8999-exec-2 druid.sql.Statement - {conn-10005, pstmt-20024} executed. 7.642108 millis. select * from user where   token = ? and is_delete = 0
+DEBUG http-nio-8999-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20024, rs-50024} open
+DEBUG http-nio-8999-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20024, rs-50024} Header: [id, nickname, phone, password, address, score, descriptions, headerImg, token, is_admin, is_shield, is_delete, create_time, modify_time]
+DEBUG http-nio-8999-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20024, rs-50024} Result: [4, qaz123, 13581997174, e9aca15ce5ee544691657de668944f9, null, 0, null, null, e6ccf915-9852-47e8-b918-1a4e300e152e, 0, 0, 0, 2019-02-21 14:04:55.0, 2019-02-21 14:04:55.0]
+DEBUG http-nio-8999-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20024, rs-50024} closed
+DEBUG http-nio-8999-exec-2 druid.sql.Statement - {conn-10005, pstmt-20024} closed
+DEBUG http-nio-8999-exec-2 druid.sql.Connection - {conn-10005} pool-recycle
+DEBUG http-nio-8999-exec-5 druid.sql.Connection - {conn-10005} pool-connect
+DEBUG http-nio-8999-exec-5 druid.sql.Statement - {conn-10005, pstmt-20025} created. select * from user where   token = ? and is_delete = 0
+DEBUG http-nio-8999-exec-5 druid.sql.Statement - {conn-10005, pstmt-20025} Parameters : [e6ccf915-9852-47e8-b918-1a4e300e152e]
+DEBUG http-nio-8999-exec-5 druid.sql.Statement - {conn-10005, pstmt-20025} Types : [VARCHAR]
+DEBUG http-nio-8999-exec-5 druid.sql.Statement - {conn-10005, pstmt-20025} executed. 9.687376 millis. select * from user where   token = ? and is_delete = 0
+DEBUG http-nio-8999-exec-5 druid.sql.ResultSet - {conn-10005, pstmt-20025, rs-50025} open
+DEBUG http-nio-8999-exec-5 druid.sql.ResultSet - {conn-10005, pstmt-20025, rs-50025} Header: [id, nickname, phone, password, address, score, descriptions, headerImg, token, is_admin, is_shield, is_delete, create_time, modify_time]
+DEBUG http-nio-8999-exec-5 druid.sql.ResultSet - {conn-10005, pstmt-20025, rs-50025} Result: [4, qaz123, 13581997174, e9aca15ce5ee544691657de668944f9, null, 0, null, null, e6ccf915-9852-47e8-b918-1a4e300e152e, 0, 0, 0, 2019-02-21 14:04:55.0, 2019-02-21 14:04:55.0]
+DEBUG http-nio-8999-exec-5 druid.sql.ResultSet - {conn-10005, pstmt-20025, rs-50025} closed
+DEBUG http-nio-8999-exec-5 druid.sql.Statement - {conn-10005, pstmt-20025} closed
+DEBUG http-nio-8999-exec-5 druid.sql.Connection - {conn-10005} pool-recycle
+DEBUG http-nio-8999-exec-1 druid.sql.Connection - {conn-10001} connected
+DEBUG http-nio-8999-exec-1 druid.sql.Connection - {conn-10002} connected
+DEBUG http-nio-8999-exec-1 druid.sql.Connection - {conn-10003} connected
+DEBUG http-nio-8999-exec-1 druid.sql.Connection - {conn-10004} connected
+DEBUG http-nio-8999-exec-1 druid.sql.Connection - {conn-10005} connected
+DEBUG http-nio-8999-exec-1 druid.sql.Connection - {conn-10005} pool-connect
+DEBUG http-nio-8999-exec-1 druid.sql.Statement - {conn-10005, pstmt-20000} created. select * from user where   token = ? and is_delete = 0
+DEBUG http-nio-8999-exec-1 druid.sql.Statement - {conn-10005, pstmt-20000} Parameters : [e6ccf915-9852-47e8-b918-1a4e300e152e]
+DEBUG http-nio-8999-exec-1 druid.sql.Statement - {conn-10005, pstmt-20000} Types : [VARCHAR]
+DEBUG http-nio-8999-exec-1 druid.sql.Statement - {conn-10005, pstmt-20000} executed. 21.299189 millis. select * from user where   token = ? and is_delete = 0
+DEBUG http-nio-8999-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} open
+DEBUG http-nio-8999-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Header: [id, nickname, phone, password, address, score, descriptions, headerImg, token, is_admin, is_shield, is_delete, create_time, modify_time]
+DEBUG http-nio-8999-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [4, qaz123, 13581997174, e9aca15ce5ee544691657de668944f9, null, 0, null, null, e6ccf915-9852-47e8-b918-1a4e300e152e, 0, 0, 0, 2019-02-21 14:04:55.0, 2019-02-21 14:04:55.0]
+DEBUG http-nio-8999-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} closed
+DEBUG http-nio-8999-exec-1 druid.sql.Statement - {conn-10005, pstmt-20000} closed
+DEBUG http-nio-8999-exec-1 druid.sql.Connection - {conn-10005} pool-recycle
+DEBUG http-nio-8999-exec-1 druid.sql.Connection - {conn-10005} pool-connect
+DEBUG http-nio-8999-exec-1 druid.sql.Connection - {conn-10005} setAutoCommit false
+DEBUG http-nio-8999-exec-1 druid.sql.Statement - {conn-10005, pstmt-20001} created. select * from user where   token = ? and is_delete = 0
+DEBUG http-nio-8999-exec-1 druid.sql.Statement - {conn-10005, pstmt-20001} Parameters : [e6ccf915-9852-47e8-b918-1a4e300e152e]
+DEBUG http-nio-8999-exec-1 druid.sql.Statement - {conn-10005, pstmt-20001} Types : [VARCHAR]
+DEBUG http-nio-8999-exec-1 druid.sql.Statement - {conn-10005, pstmt-20001} executed. 7.464614 millis. select * from user where   token = ? and is_delete = 0
+DEBUG http-nio-8999-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} open
+DEBUG http-nio-8999-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Header: [id, nickname, phone, password, address, score, descriptions, headerImg, token, is_admin, is_shield, is_delete, create_time, modify_time]
+DEBUG http-nio-8999-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [4, qaz123, 13581997174, e9aca15ce5ee544691657de668944f9, null, 0, null, null, e6ccf915-9852-47e8-b918-1a4e300e152e, 0, 0, 0, 2019-02-21 14:04:55.0, 2019-02-21 14:04:55.0]
+DEBUG http-nio-8999-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} closed
+DEBUG http-nio-8999-exec-1 druid.sql.Statement - {conn-10005, pstmt-20001} closed
+DEBUG http-nio-8999-exec-1 druid.sql.Statement - {conn-10005, pstmt-20002} created. select * from pet where user_id = ? and is_delete = 0
+DEBUG http-nio-8999-exec-1 druid.sql.Statement - {conn-10005, pstmt-20002} Parameters : [4]
+DEBUG http-nio-8999-exec-1 druid.sql.Statement - {conn-10005, pstmt-20002} Types : [BIGINT]
+DEBUG http-nio-8999-exec-1 druid.sql.Statement - {conn-10005, pstmt-20002} executed. 8.484518 millis. select * from pet where user_id = ? and is_delete = 0
+DEBUG http-nio-8999-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20002, rs-50002} open
+DEBUG http-nio-8999-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20002, rs-50002} Header: [id, user_id, name, level, change_score, percent, is_delete, create_time, modify_time]
+DEBUG http-nio-8999-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20002, rs-50002} Result: [2, 4, 特土, 11, 0, null, 0, 2019-03-08 10:41:27.0, 2019-03-08 10:41:26.0]
+DEBUG http-nio-8999-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20002, rs-50002} closed
+DEBUG http-nio-8999-exec-1 druid.sql.Statement - {conn-10005, pstmt-20002} closed
+DEBUG http-nio-8999-exec-1 druid.sql.Statement - {conn-10005, pstmt-20003} created. select count(*) from pet_stock_detail where pet_id = ? and is_delete = 0
+DEBUG http-nio-8999-exec-1 druid.sql.Statement - {conn-10005, pstmt-20003} Parameters : [2]
+DEBUG http-nio-8999-exec-1 druid.sql.Statement - {conn-10005, pstmt-20003} Types : [BIGINT]
+DEBUG http-nio-8999-exec-1 druid.sql.Statement - {conn-10005, pstmt-20003} executed. 7.309991 millis. select count(*) from pet_stock_detail where pet_id = ? and is_delete = 0
+DEBUG http-nio-8999-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20003, rs-50003} open
+DEBUG http-nio-8999-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20003, rs-50003} Header: [count(*)]
+DEBUG http-nio-8999-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20003, rs-50003} Result: [0]
+DEBUG http-nio-8999-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20003, rs-50003} closed
+DEBUG http-nio-8999-exec-1 druid.sql.Statement - {conn-10005, pstmt-20003} closed
+DEBUG http-nio-8999-exec-1 druid.sql.Statement - {conn-10005, pstmt-20004} created. INSERT INTO pet_stock_detail
+ (pet_id, stock_id, stock_name, b_price, b_time, create_time)
+VALUES (?, ?, ?, ?, ?, ?)
+DEBUG http-nio-8999-exec-1 druid.sql.Statement - {conn-10005, pstmt-20004} Parameters : [2, 2617, 开元投资, 5.87, 2019-03-11 11:09:23.085, 2019-03-11 11:09:23.085]
+DEBUG http-nio-8999-exec-1 druid.sql.Statement - {conn-10005, pstmt-20004} Types : [BIGINT, BIGINT, VARCHAR, DECIMAL, TIMESTAMP, TIMESTAMP]
+DEBUG http-nio-8999-exec-1 druid.sql.Statement - {conn-10005, pstmt-20004} executed. 12.057935 millis. INSERT INTO pet_stock_detail
+ (pet_id, stock_id, stock_name, b_price, b_time, create_time)
+VALUES (?, ?, ?, ?, ?, ?)
+DEBUG http-nio-8999-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20004, rs-50004} open
+DEBUG http-nio-8999-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20004, rs-50004} Header: [GENERATED_KEY]
+DEBUG http-nio-8999-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20004, rs-50004} Result: [7]
+DEBUG http-nio-8999-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20004, rs-50004} closed
+DEBUG http-nio-8999-exec-1 druid.sql.Statement - {conn-10005, pstmt-20004} closed
+DEBUG http-nio-8999-exec-1 druid.sql.Connection - {conn-10005} commited
+DEBUG http-nio-8999-exec-1 druid.sql.Connection - {conn-10005} setAutoCommit true
+DEBUG http-nio-8999-exec-1 druid.sql.Connection - {conn-10005} pool-recycle
