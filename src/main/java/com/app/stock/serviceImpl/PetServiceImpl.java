@@ -1,5 +1,6 @@
 package com.app.stock.serviceImpl;
 
+import com.app.stock.common.HttpClient;
 import com.app.stock.common.commonEnum.ScoreEnum;
 import com.app.stock.mapper.PetSelfMapper;
 import com.app.stock.mapper.PetStockDetailSelfMapper;
@@ -12,6 +13,7 @@ import com.app.stock.model.User;
 import com.app.stock.model.request.FeedPetRequest;
 import com.app.stock.service.PetService;
 import com.app.stock.service.ScoreDetailService;
+import com.google.gson.Gson;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -21,6 +23,8 @@ import org.springframework.transaction.annotation.Transactional;
 import javax.servlet.http.HttpServletRequest;
 import java.math.BigDecimal;
 import java.text.SimpleDateFormat;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.*;
 
 /**
@@ -64,6 +68,9 @@ public class PetServiceImpl  implements PetService {
     @Override
     @Transactional(propagation = Propagation.REQUIRED)
     public String feedPet(FeedPetRequest map, HttpServletRequest request) {
+        if(!isTrading()){
+            return "当前不是交易时间";
+        }
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
         User user = commonservice.getCurrentInfo(request);
         Long userId = user.getId();
@@ -141,6 +148,9 @@ public class PetServiceImpl  implements PetService {
 
     @Override
     public String saleStock(FeedPetRequest map, HttpServletRequest request) {
+        if(!isTrading()){
+            return "当前不是交易时间";
+        }
         User user = commonservice.getCurrentInfo(request);
         PetStockDetail petStockDetail = petStockDetailSelfMapper.selectIsHaveStock(map.getStockId(),user.getId());
         if(petStockDetail == null){
@@ -173,5 +183,23 @@ public class PetServiceImpl  implements PetService {
     public Boolean isHavePeet(Long userId){
         Pet pet = petSelfMapper.selectPrimarykeyByUserId(userId);
         return pet == null?false:true;
+    }
+
+    @Override
+    public Boolean isTrading() {
+        LocalDateTime now  = LocalDateTime.now();
+        String date = now.format(DateTimeFormatter.ofPattern("yyyy-MM-dd"));
+        String url = "https://api.shenjian.io/?appid=25a308aa0f9fe382bbfad6b40e922cc8&code=000001&index=true&k_type=day&fq_type=qfq&start_date=" + date;
+        String response = "";
+        try {
+            response = HttpClient.Get(url);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        Map<String,Object> map = new Gson().fromJson(response,Map.class);
+        if(map.get("data") != null){
+            return true;
+        }
+        return false;
     }
 }

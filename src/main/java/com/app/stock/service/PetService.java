@@ -26,4 +26,6 @@ public interface PetService {
     public String saleStock(FeedPetRequest map, HttpServletRequest request);
 
     public Boolean isHavePeet(Long userId);
+
+    public Boolean isTrading();
 }
