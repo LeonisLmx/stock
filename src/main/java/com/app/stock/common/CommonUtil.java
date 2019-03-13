@@ -3,8 +3,7 @@ package com.app.stock.common;
 import org.apache.commons.beanutils.PropertyUtilsBean;
 
 import java.beans.PropertyDescriptor;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 import static io.netty.util.internal.StringUtil.byteToHexString;
 
@@ -37,5 +36,23 @@ public class CommonUtil {
             e.printStackTrace();
         }
         return params;
+    }
+
+    public static StringBuilder sortMap(Map<String,Object> map){
+        if(map == null || map.isEmpty()){
+            return null;
+        }
+        Map<String,Object> sortMap = new TreeMap<>(new Comparator<String>() {
+            @Override
+            public int compare(String o1, String o2) {
+                return o1.compareTo(o2);
+            }
+        });
+        sortMap.putAll(map);
+        StringBuilder sb = new StringBuilder();
+        for(Map.Entry entity:sortMap.entrySet()){
+            sb.append(entity.getKey()).append(entity.getValue());
+        }
+        return sb;
     }
 }

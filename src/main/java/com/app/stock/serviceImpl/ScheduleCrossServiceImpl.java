@@ -1,10 +1,9 @@
 package com.app.stock.serviceImpl;
 
-import com.app.stock.common.HttpClient;
+import com.app.stock.common.HttpClientRequest;
 import com.app.stock.common.RedisUtil;
 import com.app.stock.mapper.StockDataSelfMapper;
 import com.app.stock.mapper.StockSelfMapper;
-import com.app.stock.model.Stock;
 import com.app.stock.model.StockData;
 import com.app.stock.service.ScheduleCrossService;
 import com.google.gson.Gson;
@@ -16,7 +15,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.math.BigDecimal;
-import java.text.Bidi;
 import java.text.ParsePosition;
 import java.text.SimpleDateFormat;
 import java.util.*;
@@ -50,7 +48,7 @@ public class ScheduleCrossServiceImpl implements ScheduleCrossService {
             // 获得最近的60个交易日
             String url = "https://api.shenjian.io/?appid=25a308aa0f9fe382bbfad6b40e922cc8&code=000001&index=true&k_type=day&fq_type=qfq";
             try {
-                response = HttpClient.Get(url);
+                response = HttpClientRequest.Get(url);
             } catch (Exception e) {
                 e.printStackTrace();
             }
@@ -97,7 +95,7 @@ public class ScheduleCrossServiceImpl implements ScheduleCrossService {
             String url = "https://api.shenjian.io/?appid=25a308aa0f9fe382bbfad6b40e922cc8&code=" + str.get("stock_code") + "&index=false&k_type=day&fq_type=qfq&start_date=" + date;
             String response = null;
             try {
-                response = HttpClient.Get(url);
+                response = HttpClientRequest.Get(url);
             } catch (Exception e) {
                 e.printStackTrace();
             }

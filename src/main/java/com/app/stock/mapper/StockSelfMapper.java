@@ -29,4 +29,14 @@ public interface StockSelfMapper extends StockMapper {
             "</script>"
     })
     List<Stock> selectAllByKeywords(@Param("keywords")String keywords);
+
+    @Select({
+            "<script>",
+            "select concat(market,stock_code) from stock where id in",
+            "<foreach collection='list' item='entity' open='(' close=')' separator=','>",
+            "#{entity}",
+            "</foreach>",
+            "</script>"
+    })
+    List<String> selectStockCodes(@Param("list")List<String> list);
 }

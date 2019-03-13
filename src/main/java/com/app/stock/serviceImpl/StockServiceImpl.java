@@ -1,16 +1,22 @@
 package com.app.stock.serviceImpl;
 
+import com.app.stock.common.CommonUtil;
+import com.app.stock.common.HttpClientRequest;
 import com.app.stock.config.redis.RedisExecutor;
 import com.app.stock.mapper.StockDataSelfMapper;
 import com.app.stock.mapper.StockSelfMapper;
 import com.app.stock.model.Stock;
+import com.app.stock.model.request.StockDetailRequest;
+import com.app.stock.model.result.StockResult;
 import com.app.stock.service.StockService;
 import com.google.gson.Gson;
+import org.apache.commons.codec.digest.DigestUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.io.UnsupportedEncodingException;
 import java.util.*;
 
 /**
@@ -132,5 +138,29 @@ public class StockServiceImpl implements StockService {
             }
         }
         return resultList;
+    }
+
+    @Override
+    public List<Object> getStockDetails(StockDetailRequest stockDetailRequest) throws UnsupportedEncodingException {
+        List<String> stocks = stockDetailRequest.getStocks();
+        List<String> stockCodes = stockSelfMapper.selectStockCodes(stocks);
+        if(stockCodes.size() > 0) {
+            String conditionStocks = stockCodes.toString().substring(1,stockCodes.toString().length()-1).replaceAll(" ","");
+            Map<String, Object> conditionMap = new HashMap<>();
+            conditionMap.put("showapi_appid", 88931);
+            conditionMap.put("stocks", conditionStocks);
+            System.out.println(conditionMap.get("stocks"));
+            StringBuilder sb = CommonUtil.sortMap(conditionMap);
+            sb.append("8e5cc51d121d4ca4ad0cbb496b42a01a");
+            System.out.println(sb);
+            String sign = DigestUtils.md5Hex(sb.toString().getBytes("utf-8"));
+            conditionMap.put("showapi_sign", sign);
+            String result = HttpClientRequest.doPost("http://route.showapi.com/131-46", conditionMap);
+            StockResult stockResult = new Gson().fromJson(result, StockResult.class);
+            System.out.println(result);
+            return stockResult.getShowapi_res_body().getList();
+        }else{
+            return null;
+        }
     }
 }

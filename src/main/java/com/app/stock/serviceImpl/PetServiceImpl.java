@@ -1,20 +1,16 @@
 package com.app.stock.serviceImpl;
 
-import com.app.stock.common.HttpClient;
+import com.app.stock.common.HttpClientRequest;
 import com.app.stock.common.commonEnum.ScoreEnum;
 import com.app.stock.mapper.PetSelfMapper;
 import com.app.stock.mapper.PetStockDetailSelfMapper;
-import com.app.stock.mapper.ScoreDetailSelfMapper;
-import com.app.stock.mapper.UserSelfMapper;
 import com.app.stock.model.Pet;
 import com.app.stock.model.PetStockDetail;
-import com.app.stock.model.ScoreDetail;
 import com.app.stock.model.User;
 import com.app.stock.model.request.FeedPetRequest;
 import com.app.stock.service.PetService;
 import com.app.stock.service.ScoreDetailService;
 import com.google.gson.Gson;
-import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Propagation;
@@ -24,8 +20,6 @@ import javax.servlet.http.HttpServletRequest;
 import java.math.BigDecimal;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
 import java.util.*;
 
 /**
@@ -197,7 +191,7 @@ public class PetServiceImpl  implements PetService {
         String url = "https://api.shenjian.io/?appid=25a308aa0f9fe382bbfad6b40e922cc8&code=000001&index=true&k_type=day&fq_type=qfq&start_date=" + date;
         String response = "";
         try {
-            response = HttpClient.Get(url);
+            response = HttpClientRequest.Get(url);
         } catch (Exception e) {
             e.printStackTrace();
         }

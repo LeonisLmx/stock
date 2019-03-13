@@ -1,347 +1,55 @@
-DEBUG scheduling-1 druid.sql.Statement - {conn-10005, pstmt-21208} Parameters : [7266, 2.07, 2.17, 2.17, 2.07, 1246142.0, 2019-03-11]
-DEBUG scheduling-1 druid.sql.Statement - {conn-10005, pstmt-21208} Types : [BIGINT, DECIMAL, DECIMAL, DECIMAL, DECIMAL, DECIMAL, VARCHAR]
-DEBUG scheduling-1 druid.sql.Statement - {conn-10005, pstmt-21208} executed. 19.047415 millis. INSERT INTO stock_data
- (stock_id, open, close, high, low, volume, trading_day)
-VALUES (?, ?, ?, ?, ?, ?, ?)
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-21208, rs-51208} open
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-21208, rs-51208} Header: [GENERATED_KEY]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-21208, rs-51208} Result: [266185]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-21208, rs-51208} closed
-DEBUG scheduling-1 druid.sql.Statement - {conn-10005, pstmt-21208} closed
-DEBUG scheduling-1 druid.sql.Connection - {conn-10005} pool-recycle
+DEBUG http-nio-8999-exec-10 druid.sql.Statement - {conn-10005, pstmt-32533} Parameters : [e6ccf915-9852-47e8-b918-1a4e300e152e]
+DEBUG http-nio-8999-exec-10 druid.sql.Statement - {conn-10005, pstmt-32533} Types : [VARCHAR]
+DEBUG http-nio-8999-exec-10 druid.sql.Statement - {conn-10005, pstmt-32533} executed. 6.932136 millis. select * from user where   token = ? and is_delete = 0
+DEBUG http-nio-8999-exec-10 druid.sql.ResultSet - {conn-10005, pstmt-32533, rs-62532} open
+DEBUG http-nio-8999-exec-10 druid.sql.ResultSet - {conn-10005, pstmt-32533, rs-62532} Header: [id, nickname, phone, password, address, score, descriptions, headerImg, token, is_admin, is_shield, is_delete, create_time, modify_time]
+DEBUG http-nio-8999-exec-10 druid.sql.ResultSet - {conn-10005, pstmt-32533, rs-62532} Result: [4, qaz123, 13581997174, e9aca15ce5ee544691657de668944f9, null, 1, null, null, e6ccf915-9852-47e8-b918-1a4e300e152e, 0, 0, 0, 2019-02-21 14:04:55.0, 2019-02-21 14:04:55.0]
+DEBUG http-nio-8999-exec-10 druid.sql.ResultSet - {conn-10005, pstmt-32533, rs-62532} closed
+DEBUG http-nio-8999-exec-10 druid.sql.Statement - {conn-10005, pstmt-32533} closed
+DEBUG http-nio-8999-exec-10 druid.sql.Connection - {conn-10005} pool-recycle
+DEBUG http-nio-8999-exec-10 druid.sql.Connection - {conn-10005} pool-connect
+DEBUG http-nio-8999-exec-10 druid.sql.Statement - {conn-10005, pstmt-32534} created. select concat(market,stock_code) from stock where id in  (   ?  ,  ?  )
+DEBUG http-nio-8999-exec-10 druid.sql.Statement - {conn-10005, pstmt-32534} Parameters : [7412, 7923]
+DEBUG http-nio-8999-exec-10 druid.sql.Statement - {conn-10005, pstmt-32534} Types : [VARCHAR, VARCHAR]
+DEBUG http-nio-8999-exec-10 druid.sql.Statement - {conn-10005, pstmt-32534} executed. 7.864998 millis. select concat(market,stock_code) from stock where id in  (   ?  ,  ?  )
+DEBUG http-nio-8999-exec-10 druid.sql.ResultSet - {conn-10005, pstmt-32534, rs-62533} open
+DEBUG http-nio-8999-exec-10 druid.sql.ResultSet - {conn-10005, pstmt-32534, rs-62533} Header: [concat(market,stock_code)]
+DEBUG http-nio-8999-exec-10 druid.sql.ResultSet - {conn-10005, pstmt-32534, rs-62533} Result: [sh600986]
+DEBUG http-nio-8999-exec-10 druid.sql.ResultSet - {conn-10005, pstmt-32534, rs-62533} Result: [sh600328]
+DEBUG http-nio-8999-exec-10 druid.sql.ResultSet - {conn-10005, pstmt-32534, rs-62533} closed
+DEBUG http-nio-8999-exec-10 druid.sql.Statement - {conn-10005, pstmt-32534} closed
+DEBUG http-nio-8999-exec-10 druid.sql.Connection - {conn-10005} pool-recycle
+DEBUG http-nio-8999-exec-2 druid.sql.Connection - {conn-10005} pool-connect
+DEBUG http-nio-8999-exec-2 druid.sql.Statement - {conn-10005, pstmt-32535} created. select * from user where   token = ? and is_delete = 0
+DEBUG http-nio-8999-exec-2 druid.sql.Statement - {conn-10005, pstmt-32535} Parameters : [e6ccf915-9852-47e8-b918-1a4e300e152e]
+DEBUG http-nio-8999-exec-2 druid.sql.Statement - {conn-10005, pstmt-32535} Types : [VARCHAR]
+DEBUG http-nio-8999-exec-2 druid.sql.Statement - {conn-10005, pstmt-32535} executed. 6.970706 millis. select * from user where   token = ? and is_delete = 0
+DEBUG http-nio-8999-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-32535, rs-62534} open
+DEBUG http-nio-8999-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-32535, rs-62534} Header: [id, nickname, phone, password, address, score, descriptions, headerImg, token, is_admin, is_shield, is_delete, create_time, modify_time]
+DEBUG http-nio-8999-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-32535, rs-62534} Result: [4, qaz123, 13581997174, e9aca15ce5ee544691657de668944f9, null, 1, null, null, e6ccf915-9852-47e8-b918-1a4e300e152e, 0, 0, 0, 2019-02-21 14:04:55.0, 2019-02-21 14:04:55.0]
+DEBUG http-nio-8999-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-32535, rs-62534} closed
+DEBUG http-nio-8999-exec-2 druid.sql.Statement - {conn-10005, pstmt-32535} closed
+DEBUG http-nio-8999-exec-2 druid.sql.Connection - {conn-10005} pool-recycle
+DEBUG http-nio-8999-exec-4 druid.sql.Connection - {conn-10005} pool-connect
+DEBUG http-nio-8999-exec-4 druid.sql.Statement - {conn-10005, pstmt-32536} created. select * from user where   token = ? and is_delete = 0
+DEBUG http-nio-8999-exec-4 druid.sql.Statement - {conn-10005, pstmt-32536} Parameters : [e6ccf915-9852-47e8-b918-1a4e300e152e]
+DEBUG http-nio-8999-exec-4 druid.sql.Statement - {conn-10005, pstmt-32536} Types : [VARCHAR]
+DEBUG http-nio-8999-exec-4 druid.sql.Statement - {conn-10005, pstmt-32536} executed. 8.681809 millis. select * from user where   token = ? and is_delete = 0
+DEBUG http-nio-8999-exec-4 druid.sql.ResultSet - {conn-10005, pstmt-32536, rs-62535} open
+DEBUG http-nio-8999-exec-4 druid.sql.ResultSet - {conn-10005, pstmt-32536, rs-62535} Header: [id, nickname, phone, password, address, score, descriptions, headerImg, token, is_admin, is_shield, is_delete, create_time, modify_time]
+DEBUG http-nio-8999-exec-4 druid.sql.ResultSet - {conn-10005, pstmt-32536, rs-62535} Result: [4, qaz123, 13581997174, e9aca15ce5ee544691657de668944f9, null, 1, null, null, e6ccf915-9852-47e8-b918-1a4e300e152e, 0, 0, 0, 2019-02-21 14:04:55.0, 2019-02-21 14:04:55.0]
+DEBUG http-nio-8999-exec-4 druid.sql.ResultSet - {conn-10005, pstmt-32536, rs-62535} closed
+DEBUG http-nio-8999-exec-4 druid.sql.Statement - {conn-10005, pstmt-32536} closed
+DEBUG http-nio-8999-exec-4 druid.sql.Connection - {conn-10005} pool-recycle
 DEBUG scheduling-1 druid.sql.Connection - {conn-10005} pool-connect
-DEBUG scheduling-1 druid.sql.Statement - {conn-10005, pstmt-21209} created. INSERT INTO stock_data
- (stock_id, open, close, high, low, volume, trading_day)
-VALUES (?, ?, ?, ?, ?, ?, ?)
-DEBUG scheduling-1 druid.sql.Statement - {conn-10005, pstmt-21209} Parameters : [7265, 6.35, 6.54, 6.54, 6.32, 32641.0, 2019-03-11]
-DEBUG scheduling-1 druid.sql.Statement - {conn-10005, pstmt-21209} Types : [BIGINT, DECIMAL, DECIMAL, DECIMAL, DECIMAL, DECIMAL, VARCHAR]
-DEBUG scheduling-1 druid.sql.Statement - {conn-10005, pstmt-21209} executed. 17.950028 millis. INSERT INTO stock_data
- (stock_id, open, close, high, low, volume, trading_day)
-VALUES (?, ?, ?, ?, ?, ?, ?)
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-21209, rs-51209} open
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-21209, rs-51209} Header: [GENERATED_KEY]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-21209, rs-51209} Result: [266186]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-21209, rs-51209} closed
-DEBUG scheduling-1 druid.sql.Statement - {conn-10005, pstmt-21209} closed
+DEBUG scheduling-1 druid.sql.Statement - {conn-10005, pstmt-32537} created. update pet set change_score = 0,percent = null where is_delete = 0
+DEBUG scheduling-1 druid.sql.Statement - {conn-10005, pstmt-32537} Parameters : []
+DEBUG scheduling-1 druid.sql.Statement - {conn-10005, pstmt-32537} Types : []
+DEBUG scheduling-1 druid.sql.Statement - {conn-10005, pstmt-32537} executed. 19.922934 millis. update pet set change_score = 0,percent = null where is_delete = 0
+DEBUG scheduling-1 druid.sql.Statement - {conn-10005, pstmt-32537} closed
 DEBUG scheduling-1 druid.sql.Connection - {conn-10005} pool-recycle
-DEBUG scheduling-1 druid.sql.Connection - {conn-10005} pool-connect
-DEBUG scheduling-1 druid.sql.Statement - {conn-10005, pstmt-21210} created. INSERT INTO stock_data
- (stock_id, open, close, high, low, volume, trading_day)
-VALUES (?, ?, ?, ?, ?, ?, ?)
-DEBUG scheduling-1 druid.sql.Statement - {conn-10005, pstmt-21210} Parameters : [7264, 6.76, 7.25, 7.25, 6.7, 779272.0, 2019-03-11]
-DEBUG scheduling-1 druid.sql.Statement - {conn-10005, pstmt-21210} Types : [BIGINT, DECIMAL, DECIMAL, DECIMAL, DECIMAL, DECIMAL, VARCHAR]
-DEBUG scheduling-1 druid.sql.Statement - {conn-10005, pstmt-21210} executed. 16.928418 millis. INSERT INTO stock_data
- (stock_id, open, close, high, low, volume, trading_day)
-VALUES (?, ?, ?, ?, ?, ?, ?)
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-21210, rs-51210} open
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-21210, rs-51210} Header: [GENERATED_KEY]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-21210, rs-51210} Result: [266187]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-21210, rs-51210} closed
-DEBUG scheduling-1 druid.sql.Statement - {conn-10005, pstmt-21210} closed
-DEBUG scheduling-1 druid.sql.Connection - {conn-10005} pool-recycle
-DEBUG scheduling-1 druid.sql.Connection - {conn-10005} pool-connect
-DEBUG scheduling-1 druid.sql.Statement - {conn-10005, pstmt-21211} created. INSERT INTO stock_data
- (stock_id, open, close, high, low, volume, trading_day)
-VALUES (?, ?, ?, ?, ?, ?, ?)
-DEBUG scheduling-1 druid.sql.Statement - {conn-10005, pstmt-21211} Parameters : [7263, 9.26, 9.47, 9.49, 9.26, 52429.0, 2019-03-11]
-DEBUG scheduling-1 druid.sql.Statement - {conn-10005, pstmt-21211} Types : [BIGINT, DECIMAL, DECIMAL, DECIMAL, DECIMAL, DECIMAL, VARCHAR]
-DEBUG scheduling-1 druid.sql.Statement - {conn-10005, pstmt-21211} executed. 17.688226 millis. INSERT INTO stock_data
- (stock_id, open, close, high, low, volume, trading_day)
-VALUES (?, ?, ?, ?, ?, ?, ?)
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-21211, rs-51211} open
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-21211, rs-51211} Header: [GENERATED_KEY]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-21211, rs-51211} Result: [266188]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-21211, rs-51211} closed
-DEBUG scheduling-1 druid.sql.Statement - {conn-10005, pstmt-21211} closed
-DEBUG scheduling-1 druid.sql.Connection - {conn-10005} pool-recycle
-DEBUG scheduling-1 druid.sql.Connection - {conn-10005} pool-connect
-DEBUG scheduling-1 druid.sql.Statement - {conn-10005, pstmt-21212} created. INSERT INTO stock_data
- (stock_id, open, close, high, low, volume, trading_day)
-VALUES (?, ?, ?, ?, ?, ?, ?)
-DEBUG scheduling-1 druid.sql.Statement - {conn-10005, pstmt-21212} Parameters : [7262, 74.39, 75.01, 75.81, 74.13, 33051.0, 2019-03-11]
-DEBUG scheduling-1 druid.sql.Statement - {conn-10005, pstmt-21212} Types : [BIGINT, DECIMAL, DECIMAL, DECIMAL, DECIMAL, DECIMAL, VARCHAR]
-DEBUG scheduling-1 druid.sql.Statement - {conn-10005, pstmt-21212} executed. 16.696994 millis. INSERT INTO stock_data
- (stock_id, open, close, high, low, volume, trading_day)
-VALUES (?, ?, ?, ?, ?, ?, ?)
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-21212, rs-51212} open
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-21212, rs-51212} Header: [GENERATED_KEY]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-21212, rs-51212} Result: [266189]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-21212, rs-51212} closed
-DEBUG scheduling-1 druid.sql.Statement - {conn-10005, pstmt-21212} closed
-DEBUG scheduling-1 druid.sql.Connection - {conn-10005} pool-recycle
-DEBUG scheduling-1 druid.sql.Connection - {conn-10005} pool-connect
-DEBUG scheduling-1 druid.sql.Statement - {conn-10005, pstmt-21213} created. INSERT INTO stock_data
- (stock_id, open, close, high, low, volume, trading_day)
-VALUES (?, ?, ?, ?, ?, ?, ?)
-DEBUG scheduling-1 druid.sql.Statement - {conn-10005, pstmt-21213} Parameters : [7261, 10.32, 10.76, 10.77, 10.32, 49569.0, 2019-03-11]
-DEBUG scheduling-1 druid.sql.Statement - {conn-10005, pstmt-21213} Types : [BIGINT, DECIMAL, DECIMAL, DECIMAL, DECIMAL, DECIMAL, VARCHAR]
-DEBUG scheduling-1 druid.sql.Statement - {conn-10005, pstmt-21213} executed. 21.227851 millis. INSERT INTO stock_data
- (stock_id, open, close, high, low, volume, trading_day)
-VALUES (?, ?, ?, ?, ?, ?, ?)
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-21213, rs-51213} open
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-21213, rs-51213} Header: [GENERATED_KEY]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-21213, rs-51213} Result: [266190]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-21213, rs-51213} closed
-DEBUG scheduling-1 druid.sql.Statement - {conn-10005, pstmt-21213} closed
-DEBUG scheduling-1 druid.sql.Connection - {conn-10005} pool-recycle
-DEBUG scheduling-1 druid.sql.Connection - {conn-10005} pool-connect
-DEBUG scheduling-1 druid.sql.Statement - {conn-10005, pstmt-21214} created. INSERT INTO stock_data
- (stock_id, open, close, high, low, volume, trading_day)
-VALUES (?, ?, ?, ?, ?, ?, ?)
-DEBUG scheduling-1 druid.sql.Statement - {conn-10005, pstmt-21214} Parameters : [7260, 6.68, 7.09, 7.25, 6.68, 57667.0, 2019-03-11]
-DEBUG scheduling-1 druid.sql.Statement - {conn-10005, pstmt-21214} Types : [BIGINT, DECIMAL, DECIMAL, DECIMAL, DECIMAL, DECIMAL, VARCHAR]
-DEBUG scheduling-1 druid.sql.Statement - {conn-10005, pstmt-21214} executed. 17.600503 millis. INSERT INTO stock_data
- (stock_id, open, close, high, low, volume, trading_day)
-VALUES (?, ?, ?, ?, ?, ?, ?)
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-21214, rs-51214} open
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-21214, rs-51214} Header: [GENERATED_KEY]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-21214, rs-51214} Result: [266191]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-21214, rs-51214} closed
-DEBUG scheduling-1 druid.sql.Statement - {conn-10005, pstmt-21214} closed
-DEBUG scheduling-1 druid.sql.Connection - {conn-10005} pool-recycle
-DEBUG scheduling-1 druid.sql.Connection - {conn-10005} pool-connect
-DEBUG scheduling-1 druid.sql.Statement - {conn-10005, pstmt-21215} created. INSERT INTO stock_data
- (stock_id, open, close, high, low, volume, trading_day)
-VALUES (?, ?, ?, ?, ?, ?, ?)
-DEBUG scheduling-1 druid.sql.Statement - {conn-10005, pstmt-21215} Parameters : [7259, 4.69, 5.02, 5.05, 4.69, 242203.0, 2019-03-11]
-DEBUG scheduling-1 druid.sql.Statement - {conn-10005, pstmt-21215} Types : [BIGINT, DECIMAL, DECIMAL, DECIMAL, DECIMAL, DECIMAL, VARCHAR]
-DEBUG scheduling-1 druid.sql.Statement - {conn-10005, pstmt-21215} executed. 16.533837 millis. INSERT INTO stock_data
- (stock_id, open, close, high, low, volume, trading_day)
-VALUES (?, ?, ?, ?, ?, ?, ?)
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-21215, rs-51215} open
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-21215, rs-51215} Header: [GENERATED_KEY]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-21215, rs-51215} Result: [266192]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-21215, rs-51215} closed
-DEBUG scheduling-1 druid.sql.Statement - {conn-10005, pstmt-21215} closed
-DEBUG scheduling-1 druid.sql.Connection - {conn-10005} pool-recycle
-DEBUG scheduling-1 druid.sql.Connection - {conn-10005} pool-connect
-DEBUG scheduling-1 druid.sql.Statement - {conn-10005, pstmt-21216} created. INSERT INTO stock_data
- (stock_id, open, close, high, low, volume, trading_day)
-VALUES (?, ?, ?, ?, ?, ?, ?)
-DEBUG scheduling-1 druid.sql.Statement - {conn-10005, pstmt-21216} Parameters : [7258, 12.41, 13.19, 13.52, 12.41, 208843.0, 2019-03-11]
-DEBUG scheduling-1 druid.sql.Statement - {conn-10005, pstmt-21216} Types : [BIGINT, DECIMAL, DECIMAL, DECIMAL, DECIMAL, DECIMAL, VARCHAR]
-DEBUG scheduling-1 druid.sql.Statement - {conn-10005, pstmt-21216} executed. 19.746123 millis. INSERT INTO stock_data
- (stock_id, open, close, high, low, volume, trading_day)
-VALUES (?, ?, ?, ?, ?, ?, ?)
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-21216, rs-51216} open
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-21216, rs-51216} Header: [GENERATED_KEY]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-21216, rs-51216} Result: [266193]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-21216, rs-51216} closed
-DEBUG scheduling-1 druid.sql.Statement - {conn-10005, pstmt-21216} closed
-DEBUG scheduling-1 druid.sql.Connection - {conn-10005} pool-recycle
-DEBUG scheduling-1 druid.sql.Connection - {conn-10005} pool-connect
-DEBUG scheduling-1 druid.sql.Statement - {conn-10005, pstmt-21217} created. INSERT INTO stock_data
- (stock_id, open, close, high, low, volume, trading_day)
-VALUES (?, ?, ?, ?, ?, ?, ?)
-DEBUG scheduling-1 druid.sql.Statement - {conn-10005, pstmt-21217} Parameters : [7257, 6.77, 7.2, 7.21, 6.73, 108753.0, 2019-03-11]
-DEBUG scheduling-1 druid.sql.Statement - {conn-10005, pstmt-21217} Types : [BIGINT, DECIMAL, DECIMAL, DECIMAL, DECIMAL, DECIMAL, VARCHAR]
-DEBUG scheduling-1 druid.sql.Statement - {conn-10005, pstmt-21217} executed. 18.825548 millis. INSERT INTO stock_data
- (stock_id, open, close, high, low, volume, trading_day)
-VALUES (?, ?, ?, ?, ?, ?, ?)
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-21217, rs-51217} open
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-21217, rs-51217} Header: [GENERATED_KEY]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-21217, rs-51217} Result: [266194]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-21217, rs-51217} closed
-DEBUG scheduling-1 druid.sql.Statement - {conn-10005, pstmt-21217} closed
-DEBUG scheduling-1 druid.sql.Connection - {conn-10005} pool-recycle
-DEBUG scheduling-1 druid.sql.Connection - {conn-10005} pool-connect
-DEBUG scheduling-1 druid.sql.Statement - {conn-10005, pstmt-21218} created. INSERT INTO stock_data
- (stock_id, open, close, high, low, volume, trading_day)
-VALUES (?, ?, ?, ?, ?, ?, ?)
-DEBUG scheduling-1 druid.sql.Statement - {conn-10005, pstmt-21218} Parameters : [7256, 11.89, 12.11, 12.11, 11.81, 21898.0, 2019-03-11]
-DEBUG scheduling-1 druid.sql.Statement - {conn-10005, pstmt-21218} Types : [BIGINT, DECIMAL, DECIMAL, DECIMAL, DECIMAL, DECIMAL, VARCHAR]
-DEBUG scheduling-1 druid.sql.Statement - {conn-10005, pstmt-21218} executed. 24.652105 millis. INSERT INTO stock_data
- (stock_id, open, close, high, low, volume, trading_day)
-VALUES (?, ?, ?, ?, ?, ?, ?)
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-21218, rs-51218} open
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-21218, rs-51218} Header: [GENERATED_KEY]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-21218, rs-51218} Result: [266195]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-21218, rs-51218} closed
-DEBUG scheduling-1 druid.sql.Statement - {conn-10005, pstmt-21218} closed
-DEBUG scheduling-1 druid.sql.Connection - {conn-10005} pool-recycle
-DEBUG scheduling-1 druid.sql.Connection - {conn-10005} pool-connect
-DEBUG scheduling-1 druid.sql.Statement - {conn-10005, pstmt-21219} created. INSERT INTO stock_data
- (stock_id, open, close, high, low, volume, trading_day)
-VALUES (?, ?, ?, ?, ?, ?, ?)
-DEBUG scheduling-1 druid.sql.Statement - {conn-10005, pstmt-21219} Parameters : [7255, 4.87, 5.05, 5.05, 4.87, 185473.0, 2019-03-11]
-DEBUG scheduling-1 druid.sql.Statement - {conn-10005, pstmt-21219} Types : [BIGINT, DECIMAL, DECIMAL, DECIMAL, DECIMAL, DECIMAL, VARCHAR]
-DEBUG scheduling-1 druid.sql.Statement - {conn-10005, pstmt-21219} executed. 16.614391 millis. INSERT INTO stock_data
- (stock_id, open, close, high, low, volume, trading_day)
-VALUES (?, ?, ?, ?, ?, ?, ?)
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-21219, rs-51219} open
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-21219, rs-51219} Header: [GENERATED_KEY]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-21219, rs-51219} Result: [266196]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-21219, rs-51219} closed
-DEBUG scheduling-1 druid.sql.Statement - {conn-10005, pstmt-21219} closed
-DEBUG scheduling-1 druid.sql.Connection - {conn-10005} pool-recycle
-DEBUG scheduling-1 druid.sql.Connection - {conn-10005} pool-connect
-DEBUG scheduling-1 druid.sql.Statement - {conn-10005, pstmt-21220} created. INSERT INTO stock_data
- (stock_id, open, close, high, low, volume, trading_day)
-VALUES (?, ?, ?, ?, ?, ?, ?)
-DEBUG scheduling-1 druid.sql.Statement - {conn-10005, pstmt-21220} Parameters : [7254, 4.76, 4.85, 4.86, 4.69, 1747854.0, 2019-03-11]
-DEBUG scheduling-1 druid.sql.Statement - {conn-10005, pstmt-21220} Types : [BIGINT, DECIMAL, DECIMAL, DECIMAL, DECIMAL, DECIMAL, VARCHAR]
-DEBUG scheduling-1 druid.sql.Statement - {conn-10005, pstmt-21220} executed. 19.355297 millis. INSERT INTO stock_data
- (stock_id, open, close, high, low, volume, trading_day)
-VALUES (?, ?, ?, ?, ?, ?, ?)
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-21220, rs-51220} open
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-21220, rs-51220} Header: [GENERATED_KEY]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-21220, rs-51220} Result: [266197]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-21220, rs-51220} closed
-DEBUG scheduling-1 druid.sql.Statement - {conn-10005, pstmt-21220} closed
-DEBUG scheduling-1 druid.sql.Connection - {conn-10005} pool-recycle
-DEBUG http-nio-8999-exec-9 druid.sql.Connection - {conn-10005} pool-connect
-DEBUG http-nio-8999-exec-9 druid.sql.Statement - {conn-10005, pstmt-21221} created. select * from user where   token = ? and is_delete = 0
-DEBUG http-nio-8999-exec-9 druid.sql.Statement - {conn-10005, pstmt-21221} Parameters : [e6ccf915-9852-47e8-b918-1a4e300e152e]
-DEBUG http-nio-8999-exec-9 druid.sql.Statement - {conn-10005, pstmt-21221} Types : [VARCHAR]
-DEBUG http-nio-8999-exec-9 druid.sql.Statement - {conn-10005, pstmt-21221} executed. 8.879099 millis. select * from user where   token = ? and is_delete = 0
-DEBUG http-nio-8999-exec-9 druid.sql.ResultSet - {conn-10005, pstmt-21221, rs-51221} open
-DEBUG http-nio-8999-exec-9 druid.sql.ResultSet - {conn-10005, pstmt-21221, rs-51221} Header: [id, nickname, phone, password, address, score, descriptions, headerImg, token, is_admin, is_shield, is_delete, create_time, modify_time]
-DEBUG http-nio-8999-exec-9 druid.sql.ResultSet - {conn-10005, pstmt-21221, rs-51221} Result: [4, qaz123, 13581997174, e9aca15ce5ee544691657de668944f9, null, 0, null, null, e6ccf915-9852-47e8-b918-1a4e300e152e, 0, 0, 0, 2019-02-21 14:04:55.0, 2019-02-21 14:04:55.0]
-DEBUG http-nio-8999-exec-9 druid.sql.ResultSet - {conn-10005, pstmt-21221, rs-51221} closed
-DEBUG http-nio-8999-exec-9 druid.sql.Statement - {conn-10005, pstmt-21221} closed
-DEBUG http-nio-8999-exec-9 druid.sql.Connection - {conn-10005} pool-recycle
-DEBUG http-nio-8999-exec-9 druid.sql.Connection - {conn-10005} pool-connect
-DEBUG http-nio-8999-exec-9 druid.sql.Statement - {conn-10005, pstmt-21222} created. SELECT count(0) FROM (SELECT a.id, b.name, (CASE WHEN b.income = '1' THEN '支出' WHEN b.income = '0' THEN '收入' ELSE '其他' END) AS income, a.serial_number, a.pay_type, a.cost, a.content, DATE_FORMAT(a.create_time, '%Y-%m-%d %T') AS create_time FROM account_book a LEFT JOIN store_type b ON a.store_type_id = b.id WHERE a.is_delete = 0 AND b.is_delete = 0) table_count
-DEBUG http-nio-8999-exec-9 druid.sql.Statement - {conn-10005, pstmt-21222} Parameters : []
-DEBUG http-nio-8999-exec-9 druid.sql.Statement - {conn-10005, pstmt-21222} Types : []
-DEBUG http-nio-8999-exec-9 druid.sql.Statement - {conn-10005, pstmt-21222} executed. 7.631185 millis. SELECT count(0) FROM (SELECT a.id, b.name, (CASE WHEN b.income = '1' THEN '支出' WHEN b.income = '0' THEN '收入' ELSE '其他' END) AS income, a.serial_number, a.pay_type, a.cost, a.content, DATE_FORMAT(a.create_time, '%Y-%m-%d %T') AS create_time FROM account_book a LEFT JOIN store_type b ON a.store_type_id = b.id WHERE a.is_delete = 0 AND b.is_delete = 0) table_count
-DEBUG http-nio-8999-exec-9 druid.sql.ResultSet - {conn-10005, pstmt-21222, rs-51222} open
-DEBUG http-nio-8999-exec-9 druid.sql.ResultSet - {conn-10005, pstmt-21222, rs-51222} Header: [count(0)]
-DEBUG http-nio-8999-exec-9 druid.sql.ResultSet - {conn-10005, pstmt-21222, rs-51222} Result: [4]
-DEBUG http-nio-8999-exec-9 druid.sql.ResultSet - {conn-10005, pstmt-21222, rs-51222} closed
-DEBUG http-nio-8999-exec-9 druid.sql.Statement - {conn-10005, pstmt-21222} closed
-DEBUG http-nio-8999-exec-9 druid.sql.Statement - {conn-10005, pstmt-21223} created. select a.id,b.name,(case when b.income = '1' then '支出' when b.income = '0' then '收入' else '其他' end) as income,a.serial_number,a.pay_type,a.cost,a.content,DATE_FORMAT(a.create_time,'%Y-%m-%d %T') as create_time from account_book a left join store_type b on a.store_type_id = b.id where a.is_delete = 0 and b.is_delete = 0 limit ?,?
-DEBUG http-nio-8999-exec-9 druid.sql.Statement - {conn-10005, pstmt-21223} Parameters : [0, 10]
-DEBUG http-nio-8999-exec-9 druid.sql.Statement - {conn-10005, pstmt-21223} Types : [INTEGER, INTEGER]
-DEBUG http-nio-8999-exec-9 druid.sql.Statement - {conn-10005, pstmt-21223} executed. 8.084476 millis. select a.id,b.name,(case when b.income = '1' then '支出' when b.income = '0' then '收入' else '其他' end) as income,a.serial_number,a.pay_type,a.cost,a.content,DATE_FORMAT(a.create_time,'%Y-%m-%d %T') as create_time from account_book a left join store_type b on a.store_type_id = b.id where a.is_delete = 0 and b.is_delete = 0 limit ?,?
-DEBUG http-nio-8999-exec-9 druid.sql.ResultSet - {conn-10005, pstmt-21223, rs-51223} open
-DEBUG http-nio-8999-exec-9 druid.sql.ResultSet - {conn-10005, pstmt-21223, rs-51223} Header: [id, name, income, serial_number, pay_type, cost, content, create_time]
-DEBUG http-nio-8999-exec-9 druid.sql.ResultSet - {conn-10005, pstmt-21223, rs-51223} Result: [1, 早午晚餐, 支出, 1547450053517115, wechat, 20.00, 鱼汤面, 2019-01-14 15:14:14]
-DEBUG http-nio-8999-exec-9 druid.sql.ResultSet - {conn-10005, pstmt-21223, rs-51223} Result: [2, 休闲玩乐, 支出, 1547451338595123, zhifubao, 50000.00, 天龙八部充值, 2019-01-14 15:35:39]
-DEBUG http-nio-8999-exec-9 druid.sql.ResultSet - {conn-10005, pstmt-21223, rs-51223} Result: [3, 休闲玩乐, 支出, 1547454887223123, zhifubao, 5000.00, 手游充值, 2019-01-14 16:34:47]
-DEBUG http-nio-8999-exec-9 druid.sql.ResultSet - {conn-10005, pstmt-21223, rs-51223} Result: [4, 公共交通, 支出, 1547548497377123, zhifubao, 5000.00, 游戏花费, 2019-01-15 18:34:57]
-DEBUG http-nio-8999-exec-9 druid.sql.ResultSet - {conn-10005, pstmt-21223, rs-51223} closed
-DEBUG http-nio-8999-exec-9 druid.sql.Statement - {conn-10005, pstmt-21223} closed
-DEBUG http-nio-8999-exec-9 druid.sql.Connection - {conn-10005} pool-recycle
-DEBUG http-nio-8999-exec-1 druid.sql.Connection - {conn-10005} pool-connect
-DEBUG http-nio-8999-exec-1 druid.sql.Statement - {conn-10005, pstmt-21224} created. select * from user where   token = ? and is_delete = 0
-DEBUG http-nio-8999-exec-1 druid.sql.Statement - {conn-10005, pstmt-21224} Parameters : [e6ccf915-9852-47e8-b918-1a4e300e152e]
-DEBUG http-nio-8999-exec-1 druid.sql.Statement - {conn-10005, pstmt-21224} Types : [VARCHAR]
-DEBUG http-nio-8999-exec-1 druid.sql.Statement - {conn-10005, pstmt-21224} executed. 7.708326 millis. select * from user where   token = ? and is_delete = 0
-DEBUG http-nio-8999-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-21224, rs-51224} open
-DEBUG http-nio-8999-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-21224, rs-51224} Header: [id, nickname, phone, password, address, score, descriptions, headerImg, token, is_admin, is_shield, is_delete, create_time, modify_time]
-DEBUG http-nio-8999-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-21224, rs-51224} Result: [4, qaz123, 13581997174, e9aca15ce5ee544691657de668944f9, null, 0, null, null, e6ccf915-9852-47e8-b918-1a4e300e152e, 0, 0, 0, 2019-02-21 14:04:55.0, 2019-02-21 14:04:55.0]
-DEBUG http-nio-8999-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-21224, rs-51224} closed
-DEBUG http-nio-8999-exec-1 druid.sql.Statement - {conn-10005, pstmt-21224} closed
-DEBUG http-nio-8999-exec-1 druid.sql.Connection - {conn-10005} pool-recycle
-DEBUG http-nio-8999-exec-1 druid.sql.Connection - {conn-10005} pool-connect
-DEBUG http-nio-8999-exec-1 druid.sql.Connection - {conn-10005} setAutoCommit false
-DEBUG http-nio-8999-exec-1 druid.sql.Statement - {conn-10005, pstmt-21225} created. select id, parent_id, name, income, is_parent, is_delete, create_time, modify_time from store_type where id = ?
-DEBUG http-nio-8999-exec-1 druid.sql.Statement - {conn-10005, pstmt-21225} Parameters : [58]
-DEBUG http-nio-8999-exec-1 druid.sql.Statement - {conn-10005, pstmt-21225} Types : [BIGINT]
-DEBUG http-nio-8999-exec-1 druid.sql.Statement - {conn-10005, pstmt-21225} executed. 8.385873 millis. select id, parent_id, name, income, is_parent, is_delete, create_time, modify_time from store_type where id = ?
-DEBUG http-nio-8999-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-21225, rs-51225} open
-DEBUG http-nio-8999-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-21225, rs-51225} Header: [id, parent_id, name, income, is_parent, is_delete, create_time, modify_time]
-DEBUG http-nio-8999-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-21225, rs-51225} Result: [58, 56, 工资收入, 2, 1, 0, 2019-01-04 16:50:08.0, 2019-01-04 16:50:08.0]
-DEBUG http-nio-8999-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-21225, rs-51225} closed
-DEBUG http-nio-8999-exec-1 druid.sql.Statement - {conn-10005, pstmt-21225} closed
-DEBUG http-nio-8999-exec-1 druid.sql.Statement - {conn-10005, pstmt-21226} created. select * from user where   token = ? and is_delete = 0
-DEBUG http-nio-8999-exec-1 druid.sql.Statement - {conn-10005, pstmt-21226} Parameters : [e6ccf915-9852-47e8-b918-1a4e300e152e]
-DEBUG http-nio-8999-exec-1 druid.sql.Statement - {conn-10005, pstmt-21226} Types : [VARCHAR]
-DEBUG http-nio-8999-exec-1 druid.sql.Statement - {conn-10005, pstmt-21226} executed. 6.985042 millis. select * from user where   token = ? and is_delete = 0
-DEBUG http-nio-8999-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-21226, rs-51226} open
-DEBUG http-nio-8999-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-21226, rs-51226} Header: [id, nickname, phone, password, address, score, descriptions, headerImg, token, is_admin, is_shield, is_delete, create_time, modify_time]
-DEBUG http-nio-8999-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-21226, rs-51226} Result: [4, qaz123, 13581997174, e9aca15ce5ee544691657de668944f9, null, 0, null, null, e6ccf915-9852-47e8-b918-1a4e300e152e, 0, 0, 0, 2019-02-21 14:04:55.0, 2019-02-21 14:04:55.0]
-DEBUG http-nio-8999-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-21226, rs-51226} closed
-DEBUG http-nio-8999-exec-1 druid.sql.Statement - {conn-10005, pstmt-21226} closed
-DEBUG http-nio-8999-exec-1 druid.sql.Statement - {conn-10005, pstmt-21227} created. INSERT INTO account_book
- (user_id, store_type_id, serial_number, pay_type, cost, create_time)
-VALUES (?, ?, ?, ?, ?, ?)
-DEBUG http-nio-8999-exec-1 druid.sql.Statement - {conn-10005, pstmt-21227} Parameters : [4, 58, 1552294494842458, zhifubao, 200, 2019-03-11 16:54:54.842]
-DEBUG http-nio-8999-exec-1 druid.sql.Statement - {conn-10005, pstmt-21227} Types : [BIGINT, BIGINT, VARCHAR, VARCHAR, DECIMAL, TIMESTAMP]
-DEBUG http-nio-8999-exec-1 druid.sql.Statement - {conn-10005, pstmt-21227} executed. 17.44622 millis. INSERT INTO account_book
- (user_id, store_type_id, serial_number, pay_type, cost, create_time)
-VALUES (?, ?, ?, ?, ?, ?)
-DEBUG http-nio-8999-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-21227, rs-51227} open
-DEBUG http-nio-8999-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-21227, rs-51227} Header: [GENERATED_KEY]
-DEBUG http-nio-8999-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-21227, rs-51227} Result: [5]
-DEBUG http-nio-8999-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-21227, rs-51227} closed
-DEBUG http-nio-8999-exec-1 druid.sql.Statement - {conn-10005, pstmt-21227} closed
-DEBUG http-nio-8999-exec-1 druid.sql.Statement - {conn-10005, pstmt-21228} created. select count(*) from score_detail where DATE_FORMAT(create_time,'%Y-%m') = ? and from_type = ? and user_id = ? and is_delete = 0
-DEBUG http-nio-8999-exec-1 druid.sql.Statement - {conn-10005, pstmt-21228} Parameters : [2019-03-11 16:54:54, INCOME, 4]
-DEBUG http-nio-8999-exec-1 druid.sql.Statement - {conn-10005, pstmt-21228} Types : [VARCHAR, VARCHAR, BIGINT]
-DEBUG http-nio-8999-exec-1 druid.sql.Statement - {conn-10005, pstmt-21228} executed. 9.015633 millis. select count(*) from score_detail where DATE_FORMAT(create_time,'%Y-%m') = ? and from_type = ? and user_id = ? and is_delete = 0
-DEBUG http-nio-8999-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-21228, rs-51228} open
-DEBUG http-nio-8999-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-21228, rs-51228} Header: [count(*)]
-DEBUG http-nio-8999-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-21228, rs-51228} Result: [0]
-DEBUG http-nio-8999-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-21228, rs-51228} closed
-DEBUG http-nio-8999-exec-1 druid.sql.Statement - {conn-10005, pstmt-21228} closed
-DEBUG http-nio-8999-exec-1 druid.sql.Statement - {conn-10005, pstmt-21229} created. INSERT INTO score_detail
- (user_id, score, from_type, create_time)
-VALUES (?, ?, ?, ?)
-DEBUG http-nio-8999-exec-1 druid.sql.Statement - {conn-10005, pstmt-21229} Parameters : [4, 1, INCOME, 2019-03-11 16:54:54.875]
-DEBUG http-nio-8999-exec-1 druid.sql.Statement - {conn-10005, pstmt-21229} Types : [BIGINT, INTEGER, VARCHAR, TIMESTAMP]
-DEBUG http-nio-8999-exec-1 druid.sql.Statement - {conn-10005, pstmt-21229} executed. 16.432803 millis. INSERT INTO score_detail
- (user_id, score, from_type, create_time)
-VALUES (?, ?, ?, ?)
-DEBUG http-nio-8999-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-21229, rs-51229} open
-DEBUG http-nio-8999-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-21229, rs-51229} Header: [GENERATED_KEY]
-DEBUG http-nio-8999-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-21229, rs-51229} Result: [19]
-DEBUG http-nio-8999-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-21229, rs-51229} closed
-DEBUG http-nio-8999-exec-1 druid.sql.Statement - {conn-10005, pstmt-21229} closed
-DEBUG http-nio-8999-exec-1 druid.sql.Statement - {conn-10005, pstmt-21230} created. select * from user where id = ? and is_delete = 0
-DEBUG http-nio-8999-exec-1 druid.sql.Statement - {conn-10005, pstmt-21230} Parameters : [4]
-DEBUG http-nio-8999-exec-1 druid.sql.Statement - {conn-10005, pstmt-21230} Types : [BIGINT]
-DEBUG http-nio-8999-exec-1 druid.sql.Statement - {conn-10005, pstmt-21230} executed. 8.798204 millis. select * from user where id = ? and is_delete = 0
-DEBUG http-nio-8999-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-21230, rs-51230} open
-DEBUG http-nio-8999-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-21230, rs-51230} Header: [id, nickname, phone, password, address, score, descriptions, headerImg, token, is_admin, is_shield, is_delete, create_time, modify_time]
-DEBUG http-nio-8999-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-21230, rs-51230} Result: [4, qaz123, 13581997174, e9aca15ce5ee544691657de668944f9, null, 0, null, null, e6ccf915-9852-47e8-b918-1a4e300e152e, 0, 0, 0, 2019-02-21 14:04:55.0, 2019-02-21 14:04:55.0]
-DEBUG http-nio-8999-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-21230, rs-51230} closed
-DEBUG http-nio-8999-exec-1 druid.sql.Statement - {conn-10005, pstmt-21230} closed
-DEBUG http-nio-8999-exec-1 druid.sql.Statement - {conn-10005, pstmt-21231} created. UPDATE user
-SET nickname = ?, phone = ?, password = ?, score = ?, token = ?, is_admin = ?, is_shield = ?, is_delete = ?, create_time = ?, modify_time = ?
-WHERE (id = ?)
-DEBUG http-nio-8999-exec-1 druid.sql.Statement - {conn-10005, pstmt-21231} Parameters : [qaz123, 13581997174, e9aca15ce5ee544691657de668944f9, 1, e6ccf915-9852-47e8-b918-1a4e300e152e, 0, 0, 0, 2019-02-21 14:04:55.0, 2019-02-21 14:04:55.0, 4]
-DEBUG http-nio-8999-exec-1 druid.sql.Statement - {conn-10005, pstmt-21231} Types : [VARCHAR, VARCHAR, VARCHAR, INTEGER, VARCHAR, INTEGER, INTEGER, INTEGER, TIMESTAMP, TIMESTAMP, BIGINT]
-DEBUG http-nio-8999-exec-1 druid.sql.Statement - {conn-10005, pstmt-21231} executed. 14.331214 millis. UPDATE user
-SET nickname = ?, phone = ?, password = ?, score = ?, token = ?, is_admin = ?, is_shield = ?, is_delete = ?, create_time = ?, modify_time = ?
-WHERE (id = ?)
-DEBUG http-nio-8999-exec-1 druid.sql.Statement - {conn-10005, pstmt-21231} closed
-DEBUG http-nio-8999-exec-1 druid.sql.Connection - {conn-10005} commited
-DEBUG http-nio-8999-exec-1 druid.sql.Connection - {conn-10005} setAutoCommit true
-DEBUG http-nio-8999-exec-1 druid.sql.Connection - {conn-10005} pool-recycle
-DEBUG http-nio-8999-exec-3 druid.sql.Connection - {conn-10005} pool-connect
-DEBUG http-nio-8999-exec-3 druid.sql.Statement - {conn-10005, pstmt-21232} created. select * from user where   token = ? and is_delete = 0
-DEBUG http-nio-8999-exec-3 druid.sql.Statement - {conn-10005, pstmt-21232} Parameters : [e6ccf915-9852-47e8-b918-1a4e300e152e]
-DEBUG http-nio-8999-exec-3 druid.sql.Statement - {conn-10005, pstmt-21232} Types : [VARCHAR]
-DEBUG http-nio-8999-exec-3 druid.sql.Statement - {conn-10005, pstmt-21232} executed. 7.661223 millis. select * from user where   token = ? and is_delete = 0
-DEBUG http-nio-8999-exec-3 druid.sql.ResultSet - {conn-10005, pstmt-21232, rs-51231} open
-DEBUG http-nio-8999-exec-3 druid.sql.ResultSet - {conn-10005, pstmt-21232, rs-51231} Header: [id, nickname, phone, password, address, score, descriptions, headerImg, token, is_admin, is_shield, is_delete, create_time, modify_time]
-DEBUG http-nio-8999-exec-3 druid.sql.ResultSet - {conn-10005, pstmt-21232, rs-51231} Result: [4, qaz123, 13581997174, e9aca15ce5ee544691657de668944f9, null, 1, null, null, e6ccf915-9852-47e8-b918-1a4e300e152e, 0, 0, 0, 2019-02-21 14:04:55.0, 2019-02-21 14:04:55.0]
-DEBUG http-nio-8999-exec-3 druid.sql.ResultSet - {conn-10005, pstmt-21232, rs-51231} closed
-DEBUG http-nio-8999-exec-3 druid.sql.Statement - {conn-10005, pstmt-21232} closed
-DEBUG http-nio-8999-exec-3 druid.sql.Connection - {conn-10005} pool-recycle
-DEBUG http-nio-8999-exec-3 druid.sql.Connection - {conn-10005} pool-connect
-DEBUG http-nio-8999-exec-3 druid.sql.Statement - {conn-10005, pstmt-21233} created. SELECT count(0) FROM (SELECT a.id, b.name, (CASE WHEN b.income = '1' THEN '支出' WHEN b.income = '0' THEN '收入' ELSE '其他' END) AS income, a.serial_number, a.pay_type, a.cost, a.content, DATE_FORMAT(a.create_time, '%Y-%m-%d %T') AS create_time FROM account_book a LEFT JOIN store_type b ON a.store_type_id = b.id WHERE a.is_delete = 0 AND b.is_delete = 0) table_count
-DEBUG http-nio-8999-exec-3 druid.sql.Statement - {conn-10005, pstmt-21233} Parameters : []
-DEBUG http-nio-8999-exec-3 druid.sql.Statement - {conn-10005, pstmt-21233} Types : []
-DEBUG http-nio-8999-exec-3 druid.sql.Statement - {conn-10005, pstmt-21233} executed. 7.502503 millis. SELECT count(0) FROM (SELECT a.id, b.name, (CASE WHEN b.income = '1' THEN '支出' WHEN b.income = '0' THEN '收入' ELSE '其他' END) AS income, a.serial_number, a.pay_type, a.cost, a.content, DATE_FORMAT(a.create_time, '%Y-%m-%d %T') AS create_time FROM account_book a LEFT JOIN store_type b ON a.store_type_id = b.id WHERE a.is_delete = 0 AND b.is_delete = 0) table_count
-DEBUG http-nio-8999-exec-3 druid.sql.ResultSet - {conn-10005, pstmt-21233, rs-51232} open
-DEBUG http-nio-8999-exec-3 druid.sql.ResultSet - {conn-10005, pstmt-21233, rs-51232} Header: [count(0)]
-DEBUG http-nio-8999-exec-3 druid.sql.ResultSet - {conn-10005, pstmt-21233, rs-51232} Result: [5]
-DEBUG http-nio-8999-exec-3 druid.sql.ResultSet - {conn-10005, pstmt-21233, rs-51232} closed
-DEBUG http-nio-8999-exec-3 druid.sql.Statement - {conn-10005, pstmt-21233} closed
-DEBUG http-nio-8999-exec-3 druid.sql.Statement - {conn-10005, pstmt-21234} created. select a.id,b.name,(case when b.income = '1' then '支出' when b.income = '0' then '收入' else '其他' end) as income,a.serial_number,a.pay_type,a.cost,a.content,DATE_FORMAT(a.create_time,'%Y-%m-%d %T') as create_time from account_book a left join store_type b on a.store_type_id = b.id where a.is_delete = 0 and b.is_delete = 0 limit ?,?
-DEBUG http-nio-8999-exec-3 druid.sql.Statement - {conn-10005, pstmt-21234} Parameters : [0, 10]
-DEBUG http-nio-8999-exec-3 druid.sql.Statement - {conn-10005, pstmt-21234} Types : [INTEGER, INTEGER]
-DEBUG http-nio-8999-exec-3 druid.sql.Statement - {conn-10005, pstmt-21234} executed. 8.178684 millis. select a.id,b.name,(case when b.income = '1' then '支出' when b.income = '0' then '收入' else '其他' end) as income,a.serial_number,a.pay_type,a.cost,a.content,DATE_FORMAT(a.create_time,'%Y-%m-%d %T') as create_time from account_book a left join store_type b on a.store_type_id = b.id where a.is_delete = 0 and b.is_delete = 0 limit ?,?
-DEBUG http-nio-8999-exec-3 druid.sql.ResultSet - {conn-10005, pstmt-21234, rs-51233} open
-DEBUG http-nio-8999-exec-3 druid.sql.ResultSet - {conn-10005, pstmt-21234, rs-51233} Header: [id, name, income, serial_number, pay_type, cost, content, create_time]
-DEBUG http-nio-8999-exec-3 druid.sql.ResultSet - {conn-10005, pstmt-21234, rs-51233} Result: [1, 早午晚餐, 支出, 1547450053517115, wechat, 20.00, 鱼汤面, 2019-01-14 15:14:14]
-DEBUG http-nio-8999-exec-3 druid.sql.ResultSet - {conn-10005, pstmt-21234, rs-51233} Result: [2, 休闲玩乐, 支出, 1547451338595123, zhifubao, 50000.00, 天龙八部充值, 2019-01-14 15:35:39]
-DEBUG http-nio-8999-exec-3 druid.sql.ResultSet - {conn-10005, pstmt-21234, rs-51233} Result: [3, 休闲玩乐, 支出, 1547454887223123, zhifubao, 5000.00, 手游充值, 2019-01-14 16:34:47]
-DEBUG http-nio-8999-exec-3 druid.sql.ResultSet - {conn-10005, pstmt-21234, rs-51233} Result: [4, 公共交通, 支出, 1547548497377123, zhifubao, 5000.00, 游戏花费, 2019-01-15 18:34:57]
-DEBUG http-nio-8999-exec-3 druid.sql.ResultSet - {conn-10005, pstmt-21234, rs-51233} Result: [5, 工资收入, 其他, 1552294494842458, zhifubao, 200.00, null, 2019-03-11 16:54:55]
-DEBUG http-nio-8999-exec-3 druid.sql.ResultSet - {conn-10005, pstmt-21234, rs-51233} closed
-DEBUG http-nio-8999-exec-3 druid.sql.Statement - {conn-10005, pstmt-21234} closed
-DEBUG http-nio-8999-exec-3 druid.sql.Connection - {conn-10005} pool-recycle
+DEBUG Druid-ConnectionPool-Destroy-1303868418 druid.sql.Connection - {conn-10001} closed
+DEBUG Druid-ConnectionPool-Destroy-1303868418 druid.sql.Connection - {conn-10002} closed
+DEBUG Druid-ConnectionPool-Destroy-1303868418 druid.sql.Connection - {conn-10003} closed
+DEBUG Druid-ConnectionPool-Destroy-1303868418 druid.sql.Connection - {conn-10004} closed
+DEBUG Druid-ConnectionPool-Destroy-1303868418 druid.sql.Connection - {conn-10005} closed
