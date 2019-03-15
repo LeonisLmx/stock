@@ -1,15 +1,18 @@
 package com.app.stock.controller;
 
 import com.app.stock.common.Response;
+import com.app.stock.model.request.StockDetailRequest;
 import com.app.stock.service.ScheduleCrossService;
 import com.app.stock.service.StockService;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.io.UnsupportedEncodingException;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.Executor;
@@ -63,6 +66,14 @@ public class StockController {
         return Response.ok(stockService.getFormualData(map),"操作成功");
     }
 
+    @RequestMapping(value = "/getStockDetail",method = RequestMethod.POST)
+    public Response getStockDetail(@RequestBody StockDetailRequest stockDetailRequest, BindingResult bindingResult) throws UnsupportedEncodingException {
+        if(bindingResult.hasErrors()){
+            return Response.ok(bindingResult.getFieldError().getDefaultMessage());
+        }
+        return Response.ok(stockService.getStockDetails(stockDetailRequest),"操纵成功");
+    }
+
     @RequestMapping("/yangLine")
     public Response yangLine(){
         Executor executor = Executors.newFixedThreadPool(1);
@@ -70,7 +81,7 @@ public class StockController {
             @Override
             public void run() {
                 try {
-                    scheduleCrossService.calcCorss();
+                    scheduleCrossService.achieveTradingDate();
                 } catch (Exception e) {
                     e.printStackTrace();
                 }

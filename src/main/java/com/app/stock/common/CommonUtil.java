@@ -21,6 +21,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.*;
 
 import static io.netty.util.internal.StringUtil.byteToHexString;
 
@@ -97,23 +98,39 @@ public class CommonUtil {
 
     protected static String entityToString(HttpEntity entity) throws IOException {
         String result = null;
-        if(entity != null)
-        {
+        if (entity != null) {
             long lenth = entity.getContentLength();
-            if(lenth != -1 && lenth < 2048)
-            {
-                result = EntityUtils.toString(entity,"UTF-8");
-            }else {
+            if (lenth != -1 && lenth < 2048) {
+                result = EntityUtils.toString(entity, "UTF-8");
+            } else {
                 InputStreamReader reader1 = new InputStreamReader(entity.getContent(), "UTF-8");
                 CharArrayBuffer buffer = new CharArrayBuffer(2048);
                 char[] tmp = new char[1024];
                 int l;
-                while((l = reader1.read(tmp)) != -1) {
+                while ((l = reader1.read(tmp)) != -1) {
                     buffer.append(tmp, 0, l);
                 }
                 result = buffer.toString();
             }
         }
         return result;
+    }
+
+    public static StringBuilder sortMap(Map<String,Object> map){
+        if(map == null || map.isEmpty()){
+            return null;
+        }
+        Map<String,Object> sortMap = new TreeMap<>(new Comparator<String>() {
+            @Override
+            public int compare(String o1, String o2) {
+                return o1.compareTo(o2);
+            }
+        });
+        sortMap.putAll(map);
+        StringBuilder sb = new StringBuilder();
+        for(Map.Entry entity:sortMap.entrySet()){
+            sb.append(entity.getKey()).append(entity.getValue());
+        }
+        return sb;
     }
 }

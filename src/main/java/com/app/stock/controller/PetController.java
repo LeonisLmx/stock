@@ -15,6 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
 import javax.servlet.http.HttpServletRequest;
 import javax.validation.Valid;
 import java.math.BigDecimal;
+import java.text.ParseException;
 import java.util.Map;
 
 /**
@@ -42,7 +43,7 @@ public class PetController {
     // 喂宠物（买入股票）
     @RequestMapping(value = "/feed",method = RequestMethod.POST)
     @PostVerify
-    public Response feedPet(@Valid @RequestBody FeedPetRequest map, BindingResult bindingResult, HttpServletRequest request){
+    public Response feedPet(@Valid @RequestBody FeedPetRequest map, BindingResult bindingResult, HttpServletRequest request) throws ParseException {
         if(bindingResult.hasErrors()){
             return Response.ok(bindingResult.getFieldError().getDefaultMessage());
         }
@@ -52,7 +53,7 @@ public class PetController {
     // 卖出股票
     @RequestMapping(value = "/sale",method = RequestMethod.POST)
     @PostVerify
-    public Response saleStock(@Valid @RequestBody FeedPetRequest map, BindingResult bindingResult, HttpServletRequest request){
+    public Response saleStock(@Valid @RequestBody FeedPetRequest map, BindingResult bindingResult, HttpServletRequest request) throws ParseException {
         if(bindingResult.hasErrors()){
             return Response.ok(bindingResult.getFieldError().getDefaultMessage());
         }

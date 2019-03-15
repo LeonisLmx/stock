@@ -46,7 +46,7 @@ public class AccountServiceImpl  implements AccountService {
     private ScoreDetailSelfMapper scoreDetailSelfMapper;
 
     @Autowired
-    private UserSelfMapper userSelfMapper;
+    private HttpServletRequest httpServletRequest;
 
     @Autowired
     private ScoreDetailService scoreDetailService;
@@ -96,22 +96,20 @@ public class AccountServiceImpl  implements AccountService {
     }
 
     @Override
-    public Map<String, Object> list(AccountListRequest accountListRequest) {
-        Map<String,Object> map = new HashMap<>();
+    public List<Map<String, Object>> list(AccountListRequest accountListRequest) {
+        /*Map<String,Object> map = new HashMap<>();*/
         if(accountListRequest.getStoreTypeParentId() != null){
             if(accountListRequest.getStoreTypeId() == null){
                 accountListRequest.setStoreTypeId(new ArrayList<>());
             }
             accountListRequest.getStoreTypeId().addAll(storeTypeSelfMapper.selectAllIdsByParent(accountListRequest.getStoreTypeParentId()));
         }
+        User user = commonservice.getCurrentInfo(httpServletRequest);
         PageHelper.startPage(accountListRequest.getPage(),accountListRequest.getPage_size());
-        List<Map<String,Object>> list = accountBookSelfMapper.selectAllAccountByCondition(accountListRequest);
+        List<Map<String,Object>> list = accountBookSelfMapper.selectAllAccountByCondition(accountListRequest,user.getId());
         PageInfo pageInfo = new PageInfo(list);
-        map.put("list",pageInfo.getList());
-        /*map.put("total",pageInfo.getTotal());
-        map.put("page",accountListRequest.getPage());
-        map.put("page_size",accountListRequest.getPage_size());*/
-        return map;
+        /*map.put("list",pageInfo.getList());*/
+        return pageInfo.getList();
     }
 
     @Override

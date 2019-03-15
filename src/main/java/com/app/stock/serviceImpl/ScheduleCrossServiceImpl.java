@@ -1,10 +1,9 @@
 package com.app.stock.serviceImpl;
 
-import com.app.stock.common.HttpClient;
+import com.app.stock.common.HttpClientRequest;
 import com.app.stock.common.RedisUtil;
 import com.app.stock.mapper.StockDataSelfMapper;
 import com.app.stock.mapper.StockSelfMapper;
-import com.app.stock.model.Stock;
 import com.app.stock.model.StockData;
 import com.app.stock.service.ScheduleCrossService;
 import com.google.gson.Gson;
@@ -16,7 +15,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.math.BigDecimal;
-import java.text.Bidi;
 import java.text.ParsePosition;
 import java.text.SimpleDateFormat;
 import java.util.*;
@@ -47,12 +45,10 @@ public class ScheduleCrossServiceImpl implements ScheduleCrossService {
     @Override
     public void achieveTradingDate() {
         String response = null;
-        /*// 如果redis为空，那么先存redis
-        if(redisUtil.getMap("common","trading_date") == null){*/
             // 获得最近的60个交易日
             String url = "https://api.shenjian.io/?appid=25a308aa0f9fe382bbfad6b40e922cc8&code=000001&index=true&k_type=day&fq_type=qfq";
             try {
-                response = HttpClient.Get(url);
+                response = HttpClientRequest.Get(url);
             } catch (Exception e) {
                 e.printStackTrace();
             }
@@ -76,31 +72,6 @@ public class ScheduleCrossServiceImpl implements ScheduleCrossService {
                 redisDateList.add(entity.get("date").toString());
             }
             redisUtil.addMap("common","trading_date",redisDateList);
-       /* }else {
-            SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
-            String date = sdf.format(new Date());
-            String url = "https://api.shenjian.io/?appid=25a308aa0f9fe382bbfad6b40e922cc8&code=000001&index=true&k_type=day&fq_type=qfq&start_date=" + date + "&end_date=" + date;
-            try {
-                response = HttpClient.Get(url);
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
-            Map<String, Object> map = new Gson().fromJson(response, Map.class);
-            // 说明今天是交易日
-            if ("0".equals(map.get("error_code").toString().split("[.]")[0])) {
-                // 更新redis
-                List<String> dateList = new Gson().fromJson(redisUtil.getMap("common","trading_date"), List.class);
-                Collections.sort(dateList, new Comparator<String>() {
-                    @Override
-                    public int compare(String o1, String o2) {
-                        return o1.compareTo(o2);
-                    }
-                });
-                dateList.remove(0);
-                dateList.add(date);
-                redisUtil.addMap("common","trading_date",dateList);
-            }
-        }*/
     }
 
     @Override
@@ -124,7 +95,7 @@ public class ScheduleCrossServiceImpl implements ScheduleCrossService {
             String url = "https://api.shenjian.io/?appid=25a308aa0f9fe382bbfad6b40e922cc8&code=" + str.get("stock_code") + "&index=false&k_type=day&fq_type=qfq&start_date=" + date;
             String response = null;
             try {
-                response = HttpClient.Get(url);
+                response = HttpClientRequest.Get(url);
             } catch (Exception e) {
                 e.printStackTrace();
             }
