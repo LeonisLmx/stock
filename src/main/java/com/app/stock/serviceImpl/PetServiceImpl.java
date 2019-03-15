@@ -157,6 +157,8 @@ public class PetServiceImpl  implements PetService {
         petStockDetail.setsPrice(new BigDecimal(map.getPrice()));
         petStockDetail.setsTime(new Date());
         petStockDetail.setIncrease((petStockDetail.getsPrice().subtract(petStockDetail.getbPrice())).multiply(new BigDecimal(100)).divide(petStockDetail.getbPrice(),2,BigDecimal.ROUND_HALF_UP));
+        petStockDetail.setIsDelete(1);
+        petStockDetailSelfMapper.updateByPrimaryKeySelective(petStockDetail);
         // 计算宠物等级
         Pet pet = petSelfMapper.selectPrimarykeyByUserId(user.getId());
         BigDecimal percent = (new BigDecimal(map.getPrice()).subtract(petStockDetail.getbPrice())).multiply(new BigDecimal(100)).divide(petStockDetail.getbPrice(),2,BigDecimal.ROUND_HALF_UP);

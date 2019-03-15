@@ -20,7 +20,7 @@ public interface AccountService {
 
     public String editAccount(AccountBook accountBook);
 
-    public Map<String, Object> list(AccountListRequest accountListRequest);
+    public List<Map<String, Object>> list(AccountListRequest accountListRequest);
 
     public List<Map<String,Object>> monthList(AccountSummarizeRequest accountSummarizeRequest,HttpServletRequest request);
 

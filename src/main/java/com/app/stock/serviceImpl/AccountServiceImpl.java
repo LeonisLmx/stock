@@ -96,8 +96,8 @@ public class AccountServiceImpl  implements AccountService {
     }
 
     @Override
-    public Map<String, Object> list(AccountListRequest accountListRequest) {
-        Map<String,Object> map = new HashMap<>();
+    public List<Map<String, Object>> list(AccountListRequest accountListRequest) {
+        /*Map<String,Object> map = new HashMap<>();*/
         if(accountListRequest.getStoreTypeParentId() != null){
             if(accountListRequest.getStoreTypeId() == null){
                 accountListRequest.setStoreTypeId(new ArrayList<>());
@@ -107,8 +107,8 @@ public class AccountServiceImpl  implements AccountService {
         PageHelper.startPage(accountListRequest.getPage(),accountListRequest.getPage_size());
         List<Map<String,Object>> list = accountBookSelfMapper.selectAllAccountByCondition(accountListRequest);
         PageInfo pageInfo = new PageInfo(list);
-        map.put("list",pageInfo.getList());
-        return map;
+        /*map.put("list",pageInfo.getList());*/
+        return pageInfo.getList();
     }
 
     @Override
