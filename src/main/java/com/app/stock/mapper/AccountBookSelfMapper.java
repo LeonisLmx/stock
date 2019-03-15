@@ -16,7 +16,7 @@ public interface AccountBookSelfMapper extends AccountBookMapper {
 
     @Select({
             "<script>",
-            "select a.id,d.id as storeTypeId,b.name,b.income,a.serial_number,a.pay_type,a.cost,a.content,DATE_FORMAT(a.create_time,'%Y-%m-%d %T') as create_time",
+            "select a.id,b.id as storeTypeId,b.name,b.income,a.serial_number,a.pay_type,a.cost,a.content,DATE_FORMAT(a.create_time,'%Y-%m-%d %T') as create_time",
             "from account_book a left join store_type b on a.store_type_id = b.id",
             "where a.is_delete = 0 and b.is_delete = 0",
             "<if test=\"entity.storeTypeId != null and entity.storeTypeId.size() > 0\">",
