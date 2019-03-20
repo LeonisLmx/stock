@@ -1,55 +1,910 @@
-DEBUG http-nio-8999-exec-10 druid.sql.Statement - {conn-10005, pstmt-32533} Parameters : [e6ccf915-9852-47e8-b918-1a4e300e152e]
-DEBUG http-nio-8999-exec-10 druid.sql.Statement - {conn-10005, pstmt-32533} Types : [VARCHAR]
-DEBUG http-nio-8999-exec-10 druid.sql.Statement - {conn-10005, pstmt-32533} executed. 6.932136 millis. select * from user where   token = ? and is_delete = 0
-DEBUG http-nio-8999-exec-10 druid.sql.ResultSet - {conn-10005, pstmt-32533, rs-62532} open
-DEBUG http-nio-8999-exec-10 druid.sql.ResultSet - {conn-10005, pstmt-32533, rs-62532} Header: [id, nickname, phone, password, address, score, descriptions, headerImg, token, is_admin, is_shield, is_delete, create_time, modify_time]
-DEBUG http-nio-8999-exec-10 druid.sql.ResultSet - {conn-10005, pstmt-32533, rs-62532} Result: [4, qaz123, 13581997174, e9aca15ce5ee544691657de668944f9, null, 1, null, null, e6ccf915-9852-47e8-b918-1a4e300e152e, 0, 0, 0, 2019-02-21 14:04:55.0, 2019-02-21 14:04:55.0]
-DEBUG http-nio-8999-exec-10 druid.sql.ResultSet - {conn-10005, pstmt-32533, rs-62532} closed
-DEBUG http-nio-8999-exec-10 druid.sql.Statement - {conn-10005, pstmt-32533} closed
-DEBUG http-nio-8999-exec-10 druid.sql.Connection - {conn-10005} pool-recycle
-DEBUG http-nio-8999-exec-10 druid.sql.Connection - {conn-10005} pool-connect
-DEBUG http-nio-8999-exec-10 druid.sql.Statement - {conn-10005, pstmt-32534} created. select concat(market,stock_code) from stock where id in  (   ?  ,  ?  )
-DEBUG http-nio-8999-exec-10 druid.sql.Statement - {conn-10005, pstmt-32534} Parameters : [7412, 7923]
-DEBUG http-nio-8999-exec-10 druid.sql.Statement - {conn-10005, pstmt-32534} Types : [VARCHAR, VARCHAR]
-DEBUG http-nio-8999-exec-10 druid.sql.Statement - {conn-10005, pstmt-32534} executed. 7.864998 millis. select concat(market,stock_code) from stock where id in  (   ?  ,  ?  )
-DEBUG http-nio-8999-exec-10 druid.sql.ResultSet - {conn-10005, pstmt-32534, rs-62533} open
-DEBUG http-nio-8999-exec-10 druid.sql.ResultSet - {conn-10005, pstmt-32534, rs-62533} Header: [concat(market,stock_code)]
-DEBUG http-nio-8999-exec-10 druid.sql.ResultSet - {conn-10005, pstmt-32534, rs-62533} Result: [sh600986]
-DEBUG http-nio-8999-exec-10 druid.sql.ResultSet - {conn-10005, pstmt-32534, rs-62533} Result: [sh600328]
-DEBUG http-nio-8999-exec-10 druid.sql.ResultSet - {conn-10005, pstmt-32534, rs-62533} closed
-DEBUG http-nio-8999-exec-10 druid.sql.Statement - {conn-10005, pstmt-32534} closed
-DEBUG http-nio-8999-exec-10 druid.sql.Connection - {conn-10005} pool-recycle
-DEBUG http-nio-8999-exec-2 druid.sql.Connection - {conn-10005} pool-connect
-DEBUG http-nio-8999-exec-2 druid.sql.Statement - {conn-10005, pstmt-32535} created. select * from user where   token = ? and is_delete = 0
-DEBUG http-nio-8999-exec-2 druid.sql.Statement - {conn-10005, pstmt-32535} Parameters : [e6ccf915-9852-47e8-b918-1a4e300e152e]
-DEBUG http-nio-8999-exec-2 druid.sql.Statement - {conn-10005, pstmt-32535} Types : [VARCHAR]
-DEBUG http-nio-8999-exec-2 druid.sql.Statement - {conn-10005, pstmt-32535} executed. 6.970706 millis. select * from user where   token = ? and is_delete = 0
-DEBUG http-nio-8999-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-32535, rs-62534} open
-DEBUG http-nio-8999-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-32535, rs-62534} Header: [id, nickname, phone, password, address, score, descriptions, headerImg, token, is_admin, is_shield, is_delete, create_time, modify_time]
-DEBUG http-nio-8999-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-32535, rs-62534} Result: [4, qaz123, 13581997174, e9aca15ce5ee544691657de668944f9, null, 1, null, null, e6ccf915-9852-47e8-b918-1a4e300e152e, 0, 0, 0, 2019-02-21 14:04:55.0, 2019-02-21 14:04:55.0]
-DEBUG http-nio-8999-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-32535, rs-62534} closed
-DEBUG http-nio-8999-exec-2 druid.sql.Statement - {conn-10005, pstmt-32535} closed
-DEBUG http-nio-8999-exec-2 druid.sql.Connection - {conn-10005} pool-recycle
-DEBUG http-nio-8999-exec-4 druid.sql.Connection - {conn-10005} pool-connect
-DEBUG http-nio-8999-exec-4 druid.sql.Statement - {conn-10005, pstmt-32536} created. select * from user where   token = ? and is_delete = 0
-DEBUG http-nio-8999-exec-4 druid.sql.Statement - {conn-10005, pstmt-32536} Parameters : [e6ccf915-9852-47e8-b918-1a4e300e152e]
-DEBUG http-nio-8999-exec-4 druid.sql.Statement - {conn-10005, pstmt-32536} Types : [VARCHAR]
-DEBUG http-nio-8999-exec-4 druid.sql.Statement - {conn-10005, pstmt-32536} executed. 8.681809 millis. select * from user where   token = ? and is_delete = 0
-DEBUG http-nio-8999-exec-4 druid.sql.ResultSet - {conn-10005, pstmt-32536, rs-62535} open
-DEBUG http-nio-8999-exec-4 druid.sql.ResultSet - {conn-10005, pstmt-32536, rs-62535} Header: [id, nickname, phone, password, address, score, descriptions, headerImg, token, is_admin, is_shield, is_delete, create_time, modify_time]
-DEBUG http-nio-8999-exec-4 druid.sql.ResultSet - {conn-10005, pstmt-32536, rs-62535} Result: [4, qaz123, 13581997174, e9aca15ce5ee544691657de668944f9, null, 1, null, null, e6ccf915-9852-47e8-b918-1a4e300e152e, 0, 0, 0, 2019-02-21 14:04:55.0, 2019-02-21 14:04:55.0]
-DEBUG http-nio-8999-exec-4 druid.sql.ResultSet - {conn-10005, pstmt-32536, rs-62535} closed
-DEBUG http-nio-8999-exec-4 druid.sql.Statement - {conn-10005, pstmt-32536} closed
-DEBUG http-nio-8999-exec-4 druid.sql.Connection - {conn-10005} pool-recycle
-DEBUG scheduling-1 druid.sql.Connection - {conn-10005} pool-connect
-DEBUG scheduling-1 druid.sql.Statement - {conn-10005, pstmt-32537} created. update pet set change_score = 0,percent = null where is_delete = 0
-DEBUG scheduling-1 druid.sql.Statement - {conn-10005, pstmt-32537} Parameters : []
-DEBUG scheduling-1 druid.sql.Statement - {conn-10005, pstmt-32537} Types : []
-DEBUG scheduling-1 druid.sql.Statement - {conn-10005, pstmt-32537} executed. 19.922934 millis. update pet set change_score = 0,percent = null where is_delete = 0
-DEBUG scheduling-1 druid.sql.Statement - {conn-10005, pstmt-32537} closed
-DEBUG scheduling-1 druid.sql.Connection - {conn-10005} pool-recycle
-DEBUG Druid-ConnectionPool-Destroy-1303868418 druid.sql.Connection - {conn-10001} closed
-DEBUG Druid-ConnectionPool-Destroy-1303868418 druid.sql.Connection - {conn-10002} closed
-DEBUG Druid-ConnectionPool-Destroy-1303868418 druid.sql.Connection - {conn-10003} closed
-DEBUG Druid-ConnectionPool-Destroy-1303868418 druid.sql.Connection - {conn-10004} closed
-DEBUG Druid-ConnectionPool-Destroy-1303868418 druid.sql.Connection - {conn-10005} closed
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21070} Types : [BIGINT, DECIMAL, DECIMAL, DECIMAL, DECIMAL, DECIMAL, VARCHAR]
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21070} executed. 21.183136 millis. INSERT INTO stock_data
+ (stock_id, open, close, high, low, volume, trading_day)
+VALUES (?, ?, ?, ?, ?, ?, ?)
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21070, rs-51070} open
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21070, rs-51070} Header: [GENERATED_KEY]
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21070, rs-51070} Result: [279267]
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21070, rs-51070} closed
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21070} closed
+DEBUG scheduling-1 druid.sql.Connection - {conn-10016} pool-recycle
+DEBUG scheduling-1 druid.sql.Connection - {conn-10016} pool-connect
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21071} created. INSERT INTO stock_data
+ (stock_id, open, close, high, low, volume, trading_day)
+VALUES (?, ?, ?, ?, ?, ?, ?)
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21071} Parameters : [7634, 17.74, 17.98, 18.27, 16.85, 262788.0, 2019-03-20]
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21071} Types : [BIGINT, DECIMAL, DECIMAL, DECIMAL, DECIMAL, DECIMAL, VARCHAR]
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21071} executed. 22.87922 millis. INSERT INTO stock_data
+ (stock_id, open, close, high, low, volume, trading_day)
+VALUES (?, ?, ?, ?, ?, ?, ?)
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21071, rs-51071} open
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21071, rs-51071} Header: [GENERATED_KEY]
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21071, rs-51071} Result: [279268]
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21071, rs-51071} closed
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21071} closed
+DEBUG scheduling-1 druid.sql.Connection - {conn-10016} pool-recycle
+DEBUG scheduling-1 druid.sql.Connection - {conn-10016} pool-connect
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21072} created. INSERT INTO stock_data
+ (stock_id, open, close, high, low, volume, trading_day)
+VALUES (?, ?, ?, ?, ?, ?, ?)
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21072} Parameters : [7633, 10.98, 10.4, 10.98, 10.13, 131818.0, 2019-03-20]
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21072} Types : [BIGINT, DECIMAL, DECIMAL, DECIMAL, DECIMAL, DECIMAL, VARCHAR]
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21072} executed. 36.557122 millis. INSERT INTO stock_data
+ (stock_id, open, close, high, low, volume, trading_day)
+VALUES (?, ?, ?, ?, ?, ?, ?)
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21072, rs-51072} open
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21072, rs-51072} Header: [GENERATED_KEY]
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21072, rs-51072} Result: [279269]
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21072, rs-51072} closed
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21072} closed
+DEBUG scheduling-1 druid.sql.Connection - {conn-10016} pool-recycle
+DEBUG scheduling-1 druid.sql.Connection - {conn-10016} pool-connect
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21073} created. INSERT INTO stock_data
+ (stock_id, open, close, high, low, volume, trading_day)
+VALUES (?, ?, ?, ?, ?, ?, ?)
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21073} Parameters : [7632, 4.94, 4.86, 4.96, 4.71, 368989.0, 2019-03-20]
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21073} Types : [BIGINT, DECIMAL, DECIMAL, DECIMAL, DECIMAL, DECIMAL, VARCHAR]
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21073} executed. 137.689359 millis. INSERT INTO stock_data
+ (stock_id, open, close, high, low, volume, trading_day)
+VALUES (?, ?, ?, ?, ?, ?, ?)
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21073, rs-51073} open
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21073, rs-51073} Header: [GENERATED_KEY]
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21073, rs-51073} Result: [279270]
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21073, rs-51073} closed
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21073} closed
+DEBUG scheduling-1 druid.sql.Connection - {conn-10016} pool-recycle
+DEBUG scheduling-1 druid.sql.Connection - {conn-10016} pool-connect
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21074} created. INSERT INTO stock_data
+ (stock_id, open, close, high, low, volume, trading_day)
+VALUES (?, ?, ?, ?, ?, ?, ?)
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21074} Parameters : [7631, 5.55, 5.54, 5.56, 5.49, 177217.0, 2019-03-20]
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21074} Types : [BIGINT, DECIMAL, DECIMAL, DECIMAL, DECIMAL, DECIMAL, VARCHAR]
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21074} executed. 32.438938 millis. INSERT INTO stock_data
+ (stock_id, open, close, high, low, volume, trading_day)
+VALUES (?, ?, ?, ?, ?, ?, ?)
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21074, rs-51074} open
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21074, rs-51074} Header: [GENERATED_KEY]
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21074, rs-51074} Result: [279271]
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21074, rs-51074} closed
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21074} closed
+DEBUG scheduling-1 druid.sql.Connection - {conn-10016} pool-recycle
+DEBUG scheduling-1 druid.sql.Connection - {conn-10016} pool-connect
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21075} created. INSERT INTO stock_data
+ (stock_id, open, close, high, low, volume, trading_day)
+VALUES (?, ?, ?, ?, ?, ?, ?)
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21075} Parameters : [7630, 12.67, 12.53, 12.93, 12.23, 168796.0, 2019-03-20]
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21075} Types : [BIGINT, DECIMAL, DECIMAL, DECIMAL, DECIMAL, DECIMAL, VARCHAR]
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21075} executed. 28.65014 millis. INSERT INTO stock_data
+ (stock_id, open, close, high, low, volume, trading_day)
+VALUES (?, ?, ?, ?, ?, ?, ?)
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21075, rs-51075} open
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21075, rs-51075} Header: [GENERATED_KEY]
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21075, rs-51075} Result: [279272]
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21075, rs-51075} closed
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21075} closed
+DEBUG scheduling-1 druid.sql.Connection - {conn-10016} pool-recycle
+DEBUG scheduling-1 druid.sql.Connection - {conn-10016} pool-connect
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21076} created. INSERT INTO stock_data
+ (stock_id, open, close, high, low, volume, trading_day)
+VALUES (?, ?, ?, ?, ?, ?, ?)
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21076} Parameters : [7629, 16.95, 16.72, 17.0, 16.55, 411958.0, 2019-03-20]
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21076} Types : [BIGINT, DECIMAL, DECIMAL, DECIMAL, DECIMAL, DECIMAL, VARCHAR]
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21076} executed. 23.90322 millis. INSERT INTO stock_data
+ (stock_id, open, close, high, low, volume, trading_day)
+VALUES (?, ?, ?, ?, ?, ?, ?)
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21076, rs-51076} open
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21076, rs-51076} Header: [GENERATED_KEY]
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21076, rs-51076} Result: [279273]
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21076, rs-51076} closed
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21076} closed
+DEBUG scheduling-1 druid.sql.Connection - {conn-10016} pool-recycle
+DEBUG scheduling-1 druid.sql.Connection - {conn-10016} pool-connect
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21077} created. INSERT INTO stock_data
+ (stock_id, open, close, high, low, volume, trading_day)
+VALUES (?, ?, ?, ?, ?, ?, ?)
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21077} Parameters : [7628, 3.0, 3.0, 3.15, 2.92, 612094.0, 2019-03-20]
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21077} Types : [BIGINT, DECIMAL, DECIMAL, DECIMAL, DECIMAL, DECIMAL, VARCHAR]
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21077} executed. 51.804817 millis. INSERT INTO stock_data
+ (stock_id, open, close, high, low, volume, trading_day)
+VALUES (?, ?, ?, ?, ?, ?, ?)
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21077, rs-51077} open
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21077, rs-51077} Header: [GENERATED_KEY]
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21077, rs-51077} Result: [279274]
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21077, rs-51077} closed
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21077} closed
+DEBUG scheduling-1 druid.sql.Connection - {conn-10016} pool-recycle
+DEBUG scheduling-1 druid.sql.Connection - {conn-10016} pool-connect
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21078} created. INSERT INTO stock_data
+ (stock_id, open, close, high, low, volume, trading_day)
+VALUES (?, ?, ?, ?, ?, ?, ?)
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21078} Parameters : [7627, 8.37, 8.21, 8.41, 8.1, 105548.0, 2019-03-20]
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21078} Types : [BIGINT, DECIMAL, DECIMAL, DECIMAL, DECIMAL, DECIMAL, VARCHAR]
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21078} executed. 21.410805 millis. INSERT INTO stock_data
+ (stock_id, open, close, high, low, volume, trading_day)
+VALUES (?, ?, ?, ?, ?, ?, ?)
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21078, rs-51078} open
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21078, rs-51078} Header: [GENERATED_KEY]
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21078, rs-51078} Result: [279275]
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21078, rs-51078} closed
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21078} closed
+DEBUG scheduling-1 druid.sql.Connection - {conn-10016} pool-recycle
+DEBUG scheduling-1 druid.sql.Connection - {conn-10016} pool-connect
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21079} created. INSERT INTO stock_data
+ (stock_id, open, close, high, low, volume, trading_day)
+VALUES (?, ?, ?, ?, ?, ?, ?)
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21079} Parameters : [7626, 6.15, 6.13, 6.22, 6.03, 72498.0, 2019-03-20]
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21079} Types : [BIGINT, DECIMAL, DECIMAL, DECIMAL, DECIMAL, DECIMAL, VARCHAR]
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21079} executed. 37.98765 millis. INSERT INTO stock_data
+ (stock_id, open, close, high, low, volume, trading_day)
+VALUES (?, ?, ?, ?, ?, ?, ?)
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21079, rs-51079} open
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21079, rs-51079} Header: [GENERATED_KEY]
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21079, rs-51079} Result: [279276]
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21079, rs-51079} closed
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21079} closed
+DEBUG scheduling-1 druid.sql.Connection - {conn-10016} pool-recycle
+DEBUG scheduling-1 druid.sql.Connection - {conn-10016} pool-connect
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21080} created. INSERT INTO stock_data
+ (stock_id, open, close, high, low, volume, trading_day)
+VALUES (?, ?, ?, ?, ?, ?, ?)
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21080} Parameters : [7625, 30.32, 30.2, 30.37, 29.68, 15712.0, 2019-03-20]
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21080} Types : [BIGINT, DECIMAL, DECIMAL, DECIMAL, DECIMAL, DECIMAL, VARCHAR]
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21080} executed. 526.837149 millis. INSERT INTO stock_data
+ (stock_id, open, close, high, low, volume, trading_day)
+VALUES (?, ?, ?, ?, ?, ?, ?)
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21080, rs-51080} open
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21080, rs-51080} Header: [GENERATED_KEY]
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21080, rs-51080} Result: [279277]
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21080, rs-51080} closed
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21080} closed
+DEBUG scheduling-1 druid.sql.Connection - {conn-10016} pool-recycle
+DEBUG scheduling-1 druid.sql.Connection - {conn-10016} pool-connect
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21081} created. INSERT INTO stock_data
+ (stock_id, open, close, high, low, volume, trading_day)
+VALUES (?, ?, ?, ?, ?, ?, ?)
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21081} Parameters : [7624, 8.49, 8.72, 8.72, 8.03, 1136174.0, 2019-03-20]
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21081} Types : [BIGINT, DECIMAL, DECIMAL, DECIMAL, DECIMAL, DECIMAL, VARCHAR]
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21081} executed. 25.304733 millis. INSERT INTO stock_data
+ (stock_id, open, close, high, low, volume, trading_day)
+VALUES (?, ?, ?, ?, ?, ?, ?)
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21081, rs-51081} open
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21081, rs-51081} Header: [GENERATED_KEY]
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21081, rs-51081} Result: [279278]
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21081, rs-51081} closed
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21081} closed
+DEBUG scheduling-1 druid.sql.Connection - {conn-10016} pool-recycle
+DEBUG scheduling-1 druid.sql.Connection - {conn-10016} pool-connect
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21082} created. INSERT INTO stock_data
+ (stock_id, open, close, high, low, volume, trading_day)
+VALUES (?, ?, ?, ?, ?, ?, ?)
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21082} Parameters : [7623, 5.87, 5.87, 5.94, 5.87, 31136.0, 2019-03-20]
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21082} Types : [BIGINT, DECIMAL, DECIMAL, DECIMAL, DECIMAL, DECIMAL, VARCHAR]
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21082} executed. 31.38968 millis. INSERT INTO stock_data
+ (stock_id, open, close, high, low, volume, trading_day)
+VALUES (?, ?, ?, ?, ?, ?, ?)
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21082, rs-51082} open
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21082, rs-51082} Header: [GENERATED_KEY]
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21082, rs-51082} Result: [279279]
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21082, rs-51082} closed
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21082} closed
+DEBUG scheduling-1 druid.sql.Connection - {conn-10016} pool-recycle
+DEBUG scheduling-1 druid.sql.Connection - {conn-10016} pool-connect
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21083} created. INSERT INTO stock_data
+ (stock_id, open, close, high, low, volume, trading_day)
+VALUES (?, ?, ?, ?, ?, ?, ?)
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21083} Parameters : [7622, 21.59, 21.52, 21.75, 21.26, 9624.0, 2019-03-20]
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21083} Types : [BIGINT, DECIMAL, DECIMAL, DECIMAL, DECIMAL, DECIMAL, VARCHAR]
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21083} executed. 19.644747 millis. INSERT INTO stock_data
+ (stock_id, open, close, high, low, volume, trading_day)
+VALUES (?, ?, ?, ?, ?, ?, ?)
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21083, rs-51083} open
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21083, rs-51083} Header: [GENERATED_KEY]
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21083, rs-51083} Result: [279280]
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21083, rs-51083} closed
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21083} closed
+DEBUG scheduling-1 druid.sql.Connection - {conn-10016} pool-recycle
+DEBUG scheduling-1 druid.sql.Connection - {conn-10016} pool-connect
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21084} created. INSERT INTO stock_data
+ (stock_id, open, close, high, low, volume, trading_day)
+VALUES (?, ?, ?, ?, ?, ?, ?)
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21084} Parameters : [7621, 4.36, 4.48, 4.66, 4.35, 440100.0, 2019-03-20]
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21084} Types : [BIGINT, DECIMAL, DECIMAL, DECIMAL, DECIMAL, DECIMAL, VARCHAR]
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21084} executed. 72.783835 millis. INSERT INTO stock_data
+ (stock_id, open, close, high, low, volume, trading_day)
+VALUES (?, ?, ?, ?, ?, ?, ?)
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21084, rs-51084} open
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21084, rs-51084} Header: [GENERATED_KEY]
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21084, rs-51084} Result: [279281]
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21084, rs-51084} closed
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21084} closed
+DEBUG scheduling-1 druid.sql.Connection - {conn-10016} pool-recycle
+DEBUG scheduling-1 druid.sql.Connection - {conn-10016} pool-connect
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21085} created. INSERT INTO stock_data
+ (stock_id, open, close, high, low, volume, trading_day)
+VALUES (?, ?, ?, ?, ?, ?, ?)
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21085} Parameters : [7620, 27.34, 27.02, 27.55, 26.52, 86461.0, 2019-03-20]
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21085} Types : [BIGINT, DECIMAL, DECIMAL, DECIMAL, DECIMAL, DECIMAL, VARCHAR]
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21085} executed. 35.461443 millis. INSERT INTO stock_data
+ (stock_id, open, close, high, low, volume, trading_day)
+VALUES (?, ?, ?, ?, ?, ?, ?)
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21085, rs-51085} open
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21085, rs-51085} Header: [GENERATED_KEY]
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21085, rs-51085} Result: [279282]
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21085, rs-51085} closed
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21085} closed
+DEBUG scheduling-1 druid.sql.Connection - {conn-10016} pool-recycle
+DEBUG scheduling-1 druid.sql.Connection - {conn-10016} pool-connect
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21086} created. INSERT INTO stock_data
+ (stock_id, open, close, high, low, volume, trading_day)
+VALUES (?, ?, ?, ?, ?, ?, ?)
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21086} Parameters : [7619, 2.69, 2.81, 2.81, 2.69, 345069.0, 2019-03-20]
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21086} Types : [BIGINT, DECIMAL, DECIMAL, DECIMAL, DECIMAL, DECIMAL, VARCHAR]
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21086} executed. 26.501789 millis. INSERT INTO stock_data
+ (stock_id, open, close, high, low, volume, trading_day)
+VALUES (?, ?, ?, ?, ?, ?, ?)
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21086, rs-51086} open
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21086, rs-51086} Header: [GENERATED_KEY]
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21086, rs-51086} Result: [279283]
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21086, rs-51086} closed
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21086} closed
+DEBUG scheduling-1 druid.sql.Connection - {conn-10016} pool-recycle
+DEBUG scheduling-1 druid.sql.Connection - {conn-10016} pool-connect
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21087} created. INSERT INTO stock_data
+ (stock_id, open, close, high, low, volume, trading_day)
+VALUES (?, ?, ?, ?, ?, ?, ?)
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21087} Parameters : [7618, 29.8, 30.31, 31.28, 29.48, 195028.0, 2019-03-20]
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21087} Types : [BIGINT, DECIMAL, DECIMAL, DECIMAL, DECIMAL, DECIMAL, VARCHAR]
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21087} executed. 20.497397 millis. INSERT INTO stock_data
+ (stock_id, open, close, high, low, volume, trading_day)
+VALUES (?, ?, ?, ?, ?, ?, ?)
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21087, rs-51087} open
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21087, rs-51087} Header: [GENERATED_KEY]
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21087, rs-51087} Result: [279284]
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21087, rs-51087} closed
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21087} closed
+DEBUG scheduling-1 druid.sql.Connection - {conn-10016} pool-recycle
+DEBUG scheduling-1 druid.sql.Connection - {conn-10016} pool-connect
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21088} created. INSERT INTO stock_data
+ (stock_id, open, close, high, low, volume, trading_day)
+VALUES (?, ?, ?, ?, ?, ?, ?)
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21088} Parameters : [7617, 15.56, 15.66, 15.84, 15.33, 751994.0, 2019-03-20]
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21088} Types : [BIGINT, DECIMAL, DECIMAL, DECIMAL, DECIMAL, DECIMAL, VARCHAR]
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21088} executed. 24.029854 millis. INSERT INTO stock_data
+ (stock_id, open, close, high, low, volume, trading_day)
+VALUES (?, ?, ?, ?, ?, ?, ?)
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21088, rs-51088} open
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21088, rs-51088} Header: [GENERATED_KEY]
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21088, rs-51088} Result: [279285]
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21088, rs-51088} closed
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21088} closed
+DEBUG scheduling-1 druid.sql.Connection - {conn-10016} pool-recycle
+DEBUG scheduling-1 druid.sql.Connection - {conn-10016} pool-connect
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21089} created. INSERT INTO stock_data
+ (stock_id, open, close, high, low, volume, trading_day)
+VALUES (?, ?, ?, ?, ?, ?, ?)
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21089} Parameters : [7616, 5.76, 5.73, 5.78, 5.63, 165933.0, 2019-03-20]
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21089} Types : [BIGINT, DECIMAL, DECIMAL, DECIMAL, DECIMAL, DECIMAL, VARCHAR]
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21089} executed. 52.641083 millis. INSERT INTO stock_data
+ (stock_id, open, close, high, low, volume, trading_day)
+VALUES (?, ?, ?, ?, ?, ?, ?)
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21089, rs-51089} open
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21089, rs-51089} Header: [GENERATED_KEY]
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21089, rs-51089} Result: [279286]
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21089, rs-51089} closed
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21089} closed
+DEBUG scheduling-1 druid.sql.Connection - {conn-10016} pool-recycle
+DEBUG scheduling-1 druid.sql.Connection - {conn-10016} pool-connect
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21090} created. INSERT INTO stock_data
+ (stock_id, open, close, high, low, volume, trading_day)
+VALUES (?, ?, ?, ?, ?, ?, ?)
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21090} Parameters : [7615, 5.86, 5.96, 5.99, 5.8, 1011807.0, 2019-03-20]
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21090} Types : [BIGINT, DECIMAL, DECIMAL, DECIMAL, DECIMAL, DECIMAL, VARCHAR]
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21090} executed. 26.670749 millis. INSERT INTO stock_data
+ (stock_id, open, close, high, low, volume, trading_day)
+VALUES (?, ?, ?, ?, ?, ?, ?)
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21090, rs-51090} open
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21090, rs-51090} Header: [GENERATED_KEY]
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21090, rs-51090} Result: [279287]
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21090, rs-51090} closed
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21090} closed
+DEBUG scheduling-1 druid.sql.Connection - {conn-10016} pool-recycle
+DEBUG scheduling-1 druid.sql.Connection - {conn-10016} pool-connect
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21091} created. INSERT INTO stock_data
+ (stock_id, open, close, high, low, volume, trading_day)
+VALUES (?, ?, ?, ?, ?, ?, ?)
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21091} Parameters : [7614, 12.27, 13.1, 13.35, 12.1, 113264.0, 2019-03-20]
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21091} Types : [BIGINT, DECIMAL, DECIMAL, DECIMAL, DECIMAL, DECIMAL, VARCHAR]
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21091} executed. 40.019607 millis. INSERT INTO stock_data
+ (stock_id, open, close, high, low, volume, trading_day)
+VALUES (?, ?, ?, ?, ?, ?, ?)
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21091, rs-51091} open
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21091, rs-51091} Header: [GENERATED_KEY]
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21091, rs-51091} Result: [279288]
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21091, rs-51091} closed
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21091} closed
+DEBUG scheduling-1 druid.sql.Connection - {conn-10016} pool-recycle
+DEBUG scheduling-1 druid.sql.Connection - {conn-10016} pool-connect
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21092} created. INSERT INTO stock_data
+ (stock_id, open, close, high, low, volume, trading_day)
+VALUES (?, ?, ?, ?, ?, ?, ?)
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21092} Parameters : [7613, 6.25, 6.23, 6.31, 6.1, 106898.0, 2019-03-20]
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21092} Types : [BIGINT, DECIMAL, DECIMAL, DECIMAL, DECIMAL, DECIMAL, VARCHAR]
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21092} executed. 19.827701 millis. INSERT INTO stock_data
+ (stock_id, open, close, high, low, volume, trading_day)
+VALUES (?, ?, ?, ?, ?, ?, ?)
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21092, rs-51092} open
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21092, rs-51092} Header: [GENERATED_KEY]
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21092, rs-51092} Result: [279289]
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21092, rs-51092} closed
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21092} closed
+DEBUG scheduling-1 druid.sql.Connection - {conn-10016} pool-recycle
+DEBUG scheduling-1 druid.sql.Connection - {conn-10016} pool-connect
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21093} created. INSERT INTO stock_data
+ (stock_id, open, close, high, low, volume, trading_day)
+VALUES (?, ?, ?, ?, ?, ?, ?)
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21093} Parameters : [7612, 5.1, 5.16, 5.2, 5.01, 221918.0, 2019-03-20]
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21093} Types : [BIGINT, DECIMAL, DECIMAL, DECIMAL, DECIMAL, DECIMAL, VARCHAR]
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21093} executed. 23.287796 millis. INSERT INTO stock_data
+ (stock_id, open, close, high, low, volume, trading_day)
+VALUES (?, ?, ?, ?, ?, ?, ?)
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21093, rs-51093} open
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21093, rs-51093} Header: [GENERATED_KEY]
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21093, rs-51093} Result: [279290]
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21093, rs-51093} closed
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21093} closed
+DEBUG scheduling-1 druid.sql.Connection - {conn-10016} pool-recycle
+DEBUG scheduling-1 druid.sql.Connection - {conn-10016} pool-connect
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21094} created. INSERT INTO stock_data
+ (stock_id, open, close, high, low, volume, trading_day)
+VALUES (?, ?, ?, ?, ?, ?, ?)
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21094} Parameters : [7611, 5.34, 5.25, 5.34, 5.13, 107207.0, 2019-03-20]
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21094} Types : [BIGINT, DECIMAL, DECIMAL, DECIMAL, DECIMAL, DECIMAL, VARCHAR]
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21094} executed. 23.692617 millis. INSERT INTO stock_data
+ (stock_id, open, close, high, low, volume, trading_day)
+VALUES (?, ?, ?, ?, ?, ?, ?)
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21094, rs-51094} open
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21094, rs-51094} Header: [GENERATED_KEY]
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21094, rs-51094} Result: [279291]
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21094, rs-51094} closed
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21094} closed
+DEBUG scheduling-1 druid.sql.Connection - {conn-10016} pool-recycle
+DEBUG scheduling-1 druid.sql.Connection - {conn-10016} pool-connect
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21095} created. INSERT INTO stock_data
+ (stock_id, open, close, high, low, volume, trading_day)
+VALUES (?, ?, ?, ?, ?, ?, ?)
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21095} Parameters : [7610, 6.33, 6.3, 6.35, 6.17, 520391.0, 2019-03-20]
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21095} Types : [BIGINT, DECIMAL, DECIMAL, DECIMAL, DECIMAL, DECIMAL, VARCHAR]
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21095} executed. 99.68669 millis. INSERT INTO stock_data
+ (stock_id, open, close, high, low, volume, trading_day)
+VALUES (?, ?, ?, ?, ?, ?, ?)
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21095, rs-51095} open
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21095, rs-51095} Header: [GENERATED_KEY]
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21095, rs-51095} Result: [279292]
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21095, rs-51095} closed
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21095} closed
+DEBUG scheduling-1 druid.sql.Connection - {conn-10016} pool-recycle
+DEBUG scheduling-1 druid.sql.Connection - {conn-10016} pool-connect
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21096} created. INSERT INTO stock_data
+ (stock_id, open, close, high, low, volume, trading_day)
+VALUES (?, ?, ?, ?, ?, ?, ?)
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21096} Parameters : [7609, 4.77, 4.89, 4.89, 4.69, 61933.0, 2019-03-20]
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21096} Types : [BIGINT, DECIMAL, DECIMAL, DECIMAL, DECIMAL, DECIMAL, VARCHAR]
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21096} executed. 17.883127 millis. INSERT INTO stock_data
+ (stock_id, open, close, high, low, volume, trading_day)
+VALUES (?, ?, ?, ?, ?, ?, ?)
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21096, rs-51096} open
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21096, rs-51096} Header: [GENERATED_KEY]
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21096, rs-51096} Result: [279293]
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21096, rs-51096} closed
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21096} closed
+DEBUG scheduling-1 druid.sql.Connection - {conn-10016} pool-recycle
+DEBUG scheduling-1 druid.sql.Connection - {conn-10016} pool-connect
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21097} created. INSERT INTO stock_data
+ (stock_id, open, close, high, low, volume, trading_day)
+VALUES (?, ?, ?, ?, ?, ?, ?)
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21097} Parameters : [7608, 5.01, 5.04, 5.06, 4.95, 67998.0, 2019-03-20]
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21097} Types : [BIGINT, DECIMAL, DECIMAL, DECIMAL, DECIMAL, DECIMAL, VARCHAR]
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21097} executed. 63.490699 millis. INSERT INTO stock_data
+ (stock_id, open, close, high, low, volume, trading_day)
+VALUES (?, ?, ?, ?, ?, ?, ?)
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21097, rs-51097} open
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21097, rs-51097} Header: [GENERATED_KEY]
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21097, rs-51097} Result: [279294]
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21097, rs-51097} closed
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21097} closed
+DEBUG scheduling-1 druid.sql.Connection - {conn-10016} pool-recycle
+DEBUG scheduling-1 druid.sql.Connection - {conn-10016} pool-connect
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21098} created. INSERT INTO stock_data
+ (stock_id, open, close, high, low, volume, trading_day)
+VALUES (?, ?, ?, ?, ?, ?, ?)
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21098} Parameters : [7607, 7.31, 7.3, 7.48, 7.15, 39500.0, 2019-03-20]
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21098} Types : [BIGINT, DECIMAL, DECIMAL, DECIMAL, DECIMAL, DECIMAL, VARCHAR]
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21098} executed. 60.329612 millis. INSERT INTO stock_data
+ (stock_id, open, close, high, low, volume, trading_day)
+VALUES (?, ?, ?, ?, ?, ?, ?)
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21098, rs-51098} open
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21098, rs-51098} Header: [GENERATED_KEY]
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21098, rs-51098} Result: [279295]
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21098, rs-51098} closed
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21098} closed
+DEBUG scheduling-1 druid.sql.Connection - {conn-10016} pool-recycle
+DEBUG scheduling-1 druid.sql.Connection - {conn-10016} pool-connect
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21099} created. INSERT INTO stock_data
+ (stock_id, open, close, high, low, volume, trading_day)
+VALUES (?, ?, ?, ?, ?, ?, ?)
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21099} Parameters : [7606, 5.38, 5.3, 5.42, 5.18, 136879.0, 2019-03-20]
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21099} Types : [BIGINT, DECIMAL, DECIMAL, DECIMAL, DECIMAL, DECIMAL, VARCHAR]
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21099} executed. 282.762437 millis. INSERT INTO stock_data
+ (stock_id, open, close, high, low, volume, trading_day)
+VALUES (?, ?, ?, ?, ?, ?, ?)
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21099, rs-51099} open
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21099, rs-51099} Header: [GENERATED_KEY]
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21099, rs-51099} Result: [279296]
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21099, rs-51099} closed
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21099} closed
+DEBUG scheduling-1 druid.sql.Connection - {conn-10016} pool-recycle
+DEBUG scheduling-1 druid.sql.Connection - {conn-10016} pool-connect
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21100} created. INSERT INTO stock_data
+ (stock_id, open, close, high, low, volume, trading_day)
+VALUES (?, ?, ?, ?, ?, ?, ?)
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21100} Parameters : [7605, 4.69, 5.06, 5.18, 4.67, 421471.0, 2019-03-20]
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21100} Types : [BIGINT, DECIMAL, DECIMAL, DECIMAL, DECIMAL, DECIMAL, VARCHAR]
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21100} executed. 28.932764 millis. INSERT INTO stock_data
+ (stock_id, open, close, high, low, volume, trading_day)
+VALUES (?, ?, ?, ?, ?, ?, ?)
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21100, rs-51100} open
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21100, rs-51100} Header: [GENERATED_KEY]
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21100, rs-51100} Result: [279297]
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21100, rs-51100} closed
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21100} closed
+DEBUG scheduling-1 druid.sql.Connection - {conn-10016} pool-recycle
+DEBUG scheduling-1 druid.sql.Connection - {conn-10016} pool-connect
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21101} created. INSERT INTO stock_data
+ (stock_id, open, close, high, low, volume, trading_day)
+VALUES (?, ?, ?, ?, ?, ?, ?)
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21101} Parameters : [7604, 8.62, 8.76, 8.78, 8.57, 197879.0, 2019-03-20]
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21101} Types : [BIGINT, DECIMAL, DECIMAL, DECIMAL, DECIMAL, DECIMAL, VARCHAR]
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21101} executed. 24.924489 millis. INSERT INTO stock_data
+ (stock_id, open, close, high, low, volume, trading_day)
+VALUES (?, ?, ?, ?, ?, ?, ?)
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21101, rs-51101} open
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21101, rs-51101} Header: [GENERATED_KEY]
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21101, rs-51101} Result: [279298]
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21101, rs-51101} closed
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21101} closed
+DEBUG scheduling-1 druid.sql.Connection - {conn-10016} pool-recycle
+DEBUG scheduling-1 druid.sql.Connection - {conn-10016} pool-connect
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21102} created. INSERT INTO stock_data
+ (stock_id, open, close, high, low, volume, trading_day)
+VALUES (?, ?, ?, ?, ?, ?, ?)
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21102} Parameters : [7603, 15.06, 14.9, 15.15, 14.25, 442320.0, 2019-03-20]
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21102} Types : [BIGINT, DECIMAL, DECIMAL, DECIMAL, DECIMAL, DECIMAL, VARCHAR]
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21102} executed. 35.889133 millis. INSERT INTO stock_data
+ (stock_id, open, close, high, low, volume, trading_day)
+VALUES (?, ?, ?, ?, ?, ?, ?)
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21102, rs-51102} open
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21102, rs-51102} Header: [GENERATED_KEY]
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21102, rs-51102} Result: [279299]
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21102, rs-51102} closed
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21102} closed
+DEBUG scheduling-1 druid.sql.Connection - {conn-10016} pool-recycle
+DEBUG scheduling-1 druid.sql.Connection - {conn-10016} pool-connect
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21103} created. INSERT INTO stock_data
+ (stock_id, open, close, high, low, volume, trading_day)
+VALUES (?, ?, ?, ?, ?, ?, ?)
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21103} Parameters : [7602, 5.45, 5.63, 5.7, 5.45, 44224.0, 2019-03-20]
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21103} Types : [BIGINT, DECIMAL, DECIMAL, DECIMAL, DECIMAL, DECIMAL, VARCHAR]
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21103} executed. 20.365301 millis. INSERT INTO stock_data
+ (stock_id, open, close, high, low, volume, trading_day)
+VALUES (?, ?, ?, ?, ?, ?, ?)
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21103, rs-51103} open
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21103, rs-51103} Header: [GENERATED_KEY]
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21103, rs-51103} Result: [279300]
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21103, rs-51103} closed
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21103} closed
+DEBUG scheduling-1 druid.sql.Connection - {conn-10016} pool-recycle
+DEBUG scheduling-1 druid.sql.Connection - {conn-10016} pool-connect
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21104} created. INSERT INTO stock_data
+ (stock_id, open, close, high, low, volume, trading_day)
+VALUES (?, ?, ?, ?, ?, ?, ?)
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21104} Parameters : [7601, 8.92, 9.16, 9.53, 8.76, 965337.0, 2019-03-20]
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21104} Types : [BIGINT, DECIMAL, DECIMAL, DECIMAL, DECIMAL, DECIMAL, VARCHAR]
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21104} executed. 18.750113 millis. INSERT INTO stock_data
+ (stock_id, open, close, high, low, volume, trading_day)
+VALUES (?, ?, ?, ?, ?, ?, ?)
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21104, rs-51104} open
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21104, rs-51104} Header: [GENERATED_KEY]
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21104, rs-51104} Result: [279301]
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21104, rs-51104} closed
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21104} closed
+DEBUG scheduling-1 druid.sql.Connection - {conn-10016} pool-recycle
+DEBUG scheduling-1 druid.sql.Connection - {conn-10016} pool-connect
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21105} created. INSERT INTO stock_data
+ (stock_id, open, close, high, low, volume, trading_day)
+VALUES (?, ?, ?, ?, ?, ?, ?)
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21105} Parameters : [7600, 6.43, 6.55, 6.65, 6.43, 145583.0, 2019-03-20]
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21105} Types : [BIGINT, DECIMAL, DECIMAL, DECIMAL, DECIMAL, DECIMAL, VARCHAR]
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21105} executed. 21.872629 millis. INSERT INTO stock_data
+ (stock_id, open, close, high, low, volume, trading_day)
+VALUES (?, ?, ?, ?, ?, ?, ?)
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21105, rs-51105} open
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21105, rs-51105} Header: [GENERATED_KEY]
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21105, rs-51105} Result: [279302]
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21105, rs-51105} closed
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21105} closed
+DEBUG scheduling-1 druid.sql.Connection - {conn-10016} pool-recycle
+DEBUG scheduling-1 druid.sql.Connection - {conn-10016} pool-connect
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21106} created. INSERT INTO stock_data
+ (stock_id, open, close, high, low, volume, trading_day)
+VALUES (?, ?, ?, ?, ?, ?, ?)
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21106} Parameters : [7599, 6.42, 6.42, 6.42, 6.42, 55374.0, 2019-03-20]
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21106} Types : [BIGINT, DECIMAL, DECIMAL, DECIMAL, DECIMAL, DECIMAL, VARCHAR]
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21106} executed. 26.720242 millis. INSERT INTO stock_data
+ (stock_id, open, close, high, low, volume, trading_day)
+VALUES (?, ?, ?, ?, ?, ?, ?)
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21106, rs-51106} open
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21106, rs-51106} Header: [GENERATED_KEY]
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21106, rs-51106} Result: [279303]
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21106, rs-51106} closed
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21106} closed
+DEBUG scheduling-1 druid.sql.Connection - {conn-10016} pool-recycle
+DEBUG scheduling-1 druid.sql.Connection - {conn-10016} pool-connect
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21107} created. INSERT INTO stock_data
+ (stock_id, open, close, high, low, volume, trading_day)
+VALUES (?, ?, ?, ?, ?, ?, ?)
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21107} Parameters : [7598, 7.32, 7.29, 7.45, 7.18, 33967.0, 2019-03-20]
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21107} Types : [BIGINT, DECIMAL, DECIMAL, DECIMAL, DECIMAL, DECIMAL, VARCHAR]
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21107} executed. 25.574728 millis. INSERT INTO stock_data
+ (stock_id, open, close, high, low, volume, trading_day)
+VALUES (?, ?, ?, ?, ?, ?, ?)
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21107, rs-51107} open
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21107, rs-51107} Header: [GENERATED_KEY]
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21107, rs-51107} Result: [279304]
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21107, rs-51107} closed
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21107} closed
+DEBUG scheduling-1 druid.sql.Connection - {conn-10016} pool-recycle
+DEBUG scheduling-1 druid.sql.Connection - {conn-10016} pool-connect
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21108} created. INSERT INTO stock_data
+ (stock_id, open, close, high, low, volume, trading_day)
+VALUES (?, ?, ?, ?, ?, ?, ?)
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21108} Parameters : [7597, 4.06, 4.11, 4.15, 3.99, 75187.0, 2019-03-20]
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21108} Types : [BIGINT, DECIMAL, DECIMAL, DECIMAL, DECIMAL, DECIMAL, VARCHAR]
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21108} executed. 23.994014 millis. INSERT INTO stock_data
+ (stock_id, open, close, high, low, volume, trading_day)
+VALUES (?, ?, ?, ?, ?, ?, ?)
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21108, rs-51108} open
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21108, rs-51108} Header: [GENERATED_KEY]
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21108, rs-51108} Result: [279305]
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21108, rs-51108} closed
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21108} closed
+DEBUG scheduling-1 druid.sql.Connection - {conn-10016} pool-recycle
+DEBUG scheduling-1 druid.sql.Connection - {conn-10016} pool-connect
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21109} created. INSERT INTO stock_data
+ (stock_id, open, close, high, low, volume, trading_day)
+VALUES (?, ?, ?, ?, ?, ?, ?)
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21109} Parameters : [7596, 2.89, 2.94, 3.02, 2.87, 89825.0, 2019-03-20]
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21109} Types : [BIGINT, DECIMAL, DECIMAL, DECIMAL, DECIMAL, DECIMAL, VARCHAR]
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21109} executed. 19.008843 millis. INSERT INTO stock_data
+ (stock_id, open, close, high, low, volume, trading_day)
+VALUES (?, ?, ?, ?, ?, ?, ?)
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21109, rs-51109} open
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21109, rs-51109} Header: [GENERATED_KEY]
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21109, rs-51109} Result: [279306]
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21109, rs-51109} closed
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21109} closed
+DEBUG scheduling-1 druid.sql.Connection - {conn-10016} pool-recycle
+DEBUG scheduling-1 druid.sql.Connection - {conn-10016} pool-connect
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21110} created. INSERT INTO stock_data
+ (stock_id, open, close, high, low, volume, trading_day)
+VALUES (?, ?, ?, ?, ?, ?, ?)
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21110} Parameters : [7595, 2.67, 2.64, 2.68, 2.59, 88816.0, 2019-03-20]
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21110} Types : [BIGINT, DECIMAL, DECIMAL, DECIMAL, DECIMAL, DECIMAL, VARCHAR]
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21110} executed. 34.363374 millis. INSERT INTO stock_data
+ (stock_id, open, close, high, low, volume, trading_day)
+VALUES (?, ?, ?, ?, ?, ?, ?)
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21110, rs-51110} open
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21110, rs-51110} Header: [GENERATED_KEY]
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21110, rs-51110} Result: [279307]
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21110, rs-51110} closed
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21110} closed
+DEBUG scheduling-1 druid.sql.Connection - {conn-10016} pool-recycle
+DEBUG scheduling-1 druid.sql.Connection - {conn-10016} pool-connect
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21111} created. INSERT INTO stock_data
+ (stock_id, open, close, high, low, volume, trading_day)
+VALUES (?, ?, ?, ?, ?, ?, ?)
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21111} Parameters : [7594, 6.83, 6.95, 7.08, 6.75, 80367.0, 2019-03-20]
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21111} Types : [BIGINT, DECIMAL, DECIMAL, DECIMAL, DECIMAL, DECIMAL, VARCHAR]
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21111} executed. 24.130206 millis. INSERT INTO stock_data
+ (stock_id, open, close, high, low, volume, trading_day)
+VALUES (?, ?, ?, ?, ?, ?, ?)
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21111, rs-51111} open
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21111, rs-51111} Header: [GENERATED_KEY]
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21111, rs-51111} Result: [279308]
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21111, rs-51111} closed
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21111} closed
+DEBUG scheduling-1 druid.sql.Connection - {conn-10016} pool-recycle
+DEBUG scheduling-1 druid.sql.Connection - {conn-10016} pool-connect
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21112} created. INSERT INTO stock_data
+ (stock_id, open, close, high, low, volume, trading_day)
+VALUES (?, ?, ?, ?, ?, ?, ?)
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21112} Parameters : [7593, 12.0, 12.33, 12.68, 11.83, 1174968.0, 2019-03-20]
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21112} Types : [BIGINT, DECIMAL, DECIMAL, DECIMAL, DECIMAL, DECIMAL, VARCHAR]
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21112} executed. 93.402747 millis. INSERT INTO stock_data
+ (stock_id, open, close, high, low, volume, trading_day)
+VALUES (?, ?, ?, ?, ?, ?, ?)
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21112, rs-51112} open
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21112, rs-51112} Header: [GENERATED_KEY]
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21112, rs-51112} Result: [279309]
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21112, rs-51112} closed
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21112} closed
+DEBUG scheduling-1 druid.sql.Connection - {conn-10016} pool-recycle
+DEBUG scheduling-1 druid.sql.Connection - {conn-10016} pool-connect
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21113} created. INSERT INTO stock_data
+ (stock_id, open, close, high, low, volume, trading_day)
+VALUES (?, ?, ?, ?, ?, ?, ?)
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21113} Parameters : [7592, 33.04, 34.76, 35.2, 33.0, 88894.0, 2019-03-20]
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21113} Types : [BIGINT, DECIMAL, DECIMAL, DECIMAL, DECIMAL, DECIMAL, VARCHAR]
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21113} executed. 98.252067 millis. INSERT INTO stock_data
+ (stock_id, open, close, high, low, volume, trading_day)
+VALUES (?, ?, ?, ?, ?, ?, ?)
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21113, rs-51113} open
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21113, rs-51113} Header: [GENERATED_KEY]
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21113, rs-51113} Result: [279310]
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21113, rs-51113} closed
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21113} closed
+DEBUG scheduling-1 druid.sql.Connection - {conn-10016} pool-recycle
+DEBUG scheduling-1 druid.sql.Connection - {conn-10016} pool-connect
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21114} created. INSERT INTO stock_data
+ (stock_id, open, close, high, low, volume, trading_day)
+VALUES (?, ?, ?, ?, ?, ?, ?)
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21114} Parameters : [7591, 7.27, 7.61, 7.77, 7.1, 537112.0, 2019-03-20]
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21114} Types : [BIGINT, DECIMAL, DECIMAL, DECIMAL, DECIMAL, DECIMAL, VARCHAR]
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21114} executed. 73.065435 millis. INSERT INTO stock_data
+ (stock_id, open, close, high, low, volume, trading_day)
+VALUES (?, ?, ?, ?, ?, ?, ?)
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21114, rs-51114} open
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21114, rs-51114} Header: [GENERATED_KEY]
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21114, rs-51114} Result: [279311]
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21114, rs-51114} closed
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21114} closed
+DEBUG scheduling-1 druid.sql.Connection - {conn-10016} pool-recycle
+DEBUG scheduling-1 druid.sql.Connection - {conn-10016} pool-connect
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21115} created. INSERT INTO stock_data
+ (stock_id, open, close, high, low, volume, trading_day)
+VALUES (?, ?, ?, ?, ?, ?, ?)
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21115} Parameters : [7590, 5.54, 5.57, 5.6, 5.45, 54907.0, 2019-03-20]
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21115} Types : [BIGINT, DECIMAL, DECIMAL, DECIMAL, DECIMAL, DECIMAL, VARCHAR]
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21115} executed. 59.94527 millis. INSERT INTO stock_data
+ (stock_id, open, close, high, low, volume, trading_day)
+VALUES (?, ?, ?, ?, ?, ?, ?)
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21115, rs-51115} open
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21115, rs-51115} Header: [GENERATED_KEY]
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21115, rs-51115} Result: [279312]
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21115, rs-51115} closed
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21115} closed
+DEBUG scheduling-1 druid.sql.Connection - {conn-10016} pool-recycle
+DEBUG scheduling-1 druid.sql.Connection - {conn-10016} pool-connect
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21116} created. INSERT INTO stock_data
+ (stock_id, open, close, high, low, volume, trading_day)
+VALUES (?, ?, ?, ?, ?, ?, ?)
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21116} Parameters : [7589, 5.96, 5.81, 6.11, 5.61, 106060.0, 2019-03-20]
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21116} Types : [BIGINT, DECIMAL, DECIMAL, DECIMAL, DECIMAL, DECIMAL, VARCHAR]
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21116} executed. 70.898652 millis. INSERT INTO stock_data
+ (stock_id, open, close, high, low, volume, trading_day)
+VALUES (?, ?, ?, ?, ?, ?, ?)
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21116, rs-51116} open
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21116, rs-51116} Header: [GENERATED_KEY]
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21116, rs-51116} Result: [279313]
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21116, rs-51116} closed
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21116} closed
+DEBUG scheduling-1 druid.sql.Connection - {conn-10016} pool-recycle
+DEBUG scheduling-1 druid.sql.Connection - {conn-10016} pool-connect
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21117} created. INSERT INTO stock_data
+ (stock_id, open, close, high, low, volume, trading_day)
+VALUES (?, ?, ?, ?, ?, ?, ?)
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21117} Parameters : [7588, 8.68, 8.78, 8.84, 8.62, 161369.0, 2019-03-20]
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21117} Types : [BIGINT, DECIMAL, DECIMAL, DECIMAL, DECIMAL, DECIMAL, VARCHAR]
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21117} executed. 23.506591 millis. INSERT INTO stock_data
+ (stock_id, open, close, high, low, volume, trading_day)
+VALUES (?, ?, ?, ?, ?, ?, ?)
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21117, rs-51117} open
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21117, rs-51117} Header: [GENERATED_KEY]
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21117, rs-51117} Result: [279314]
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21117, rs-51117} closed
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21117} closed
+DEBUG scheduling-1 druid.sql.Connection - {conn-10016} pool-recycle
+DEBUG scheduling-1 druid.sql.Connection - {conn-10016} pool-connect
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21118} created. INSERT INTO stock_data
+ (stock_id, open, close, high, low, volume, trading_day)
+VALUES (?, ?, ?, ?, ?, ?, ?)
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21118} Parameters : [7587, 8.48, 8.44, 8.5, 8.05, 194527.0, 2019-03-20]
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21118} Types : [BIGINT, DECIMAL, DECIMAL, DECIMAL, DECIMAL, DECIMAL, VARCHAR]
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21118} executed. 17.482402 millis. INSERT INTO stock_data
+ (stock_id, open, close, high, low, volume, trading_day)
+VALUES (?, ?, ?, ?, ?, ?, ?)
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21118, rs-51118} open
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21118, rs-51118} Header: [GENERATED_KEY]
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21118, rs-51118} Result: [279315]
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21118, rs-51118} closed
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21118} closed
+DEBUG scheduling-1 druid.sql.Connection - {conn-10016} pool-recycle
+DEBUG scheduling-1 druid.sql.Connection - {conn-10016} pool-connect
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21119} created. INSERT INTO stock_data
+ (stock_id, open, close, high, low, volume, trading_day)
+VALUES (?, ?, ?, ?, ?, ?, ?)
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21119} Parameters : [7586, 6.74, 7.14, 7.34, 6.68, 299548.0, 2019-03-20]
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21119} Types : [BIGINT, DECIMAL, DECIMAL, DECIMAL, DECIMAL, DECIMAL, VARCHAR]
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21119} executed. 21.873311 millis. INSERT INTO stock_data
+ (stock_id, open, close, high, low, volume, trading_day)
+VALUES (?, ?, ?, ?, ?, ?, ?)
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21119, rs-51119} open
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21119, rs-51119} Header: [GENERATED_KEY]
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21119, rs-51119} Result: [279316]
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21119, rs-51119} closed
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21119} closed
+DEBUG scheduling-1 druid.sql.Connection - {conn-10016} pool-recycle
+DEBUG scheduling-1 druid.sql.Connection - {conn-10016} pool-connect
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21120} created. INSERT INTO stock_data
+ (stock_id, open, close, high, low, volume, trading_day)
+VALUES (?, ?, ?, ?, ?, ?, ?)
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21120} Parameters : [7585, 8.12, 8.24, 8.57, 8.05, 621368.0, 2019-03-20]
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21120} Types : [BIGINT, DECIMAL, DECIMAL, DECIMAL, DECIMAL, DECIMAL, VARCHAR]
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21120} executed. 95.467813 millis. INSERT INTO stock_data
+ (stock_id, open, close, high, low, volume, trading_day)
+VALUES (?, ?, ?, ?, ?, ?, ?)
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21120, rs-51120} open
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21120, rs-51120} Header: [GENERATED_KEY]
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21120, rs-51120} Result: [279317]
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21120, rs-51120} closed
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21120} closed
+DEBUG scheduling-1 druid.sql.Connection - {conn-10016} pool-recycle
+DEBUG scheduling-1 druid.sql.Connection - {conn-10016} pool-connect
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21121} created. INSERT INTO stock_data
+ (stock_id, open, close, high, low, volume, trading_day)
+VALUES (?, ?, ?, ?, ?, ?, ?)
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21121} Parameters : [7584, 9.24, 9.21, 9.44, 9.04, 221351.0, 2019-03-20]
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21121} Types : [BIGINT, DECIMAL, DECIMAL, DECIMAL, DECIMAL, DECIMAL, VARCHAR]
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21121} executed. 34.431982 millis. INSERT INTO stock_data
+ (stock_id, open, close, high, low, volume, trading_day)
+VALUES (?, ?, ?, ?, ?, ?, ?)
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21121, rs-51121} open
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21121, rs-51121} Header: [GENERATED_KEY]
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21121, rs-51121} Result: [279318]
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21121, rs-51121} closed
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21121} closed
+DEBUG scheduling-1 druid.sql.Connection - {conn-10016} pool-recycle
+DEBUG scheduling-1 druid.sql.Connection - {conn-10016} pool-connect
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21122} created. INSERT INTO stock_data
+ (stock_id, open, close, high, low, volume, trading_day)
+VALUES (?, ?, ?, ?, ?, ?, ?)
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21122} Parameters : [7583, 7.83, 7.75, 7.84, 7.63, 173281.0, 2019-03-20]
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21122} Types : [BIGINT, DECIMAL, DECIMAL, DECIMAL, DECIMAL, DECIMAL, VARCHAR]
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21122} executed. 24.205641 millis. INSERT INTO stock_data
+ (stock_id, open, close, high, low, volume, trading_day)
+VALUES (?, ?, ?, ?, ?, ?, ?)
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21122, rs-51122} open
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21122, rs-51122} Header: [GENERATED_KEY]
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21122, rs-51122} Result: [279319]
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21122, rs-51122} closed
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21122} closed
+DEBUG scheduling-1 druid.sql.Connection - {conn-10016} pool-recycle
+DEBUG scheduling-1 druid.sql.Connection - {conn-10016} pool-connect
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21123} created. INSERT INTO stock_data
+ (stock_id, open, close, high, low, volume, trading_day)
+VALUES (?, ?, ?, ?, ?, ?, ?)
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21123} Parameters : [7582, 14.75, 14.71, 14.97, 14.51, 250410.0, 2019-03-20]
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21123} Types : [BIGINT, DECIMAL, DECIMAL, DECIMAL, DECIMAL, DECIMAL, VARCHAR]
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21123} executed. 19.301366 millis. INSERT INTO stock_data
+ (stock_id, open, close, high, low, volume, trading_day)
+VALUES (?, ?, ?, ?, ?, ?, ?)
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21123, rs-51123} open
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21123, rs-51123} Header: [GENERATED_KEY]
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21123, rs-51123} Result: [279320]
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21123, rs-51123} closed
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21123} closed
+DEBUG scheduling-1 druid.sql.Connection - {conn-10016} pool-recycle
+DEBUG scheduling-1 druid.sql.Connection - {conn-10016} pool-connect
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21124} created. INSERT INTO stock_data
+ (stock_id, open, close, high, low, volume, trading_day)
+VALUES (?, ?, ?, ?, ?, ?, ?)
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21124} Parameters : [7581, 9.99, 9.88, 10.15, 9.67, 645133.0, 2019-03-20]
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21124} Types : [BIGINT, DECIMAL, DECIMAL, DECIMAL, DECIMAL, DECIMAL, VARCHAR]
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21124} executed. 77.681624 millis. INSERT INTO stock_data
+ (stock_id, open, close, high, low, volume, trading_day)
+VALUES (?, ?, ?, ?, ?, ?, ?)
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21124, rs-51124} open
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21124, rs-51124} Header: [GENERATED_KEY]
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21124, rs-51124} Result: [279321]
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21124, rs-51124} closed
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21124} closed
+DEBUG scheduling-1 druid.sql.Connection - {conn-10016} pool-recycle
+DEBUG scheduling-1 druid.sql.Connection - {conn-10016} pool-connect
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21125} created. INSERT INTO stock_data
+ (stock_id, open, close, high, low, volume, trading_day)
+VALUES (?, ?, ?, ?, ?, ?, ?)
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21125} Parameters : [7580, 20.83, 20.69, 20.85, 20.43, 116743.0, 2019-03-20]
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21125} Types : [BIGINT, DECIMAL, DECIMAL, DECIMAL, DECIMAL, DECIMAL, VARCHAR]
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21125} executed. 22.350495 millis. INSERT INTO stock_data
+ (stock_id, open, close, high, low, volume, trading_day)
+VALUES (?, ?, ?, ?, ?, ?, ?)
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21125, rs-51125} open
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21125, rs-51125} Header: [GENERATED_KEY]
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21125, rs-51125} Result: [279322]
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21125, rs-51125} closed
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21125} closed
+DEBUG scheduling-1 druid.sql.Connection - {conn-10016} pool-recycle
+DEBUG scheduling-1 druid.sql.Connection - {conn-10016} pool-connect
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21126} created. INSERT INTO stock_data
+ (stock_id, open, close, high, low, volume, trading_day)
+VALUES (?, ?, ?, ?, ?, ?, ?)
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21126} Parameters : [7579, 12.31, 12.8, 12.8, 12.3, 96476.0, 2019-03-20]
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21126} Types : [BIGINT, DECIMAL, DECIMAL, DECIMAL, DECIMAL, DECIMAL, VARCHAR]
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21126} executed. 24.733001 millis. INSERT INTO stock_data
+ (stock_id, open, close, high, low, volume, trading_day)
+VALUES (?, ?, ?, ?, ?, ?, ?)
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21126, rs-51126} open
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21126, rs-51126} Header: [GENERATED_KEY]
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21126, rs-51126} Result: [279323]
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21126, rs-51126} closed
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21126} closed
+DEBUG scheduling-1 druid.sql.Connection - {conn-10016} pool-recycle
+DEBUG scheduling-1 druid.sql.Connection - {conn-10016} pool-connect
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21127} created. INSERT INTO stock_data
+ (stock_id, open, close, high, low, volume, trading_day)
+VALUES (?, ?, ?, ?, ?, ?, ?)
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21127} Parameters : [7578, 3.06, 3.14, 3.15, 2.98, 436074.0, 2019-03-20]
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21127} Types : [BIGINT, DECIMAL, DECIMAL, DECIMAL, DECIMAL, DECIMAL, VARCHAR]
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21127} executed. 41.894549 millis. INSERT INTO stock_data
+ (stock_id, open, close, high, low, volume, trading_day)
+VALUES (?, ?, ?, ?, ?, ?, ?)
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21127, rs-51127} open
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21127, rs-51127} Header: [GENERATED_KEY]
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21127, rs-51127} Result: [279324]
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21127, rs-51127} closed
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21127} closed
+DEBUG scheduling-1 druid.sql.Connection - {conn-10016} pool-recycle
+DEBUG scheduling-1 druid.sql.Connection - {conn-10016} pool-connect
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21128} created. INSERT INTO stock_data
+ (stock_id, open, close, high, low, volume, trading_day)
+VALUES (?, ?, ?, ?, ?, ?, ?)
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21128} Parameters : [7577, 3.66, 3.64, 3.67, 3.6, 97849.0, 2019-03-20]
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21128} Types : [BIGINT, DECIMAL, DECIMAL, DECIMAL, DECIMAL, DECIMAL, VARCHAR]
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21128} executed. 137.301263 millis. INSERT INTO stock_data
+ (stock_id, open, close, high, low, volume, trading_day)
+VALUES (?, ?, ?, ?, ?, ?, ?)
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21128, rs-51128} open
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21128, rs-51128} Header: [GENERATED_KEY]
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21128, rs-51128} Result: [279325]
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21128, rs-51128} closed
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21128} closed
+DEBUG scheduling-1 druid.sql.Connection - {conn-10016} pool-recycle
+DEBUG scheduling-1 druid.sql.Connection - {conn-10016} pool-connect
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21129} created. INSERT INTO stock_data
+ (stock_id, open, close, high, low, volume, trading_day)
+VALUES (?, ?, ?, ?, ?, ?, ?)
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21129} Parameters : [7576, 27.47, 26.88, 27.59, 25.98, 85717.0, 2019-03-20]
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21129} Types : [BIGINT, DECIMAL, DECIMAL, DECIMAL, DECIMAL, DECIMAL, VARCHAR]
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21129} executed. 126.051605 millis. INSERT INTO stock_data
+ (stock_id, open, close, high, low, volume, trading_day)
+VALUES (?, ?, ?, ?, ?, ?, ?)
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21129, rs-51129} open
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21129, rs-51129} Header: [GENERATED_KEY]
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21129, rs-51129} Result: [279326]
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21129, rs-51129} closed
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21129} closed
+DEBUG scheduling-1 druid.sql.Connection - {conn-10016} pool-recycle
+DEBUG scheduling-1 druid.sql.Connection - {conn-10016} pool-connect
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21130} created. INSERT INTO stock_data
+ (stock_id, open, close, high, low, volume, trading_day)
+VALUES (?, ?, ?, ?, ?, ?, ?)
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21130} Parameters : [7575, 7.39, 8.16, 8.16, 7.39, 203576.0, 2019-03-20]
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21130} Types : [BIGINT, DECIMAL, DECIMAL, DECIMAL, DECIMAL, DECIMAL, VARCHAR]
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21130} executed. 40.959296 millis. INSERT INTO stock_data
+ (stock_id, open, close, high, low, volume, trading_day)
+VALUES (?, ?, ?, ?, ?, ?, ?)
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21130, rs-51130} open
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21130, rs-51130} Header: [GENERATED_KEY]
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21130, rs-51130} Result: [279327]
+DEBUG scheduling-1 druid.sql.ResultSet - {conn-10016, pstmt-21130, rs-51130} closed
+DEBUG scheduling-1 druid.sql.Statement - {conn-10016, pstmt-21130} closed
+DEBUG scheduling-1 druid.sql.Connection - {conn-10016} pool-recycle

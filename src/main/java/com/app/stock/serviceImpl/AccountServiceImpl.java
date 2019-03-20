@@ -98,7 +98,8 @@ public class AccountServiceImpl  implements AccountService {
     @Override
     public List<Map<String, Object>> list(AccountListRequest accountListRequest) {
         /*Map<String,Object> map = new HashMap<>();*/
-        if(accountListRequest.getStoreTypeParentId() != null){
+        if(accountListRequest.getStoreTypeParentId() != null &&
+                accountListRequest.getStoreTypeParentId() != 0){
             if(accountListRequest.getStoreTypeId() == null){
                 accountListRequest.setStoreTypeId(new ArrayList<>());
             }
