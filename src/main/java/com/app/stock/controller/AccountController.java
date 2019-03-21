@@ -56,7 +56,7 @@ public class AccountController {
         if(requestMap.get("id") == null){
             return Response.ok("主键不能为空");
         }
-        return Response.ok(accountService.deleteAccount((Long)requestMap.get("id")));
+        return Response.ok(accountService.deleteAccount(Long.valueOf(requestMap.get("id") + "")));
     }
 
     // 修改账单信息
