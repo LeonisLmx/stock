@@ -146,6 +146,7 @@ public class PetServiceImpl  implements PetService {
 
     @Override
     public String saleStock(FeedPetRequest map, HttpServletRequest request) throws ParseException {
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
         if(!isTrading()){
             return "当前不是交易时间";
         }
@@ -153,6 +154,9 @@ public class PetServiceImpl  implements PetService {
         PetStockDetail petStockDetail = petStockDetailSelfMapper.selectIsHaveStock(map.getStockId(),user.getId());
         if(petStockDetail == null){
             return "当前未持有该股票，无法操作";
+        }
+        if(sdf.format(petStockDetail.getbTime()).equals(sdf.format(new Date()))){
+            return "股票必须T+1操作";
         }
         petStockDetail.setsPrice(new BigDecimal(map.getPrice()));
         petStockDetail.setsTime(new Date());

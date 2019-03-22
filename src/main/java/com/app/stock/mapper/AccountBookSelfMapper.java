@@ -40,6 +40,7 @@ public interface AccountBookSelfMapper extends AccountBookMapper {
             "<if test=\"entity.endTime != null and entity.endTime != ''\">",
             "and a.create_time &lt;= #{entity.endTime}",
             "</if>",
+            "order by create_time desc",
             "</script>"
     })
     List<Map<String,Object>> selectAllAccountByCondition(@Param("entity") AccountListRequest entity,@Param("userId")Long userId);
