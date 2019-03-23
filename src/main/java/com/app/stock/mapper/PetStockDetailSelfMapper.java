@@ -22,7 +22,7 @@ public interface PetStockDetailSelfMapper extends PetStockDetailMapper {
             ",a.s_price,date_format(a.s_time,'%Y-%m-%d %H:%i:%s') as s_time,a.increase",
             "</if>",
             " from pet_stock_detail a left join stock b on a.stock_id = b.id",
-            "where a.pet_id = #{petId} and a.is_delete = #{isDelete} order by a.create_time",
+            "where a.pet_id = #{petId} and a.is_delete = #{isDelete} order by a.create_time desc",
             "</script>"
     })
     List<Map<String,Object>> selectListByPetId(@Param("petId")Long petId, @Param("isDelete") Integer isDelete);

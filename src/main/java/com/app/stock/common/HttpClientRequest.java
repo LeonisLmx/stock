@@ -75,7 +75,6 @@ public class HttpClientRequest {
                 String name = (String) iter.next();
                 String value = String.valueOf(params.get(name));
                 nvps.add(new BasicNameValuePair(name, value));
-                System.out.println(value);
             }
             request.setEntity(new UrlEncodedFormEntity(nvps, HTTP.UTF_8));
 

@@ -152,7 +152,6 @@ public class StockServiceImpl implements StockService {
             System.out.println(conditionMap.get("stocks"));
             StringBuilder sb = CommonUtil.sortMap(conditionMap);
             sb.append("8e5cc51d121d4ca4ad0cbb496b42a01a");
-            System.out.println(sb);
             String sign = DigestUtils.md5Hex(sb.toString().getBytes("utf-8"));
             conditionMap.put("showapi_sign", sign);
             String result = HttpClientRequest.doPost("http://route.showapi.com/131-46", conditionMap);
