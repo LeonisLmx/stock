@@ -9,6 +9,7 @@ import com.app.stock.model.Stock;
 import com.app.stock.model.request.StockDetailRequest;
 import com.app.stock.model.result.StockResult;
 import com.app.stock.service.StockService;
+import com.app.stock.spring_config_files.ShowApi;
 import com.google.gson.Gson;
 import org.apache.commons.codec.digest.DigestUtils;
 import org.slf4j.Logger;
@@ -36,6 +37,9 @@ public class StockServiceImpl implements StockService {
 
     @Autowired
     private RedisExecutor redisExecutor;
+
+    @Autowired
+    private ShowApi showApi;
 
     @Override
     public List<Stock> selectAllByKeywords(String keywords) {
@@ -147,11 +151,11 @@ public class StockServiceImpl implements StockService {
         if(stockCodes.size() > 0) {
             String conditionStocks = stockCodes.toString().substring(1,stockCodes.toString().length()-1).replaceAll(" ","");
             Map<String, Object> conditionMap = new HashMap<>();
-            conditionMap.put("showapi_appid", 88931);
+            conditionMap.put("showapi_appid", showApi.getAppId());
             conditionMap.put("stocks", conditionStocks);
             System.out.println(conditionMap.get("stocks"));
             StringBuilder sb = CommonUtil.sortMap(conditionMap);
-            sb.append("8e5cc51d121d4ca4ad0cbb496b42a01a");
+            sb.append(showApi.getKey());
             String sign = DigestUtils.md5Hex(sb.toString().getBytes("utf-8"));
             conditionMap.put("showapi_sign", sign);
             String result = HttpClientRequest.doPost("http://route.showapi.com/131-46", conditionMap);
