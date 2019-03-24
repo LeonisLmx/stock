@@ -14,5 +14,5 @@ public interface NewsService {
     // 新闻拉取
     public void pullNews() throws UnsupportedEncodingException;
 
-    public List<Map<String,Object>> searchNews();
+    public List<Map<String,Object>> searchNews(Map<String,Object> map);
 }

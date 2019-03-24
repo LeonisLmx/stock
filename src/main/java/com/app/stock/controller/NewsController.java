@@ -3,10 +3,12 @@ package com.app.stock.controller;
 import com.app.stock.common.Response;
 import com.app.stock.service.NewsService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.io.UnsupportedEncodingException;
+import java.util.Map;
 
 /**
  * @Author mingxin Liu
@@ -20,9 +22,14 @@ public class NewsController {
     @Autowired
     private NewsService newsService;
 
-    @RequestMapping("search")
-    public Response searchNews() throws UnsupportedEncodingException {
+    @RequestMapping("pullNews")
+    public Response pullNews() throws UnsupportedEncodingException {
         newsService.pullNews();
         return Response.ok("操作成功");
+    }
+
+    @RequestMapping("/search")
+    public Response searchNews(@RequestBody Map<String,Object> map){
+        return Response.ok(newsService.searchNews(map),"操作成功");
     }
 }

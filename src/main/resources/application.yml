@@ -52,3 +52,11 @@ image:
     avatar: /data/image/avatar/
     advertise: /data/image/advertise/
     vedio: /data/vedio/subject/
+showapi:
+  key: 8e5cc51d121d4ca4ad0cbb496b42a01a
+  appId: 88931
+  news:
+    url: http://route.showapi.com/109-35
+    channelId: 5572a108b3cdc86cf39001d0
+  stock:
+    url: http://route.showapi.com/131-46

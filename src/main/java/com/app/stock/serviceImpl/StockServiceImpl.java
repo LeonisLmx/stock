@@ -157,8 +157,10 @@ public class StockServiceImpl implements StockService {
             String result = HttpClientRequest.doPost("http://route.showapi.com/131-46", conditionMap);
             StockResult stockResult = new Gson().fromJson(result, StockResult.class);
             System.out.println(result);
+            logger.info("股票信息查询成功");
             return stockResult.getShowapi_res_body().getList();
         }else{
+            logger.info("股票信息不存在");
             return null;
         }
     }
