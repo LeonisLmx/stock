@@ -51,7 +51,7 @@ image:
   path:
     avatar: /data/image/avatar/
     advertise: /data/image/advertise/
-    vedio: /data/vedio/subject/
+    vedio: /data/video/subject/
 showapi:
   key: 8e5cc51d121d4ca4ad0cbb496b42a01a
   appId: 88931

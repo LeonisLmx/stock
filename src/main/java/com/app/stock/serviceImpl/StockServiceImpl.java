@@ -57,19 +57,46 @@ public class StockServiceImpl implements StockService {
         List<Map<String,Object>> list = new ArrayList<>();
         Gson gson = new Gson();
         for(String entity:condition){
+            List<Map<String,Object>> redisList = new ArrayList<>();
             if(entity.equals("1")){
-                List<Map<String,Object>> redisList = gson.fromJson(redisExecutor.getMap("CALC","CROSS"),List.class);
+                redisList = gson.fromJson(redisExecutor.getMap("CALC","CROSS"),List.class);
                 list = addRepeatList(list,redisList);
             }else if(entity.equals("2")){
-                List<Map<String,Object>> redisList = gson.fromJson(redisExecutor.getMap("CALC","YANGLINE"),List.class);
+                redisList = gson.fromJson(redisExecutor.getMap("CALC","YANGLINE"),List.class);
                 list = addRepeatList(list,redisList);
             }else if(entity.equals("3")){
-                List<Map<String,Object>> redisList = gson.fromJson(redisExecutor.getMap("CALC","LONGUNDERLINE"),List.class);
-                list = addRepeatList(list,redisList);
+                redisList = gson.fromJson(redisExecutor.getMap("CALC","LONGUNDERLINE"),List.class);
             }else if(entity.equals("4")){
-                List<Map<String,Object>> redisList = gson.fromJson(redisExecutor.getMap("CALC","HAMMERLINE"),List.class);
-                list = addRepeatList(list,redisList);
+                redisList = gson.fromJson(redisExecutor.getMap("CALC","HAMMERLINE"),List.class);
+            }else if(entity.equals("5")){
+                // 金叉
+                redisList = gson.fromJson(redisExecutor.getMap("CALC","GOLDCROSS"),List.class);
+            }else if(entity.equals("6")){
+                // 死叉
+                redisList = gson.fromJson(redisExecutor.getMap("CALC","DEADCROSS"),List.class);
+            }else  if(entity.equals("7")){
+                // 稳健买点
+                redisList = gson.fromJson(redisExecutor.getMap("CALC","ROBUSTBUY"),List.class);
+            }else if(entity.equals("8")) {
+                // 激进买点
+                redisList = gson.fromJson(redisExecutor.getMap("CALC", "RADICALBUY"), List.class);
+            }else if(entity.equals("9")){
+                // BOLL
+                redisList = gson.fromJson(redisExecutor.getMap("CALC","BOLL"),List.class);
+            }else if(entity.equals("10")){
+                // V字底
+                redisList = gson.fromJson(redisExecutor.getMap("CALC","V"),List.class);
+            }else if(entity.equals("11")){
+                // 海底捞月
+                redisList = gson.fromJson(redisExecutor.getMap("CALC","SEA"),List.class);
+            }else if(entity.equals("12")){
+                // 均线多头
+                redisList = gson.fromJson(redisExecutor.getMap("CALC","MORE"),List.class);
+            }else if(entity.equals("13")){
+                // 红三兵
+                redisList = gson.fromJson(redisExecutor.getMap("CALC","THREEARMY"),List.class);
             }
+            list = addRepeatList(list,redisList);
         }
         Collections.sort(list, new Comparator<Map<String, Object>>() {
             @Override
