@@ -195,4 +195,16 @@ public class StockServiceImpl implements StockService {
             return null;
         }
     }
+
+    // 获取新浪概念板块
+    @Override
+    public List<Object> getSinaData(Integer page, Integer page_size,Integer type) throws Exception {
+        String conceptUrl = "http://gu.sina.cn/hq/api/openapi.php/StockV2Service.getPlateList?num=" + page_size + "&page=" + page +"&sort=percent&asc=0&dpc=1&plate=chgn";
+        String industryUrl = "http://gu.sina.cn/hq/api/openapi.php/StockV2Service.getPlateList?num=" + page_size + "&page="+ page +"&sort=percent&asc=0&dpc=1&plate=sw2";
+        String url = 1 == type? conceptUrl:industryUrl;
+        String response =  HttpClientRequest.Get(url);
+        response = response.substring(response.indexOf("["),response.indexOf("]") + 1);
+        List<Object> list = new Gson().fromJson(response,List.class);
+        return list;
+    }
 }

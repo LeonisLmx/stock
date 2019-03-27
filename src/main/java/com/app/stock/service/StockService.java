@@ -22,4 +22,6 @@ public interface StockService {
     public List<Map<String,Object>> getFormualData(Map<String, Object> map);
 
     public List<Object> getStockDetails(StockDetailRequest stockDetailRequest) throws UnsupportedEncodingException;
+
+    public List<Object> getSinaData(Integer page,Integer page_size,Integer type) throws Exception;
 }

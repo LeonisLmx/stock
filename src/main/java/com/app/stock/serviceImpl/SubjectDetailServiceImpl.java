@@ -122,7 +122,10 @@ public class SubjectDetailServiceImpl implements SubjectDetailService {
             int hour = (int) (ls/3600);
             int minute = (int) (ls%3600)/60;
             int second = (int) (ls-hour*3600-minute*60);
-            length = hour+"h"+minute+"m"+second+"s";
+            String hourTime = hour < 10? "0" + hour:hour + "";
+            String minuteTime = minute < 10? "0" + minute:minute + "";
+            String secondTime = second < 10? "0" + second:second + "";
+            length = hourTime + ":" + minuteTime + ":" + secondTime;
         } catch (Exception e) {
             e.printStackTrace();
         }
