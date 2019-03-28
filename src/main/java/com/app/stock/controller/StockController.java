@@ -78,7 +78,8 @@ public class StockController {
     public Response getSinaData(@RequestBody Map<String,Object> map) throws Exception {
         return Response.ok(stockService.getSinaData(map.get("page") == null?1:Integer.valueOf(map.get("page") + ""),
                 map.get("page_size") == null?20:Integer.valueOf(map.get("page_size") + ""),
-                map.get("type") == null?1:Integer.valueOf(map.get("type") + "")),"操作成功");
+                map.get("type") == null?1:Integer.valueOf(map.get("type") + ""),
+                map.get("asc") == null?0:Integer.valueOf(map.get("sort") + "")),"操作成功");
     }
 
     @RequestMapping("/yangLine")

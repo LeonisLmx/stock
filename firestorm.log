@@ -95,3 +95,8 @@ DEBUG http-nio-8999-exec-4 druid.sql.ResultSet - {conn-10005, pstmt-20002, rs-50
 DEBUG http-nio-8999-exec-4 druid.sql.ResultSet - {conn-10005, pstmt-20002, rs-50002} closed
 DEBUG http-nio-8999-exec-4 druid.sql.Statement - {conn-10005, pstmt-20002} closed
 DEBUG http-nio-8999-exec-4 druid.sql.Connection - {conn-10005} pool-recycle
+DEBUG Thread-12 druid.sql.Connection - {conn-10001} closed
+DEBUG Thread-12 druid.sql.Connection - {conn-10002} closed
+DEBUG Thread-12 druid.sql.Connection - {conn-10003} closed
+DEBUG Thread-12 druid.sql.Connection - {conn-10004} closed
+DEBUG Thread-12 druid.sql.Connection - {conn-10005} closed

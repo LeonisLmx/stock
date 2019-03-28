@@ -23,5 +23,5 @@ public interface StockService {
 
     public List<Object> getStockDetails(StockDetailRequest stockDetailRequest) throws UnsupportedEncodingException;
 
-    public List<Object> getSinaData(Integer page,Integer page_size,Integer type) throws Exception;
+    public List<Object> getSinaData(Integer page,Integer page_size,Integer type,Integer asc) throws Exception;
 }
