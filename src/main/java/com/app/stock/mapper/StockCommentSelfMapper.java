@@ -16,9 +16,9 @@ public interface StockCommentSelfMapper extends StockCommentMapper {
 
     @Select({
             "<script>",
-            "select a.nickname,a.phone,a.headerImg,b.content,DATE_FORMAT(b.create_time,'%Y-%m-%d %H:%i:%s') as create_time",
-            "from user a left join stock_comment b",
-            "on a.id = b.user_id where a.is_delete = 0 and b.is_delete = 0",
+            "select a.nickname,a.phone,a.headerImg,b.content,DATE_FORMAT(b.create_time,'%Y-%m-%d %H:%i:%s') as create_time,",
+            "c.stock_code,c.stock_name,c.market from user a left join stock_comment b",
+            "on a.id = b.user_id left join stock c on b.stock_code = c.stock_code where a.is_delete = 0 and b.is_delete = 0",
             "<if test=\"userId != null\">",
             "and a.id = #{userId}",
             "</if>",

@@ -82,11 +82,6 @@ public class StockCommentServiceImpl implements StockCommentService {
         PageHelper.startPage(page,page_size);
         List<Map<String,Object>> list = stockCommentSelfMapper.selectStockCommentByCondition(userId,stockCode,stockMarket,date);
         PageInfo pageInfo = new PageInfo(list);
-        /*Map<String,Object> map = new HashMap<>();
-        map.put("list",pageInfo.getList());*/
-        /*map.put("page",page);
-        map.put("per_page",page_size);
-        map.put("count",pageInfo.getTotal());*/
         return pageInfo.getList();
     }
 }

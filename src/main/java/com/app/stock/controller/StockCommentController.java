@@ -39,8 +39,13 @@ public class StockCommentController {
     // 获取吐槽接口
     @RequestMapping(value = "/get_comment",method = {RequestMethod.GET,RequestMethod.POST})
     public Response getComment(@RequestBody Map<String,Object> requestMap,HttpServletRequest request){
-        return Response.ok(stockCommentService.getComment((Integer) requestMap.get("type"),requestMap.get("stockCode").toString(),
-                requestMap.get("stockMarket").toString(),requestMap.get("date").toString(),
-                (Integer)requestMap.get("page"),(Integer)requestMap.get("page_size"),request),"操作成功");
+        if(requestMap.get("stockCode") == null || requestMap.get("stockMarket") == null){
+            return Response.ok("股票相关信息不能为空");
+        }
+        return Response.ok(stockCommentService.getComment(requestMap.get("type") == null?0:Integer.valueOf(requestMap.get("type") + ""),
+                requestMap.get("stockCode").toString(), requestMap.get("stockMarket").toString(),
+                requestMap.get("date") == null?null:requestMap.get("date").toString(),
+                requestMap.get("page") == null?1:Integer.valueOf(requestMap.get("page") + ""),
+                requestMap.get("page_size") == null?20:Integer.valueOf(requestMap.get("page_size") + ""),request),"操作成功");
     }
 }

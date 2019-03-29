@@ -60,6 +60,7 @@ public class NewsServiceImpl implements NewsService {
         String sign = DigestUtils.md5Hex(sb.toString().getBytes("utf-8"));
         map.put("showapi_sign", sign);
         String response =  HttpClientRequest.doPost(showApi.getNewsUrl(),map);
+        System.out.println(response);
         response = response.substring(response.indexOf("contentlist") + 13,response.lastIndexOf("]") + 1);
         List<Map<String,Object>> bigMap = gson.fromJson(response,new TypeToken<List>(){}.getType());
         List<News> list = new ArrayList<>();
