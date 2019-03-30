@@ -2,6 +2,7 @@ package com.app.stock.controller;
 
 import com.app.stock.common.Response;
 import com.app.stock.model.request.StockDetailRequest;
+import com.app.stock.service.SMSSerivce;
 import com.app.stock.service.ScheduleCrossService;
 import com.app.stock.service.StockService;
 import org.apache.commons.lang3.StringUtils;
@@ -32,6 +33,9 @@ public class StockController {
 
     @Autowired
     private ScheduleCrossService scheduleCrossService;
+
+    @Autowired
+    private SMSSerivce smsSerivce;
 
     // 通过关键词搜索股票
     @RequestMapping(value = "/getStock",method = {RequestMethod.GET,RequestMethod.POST})
@@ -89,7 +93,7 @@ public class StockController {
             @Override
             public void run() {
                 try {
-                    scheduleCrossService.achieveTradingDate();
+                    //smsSerivce.sendSMS();
                 } catch (Exception e) {
                     e.printStackTrace();
                 }

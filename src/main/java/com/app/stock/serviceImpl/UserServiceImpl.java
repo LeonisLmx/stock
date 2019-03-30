@@ -1,15 +1,15 @@
 package com.app.stock.serviceImpl;
 
 import com.app.stock.common.CommonUtil;
-import com.app.stock.common.commonEnum.MessageEnum;
 import com.app.stock.common.RedisUtil;
+import com.app.stock.common.commonEnum.SMSEnum;
 import com.app.stock.mapper.UserSelfMapper;
 import com.app.stock.mapper.UserVipDetailSelfMapper;
 import com.app.stock.model.User;
 import com.app.stock.model.UserVipDetail;
 import com.app.stock.model.request.UserRegisterRequest;
-import com.app.stock.service.AdvertiseService;
 import com.app.stock.service.PetService;
+import com.app.stock.service.SMSSerivce;
 import com.app.stock.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -19,7 +19,6 @@ import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.text.SimpleDateFormat;
 import java.util.*;
-import java.util.concurrent.TimeUnit;
 
 /**
  * Created by lmx
@@ -46,23 +45,25 @@ public class UserServiceImpl implements UserService {
     @Autowired
     private PetService petService;
 
+    @Autowired
+    private SMSSerivce smsSerivce;
+
     // 根据类别获取短信验证码
-    public String getMessageCode(String phone,int type){
-        if(redisUtil.get(phone + MessageEnum.getName(type)) == null){
-            String code = "123456";
-            // 默认存储60秒
-            redisUtil.set(phone + MessageEnum.getName(type),code,60L, TimeUnit.SECONDS);
-            return code;
+    public String getMessageCode(String phone,int type) throws Exception {
+        /*if(redisUtil.get(phone + SMSEnum.getName(type)) == null){
+            return smsSerivce.sendSMS(SMSEnum.getName(type),phone).toString();
         }else{
             return null;
-        }
+        }*/
+        return smsSerivce.sendSMS(SMSEnum.getName(type),phone).toString();
     }
 
     // 用户注册
     public Object userRegister(UserRegisterRequest map) throws NoSuchAlgorithmException{
-        if(!map.getCode().equals(redisUtil.get(map.getPhone() + MessageEnum.getName(0)))){
+        if(!map.getCode().equals(redisUtil.get(map.getPhone() + SMSEnum.REGISTER.getCode()))){
             return "验证码不正确或验证码已超时";
         }
+        redisUtil.remove(map.getPhone() + SMSEnum.REGISTER.getCode());
         if(userMapper.queryUserDetail(map.getPhone(),null) != null){
             return "该用户已存在";
         }
@@ -126,9 +127,10 @@ public class UserServiceImpl implements UserService {
     // 验证码登录
     @Override
     public Object loginByCode(String phone, String code) {
-        if(!code.equals(redisUtil.get(phone + MessageEnum.getName(1)))){
+        if(!code.equals(redisUtil.get(phone + SMSEnum.CODE_LOGIN.getCode()))){
             return "验证码不正确或验证码已超时";
         }
+        redisUtil.remove(phone + SMSEnum.CODE_LOGIN.getCode());
         User user = userMapper.queryUserDetail(phone,null);
         return returnUserInfo(user);
     }
@@ -136,15 +138,15 @@ public class UserServiceImpl implements UserService {
     // 验证码找回密码
     @Override
     public String findPasswordByCode(String phone, String password, String code) throws NoSuchAlgorithmException {
-        if(!code.equals(redisUtil.get(phone + MessageEnum.getName(2)))){
+        if(!code.equals(redisUtil.get(phone + SMSEnum.RESET_PASSWORD.getCode()))){
             return "验证码不正确或验证码已超时";
         }
+        redisUtil.remove(phone + SMSEnum.RESET_PASSWORD.getCode());
         User user = userMapper.queryUserDetail(phone,null);
         if(user == null){
             return "用户不存在";
         }
         editPassword(user,password);
-        redisUtil.remove(phone + MessageEnum.getName(2));
         return "密码修改成功";
     }
 

@@ -41,14 +41,15 @@ public class UserController {
     // 获取手机验证码
     @RequestMapping(value = "/get_message_code",method = {RequestMethod.GET,RequestMethod.POST})
     @PostVerify
-    public Response getMessageCode(@Valid @RequestBody PhoneCodeRequest request, BindingResult bindingResult){
+    public Response getMessageCode(@Valid @RequestBody PhoneCodeRequest request, BindingResult bindingResult) throws Exception {
         if(bindingResult.hasErrors()){
             return Response.ok(bindingResult.getFieldError().getDefaultMessage());
         }
-        String messageCode = userService.getMessageCode(request.getPhone(),request.getType());
-        Map<String,Object> map = new HashMap<>();
-        map.put("code",messageCode);
-        return StringUtils.isNotBlank(messageCode) ? Response.ok(map,"获取成功"):Response.ok("获取太过频繁");
+        userService.getMessageCode(request.getPhone(),request.getType());
+        /*Map<String,Object> map = new HashMap<>();
+        map.put("code",messageCode);*/
+        //return StringUtils.isNotBlank(messageCode) ? Response.ok(map,"获取成功"):Response.ok("获取太过频繁");
+        return Response.ok("获取成功");
     }
 
     // 用户注册

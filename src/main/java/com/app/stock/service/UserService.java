@@ -13,7 +13,7 @@ import java.util.Map;
  */
 public interface UserService {
 
-    public String getMessageCode(String phone,int type);
+    public String getMessageCode(String phone,int type) throws Exception;
 
     public Object userRegister(UserRegisterRequest map) throws NoSuchAlgorithmException;
 

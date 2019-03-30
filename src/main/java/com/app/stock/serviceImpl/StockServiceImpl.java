@@ -98,6 +98,9 @@ public class StockServiceImpl implements StockService {
             }
             list = addRepeatList(list,redisList);
         }
+        if(list == null){
+            return list;
+        }
         Collections.sort(list, new Comparator<Map<String, Object>>() {
             @Override
             public int compare(Map<String, Object> o1, Map<String, Object> o2) {
