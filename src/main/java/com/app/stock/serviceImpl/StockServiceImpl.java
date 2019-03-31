@@ -149,6 +149,9 @@ public class StockServiceImpl implements StockService {
             // 红三兵
             redisList = gson.fromJson(redisExecutor.getMap("CALC","THREEARMY"),List.class);
         }
+        if(redisList == null){
+            return redisList;
+        }
         Collections.sort(redisList, new Comparator<Map<String, Object>>() {
             @Override
             public int compare(Map<String, Object> o1, Map<String, Object> o2) {
@@ -162,8 +165,8 @@ public class StockServiceImpl implements StockService {
     }
 
     protected List<Map<String,Object>> addRepeatList(List<Map<String,Object>> originalList, List<Map<String,Object>> targetList){
-        if(originalList == null || originalList.size() == 0){
-            return targetList;
+        if(originalList == null || originalList.size() == 0 || targetList == null || targetList.size() == 0){
+            return null;
         }
         List<Map<String,Object>> resultList = new ArrayList<>();
         for(Map<String,Object> entity:targetList){

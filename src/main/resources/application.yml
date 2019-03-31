@@ -42,6 +42,15 @@ spring:
     multipart:
       max-file-size: -1
       max-request-size: -1
+  thymeleaf:
+    cache: false
+    prefix: classpath:/templates/
+    check-template-location: true
+    suffix: .html
+    encoding: UTF-8
+    mode: HTML5
+    servlet:
+      content-type: text/html
 logging:
   config: classpath:logback.xml
 mybatis:

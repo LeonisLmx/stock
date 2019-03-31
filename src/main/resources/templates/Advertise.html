@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>广告列表页面</title>
+    <script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+</head>
+<style type="text/css">
+    table.gridtable {
+        margin: 0 auto;
+        font-family: verdana,arial,sans-serif;
+        font-size:11px;
+        color:#333333;
+        border-width: 1px;
+        border-color: #666666;
+        border-collapse: collapse;
+    }
+    table.gridtable th {
+        border-width: 1px;
+        padding: 8px;
+        border-style: solid;
+        border-color: #666666;
+        background-color: #dedede;
+    }
+    table.gridtable td {
+        border-width: 1px;
+        padding: 8px;
+        border-style: solid;
+        border-color: #666666;
+        background-color: #ffffff;
+    }
+    .edit,.delete{
+        cursor: pointer;
+        display: inline-block;
+        color: #409CF7;
+    }
+    .edit{
+        margin-right: 10px;
+    }
+</style>
+<body>
+<p style="text-align: center">广告管理</p>
+<table class="gridtable">
+    <tr><button>新增广告</button></tr>
+    <tr>
+        <th>序号</th>
+        <th>广告名称</th>
+        <th>广告地址</th>
+        <th>广告转向地址</th>
+        <th>广告类型</th>
+        <th>创建时间</th>
+        <th>操作</th>
+    </tr>
+    <tr th:each="entity : ${list}" class="data-line">
+        <td th:text="${entity.id}" class="number"></td>
+        <td th:text="${entity.title}"></td>
+        <td th:text="${entity.imageUrl}"></td>
+        <td th:text="${entity.toUrl}"></td>
+        <td th:text="${entity.type}"></td>
+        <td th:text="${entity.createTime}"></td>
+        <td class="operate"><span class="edit">编辑</span><span class="delete">删除</span></td>
+    </tr>
+</table>
+</body>
+<script>
+    $(".delete").click(function () {
+        // 获取当前选择的值
+        var value = $(this).parents(".data-line").find(".number").text();
+        $.ajax({
+            url:"",
+            success:function (data) {
+                console.log(data);
+            }
+        })
+    })
+
+    $(".edit").click(function () {
+        // 获取当前选择的值
+        var value = $(this).parents(".data-line").find(".number").text();
+        window.location.href = "/api/advertise/info?id=" + value;
+    })
+</script>
+</html>
