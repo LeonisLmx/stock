@@ -28,10 +28,10 @@ public class StockApplication extends WebMvcConfigurerAdapter {
     @Override
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/**")
-                .allowCredentials(true)
-                .allowedHeaders("*")
                 .allowedOrigins("*")
-                .allowedMethods("*");
+                .allowedMethods("POST", "GET", "PUT", "OPTIONS", "DELETE")
+                .maxAge(3600)
+                .allowCredentials(true);
     }
 
     @Override

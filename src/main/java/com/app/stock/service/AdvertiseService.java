@@ -18,4 +18,6 @@ public interface AdvertiseService {
     public int uploadAdvertise(String imgStr, Advertise advertise) throws IOException;
 
     public List<Map<String,Object>> list();
+
+    public int deleteAdvertise(Long id);
 }

@@ -60,10 +60,8 @@ public class StockServiceImpl implements StockService {
             List<Map<String,Object>> redisList = new ArrayList<>();
             if(entity.equals("1")){
                 redisList = gson.fromJson(redisExecutor.getMap("CALC","CROSS"),List.class);
-                list = addRepeatList(list,redisList);
             }else if(entity.equals("2")){
                 redisList = gson.fromJson(redisExecutor.getMap("CALC","YANGLINE"),List.class);
-                list = addRepeatList(list,redisList);
             }else if(entity.equals("3")){
                 redisList = gson.fromJson(redisExecutor.getMap("CALC","LONGUNDERLINE"),List.class);
             }else if(entity.equals("4")){
@@ -96,10 +94,14 @@ public class StockServiceImpl implements StockService {
                 // 红三兵
                 redisList = gson.fromJson(redisExecutor.getMap("CALC","THREEARMY"),List.class);
             }
-            list = addRepeatList(list,redisList);
+            if(list == null || list.size() == 0){
+                list = redisList;
+            }else {
+                list = addRepeatList(list, redisList);
+            }
         }
-        if(list == null){
-            return list;
+        if(list == null || list.size() == 0){
+            return null;
         }
         Collections.sort(list, new Comparator<Map<String, Object>>() {
             @Override
@@ -165,7 +167,7 @@ public class StockServiceImpl implements StockService {
     }
 
     protected List<Map<String,Object>> addRepeatList(List<Map<String,Object>> originalList, List<Map<String,Object>> targetList){
-        if(originalList == null || originalList.size() == 0 || targetList == null || targetList.size() == 0){
+        if(originalList == null || originalList.size() == 0){
             return null;
         }
         List<Map<String,Object>> resultList = new ArrayList<>();

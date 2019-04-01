@@ -4,12 +4,15 @@ import com.app.stock.mapper.AdvertiseSelfMapper;
 import com.app.stock.model.Advertise;
 import com.app.stock.service.AdvertiseService;
 import com.app.stock.spring_config_files.ImagePath;
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.web.multipart.MultipartFile;
 import sun.misc.BASE64Decoder;
 
-import java.io.*;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.OutputStream;
 import java.util.*;
 
 /**
@@ -68,14 +71,28 @@ public class AdvertiseServiceImpl implements AdvertiseService {
 
     @Override
     public int uploadAdvertise(String imgStr, Advertise advertise) throws IOException {
-        String filePath = uploadImage(2,imgStr).get("url").toString();
-        advertise.setImageUrl(filePath);
-        advertise.setCreateTime(new Date());
-        return advertiseSelfMapper.insertSelective(advertise);
+        if(StringUtils.isNotBlank(imgStr)) {
+            String filePath = uploadImage(2, imgStr).get("url").toString();
+            advertise.setImageUrl(filePath);
+        }
+        if(advertise.getId() == null) {
+            advertise.setCreateTime(new Date());
+            return advertiseSelfMapper.insertSelective(advertise);
+        }else{
+            return advertiseSelfMapper.updateByPrimaryKeySelective(advertise);
+        }
     }
 
     @Override
     public List<Map<String,Object>> list() {
         return advertiseSelfMapper.selectList();
+    }
+
+    @Override
+    public int deleteAdvertise(Long id) {
+        Advertise advertise = new Advertise();
+        advertise.setId(id);
+        advertise.setIsDelete(1);
+        return advertiseSelfMapper.updateByPrimaryKeySelective(advertise);
     }
 }

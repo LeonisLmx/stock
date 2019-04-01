@@ -20,7 +20,7 @@ import java.util.Map;
  * Date 2018/12/24
  */
 @RequestMapping("/api/advertise")
-@Controller
+@RestController
 public class AdvertiseController {
 
     @Autowired
@@ -28,10 +28,10 @@ public class AdvertiseController {
 
     // 上传广告
     @RequestMapping(value = "/publish",method = RequestMethod.POST)
-    @ResponseBody
     public Response publishAdversise(@RequestBody AdvertiseRequest advertise) throws IOException {
-        if(StringUtils.isBlank(advertise.getImgStr())){
+        if(advertise.getId() == null && StringUtils.isBlank(advertise.getImgStr())){
             return Response.ok("图片不能为空");
+            // 否则就是修改
         }
         advertiseService.uploadAdvertise(advertise.getImgStr(),advertise);
         return Response.ok("上传成功");
@@ -39,19 +39,15 @@ public class AdvertiseController {
 
     // 广告列表
     @RequestMapping(value = "/list",method = {RequestMethod.GET,RequestMethod.POST})
-    public String advertiseList(Model model) {
-        List<Map<String,Object>> list = advertiseService.list();
-        //return Response.ok(advertiseService.list(),"操作成功");
-        model.addAttribute("list",list);
-        return "Advertise";
+    public Response advertiseList() {
+        return Response.ok(advertiseService.list(),"操作成功");
     }
 
-    @RequestMapping(value = "/info",method = {RequestMethod.GET})
-    public String advertiseInfo(Model model,Long id){
-        System.out.println(id);
-        if(id != null){
-            model.addAttribute("entity",null);
+    @RequestMapping(value = "/delete",method = {RequestMethod.POST})
+    public Response deleteAdvertise(@RequestBody Advertise advertise){
+        if(advertise.getId() == null){
+            return Response.ok("id不能为空");
         }
-        return "AdvertiseEdit";
+        return Response.ok(advertiseService.deleteAdvertise(advertise.getId()),"删除成功");
     }
 }

@@ -3,6 +3,7 @@ package com.app.stock.controller;
 import com.app.stock.common.Response;
 import com.app.stock.model.request.PrimarykeyIdRequest;
 import com.app.stock.model.request.SubjectListRequest;
+import com.app.stock.service.SubjectDetailService;
 import com.app.stock.service.SubjectService;
 import com.app.stock.service.SubjectTypeService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -28,6 +29,9 @@ public class SubjectController {
 
     @Autowired
     private SubjectTypeService subjectTypeService;
+
+    @Autowired
+    private SubjectDetailService subjectDetailService;
 
     // 获取所有的课程分类列表
     @RequestMapping(value = "/type_list",method = RequestMethod.POST)
@@ -57,5 +61,10 @@ public class SubjectController {
             return Response.ok(bindingResult.getFieldError().getDefaultMessage());
         }
         return Response.ok(subjectService.detail(primarykeyIdRequest),"查询成功");
+    }
+
+    @RequestMapping(value = "/video_list",method = {RequestMethod.GET,RequestMethod.POST})
+    public Response videoList(){
+        return Response.ok(subjectDetailService.videoList(),"操作成功");
     }
 }

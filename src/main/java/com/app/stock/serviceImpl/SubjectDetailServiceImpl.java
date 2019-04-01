@@ -131,4 +131,9 @@ public class SubjectDetailServiceImpl implements SubjectDetailService {
         }
         return length;
     }
+
+    @Override
+    public List videoList() {
+        return subjectDetailSelfMapper.selectAllVideos();
+    }
 }
