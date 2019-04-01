@@ -1,301 +1,242 @@
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [469d7fda7acb6481e5a89661db4497f9]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [4996b1040512680306bfdff9847be0c1]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [4fcb87bac5de572a44fd6aa5c436e595]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [79cb7c442929e338c7e83c468e6156b3]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [874a8b6d6c8bd54007207e75fcb7d688]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [89badf41e9598c852820d3afa3307ae6]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [a9116fdebfa721f613cc1d1bcb21eb75]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [a9c412a9691ecfa1780e87a64307fcda]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [b2c6b8069a72c71e0a1a9031fcbcd91b]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [b575f1ac4e1dcb38f783b3d4686329fa]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [c20c84fdb50b8d3f6ab54fdb093feb0a]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [c563505150fb8366825f1712d489a281]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [d7d1d99875b8ae48f508c4207c033691]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [d8f927f0c414f3605f41a9ed8d845d0f]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [d9a75e8c66e319a839d71f2d416deb2f]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [e2050439eaa8686049180a9d74db98ed]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [f5e63d144632b477dae72cc22951b9fb]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [fd731987e870931e3461731e3314a381]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [061cef7d0093a1daa7a9a317c89281ca]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [130bcce8a2d69aa4f6b847791bf79e6b]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [27fed7e039f32d87738455b66dcd26b8]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [29444175ccc6ef97994894dd9757fc5b]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [2a84da7f2a5ce29afcbfd70fb83562b0]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [2f6b938c3e78842fcaf87257317ee4aa]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [30e6ff0d38fb00274d96f3f8a3ed2ea1]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [37d3ab0894baf4bdec91511434069086]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [38a445776e858aa4eab3c23e94283b20]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [43e11316d5ebadf6acd98670e9ae150d]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [82ddda41c4fd8366b7f0efda82696d6e]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [a93bfb7041c3de4f200feee8dd6b44a2]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [c9905752da8b58d0170d0d43fdc5d7b4]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [cade9425e5f3a19d143d18551995b857]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [d43faa02a9f61723baa40b785e1e52ce]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [dc15bf41ce9bb17a7da33837a0eca351]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [036e6bdd106e375d6c94c6ce663d239f]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [0f9ee3f818ecf413fdc5847ee587d646]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [16bb142d9bc4f44a0d9ca7565ba6f887]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [1912dec866f4d94dc8c33813d44fb4f8]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [1c2d14827116a0fccf13799cfed17899]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [1d8aea3a764fc5eee69539c6d76062a5]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [1dd5692db647eba2830524dfa80742e7]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [256d573c5a7445532598d0e167fc9652]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [2a1098ae4c87123ed15e659aefcb0a7d]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [2de039efe16e8fd8c4d4ec657b986f22]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [3454177d0bc554384f69692ed26c8e1e]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [400e163468a583ddd3772fe66a1ace8c]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [456616619f6d6b221aa491164f9650b4]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [52f08f986fc296960e57a21e1769725f]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [579131299f4615f77d0076f8c81de150]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [58707ab3e0a3bf8e35aa586947fbcef8]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [5ed4a004e61aff7ea3a294cde4d189b5]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [6501641a0cf5b3d0edf51f9077fa5739]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [653932550c34677f9b44d8b667aa1659]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [69c218cda0494af6b382a9cb9e326397]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [6aac93406eac2cc89760126ede96bce9]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [7e23e4aa044575f371f5925d9b5002ae]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [8b6403f125c153a16afcf35ef025fb3f]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [953c256927ef2ae368d73735d043b70d]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [980a2f35d3fde39bcdab795b9ef0e9fa]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [a7c3271fb1fea20b5792dd643cf04e6d]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [a8233f814a554757300ddf7598beec02]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [b88df98004ea8c4dc49c10489a53c44a]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [bab7aac9727fca85460b7f13cf1e294f]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [c33878852133bf2cb5551100cca90f13]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [ccc3e08a09cb6dc10221c62614e9bdaf]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [d8514f360e9a4371e44fdb92470f8b0f]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [e01ebc04e91de67189d6ff597c236c43]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [e27e749fc68060208694446ea3da268d]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [e4364985ef825764d3bbe81cabcaed61]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [e9300c9b6476b585a95f4e0e1270aac2]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [edf0a649e7c60f6ee26f71e1eaf8590e]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [f58ae41203fbdc4d4bb5626f8c977a84]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [fb4c7823b01e2f5eae29aeab1a6ecd77]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [fbe1660958c3c0d8daec37656b01f74c]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [ff52721df9a6768c7017f5fa608b14a1]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [fff2e953f1c2a53c9bb31ecad4059402]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [041dc7e758931e75af91fde3e9e84742]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [07bbb7093ac57259075697e0c7c4fbb7]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [0e2aff281b68c69951342dcf41b24db0]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [0fbbde24bcdb9f19c9931e299d711bfb]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [21b179dcee7373d4a9596c01b29025b4]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [22df5691a7be75488203dc8cc09d9c49]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [238f7bdc26329efe8ff90c845004dc14]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [3ee196b63cfc9909b09d93909cb6c795]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [3ef1d95f0a15b7de207e6ebfcc627cb2]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [3f499f4789ccc85b1329e31606fb8f15]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [5714953ee6bc80ca411b58adfac43864]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [598d8a95cdfe9f72f9b377e727f77b0e]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [5bb4fd42405f6aa7f76010556bf9b466]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [5cd6c75069a34ecfdedf722bca0acfbb]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [5df9cd082766a594f0fb95baa977c367]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [6236ca917d02b8eae99de934fbe2a80c]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [642784c748fca6b34a90746c69bc3e06]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [68856561a49bcfa7e3b7779cc8585c17]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [6de722a834613fa22faf2b63ffeb7761]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [6e739de67c717d2538d92ff4aef31eb5]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [71e1c10df5daac90e43eb1af42d1d1bf]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [7237b637292d68bbb4d4e953e61c1d9c]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [73aaa34b19d330343a2179868c609115]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [7a1b65b3d7d1e86cdfaf92105139ed80]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [81b306730fc86d3d74b66cff0da69976]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [89bedff31f9bc6aaf79c69c852f32acf]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [8b8debad34fba46939c1037df49eaf70]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [9045c1fc9c101d625faa66701280c3b1]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [9323e9b37a630c165ca5f36a056f669c]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [94f27c3c0290b9d615f54d629e579085]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [9534bdcd3f920c7d9b9e412cd0d6cae7]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [9cfceda6704b361d20c9cf8862858401]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [a044404b589bab596ee7902e42855dba]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [a3de7f632c5e10444db31f1c5c88d1ee]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [a9f4e250d2c71bc0f2e98f1912000417]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [ac490a925d3c609e262952e020d70865]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [b1204a6855e307187191d4f79c825db9]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [b4ba1b31cf76127ea2f7abe05bbdddf2]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [b6e1c92ca62f7c7cb8b948af44b5cd18]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [b9b2ca51432300efadd90d06cf19f444]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [bc4188e8a73a7694be5f7fac525e5b46]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [bd4d60a4d2fa63676f6d0d51b48d6e62]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [c6d6112c62149c4b9be953ae8fc6c0c0]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [ca95e717ebf4f4e36b742b23a4b55d49]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [cd5dadc29bc833e7b5055d7252b1c3d1]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [cd604017f7651e1b2b320c18b0e38561]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [d7ce79d8e66d60e1148a259532af9446]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [d93166bf450e80a49095caec792f05ba]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [d99dd12bb0ffd4cecf0be7cd00ab7f85]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [e5d490bb0c1b24a98bfbe900067dd987]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [e63c3915620bf51c600b443c97446efa]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [ea8827caf9a5a97886aa56f3908d3c1f]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [ec49e42614b2faff3de00b32f5427b01]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [ef376d1822b28003c3c916bef4e29524]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [f085976cf385c2a5daa674359394dd81]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [05988704f5bfdb3d98108142b2d09c38]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [123e3e1bc0e097c23d7d4d64d1e1a1bf]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [23f37599ff30c05a9004ff9e7ced9462]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [276873389a810b86c0a4538bcf74f3e5]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [4208090710aa0c1363123f304ac1c935]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [5cb28f256e4f8bf6c8cdc0c3561f7bfe]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [5cc5628a23af9a1ce3840c6140939e8d]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [71174e2c90f780427d8e24f1eea730cc]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [78649011137d69e27f788cade74f8c13]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [8e167c2f89042b3e92e27287e669c84a]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [92a6942874d982c291636e1ba4a9eb76]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [9edebee2be137e42dd1530df65ab71a6]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [a2cb867bcae06dea62cadbbd08096175]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [fdbde05c1ca835097897892c4c65ea63]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [ff0b0f2f0c06a366358d505f61d05cf8]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [1caed1576e50744a7d4232a7038641ae]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [2bd474b3498938b61149b5dfcb226490]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [50a7fe4e056ebdf52c907cda6c3f6611]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [579942bc20fdf2b363ef3af33e8bdefd]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [8e7139865614ce39141d329f26ee0578]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [b01083f9041a13a530f51797497f3aa5]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [e81cb85b3d8f186275fed86c6328f067]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [f9df2a13d0b827f8f384884fd85d9234]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [5a516a4ac9c6d95455c60e7f40656d2c]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [621300f50d6fa2b1b5cbfe833a741f75]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [711135678c825a15307b39cc46e8def2]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [72b7c40b6b7f9aa3688ce1160582d929]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [85cc1d76f56942594abd8382007a3cb7]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [9645cb6c9361ea3664cac4547e4041db]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [a247342b31f8672e967653823094d0e8]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [b23d6e770199bf458fa933293edeedae]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [bbdeca313f3dbdccde9d309fef8fe5bf]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [c03aeaac45e8687f0c48b211f3721b80]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [c685f5796b5288555b1411ee316237a6]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [ca569f9581b2c0afded4b58a10637561]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [ce21870b616b87048323a63f640a31fc]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [d5fd767056da643389a5d3c296402b69]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [dfd21064e78d9e6c535b5ffe1f987aba]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [e7985b910635284dc5c10fcad2dab026]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [f7d889049d57fb79cf0007b3c718fd2f]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [0e50b6395de64d3f44bce50152515bbf]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [12774041d93618c92aebb01fed1420c8]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [30d84207c6167a63aa84f72b0051afa0]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [39076c4415c81e5c8f900c8cd07d46ff]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [3942b3fe7b7b6f69a89026858d3bc53f]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [5786f40d8591d396802fc5fe2805c498]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [6391cf351acd40e4e5f9e3d9d3b79983]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [6aa3bd861fe23a17e7bcb6f3e68e6b17]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [7ee700c3b68976372d8fcd2074e97057]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [897056ae1c3aabf91118ca8c476f21d5]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [b24a76b9a9b4c7a7a769c33629bb57cd]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [b88c885fa336d62209fb9e105204b278]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [c1feab0bc50b42c88c7ef584e1b7f294]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [c789fe5367c39a5c5fa87aa747f9e3cf]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [d24d0674553c8930c5e6d90764e24831]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [de8a560c72a9653206f817d588c5ba32]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [ece1988dbbe48bc4085479824b5d0189]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [f7902122131756e25dc5caad997a732b]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [f88178eae0badca699fa5ad7bcfcf47d]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [f95d6b30d6b756d83c4108c415388924]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [066ab82172c94d8db01d1c58e0aded5f]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [156855cad34557250b4c1dbaec4349e2]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [2a358b4a2ad97300ead0c600a5c00209]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [35cc4f8c338c5f6303359df8b452bc3b]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [4912c6934b954ac74f8568e0acff0654]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [7327894911bdcdd1866584837d0d978f]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [8bedddf13b58fd9caa01ee23a2ce5bd7]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [9e64151c68b2d460c94ff1a5ad5df561]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [b5551a301f52bfec929ee8b7b9b80a09]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [c4fbdcd5d39b66095e3d9e0b28cce007]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [c59ef37acf5e62ad03d44cdc24a14c90]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [06d34b55482d9a6b2db9cb30328482a2]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [1ef42ba10669003a05062e0ab6ac38ef]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [45efe9e17741c3897fb8920d3b31c107]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [603ddf41e29b2d3388d969d16db6a618]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [6bce253fec4beb44b308b4820e818e26]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [814b81e676d93181c8ffd767b744a639]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [af700bb05fff3c360837653365d18fa4]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [b4c4eac2cf0601f546db1b3b3ad3cc40]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [bd825c4446574b755027a417e8bc5ff4]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [c49cb0d8d971ddabca2608b0e4fd89d7]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [e233dac7e1bbee81282ab895a7c0c5fc]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [0cdf7e48dddbc50ae5ae1a1663696bcc]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [3232b3b65277dd987e1de7f8e9147429]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [43a0e7c71bbc4e64c57bb6582163097f]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [b20f76b35e7ce0e712b18a14f3b6daee]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [cd6d64370755d7a110f9a52aeab952d5]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [02429381c84826e6a874fcc46cfd4f71]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [22d2cd83ef949104b129a7700d97da17]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} Result: [8008ecd4fc580330cce08987fb6ef11f]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20000, rs-50000} closed
-DEBUG scheduling-1 druid.sql.Statement - {conn-10005, pstmt-20000} closed
-DEBUG scheduling-1 druid.sql.Connection - {conn-10005} pool-recycle
-DEBUG http-nio-8999-exec-1 druid.sql.Connection - {conn-10005} pool-connect
-DEBUG http-nio-8999-exec-1 druid.sql.Statement - {conn-10005, pstmt-20001} created. select * from user where   token = ? and is_delete = 0
-DEBUG http-nio-8999-exec-1 druid.sql.Statement - {conn-10005, pstmt-20001} Parameters : [e6ccf915-9852-47e8-b918-1a4e300e152e]
-DEBUG http-nio-8999-exec-1 druid.sql.Statement - {conn-10005, pstmt-20001} Types : [VARCHAR]
-DEBUG http-nio-8999-exec-1 druid.sql.Statement - {conn-10005, pstmt-20001} executed. 7.356756 millis. select * from user where   token = ? and is_delete = 0
-DEBUG http-nio-8999-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} open
-DEBUG http-nio-8999-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Header: [id, nickname, phone, password, address, score, descriptions, headerImg, token, is_admin, is_shield, is_delete, create_time, modify_time]
-DEBUG http-nio-8999-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [4, qaz123, 13581997174, e9aca15ce5ee544691657de668944f9, null, 17, null, null, e6ccf915-9852-47e8-b918-1a4e300e152e, 0, 0, 0, 2019-02-21 14:04:55.0, 2019-02-21 14:04:55.0]
-DEBUG http-nio-8999-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} closed
-DEBUG http-nio-8999-exec-1 druid.sql.Statement - {conn-10005, pstmt-20001} closed
-DEBUG http-nio-8999-exec-1 druid.sql.Connection - {conn-10005} pool-recycle
-DEBUG http-nio-8999-exec-3 druid.sql.Connection - {conn-10005} pool-connect
-DEBUG http-nio-8999-exec-3 druid.sql.Statement - {conn-10005, pstmt-20002} created. select * from user where   token = ? and is_delete = 0
-DEBUG http-nio-8999-exec-3 druid.sql.Statement - {conn-10005, pstmt-20002} Parameters : [e6ccf915-9852-47e8-b918-1a4e300e152e]
-DEBUG http-nio-8999-exec-3 druid.sql.Statement - {conn-10005, pstmt-20002} Types : [VARCHAR]
-DEBUG http-nio-8999-exec-3 druid.sql.Statement - {conn-10005, pstmt-20002} executed. 6.655952 millis. select * from user where   token = ? and is_delete = 0
-DEBUG http-nio-8999-exec-3 druid.sql.ResultSet - {conn-10005, pstmt-20002, rs-50002} open
-DEBUG http-nio-8999-exec-3 druid.sql.ResultSet - {conn-10005, pstmt-20002, rs-50002} Header: [id, nickname, phone, password, address, score, descriptions, headerImg, token, is_admin, is_shield, is_delete, create_time, modify_time]
-DEBUG http-nio-8999-exec-3 druid.sql.ResultSet - {conn-10005, pstmt-20002, rs-50002} Result: [4, qaz123, 13581997174, e9aca15ce5ee544691657de668944f9, null, 17, null, null, e6ccf915-9852-47e8-b918-1a4e300e152e, 0, 0, 0, 2019-02-21 14:04:55.0, 2019-02-21 14:04:55.0]
-DEBUG http-nio-8999-exec-3 druid.sql.ResultSet - {conn-10005, pstmt-20002, rs-50002} closed
-DEBUG http-nio-8999-exec-3 druid.sql.Statement - {conn-10005, pstmt-20002} closed
+DEBUG http-nio-8999-exec-3 druid.sql.ResultSet - {conn-10005, pstmt-20035, rs-50035} open
+DEBUG http-nio-8999-exec-3 druid.sql.ResultSet - {conn-10005, pstmt-20035, rs-50035} Header: [id, title, image_url, type, to_url, createTime, modifyTime]
+DEBUG http-nio-8999-exec-3 druid.sql.ResultSet - {conn-10005, pstmt-20035, rs-50035} Result: [1, 测试标题，百度图片, /advertise/ceshi.jpg, 1, https://www.baidu.com, 2019-01-23 14:04:01, 2019-01-23 14:23:05]
+DEBUG http-nio-8999-exec-3 druid.sql.ResultSet - {conn-10005, pstmt-20035, rs-50035} Result: [12, 小图片, /advertise/1550652477388_723526d1-eafa-425c-a4d5-4a89f228e221.jpeg, 0, https://www.apple.com/cn/, 2019-02-20 16:47:57, 2019-02-20 16:47:57]
+DEBUG http-nio-8999-exec-3 druid.sql.ResultSet - {conn-10005, pstmt-20035, rs-50035} Result: [13, , /advertise/1554097726294_3b966c94-7a03-4601-83f2-06c72b28052e.mp4, null, , 2019-04-01 13:48:46, 2019-04-01 13:48:46]
+DEBUG http-nio-8999-exec-3 druid.sql.ResultSet - {conn-10005, pstmt-20035, rs-50035} Result: [14, 测试新上传, /advertise/1554125075695_c4dc0f88-aa91-423c-9553-25fc6f829630.png, 1, www.ureyblog.cn, 2019-04-01 21:24:36, 2019-04-01 21:24:35]
+DEBUG http-nio-8999-exec-3 druid.sql.ResultSet - {conn-10005, pstmt-20035, rs-50035} Result: [15, daw, /advertise/1554125406326_912e88cf-2408-4f5c-b3b2-874ff5ae1f76.png, 1, afsa, 2019-04-01 21:30:06, 2019-04-01 21:30:06]
+DEBUG http-nio-8999-exec-3 druid.sql.ResultSet - {conn-10005, pstmt-20035, rs-50035} closed
+DEBUG http-nio-8999-exec-3 druid.sql.Statement - {conn-10005, pstmt-20035} closed
 DEBUG http-nio-8999-exec-3 druid.sql.Connection - {conn-10005} pool-recycle
-DEBUG http-nio-8999-exec-4 druid.sql.Connection - {conn-10005} pool-connect
-DEBUG http-nio-8999-exec-4 druid.sql.Statement - {conn-10005, pstmt-20003} created. select * from user where   token = ? and is_delete = 0
-DEBUG http-nio-8999-exec-4 druid.sql.Statement - {conn-10005, pstmt-20003} Parameters : [e6ccf915-9852-47e8-b918-1a4e300e152e]
-DEBUG http-nio-8999-exec-4 druid.sql.Statement - {conn-10005, pstmt-20003} Types : [VARCHAR]
-DEBUG http-nio-8999-exec-4 druid.sql.Statement - {conn-10005, pstmt-20003} executed. 11.538598 millis. select * from user where   token = ? and is_delete = 0
-DEBUG http-nio-8999-exec-4 druid.sql.ResultSet - {conn-10005, pstmt-20003, rs-50003} open
-DEBUG http-nio-8999-exec-4 druid.sql.ResultSet - {conn-10005, pstmt-20003, rs-50003} Header: [id, nickname, phone, password, address, score, descriptions, headerImg, token, is_admin, is_shield, is_delete, create_time, modify_time]
-DEBUG http-nio-8999-exec-4 druid.sql.ResultSet - {conn-10005, pstmt-20003, rs-50003} Result: [4, qaz123, 13581997174, e9aca15ce5ee544691657de668944f9, null, 17, null, null, e6ccf915-9852-47e8-b918-1a4e300e152e, 0, 0, 0, 2019-02-21 14:04:55.0, 2019-02-21 14:04:55.0]
-DEBUG http-nio-8999-exec-4 druid.sql.ResultSet - {conn-10005, pstmt-20003, rs-50003} closed
-DEBUG http-nio-8999-exec-4 druid.sql.Statement - {conn-10005, pstmt-20003} closed
-DEBUG http-nio-8999-exec-4 druid.sql.Connection - {conn-10005} pool-recycle
+DEBUG http-nio-8999-exec-6 druid.sql.Connection - {conn-10005} pool-connect
+DEBUG http-nio-8999-exec-6 druid.sql.Statement - {conn-10005, pstmt-20036} created. select id,title,image_url as imageUrl,type,to_url as toUrl,date_format(create_time,'%Y-%m-%d %H:%i:%s') as createTime, date_format(modify_time,'%Y-%m-%d %H:%i:%s') as modifyTime from advertise where is_delete = 0 order by create_time
+DEBUG http-nio-8999-exec-6 druid.sql.Statement - {conn-10005, pstmt-20036} Parameters : []
+DEBUG http-nio-8999-exec-6 druid.sql.Statement - {conn-10005, pstmt-20036} Types : []
+DEBUG http-nio-8999-exec-6 druid.sql.Statement - {conn-10005, pstmt-20036} executed. 7.417488 millis. select id,title,image_url as imageUrl,type,to_url as toUrl,date_format(create_time,'%Y-%m-%d %H:%i:%s') as createTime, date_format(modify_time,'%Y-%m-%d %H:%i:%s') as modifyTime from advertise where is_delete = 0 order by create_time
+DEBUG http-nio-8999-exec-6 druid.sql.ResultSet - {conn-10005, pstmt-20036, rs-50036} open
+DEBUG http-nio-8999-exec-6 druid.sql.ResultSet - {conn-10005, pstmt-20036, rs-50036} Header: [id, title, image_url, type, to_url, createTime, modifyTime]
+DEBUG http-nio-8999-exec-6 druid.sql.ResultSet - {conn-10005, pstmt-20036, rs-50036} Result: [1, 测试标题，百度图片, /advertise/ceshi.jpg, 1, https://www.baidu.com, 2019-01-23 14:04:01, 2019-01-23 14:23:05]
+DEBUG http-nio-8999-exec-6 druid.sql.ResultSet - {conn-10005, pstmt-20036, rs-50036} Result: [12, 小图片, /advertise/1550652477388_723526d1-eafa-425c-a4d5-4a89f228e221.jpeg, 0, https://www.apple.com/cn/, 2019-02-20 16:47:57, 2019-02-20 16:47:57]
+DEBUG http-nio-8999-exec-6 druid.sql.ResultSet - {conn-10005, pstmt-20036, rs-50036} Result: [13, , /advertise/1554097726294_3b966c94-7a03-4601-83f2-06c72b28052e.mp4, null, , 2019-04-01 13:48:46, 2019-04-01 13:48:46]
+DEBUG http-nio-8999-exec-6 druid.sql.ResultSet - {conn-10005, pstmt-20036, rs-50036} Result: [14, 测试新上传, /advertise/1554125075695_c4dc0f88-aa91-423c-9553-25fc6f829630.png, 1, www.ureyblog.cn, 2019-04-01 21:24:36, 2019-04-01 21:24:35]
+DEBUG http-nio-8999-exec-6 druid.sql.ResultSet - {conn-10005, pstmt-20036, rs-50036} Result: [15, daw, /advertise/1554125406326_912e88cf-2408-4f5c-b3b2-874ff5ae1f76.png, 1, afsa, 2019-04-01 21:30:06, 2019-04-01 21:30:06]
+DEBUG http-nio-8999-exec-6 druid.sql.ResultSet - {conn-10005, pstmt-20036, rs-50036} closed
+DEBUG http-nio-8999-exec-6 druid.sql.Statement - {conn-10005, pstmt-20036} closed
+DEBUG http-nio-8999-exec-6 druid.sql.Connection - {conn-10005} pool-recycle
 DEBUG http-nio-8999-exec-7 druid.sql.Connection - {conn-10005} pool-connect
-DEBUG http-nio-8999-exec-7 druid.sql.Statement - {conn-10005, pstmt-20004} created. select * from user where   token = ? and is_delete = 0
-DEBUG http-nio-8999-exec-7 druid.sql.Statement - {conn-10005, pstmt-20004} Parameters : [e6ccf915-9852-47e8-b918-1a4e300e152e]
-DEBUG http-nio-8999-exec-7 druid.sql.Statement - {conn-10005, pstmt-20004} Types : [VARCHAR]
-DEBUG http-nio-8999-exec-7 druid.sql.Statement - {conn-10005, pstmt-20004} executed. 7.685325 millis. select * from user where   token = ? and is_delete = 0
-DEBUG http-nio-8999-exec-7 druid.sql.ResultSet - {conn-10005, pstmt-20004, rs-50004} open
-DEBUG http-nio-8999-exec-7 druid.sql.ResultSet - {conn-10005, pstmt-20004, rs-50004} Header: [id, nickname, phone, password, address, score, descriptions, headerImg, token, is_admin, is_shield, is_delete, create_time, modify_time]
-DEBUG http-nio-8999-exec-7 druid.sql.ResultSet - {conn-10005, pstmt-20004, rs-50004} Result: [4, qaz123, 13581997174, e9aca15ce5ee544691657de668944f9, null, 17, null, null, e6ccf915-9852-47e8-b918-1a4e300e152e, 0, 0, 0, 2019-02-21 14:04:55.0, 2019-02-21 14:04:55.0]
-DEBUG http-nio-8999-exec-7 druid.sql.ResultSet - {conn-10005, pstmt-20004, rs-50004} closed
-DEBUG http-nio-8999-exec-7 druid.sql.Statement - {conn-10005, pstmt-20004} closed
+DEBUG http-nio-8999-exec-7 druid.sql.Statement - {conn-10005, pstmt-20037} created. select id,title,image_url as imageUrl,type,to_url as toUrl,date_format(create_time,'%Y-%m-%d %H:%i:%s') as createTime, date_format(modify_time,'%Y-%m-%d %H:%i:%s') as modifyTime from advertise where is_delete = 0 order by create_time
+DEBUG http-nio-8999-exec-7 druid.sql.Statement - {conn-10005, pstmt-20037} Parameters : []
+DEBUG http-nio-8999-exec-7 druid.sql.Statement - {conn-10005, pstmt-20037} Types : []
+DEBUG http-nio-8999-exec-7 druid.sql.Statement - {conn-10005, pstmt-20037} executed. 7.154262 millis. select id,title,image_url as imageUrl,type,to_url as toUrl,date_format(create_time,'%Y-%m-%d %H:%i:%s') as createTime, date_format(modify_time,'%Y-%m-%d %H:%i:%s') as modifyTime from advertise where is_delete = 0 order by create_time
+DEBUG http-nio-8999-exec-7 druid.sql.ResultSet - {conn-10005, pstmt-20037, rs-50037} open
+DEBUG http-nio-8999-exec-7 druid.sql.ResultSet - {conn-10005, pstmt-20037, rs-50037} Header: [id, title, image_url, type, to_url, createTime, modifyTime]
+DEBUG http-nio-8999-exec-7 druid.sql.ResultSet - {conn-10005, pstmt-20037, rs-50037} Result: [1, 测试标题，百度图片, /advertise/ceshi.jpg, 1, https://www.baidu.com, 2019-01-23 14:04:01, 2019-01-23 14:23:05]
+DEBUG http-nio-8999-exec-7 druid.sql.ResultSet - {conn-10005, pstmt-20037, rs-50037} Result: [12, 小图片, /advertise/1550652477388_723526d1-eafa-425c-a4d5-4a89f228e221.jpeg, 0, https://www.apple.com/cn/, 2019-02-20 16:47:57, 2019-02-20 16:47:57]
+DEBUG http-nio-8999-exec-7 druid.sql.ResultSet - {conn-10005, pstmt-20037, rs-50037} Result: [13, , /advertise/1554097726294_3b966c94-7a03-4601-83f2-06c72b28052e.mp4, null, , 2019-04-01 13:48:46, 2019-04-01 13:48:46]
+DEBUG http-nio-8999-exec-7 druid.sql.ResultSet - {conn-10005, pstmt-20037, rs-50037} Result: [14, 测试新上传, /advertise/1554125075695_c4dc0f88-aa91-423c-9553-25fc6f829630.png, 1, www.ureyblog.cn, 2019-04-01 21:24:36, 2019-04-01 21:24:35]
+DEBUG http-nio-8999-exec-7 druid.sql.ResultSet - {conn-10005, pstmt-20037, rs-50037} Result: [15, daw, /advertise/1554125406326_912e88cf-2408-4f5c-b3b2-874ff5ae1f76.png, 1, afsa, 2019-04-01 21:30:06, 2019-04-01 21:30:06]
+DEBUG http-nio-8999-exec-7 druid.sql.ResultSet - {conn-10005, pstmt-20037, rs-50037} closed
+DEBUG http-nio-8999-exec-7 druid.sql.Statement - {conn-10005, pstmt-20037} closed
 DEBUG http-nio-8999-exec-7 druid.sql.Connection - {conn-10005} pool-recycle
 DEBUG http-nio-8999-exec-8 druid.sql.Connection - {conn-10005} pool-connect
-DEBUG http-nio-8999-exec-8 druid.sql.Statement - {conn-10005, pstmt-20005} created. select * from user where   token = ? and is_delete = 0
-DEBUG http-nio-8999-exec-8 druid.sql.Statement - {conn-10005, pstmt-20005} Parameters : [e6ccf915-9852-47e8-b918-1a4e300e152e]
-DEBUG http-nio-8999-exec-8 druid.sql.Statement - {conn-10005, pstmt-20005} Types : [VARCHAR]
-DEBUG http-nio-8999-exec-8 druid.sql.Statement - {conn-10005, pstmt-20005} executed. 7.691126 millis. select * from user where   token = ? and is_delete = 0
-DEBUG http-nio-8999-exec-8 druid.sql.ResultSet - {conn-10005, pstmt-20005, rs-50005} open
-DEBUG http-nio-8999-exec-8 druid.sql.ResultSet - {conn-10005, pstmt-20005, rs-50005} Header: [id, nickname, phone, password, address, score, descriptions, headerImg, token, is_admin, is_shield, is_delete, create_time, modify_time]
-DEBUG http-nio-8999-exec-8 druid.sql.ResultSet - {conn-10005, pstmt-20005, rs-50005} Result: [4, qaz123, 13581997174, e9aca15ce5ee544691657de668944f9, null, 17, null, null, e6ccf915-9852-47e8-b918-1a4e300e152e, 0, 0, 0, 2019-02-21 14:04:55.0, 2019-02-21 14:04:55.0]
-DEBUG http-nio-8999-exec-8 druid.sql.ResultSet - {conn-10005, pstmt-20005, rs-50005} closed
-DEBUG http-nio-8999-exec-8 druid.sql.Statement - {conn-10005, pstmt-20005} closed
+DEBUG http-nio-8999-exec-8 druid.sql.Statement - {conn-10005, pstmt-20038} created. select id,title,image_url as imageUrl,type,to_url as toUrl,date_format(create_time,'%Y-%m-%d %H:%i:%s') as createTime, date_format(modify_time,'%Y-%m-%d %H:%i:%s') as modifyTime from advertise where is_delete = 0 order by create_time
+DEBUG http-nio-8999-exec-8 druid.sql.Statement - {conn-10005, pstmt-20038} Parameters : []
+DEBUG http-nio-8999-exec-8 druid.sql.Statement - {conn-10005, pstmt-20038} Types : []
+DEBUG http-nio-8999-exec-8 druid.sql.Statement - {conn-10005, pstmt-20038} executed. 6.839527 millis. select id,title,image_url as imageUrl,type,to_url as toUrl,date_format(create_time,'%Y-%m-%d %H:%i:%s') as createTime, date_format(modify_time,'%Y-%m-%d %H:%i:%s') as modifyTime from advertise where is_delete = 0 order by create_time
+DEBUG http-nio-8999-exec-8 druid.sql.ResultSet - {conn-10005, pstmt-20038, rs-50038} open
+DEBUG http-nio-8999-exec-8 druid.sql.ResultSet - {conn-10005, pstmt-20038, rs-50038} Header: [id, title, image_url, type, to_url, createTime, modifyTime]
+DEBUG http-nio-8999-exec-8 druid.sql.ResultSet - {conn-10005, pstmt-20038, rs-50038} Result: [1, 测试标题，百度图片, /advertise/ceshi.jpg, 1, https://www.baidu.com, 2019-01-23 14:04:01, 2019-01-23 14:23:05]
+DEBUG http-nio-8999-exec-8 druid.sql.ResultSet - {conn-10005, pstmt-20038, rs-50038} Result: [12, 小图片, /advertise/1550652477388_723526d1-eafa-425c-a4d5-4a89f228e221.jpeg, 0, https://www.apple.com/cn/, 2019-02-20 16:47:57, 2019-02-20 16:47:57]
+DEBUG http-nio-8999-exec-8 druid.sql.ResultSet - {conn-10005, pstmt-20038, rs-50038} Result: [13, , /advertise/1554097726294_3b966c94-7a03-4601-83f2-06c72b28052e.mp4, null, , 2019-04-01 13:48:46, 2019-04-01 13:48:46]
+DEBUG http-nio-8999-exec-8 druid.sql.ResultSet - {conn-10005, pstmt-20038, rs-50038} Result: [14, 测试新上传, /advertise/1554125075695_c4dc0f88-aa91-423c-9553-25fc6f829630.png, 1, www.ureyblog.cn, 2019-04-01 21:24:36, 2019-04-01 21:24:35]
+DEBUG http-nio-8999-exec-8 druid.sql.ResultSet - {conn-10005, pstmt-20038, rs-50038} Result: [15, daw, /advertise/1554125406326_912e88cf-2408-4f5c-b3b2-874ff5ae1f76.png, 1, afsa, 2019-04-01 21:30:06, 2019-04-01 21:30:06]
+DEBUG http-nio-8999-exec-8 druid.sql.ResultSet - {conn-10005, pstmt-20038, rs-50038} closed
+DEBUG http-nio-8999-exec-8 druid.sql.Statement - {conn-10005, pstmt-20038} closed
 DEBUG http-nio-8999-exec-8 druid.sql.Connection - {conn-10005} pool-recycle
 DEBUG http-nio-8999-exec-9 druid.sql.Connection - {conn-10005} pool-connect
-DEBUG http-nio-8999-exec-9 druid.sql.Statement - {conn-10005, pstmt-20006} created. select * from user where   token = ? and is_delete = 0
-DEBUG http-nio-8999-exec-9 druid.sql.Statement - {conn-10005, pstmt-20006} Parameters : [e6ccf915-9852-47e8-b918-1a4e300e152e]
-DEBUG http-nio-8999-exec-9 druid.sql.Statement - {conn-10005, pstmt-20006} Types : [VARCHAR]
-DEBUG http-nio-8999-exec-9 druid.sql.Statement - {conn-10005, pstmt-20006} executed. 8.014258 millis. select * from user where   token = ? and is_delete = 0
-DEBUG http-nio-8999-exec-9 druid.sql.ResultSet - {conn-10005, pstmt-20006, rs-50006} open
-DEBUG http-nio-8999-exec-9 druid.sql.ResultSet - {conn-10005, pstmt-20006, rs-50006} Header: [id, nickname, phone, password, address, score, descriptions, headerImg, token, is_admin, is_shield, is_delete, create_time, modify_time]
-DEBUG http-nio-8999-exec-9 druid.sql.ResultSet - {conn-10005, pstmt-20006, rs-50006} Result: [4, qaz123, 13581997174, e9aca15ce5ee544691657de668944f9, null, 17, null, null, e6ccf915-9852-47e8-b918-1a4e300e152e, 0, 0, 0, 2019-02-21 14:04:55.0, 2019-02-21 14:04:55.0]
-DEBUG http-nio-8999-exec-9 druid.sql.ResultSet - {conn-10005, pstmt-20006, rs-50006} closed
-DEBUG http-nio-8999-exec-9 druid.sql.Statement - {conn-10005, pstmt-20006} closed
+DEBUG http-nio-8999-exec-9 druid.sql.Statement - {conn-10005, pstmt-20039} created. select id,title,image_url as imageUrl,type,to_url as toUrl,date_format(create_time,'%Y-%m-%d %H:%i:%s') as createTime, date_format(modify_time,'%Y-%m-%d %H:%i:%s') as modifyTime from advertise where is_delete = 0 order by create_time
+DEBUG http-nio-8999-exec-9 druid.sql.Statement - {conn-10005, pstmt-20039} Parameters : []
+DEBUG http-nio-8999-exec-9 druid.sql.Statement - {conn-10005, pstmt-20039} Types : []
+DEBUG http-nio-8999-exec-9 druid.sql.Statement - {conn-10005, pstmt-20039} executed. 7.217512 millis. select id,title,image_url as imageUrl,type,to_url as toUrl,date_format(create_time,'%Y-%m-%d %H:%i:%s') as createTime, date_format(modify_time,'%Y-%m-%d %H:%i:%s') as modifyTime from advertise where is_delete = 0 order by create_time
+DEBUG http-nio-8999-exec-9 druid.sql.ResultSet - {conn-10005, pstmt-20039, rs-50039} open
+DEBUG http-nio-8999-exec-9 druid.sql.ResultSet - {conn-10005, pstmt-20039, rs-50039} Header: [id, title, image_url, type, to_url, createTime, modifyTime]
+DEBUG http-nio-8999-exec-9 druid.sql.ResultSet - {conn-10005, pstmt-20039, rs-50039} Result: [1, 测试标题，百度图片, /advertise/ceshi.jpg, 1, https://www.baidu.com, 2019-01-23 14:04:01, 2019-01-23 14:23:05]
+DEBUG http-nio-8999-exec-9 druid.sql.ResultSet - {conn-10005, pstmt-20039, rs-50039} Result: [12, 小图片, /advertise/1550652477388_723526d1-eafa-425c-a4d5-4a89f228e221.jpeg, 0, https://www.apple.com/cn/, 2019-02-20 16:47:57, 2019-02-20 16:47:57]
+DEBUG http-nio-8999-exec-9 druid.sql.ResultSet - {conn-10005, pstmt-20039, rs-50039} Result: [13, , /advertise/1554097726294_3b966c94-7a03-4601-83f2-06c72b28052e.mp4, null, , 2019-04-01 13:48:46, 2019-04-01 13:48:46]
+DEBUG http-nio-8999-exec-9 druid.sql.ResultSet - {conn-10005, pstmt-20039, rs-50039} Result: [14, 测试新上传, /advertise/1554125075695_c4dc0f88-aa91-423c-9553-25fc6f829630.png, 1, www.ureyblog.cn, 2019-04-01 21:24:36, 2019-04-01 21:24:35]
+DEBUG http-nio-8999-exec-9 druid.sql.ResultSet - {conn-10005, pstmt-20039, rs-50039} Result: [15, daw, /advertise/1554125406326_912e88cf-2408-4f5c-b3b2-874ff5ae1f76.png, 1, afsa, 2019-04-01 21:30:06, 2019-04-01 21:30:06]
+DEBUG http-nio-8999-exec-9 druid.sql.ResultSet - {conn-10005, pstmt-20039, rs-50039} closed
+DEBUG http-nio-8999-exec-9 druid.sql.Statement - {conn-10005, pstmt-20039} closed
+DEBUG http-nio-8999-exec-9 druid.sql.Connection - {conn-10005} pool-recycle
+DEBUG http-nio-8999-exec-2 druid.sql.Connection - {conn-10005} pool-connect
+DEBUG http-nio-8999-exec-2 druid.sql.Statement - {conn-10005, pstmt-20040} created. select id,title,image_url as imageUrl,type,to_url as toUrl,date_format(create_time,'%Y-%m-%d %H:%i:%s') as createTime, date_format(modify_time,'%Y-%m-%d %H:%i:%s') as modifyTime from advertise where is_delete = 0 order by create_time
+DEBUG http-nio-8999-exec-2 druid.sql.Statement - {conn-10005, pstmt-20040} Parameters : []
+DEBUG http-nio-8999-exec-2 druid.sql.Statement - {conn-10005, pstmt-20040} Types : []
+DEBUG http-nio-8999-exec-2 druid.sql.Statement - {conn-10005, pstmt-20040} executed. 20.519616 millis. select id,title,image_url as imageUrl,type,to_url as toUrl,date_format(create_time,'%Y-%m-%d %H:%i:%s') as createTime, date_format(modify_time,'%Y-%m-%d %H:%i:%s') as modifyTime from advertise where is_delete = 0 order by create_time
+DEBUG http-nio-8999-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20040, rs-50040} open
+DEBUG http-nio-8999-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20040, rs-50040} Header: [id, title, image_url, type, to_url, createTime, modifyTime]
+DEBUG http-nio-8999-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20040, rs-50040} Result: [1, 测试标题，百度图片, /advertise/ceshi.jpg, 1, https://www.baidu.com, 2019-01-23 14:04:01, 2019-01-23 14:23:05]
+DEBUG http-nio-8999-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20040, rs-50040} Result: [12, 小图片, /advertise/1550652477388_723526d1-eafa-425c-a4d5-4a89f228e221.jpeg, 0, https://www.apple.com/cn/, 2019-02-20 16:47:57, 2019-02-20 16:47:57]
+DEBUG http-nio-8999-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20040, rs-50040} Result: [13, , /advertise/1554097726294_3b966c94-7a03-4601-83f2-06c72b28052e.mp4, null, , 2019-04-01 13:48:46, 2019-04-01 13:48:46]
+DEBUG http-nio-8999-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20040, rs-50040} Result: [14, 测试新上传, /advertise/1554125075695_c4dc0f88-aa91-423c-9553-25fc6f829630.png, 1, www.ureyblog.cn, 2019-04-01 21:24:36, 2019-04-01 21:24:35]
+DEBUG http-nio-8999-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20040, rs-50040} Result: [15, daw, /advertise/1554125406326_912e88cf-2408-4f5c-b3b2-874ff5ae1f76.png, 1, afsa, 2019-04-01 21:30:06, 2019-04-01 21:30:06]
+DEBUG http-nio-8999-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20040, rs-50040} closed
+DEBUG http-nio-8999-exec-2 druid.sql.Statement - {conn-10005, pstmt-20040} closed
+DEBUG http-nio-8999-exec-2 druid.sql.Connection - {conn-10005} pool-recycle
+DEBUG http-nio-8999-exec-1 druid.sql.Connection - {conn-10005} pool-connect
+DEBUG http-nio-8999-exec-1 druid.sql.Statement - {conn-10005, pstmt-20041} created. select id,title,image_url as imageUrl,type,to_url as toUrl,date_format(create_time,'%Y-%m-%d %H:%i:%s') as createTime, date_format(modify_time,'%Y-%m-%d %H:%i:%s') as modifyTime from advertise where is_delete = 0 order by create_time
+DEBUG http-nio-8999-exec-1 druid.sql.Statement - {conn-10005, pstmt-20041} Parameters : []
+DEBUG http-nio-8999-exec-1 druid.sql.Statement - {conn-10005, pstmt-20041} Types : []
+DEBUG http-nio-8999-exec-1 druid.sql.Statement - {conn-10005, pstmt-20041} executed. 6.575333 millis. select id,title,image_url as imageUrl,type,to_url as toUrl,date_format(create_time,'%Y-%m-%d %H:%i:%s') as createTime, date_format(modify_time,'%Y-%m-%d %H:%i:%s') as modifyTime from advertise where is_delete = 0 order by create_time
+DEBUG http-nio-8999-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20041, rs-50041} open
+DEBUG http-nio-8999-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20041, rs-50041} Header: [id, title, image_url, type, to_url, createTime, modifyTime]
+DEBUG http-nio-8999-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20041, rs-50041} Result: [1, 测试标题，百度图片, /advertise/ceshi.jpg, 1, https://www.baidu.com, 2019-01-23 14:04:01, 2019-01-23 14:23:05]
+DEBUG http-nio-8999-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20041, rs-50041} Result: [12, 小图片, /advertise/1550652477388_723526d1-eafa-425c-a4d5-4a89f228e221.jpeg, 0, https://www.apple.com/cn/, 2019-02-20 16:47:57, 2019-02-20 16:47:57]
+DEBUG http-nio-8999-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20041, rs-50041} Result: [13, , /advertise/1554097726294_3b966c94-7a03-4601-83f2-06c72b28052e.mp4, null, , 2019-04-01 13:48:46, 2019-04-01 13:48:46]
+DEBUG http-nio-8999-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20041, rs-50041} Result: [14, 测试新上传, /advertise/1554125075695_c4dc0f88-aa91-423c-9553-25fc6f829630.png, 1, www.ureyblog.cn, 2019-04-01 21:24:36, 2019-04-01 21:24:35]
+DEBUG http-nio-8999-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20041, rs-50041} Result: [15, daw, /advertise/1554125406326_912e88cf-2408-4f5c-b3b2-874ff5ae1f76.png, 1, afsa, 2019-04-01 21:30:06, 2019-04-01 21:30:06]
+DEBUG http-nio-8999-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20041, rs-50041} closed
+DEBUG http-nio-8999-exec-1 druid.sql.Statement - {conn-10005, pstmt-20041} closed
+DEBUG http-nio-8999-exec-1 druid.sql.Connection - {conn-10005} pool-recycle
+DEBUG http-nio-8999-exec-5 druid.sql.Connection - {conn-10005} pool-connect
+DEBUG http-nio-8999-exec-5 druid.sql.Statement - {conn-10005, pstmt-20042} created. select id,title,image_url as imageUrl,type,to_url as toUrl,date_format(create_time,'%Y-%m-%d %H:%i:%s') as createTime, date_format(modify_time,'%Y-%m-%d %H:%i:%s') as modifyTime from advertise where is_delete = 0 order by create_time
+DEBUG http-nio-8999-exec-5 druid.sql.Statement - {conn-10005, pstmt-20042} Parameters : []
+DEBUG http-nio-8999-exec-5 druid.sql.Statement - {conn-10005, pstmt-20042} Types : []
+DEBUG http-nio-8999-exec-5 druid.sql.Statement - {conn-10005, pstmt-20042} executed. 9.156642 millis. select id,title,image_url as imageUrl,type,to_url as toUrl,date_format(create_time,'%Y-%m-%d %H:%i:%s') as createTime, date_format(modify_time,'%Y-%m-%d %H:%i:%s') as modifyTime from advertise where is_delete = 0 order by create_time
+DEBUG http-nio-8999-exec-5 druid.sql.ResultSet - {conn-10005, pstmt-20042, rs-50042} open
+DEBUG http-nio-8999-exec-5 druid.sql.ResultSet - {conn-10005, pstmt-20042, rs-50042} Header: [id, title, image_url, type, to_url, createTime, modifyTime]
+DEBUG http-nio-8999-exec-5 druid.sql.ResultSet - {conn-10005, pstmt-20042, rs-50042} Result: [1, 测试标题，百度图片, /advertise/ceshi.jpg, 1, https://www.baidu.com, 2019-01-23 14:04:01, 2019-01-23 14:23:05]
+DEBUG http-nio-8999-exec-5 druid.sql.ResultSet - {conn-10005, pstmt-20042, rs-50042} Result: [12, 小图片, /advertise/1550652477388_723526d1-eafa-425c-a4d5-4a89f228e221.jpeg, 0, https://www.apple.com/cn/, 2019-02-20 16:47:57, 2019-02-20 16:47:57]
+DEBUG http-nio-8999-exec-5 druid.sql.ResultSet - {conn-10005, pstmt-20042, rs-50042} Result: [13, , /advertise/1554097726294_3b966c94-7a03-4601-83f2-06c72b28052e.mp4, null, , 2019-04-01 13:48:46, 2019-04-01 13:48:46]
+DEBUG http-nio-8999-exec-5 druid.sql.ResultSet - {conn-10005, pstmt-20042, rs-50042} Result: [14, 测试新上传, /advertise/1554125075695_c4dc0f88-aa91-423c-9553-25fc6f829630.png, 1, www.ureyblog.cn, 2019-04-01 21:24:36, 2019-04-01 21:24:35]
+DEBUG http-nio-8999-exec-5 druid.sql.ResultSet - {conn-10005, pstmt-20042, rs-50042} Result: [15, daw, /advertise/1554125406326_912e88cf-2408-4f5c-b3b2-874ff5ae1f76.png, 1, afsa, 2019-04-01 21:30:06, 2019-04-01 21:30:06]
+DEBUG http-nio-8999-exec-5 druid.sql.ResultSet - {conn-10005, pstmt-20042, rs-50042} closed
+DEBUG http-nio-8999-exec-5 druid.sql.Statement - {conn-10005, pstmt-20042} closed
+DEBUG http-nio-8999-exec-5 druid.sql.Connection - {conn-10005} pool-recycle
+DEBUG http-nio-8999-exec-6 druid.sql.Connection - {conn-10005} pool-connect
+DEBUG http-nio-8999-exec-6 druid.sql.Statement - {conn-10005, pstmt-20043} created. select id,title,image_url as imageUrl,type,to_url as toUrl,date_format(create_time,'%Y-%m-%d %H:%i:%s') as createTime, date_format(modify_time,'%Y-%m-%d %H:%i:%s') as modifyTime from advertise where is_delete = 0 order by create_time
+DEBUG http-nio-8999-exec-6 druid.sql.Statement - {conn-10005, pstmt-20043} Parameters : []
+DEBUG http-nio-8999-exec-6 druid.sql.Statement - {conn-10005, pstmt-20043} Types : []
+DEBUG http-nio-8999-exec-6 druid.sql.Statement - {conn-10005, pstmt-20043} executed. 8.004506 millis. select id,title,image_url as imageUrl,type,to_url as toUrl,date_format(create_time,'%Y-%m-%d %H:%i:%s') as createTime, date_format(modify_time,'%Y-%m-%d %H:%i:%s') as modifyTime from advertise where is_delete = 0 order by create_time
+DEBUG http-nio-8999-exec-6 druid.sql.ResultSet - {conn-10005, pstmt-20043, rs-50043} open
+DEBUG http-nio-8999-exec-6 druid.sql.ResultSet - {conn-10005, pstmt-20043, rs-50043} Header: [id, title, image_url, type, to_url, createTime, modifyTime]
+DEBUG http-nio-8999-exec-6 druid.sql.ResultSet - {conn-10005, pstmt-20043, rs-50043} Result: [1, 测试标题，百度图片, /advertise/ceshi.jpg, 1, https://www.baidu.com, 2019-01-23 14:04:01, 2019-01-23 14:23:05]
+DEBUG http-nio-8999-exec-6 druid.sql.ResultSet - {conn-10005, pstmt-20043, rs-50043} Result: [12, 小图片, /advertise/1550652477388_723526d1-eafa-425c-a4d5-4a89f228e221.jpeg, 0, https://www.apple.com/cn/, 2019-02-20 16:47:57, 2019-02-20 16:47:57]
+DEBUG http-nio-8999-exec-6 druid.sql.ResultSet - {conn-10005, pstmt-20043, rs-50043} Result: [13, , /advertise/1554097726294_3b966c94-7a03-4601-83f2-06c72b28052e.mp4, null, , 2019-04-01 13:48:46, 2019-04-01 13:48:46]
+DEBUG http-nio-8999-exec-6 druid.sql.ResultSet - {conn-10005, pstmt-20043, rs-50043} Result: [14, 测试新上传, /advertise/1554125075695_c4dc0f88-aa91-423c-9553-25fc6f829630.png, 1, www.ureyblog.cn, 2019-04-01 21:24:36, 2019-04-01 21:24:35]
+DEBUG http-nio-8999-exec-6 druid.sql.ResultSet - {conn-10005, pstmt-20043, rs-50043} Result: [15, daw, /advertise/1554125406326_912e88cf-2408-4f5c-b3b2-874ff5ae1f76.png, 1, afsa, 2019-04-01 21:30:06, 2019-04-01 21:30:06]
+DEBUG http-nio-8999-exec-6 druid.sql.ResultSet - {conn-10005, pstmt-20043, rs-50043} closed
+DEBUG http-nio-8999-exec-6 druid.sql.Statement - {conn-10005, pstmt-20043} closed
+DEBUG http-nio-8999-exec-6 druid.sql.Connection - {conn-10005} pool-recycle
+DEBUG http-nio-8999-exec-7 druid.sql.Connection - {conn-10005} pool-connect
+DEBUG http-nio-8999-exec-7 druid.sql.Statement - {conn-10005, pstmt-20044} created. select id,title,image_url as imageUrl,type,to_url as toUrl,date_format(create_time,'%Y-%m-%d %H:%i:%s') as createTime, date_format(modify_time,'%Y-%m-%d %H:%i:%s') as modifyTime from advertise where is_delete = 0 order by create_time
+DEBUG http-nio-8999-exec-7 druid.sql.Statement - {conn-10005, pstmt-20044} Parameters : []
+DEBUG http-nio-8999-exec-7 druid.sql.Statement - {conn-10005, pstmt-20044} Types : []
+DEBUG http-nio-8999-exec-7 druid.sql.Statement - {conn-10005, pstmt-20044} executed. 7.255663 millis. select id,title,image_url as imageUrl,type,to_url as toUrl,date_format(create_time,'%Y-%m-%d %H:%i:%s') as createTime, date_format(modify_time,'%Y-%m-%d %H:%i:%s') as modifyTime from advertise where is_delete = 0 order by create_time
+DEBUG http-nio-8999-exec-7 druid.sql.ResultSet - {conn-10005, pstmt-20044, rs-50044} open
+DEBUG http-nio-8999-exec-7 druid.sql.ResultSet - {conn-10005, pstmt-20044, rs-50044} Header: [id, title, image_url, type, to_url, createTime, modifyTime]
+DEBUG http-nio-8999-exec-7 druid.sql.ResultSet - {conn-10005, pstmt-20044, rs-50044} Result: [1, 测试标题，百度图片, /advertise/ceshi.jpg, 1, https://www.baidu.com, 2019-01-23 14:04:01, 2019-01-23 14:23:05]
+DEBUG http-nio-8999-exec-7 druid.sql.ResultSet - {conn-10005, pstmt-20044, rs-50044} Result: [12, 小图片, /advertise/1550652477388_723526d1-eafa-425c-a4d5-4a89f228e221.jpeg, 0, https://www.apple.com/cn/, 2019-02-20 16:47:57, 2019-02-20 16:47:57]
+DEBUG http-nio-8999-exec-7 druid.sql.ResultSet - {conn-10005, pstmt-20044, rs-50044} Result: [13, , /advertise/1554097726294_3b966c94-7a03-4601-83f2-06c72b28052e.mp4, null, , 2019-04-01 13:48:46, 2019-04-01 13:48:46]
+DEBUG http-nio-8999-exec-7 druid.sql.ResultSet - {conn-10005, pstmt-20044, rs-50044} Result: [14, 测试新上传, /advertise/1554125075695_c4dc0f88-aa91-423c-9553-25fc6f829630.png, 1, www.ureyblog.cn, 2019-04-01 21:24:36, 2019-04-01 21:24:35]
+DEBUG http-nio-8999-exec-7 druid.sql.ResultSet - {conn-10005, pstmt-20044, rs-50044} Result: [15, daw, /advertise/1554125406326_912e88cf-2408-4f5c-b3b2-874ff5ae1f76.png, 1, afsa, 2019-04-01 21:30:06, 2019-04-01 21:30:06]
+DEBUG http-nio-8999-exec-7 druid.sql.ResultSet - {conn-10005, pstmt-20044, rs-50044} closed
+DEBUG http-nio-8999-exec-7 druid.sql.Statement - {conn-10005, pstmt-20044} closed
+DEBUG http-nio-8999-exec-7 druid.sql.Connection - {conn-10005} pool-recycle
+DEBUG http-nio-8999-exec-8 druid.sql.Connection - {conn-10005} pool-connect
+DEBUG http-nio-8999-exec-8 druid.sql.Statement - {conn-10005, pstmt-20045} created. select id,title,image_url as imageUrl,type,to_url as toUrl,date_format(create_time,'%Y-%m-%d %H:%i:%s') as createTime, date_format(modify_time,'%Y-%m-%d %H:%i:%s') as modifyTime from advertise where is_delete = 0 order by create_time
+DEBUG http-nio-8999-exec-8 druid.sql.Statement - {conn-10005, pstmt-20045} Parameters : []
+DEBUG http-nio-8999-exec-8 druid.sql.Statement - {conn-10005, pstmt-20045} Types : []
+DEBUG http-nio-8999-exec-8 druid.sql.Statement - {conn-10005, pstmt-20045} executed. 7.357065 millis. select id,title,image_url as imageUrl,type,to_url as toUrl,date_format(create_time,'%Y-%m-%d %H:%i:%s') as createTime, date_format(modify_time,'%Y-%m-%d %H:%i:%s') as modifyTime from advertise where is_delete = 0 order by create_time
+DEBUG http-nio-8999-exec-8 druid.sql.ResultSet - {conn-10005, pstmt-20045, rs-50045} open
+DEBUG http-nio-8999-exec-8 druid.sql.ResultSet - {conn-10005, pstmt-20045, rs-50045} Header: [id, title, image_url, type, to_url, createTime, modifyTime]
+DEBUG http-nio-8999-exec-8 druid.sql.ResultSet - {conn-10005, pstmt-20045, rs-50045} Result: [1, 测试标题，百度图片, /advertise/ceshi.jpg, 1, https://www.baidu.com, 2019-01-23 14:04:01, 2019-01-23 14:23:05]
+DEBUG http-nio-8999-exec-8 druid.sql.ResultSet - {conn-10005, pstmt-20045, rs-50045} Result: [12, 小图片, /advertise/1550652477388_723526d1-eafa-425c-a4d5-4a89f228e221.jpeg, 0, https://www.apple.com/cn/, 2019-02-20 16:47:57, 2019-02-20 16:47:57]
+DEBUG http-nio-8999-exec-8 druid.sql.ResultSet - {conn-10005, pstmt-20045, rs-50045} Result: [13, , /advertise/1554097726294_3b966c94-7a03-4601-83f2-06c72b28052e.mp4, null, , 2019-04-01 13:48:46, 2019-04-01 13:48:46]
+DEBUG http-nio-8999-exec-8 druid.sql.ResultSet - {conn-10005, pstmt-20045, rs-50045} Result: [14, 测试新上传, /advertise/1554125075695_c4dc0f88-aa91-423c-9553-25fc6f829630.png, 1, www.ureyblog.cn, 2019-04-01 21:24:36, 2019-04-01 21:24:35]
+DEBUG http-nio-8999-exec-8 druid.sql.ResultSet - {conn-10005, pstmt-20045, rs-50045} Result: [15, daw, /advertise/1554125406326_912e88cf-2408-4f5c-b3b2-874ff5ae1f76.png, 1, afsa, 2019-04-01 21:30:06, 2019-04-01 21:30:06]
+DEBUG http-nio-8999-exec-8 druid.sql.ResultSet - {conn-10005, pstmt-20045, rs-50045} closed
+DEBUG http-nio-8999-exec-8 druid.sql.Statement - {conn-10005, pstmt-20045} closed
+DEBUG http-nio-8999-exec-8 druid.sql.Connection - {conn-10005} pool-recycle
+DEBUG http-nio-8999-exec-9 druid.sql.Connection - {conn-10005} pool-connect
+DEBUG http-nio-8999-exec-9 druid.sql.Statement - {conn-10005, pstmt-20046} created. select id,title,image_url as imageUrl,type,to_url as toUrl,date_format(create_time,'%Y-%m-%d %H:%i:%s') as createTime, date_format(modify_time,'%Y-%m-%d %H:%i:%s') as modifyTime from advertise where is_delete = 0 order by create_time
+DEBUG http-nio-8999-exec-9 druid.sql.Statement - {conn-10005, pstmt-20046} Parameters : []
+DEBUG http-nio-8999-exec-9 druid.sql.Statement - {conn-10005, pstmt-20046} Types : []
+DEBUG http-nio-8999-exec-9 druid.sql.Statement - {conn-10005, pstmt-20046} executed. 6.786575 millis. select id,title,image_url as imageUrl,type,to_url as toUrl,date_format(create_time,'%Y-%m-%d %H:%i:%s') as createTime, date_format(modify_time,'%Y-%m-%d %H:%i:%s') as modifyTime from advertise where is_delete = 0 order by create_time
+DEBUG http-nio-8999-exec-9 druid.sql.ResultSet - {conn-10005, pstmt-20046, rs-50046} open
+DEBUG http-nio-8999-exec-9 druid.sql.ResultSet - {conn-10005, pstmt-20046, rs-50046} Header: [id, title, image_url, type, to_url, createTime, modifyTime]
+DEBUG http-nio-8999-exec-9 druid.sql.ResultSet - {conn-10005, pstmt-20046, rs-50046} Result: [1, 测试标题，百度图片, /advertise/ceshi.jpg, 1, https://www.baidu.com, 2019-01-23 14:04:01, 2019-01-23 14:23:05]
+DEBUG http-nio-8999-exec-9 druid.sql.ResultSet - {conn-10005, pstmt-20046, rs-50046} Result: [12, 小图片, /advertise/1550652477388_723526d1-eafa-425c-a4d5-4a89f228e221.jpeg, 0, https://www.apple.com/cn/, 2019-02-20 16:47:57, 2019-02-20 16:47:57]
+DEBUG http-nio-8999-exec-9 druid.sql.ResultSet - {conn-10005, pstmt-20046, rs-50046} Result: [13, , /advertise/1554097726294_3b966c94-7a03-4601-83f2-06c72b28052e.mp4, null, , 2019-04-01 13:48:46, 2019-04-01 13:48:46]
+DEBUG http-nio-8999-exec-9 druid.sql.ResultSet - {conn-10005, pstmt-20046, rs-50046} Result: [14, 测试新上传, /advertise/1554125075695_c4dc0f88-aa91-423c-9553-25fc6f829630.png, 1, www.ureyblog.cn, 2019-04-01 21:24:36, 2019-04-01 21:24:35]
+DEBUG http-nio-8999-exec-9 druid.sql.ResultSet - {conn-10005, pstmt-20046, rs-50046} Result: [15, daw, /advertise/1554125406326_912e88cf-2408-4f5c-b3b2-874ff5ae1f76.png, 1, afsa, 2019-04-01 21:30:06, 2019-04-01 21:30:06]
+DEBUG http-nio-8999-exec-9 druid.sql.ResultSet - {conn-10005, pstmt-20046, rs-50046} closed
+DEBUG http-nio-8999-exec-9 druid.sql.Statement - {conn-10005, pstmt-20046} closed
 DEBUG http-nio-8999-exec-9 druid.sql.Connection - {conn-10005} pool-recycle
 DEBUG http-nio-8999-exec-10 druid.sql.Connection - {conn-10005} pool-connect
-DEBUG http-nio-8999-exec-10 druid.sql.Statement - {conn-10005, pstmt-20007} created. select * from user where   token = ? and is_delete = 0
-DEBUG http-nio-8999-exec-10 druid.sql.Statement - {conn-10005, pstmt-20007} Parameters : [e6ccf915-9852-47e8-b918-1a4e300e152e]
-DEBUG http-nio-8999-exec-10 druid.sql.Statement - {conn-10005, pstmt-20007} Types : [VARCHAR]
-DEBUG http-nio-8999-exec-10 druid.sql.Statement - {conn-10005, pstmt-20007} executed. 8.401538 millis. select * from user where   token = ? and is_delete = 0
-DEBUG http-nio-8999-exec-10 druid.sql.ResultSet - {conn-10005, pstmt-20007, rs-50007} open
-DEBUG http-nio-8999-exec-10 druid.sql.ResultSet - {conn-10005, pstmt-20007, rs-50007} Header: [id, nickname, phone, password, address, score, descriptions, headerImg, token, is_admin, is_shield, is_delete, create_time, modify_time]
-DEBUG http-nio-8999-exec-10 druid.sql.ResultSet - {conn-10005, pstmt-20007, rs-50007} Result: [4, qaz123, 13581997174, e9aca15ce5ee544691657de668944f9, null, 17, null, null, e6ccf915-9852-47e8-b918-1a4e300e152e, 0, 0, 0, 2019-02-21 14:04:55.0, 2019-02-21 14:04:55.0]
-DEBUG http-nio-8999-exec-10 druid.sql.ResultSet - {conn-10005, pstmt-20007, rs-50007} closed
-DEBUG http-nio-8999-exec-10 druid.sql.Statement - {conn-10005, pstmt-20007} closed
+DEBUG http-nio-8999-exec-10 druid.sql.Statement - {conn-10005, pstmt-20047} created. select id,title,image_url as imageUrl,type,to_url as toUrl,date_format(create_time,'%Y-%m-%d %H:%i:%s') as createTime, date_format(modify_time,'%Y-%m-%d %H:%i:%s') as modifyTime from advertise where is_delete = 0 order by create_time
+DEBUG http-nio-8999-exec-10 druid.sql.Statement - {conn-10005, pstmt-20047} Parameters : []
+DEBUG http-nio-8999-exec-10 druid.sql.Statement - {conn-10005, pstmt-20047} Types : []
+DEBUG http-nio-8999-exec-10 druid.sql.Statement - {conn-10005, pstmt-20047} executed. 7.869608 millis. select id,title,image_url as imageUrl,type,to_url as toUrl,date_format(create_time,'%Y-%m-%d %H:%i:%s') as createTime, date_format(modify_time,'%Y-%m-%d %H:%i:%s') as modifyTime from advertise where is_delete = 0 order by create_time
+DEBUG http-nio-8999-exec-10 druid.sql.ResultSet - {conn-10005, pstmt-20047, rs-50047} open
+DEBUG http-nio-8999-exec-10 druid.sql.ResultSet - {conn-10005, pstmt-20047, rs-50047} Header: [id, title, image_url, type, to_url, createTime, modifyTime]
+DEBUG http-nio-8999-exec-10 druid.sql.ResultSet - {conn-10005, pstmt-20047, rs-50047} Result: [1, 测试标题，百度图片, /advertise/ceshi.jpg, 1, https://www.baidu.com, 2019-01-23 14:04:01, 2019-01-23 14:23:05]
+DEBUG http-nio-8999-exec-10 druid.sql.ResultSet - {conn-10005, pstmt-20047, rs-50047} Result: [12, 小图片, /advertise/1550652477388_723526d1-eafa-425c-a4d5-4a89f228e221.jpeg, 0, https://www.apple.com/cn/, 2019-02-20 16:47:57, 2019-02-20 16:47:57]
+DEBUG http-nio-8999-exec-10 druid.sql.ResultSet - {conn-10005, pstmt-20047, rs-50047} Result: [13, , /advertise/1554097726294_3b966c94-7a03-4601-83f2-06c72b28052e.mp4, null, , 2019-04-01 13:48:46, 2019-04-01 13:48:46]
+DEBUG http-nio-8999-exec-10 druid.sql.ResultSet - {conn-10005, pstmt-20047, rs-50047} Result: [14, 测试新上传, /advertise/1554125075695_c4dc0f88-aa91-423c-9553-25fc6f829630.png, 1, www.ureyblog.cn, 2019-04-01 21:24:36, 2019-04-01 21:24:35]
+DEBUG http-nio-8999-exec-10 druid.sql.ResultSet - {conn-10005, pstmt-20047, rs-50047} Result: [15, daw, /advertise/1554125406326_912e88cf-2408-4f5c-b3b2-874ff5ae1f76.png, 1, afsa, 2019-04-01 21:30:06, 2019-04-01 21:30:06]
+DEBUG http-nio-8999-exec-10 druid.sql.ResultSet - {conn-10005, pstmt-20047, rs-50047} closed
+DEBUG http-nio-8999-exec-10 druid.sql.Statement - {conn-10005, pstmt-20047} closed
 DEBUG http-nio-8999-exec-10 druid.sql.Connection - {conn-10005} pool-recycle
+DEBUG http-nio-8999-exec-2 druid.sql.Connection - {conn-10005} pool-connect
+DEBUG http-nio-8999-exec-2 druid.sql.Statement - {conn-10005, pstmt-20048} created. select id,title,image_url as imageUrl,type,to_url as toUrl,date_format(create_time,'%Y-%m-%d %H:%i:%s') as createTime, date_format(modify_time,'%Y-%m-%d %H:%i:%s') as modifyTime from advertise where is_delete = 0 order by create_time
+DEBUG http-nio-8999-exec-2 druid.sql.Statement - {conn-10005, pstmt-20048} Parameters : []
+DEBUG http-nio-8999-exec-2 druid.sql.Statement - {conn-10005, pstmt-20048} Types : []
+DEBUG http-nio-8999-exec-2 druid.sql.Statement - {conn-10005, pstmt-20048} executed. 8.120409 millis. select id,title,image_url as imageUrl,type,to_url as toUrl,date_format(create_time,'%Y-%m-%d %H:%i:%s') as createTime, date_format(modify_time,'%Y-%m-%d %H:%i:%s') as modifyTime from advertise where is_delete = 0 order by create_time
+DEBUG http-nio-8999-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20048, rs-50048} open
+DEBUG http-nio-8999-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20048, rs-50048} Header: [id, title, image_url, type, to_url, createTime, modifyTime]
+DEBUG http-nio-8999-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20048, rs-50048} Result: [1, 测试标题，百度图片, /advertise/ceshi.jpg, 1, https://www.baidu.com, 2019-01-23 14:04:01, 2019-01-23 14:23:05]
+DEBUG http-nio-8999-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20048, rs-50048} Result: [12, 小图片, /advertise/1550652477388_723526d1-eafa-425c-a4d5-4a89f228e221.jpeg, 0, https://www.apple.com/cn/, 2019-02-20 16:47:57, 2019-02-20 16:47:57]
+DEBUG http-nio-8999-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20048, rs-50048} Result: [13, , /advertise/1554097726294_3b966c94-7a03-4601-83f2-06c72b28052e.mp4, null, , 2019-04-01 13:48:46, 2019-04-01 13:48:46]
+DEBUG http-nio-8999-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20048, rs-50048} Result: [14, 测试新上传, /advertise/1554125075695_c4dc0f88-aa91-423c-9553-25fc6f829630.png, 1, www.ureyblog.cn, 2019-04-01 21:24:36, 2019-04-01 21:24:35]
+DEBUG http-nio-8999-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20048, rs-50048} Result: [15, daw, /advertise/1554125406326_912e88cf-2408-4f5c-b3b2-874ff5ae1f76.png, 1, afsa, 2019-04-01 21:30:06, 2019-04-01 21:30:06]
+DEBUG http-nio-8999-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20048, rs-50048} closed
+DEBUG http-nio-8999-exec-2 druid.sql.Statement - {conn-10005, pstmt-20048} closed
+DEBUG http-nio-8999-exec-2 druid.sql.Connection - {conn-10005} pool-recycle
+DEBUG http-nio-8999-exec-1 druid.sql.Connection - {conn-10005} pool-connect
+DEBUG http-nio-8999-exec-1 druid.sql.Statement - {conn-10005, pstmt-20049} created. select id,title,image_url as imageUrl,type,to_url as toUrl,date_format(create_time,'%Y-%m-%d %H:%i:%s') as createTime, date_format(modify_time,'%Y-%m-%d %H:%i:%s') as modifyTime from advertise where is_delete = 0 order by create_time
+DEBUG http-nio-8999-exec-1 druid.sql.Statement - {conn-10005, pstmt-20049} Parameters : []
+DEBUG http-nio-8999-exec-1 druid.sql.Statement - {conn-10005, pstmt-20049} Types : []
+DEBUG http-nio-8999-exec-1 druid.sql.Statement - {conn-10005, pstmt-20049} executed. 7.039224 millis. select id,title,image_url as imageUrl,type,to_url as toUrl,date_format(create_time,'%Y-%m-%d %H:%i:%s') as createTime, date_format(modify_time,'%Y-%m-%d %H:%i:%s') as modifyTime from advertise where is_delete = 0 order by create_time
+DEBUG http-nio-8999-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20049, rs-50049} open
+DEBUG http-nio-8999-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20049, rs-50049} Header: [id, title, image_url, type, to_url, createTime, modifyTime]
+DEBUG http-nio-8999-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20049, rs-50049} Result: [1, 测试标题，百度图片, /advertise/ceshi.jpg, 1, https://www.baidu.com, 2019-01-23 14:04:01, 2019-01-23 14:23:05]
+DEBUG http-nio-8999-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20049, rs-50049} Result: [12, 小图片, /advertise/1550652477388_723526d1-eafa-425c-a4d5-4a89f228e221.jpeg, 0, https://www.apple.com/cn/, 2019-02-20 16:47:57, 2019-02-20 16:47:57]
+DEBUG http-nio-8999-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20049, rs-50049} Result: [13, , /advertise/1554097726294_3b966c94-7a03-4601-83f2-06c72b28052e.mp4, null, , 2019-04-01 13:48:46, 2019-04-01 13:48:46]
+DEBUG http-nio-8999-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20049, rs-50049} Result: [14, 测试新上传, /advertise/1554125075695_c4dc0f88-aa91-423c-9553-25fc6f829630.png, 1, www.ureyblog.cn, 2019-04-01 21:24:36, 2019-04-01 21:24:35]
+DEBUG http-nio-8999-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20049, rs-50049} Result: [15, daw, /advertise/1554125406326_912e88cf-2408-4f5c-b3b2-874ff5ae1f76.png, 1, afsa, 2019-04-01 21:30:06, 2019-04-01 21:30:06]
+DEBUG http-nio-8999-exec-1 druid.sql.ResultSet - {conn-10005, pstmt-20049, rs-50049} closed
+DEBUG http-nio-8999-exec-1 druid.sql.Statement - {conn-10005, pstmt-20049} closed
+DEBUG http-nio-8999-exec-1 druid.sql.Connection - {conn-10005} pool-recycle
+DEBUG http-nio-8999-exec-3 druid.sql.Connection - {conn-10005} pool-connect
+DEBUG http-nio-8999-exec-3 druid.sql.Statement - {conn-10005, pstmt-20050} created. select id,title,image_url as imageUrl,type,to_url as toUrl,date_format(create_time,'%Y-%m-%d %H:%i:%s') as createTime, date_format(modify_time,'%Y-%m-%d %H:%i:%s') as modifyTime from advertise where is_delete = 0 order by create_time
+DEBUG http-nio-8999-exec-3 druid.sql.Statement - {conn-10005, pstmt-20050} Parameters : []
+DEBUG http-nio-8999-exec-3 druid.sql.Statement - {conn-10005, pstmt-20050} Types : []
+DEBUG http-nio-8999-exec-3 druid.sql.Statement - {conn-10005, pstmt-20050} executed. 24.407162 millis. select id,title,image_url as imageUrl,type,to_url as toUrl,date_format(create_time,'%Y-%m-%d %H:%i:%s') as createTime, date_format(modify_time,'%Y-%m-%d %H:%i:%s') as modifyTime from advertise where is_delete = 0 order by create_time
+DEBUG http-nio-8999-exec-3 druid.sql.ResultSet - {conn-10005, pstmt-20050, rs-50050} open
+DEBUG http-nio-8999-exec-3 druid.sql.ResultSet - {conn-10005, pstmt-20050, rs-50050} Header: [id, title, image_url, type, to_url, createTime, modifyTime]
+DEBUG http-nio-8999-exec-3 druid.sql.ResultSet - {conn-10005, pstmt-20050, rs-50050} Result: [1, 测试标题，百度图片, /advertise/ceshi.jpg, 1, https://www.baidu.com, 2019-01-23 14:04:01, 2019-01-23 14:23:05]
+DEBUG http-nio-8999-exec-3 druid.sql.ResultSet - {conn-10005, pstmt-20050, rs-50050} Result: [12, 小图片, /advertise/1550652477388_723526d1-eafa-425c-a4d5-4a89f228e221.jpeg, 0, https://www.apple.com/cn/, 2019-02-20 16:47:57, 2019-02-20 16:47:57]
+DEBUG http-nio-8999-exec-3 druid.sql.ResultSet - {conn-10005, pstmt-20050, rs-50050} Result: [13, , /advertise/1554097726294_3b966c94-7a03-4601-83f2-06c72b28052e.mp4, null, , 2019-04-01 13:48:46, 2019-04-01 13:48:46]
+DEBUG http-nio-8999-exec-3 druid.sql.ResultSet - {conn-10005, pstmt-20050, rs-50050} Result: [14, 测试新上传, /advertise/1554125075695_c4dc0f88-aa91-423c-9553-25fc6f829630.png, 1, www.ureyblog.cn, 2019-04-01 21:24:36, 2019-04-01 21:24:35]
+DEBUG http-nio-8999-exec-3 druid.sql.ResultSet - {conn-10005, pstmt-20050, rs-50050} Result: [15, daw, /advertise/1554125406326_912e88cf-2408-4f5c-b3b2-874ff5ae1f76.png, 1, afsa, 2019-04-01 21:30:06, 2019-04-01 21:30:06]
+DEBUG http-nio-8999-exec-3 druid.sql.ResultSet - {conn-10005, pstmt-20050, rs-50050} closed
+DEBUG http-nio-8999-exec-3 druid.sql.Statement - {conn-10005, pstmt-20050} closed
+DEBUG http-nio-8999-exec-3 druid.sql.Connection - {conn-10005} pool-recycle
+DEBUG scheduling-1 druid.sql.Connection - {conn-10005} pool-connect
+DEBUG scheduling-1 druid.sql.Statement - {conn-10005, pstmt-20051} created. update pet set change_score = 0,percent = null where is_delete = 0
+DEBUG scheduling-1 druid.sql.Statement - {conn-10005, pstmt-20051} Parameters : []
+DEBUG scheduling-1 druid.sql.Statement - {conn-10005, pstmt-20051} Types : []
+DEBUG scheduling-1 druid.sql.Statement - {conn-10005, pstmt-20051} executed. 26.174557 millis. update pet set change_score = 0,percent = null where is_delete = 0
+DEBUG scheduling-1 druid.sql.Statement - {conn-10005, pstmt-20051} closed
+DEBUG scheduling-1 druid.sql.Connection - {conn-10005} pool-recycle

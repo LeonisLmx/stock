@@ -89,7 +89,7 @@ public class AdminController {
 
     // 上传视频
     @RequestMapping(value = "/upload_video",method = RequestMethod.POST)
-    public Response uploadVideo(@RequestParam("file") MultipartFile file,Long id,
+    public Response uploadVideo(@RequestParam(value = "file",required = false) MultipartFile file,Long id,
                                 String title,Long subjectId) throws IOException {
         Map<String,String> map = new HashMap<>();
         map.put("id",id==null?null:id + "");

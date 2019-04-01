@@ -38,6 +38,8 @@ public class MyInterceptor implements HandlerInterceptor {
             "/api/subject/type_list",
             "/api/subject/list",
             "/api/subject/video_list",
+            "/api/admin/upload_video",
+            "/api/admin/edit_vedio",
             "/api/http/test",
             "/error"
     };
