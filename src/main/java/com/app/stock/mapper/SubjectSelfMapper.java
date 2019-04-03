@@ -1,6 +1,7 @@
 package com.app.stock.mapper;
 
 import com.app.stock.mapper.auto_generate.SubjectMapper;
+import com.app.stock.model.SubjectDetail;
 import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.Select;
 import org.apache.ibatis.annotations.Update;
@@ -17,9 +18,9 @@ public interface SubjectSelfMapper extends SubjectMapper {
     @Select({
             "<script>",
             "select a.id,c.name as type,a.content,a.title,a.small_img,a.detail,a.common_price,a.vip_price,DATE_FORMAT(a.create_time,'%Y-%m-%d %T') as create_time,",
-            "b.name as teacher_name,b.description,b.avatar,d.play_count from subject a left join teacher b on a.teacher_id = b.id",
-            "left join subject_type c on a.subject_type_id = c.id left join subject_detail d on a.id = d.subject_id",
-            "where a.is_delete = 0 and b.is_delete = 0 and c.is_delete = 0 and d.is_delete = 0",
+            "b.name as teacher_name,b.description,b.avatar from subject a left join teacher b on a.teacher_id = b.id",
+            "left join subject_type c on a.subject_type_id = c.id",
+            "where a.is_delete = 0 and b.is_delete = 0 and c.is_delete = 0",
             "<if test=\"type != null and type != ''\">",
             "and c.id = #{type}",
             "</if>",
@@ -52,4 +53,9 @@ public interface SubjectSelfMapper extends SubjectMapper {
             "</script>"
     })
     int batchUpdateSubjectTeacher(@Param("list")List<Long> list);
+
+    @Select({
+            "select * from subject_detail where subject_id = #{subjectId}"
+    })
+    List<SubjectDetail> selectAllInfos(@Param("subjectId")Long subjectId);
 }

@@ -43,6 +43,9 @@ public class SubjectServiceImpl implements SubjectService {
         PageHelper.startPage(subjectListRequest.getPage(),subjectListRequest.getPage_size());
         List<Map<String,Object>> list = subjectSelfMapper.list(subjectListRequest.getType(),subjectListRequest.getIsFree(),
                 subjectListRequest.getOrderType(),subjectListRequest.getOrder());
+        for(Map<String,Object> entity:list){
+            entity.put("list",subjectSelfMapper.selectAllInfos((Long)entity.get("id")));
+        }
         PageInfo pageInfo = new PageInfo(list);
         return pageInfo.getList();
     }
