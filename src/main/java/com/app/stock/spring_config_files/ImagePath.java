@@ -16,6 +16,9 @@ public class ImagePath {
     @Value("${image.path.advertise}")
     private String imagePathAdvertise;
 
+    @Value("${image.path.subject}")
+    private String imagePathSubject;
+
     @Value("${image.path.vedio}")
     private String imagePathVedio;
 
@@ -41,5 +44,13 @@ public class ImagePath {
 
     public void setImagePathVedio(String imagePathVedio) {
         this.imagePathVedio = imagePathVedio;
+    }
+
+    public String getImagePathSubject() {
+        return imagePathSubject;
+    }
+
+    public void setImagePathSubject(String imagePathSubject) {
+        this.imagePathSubject = imagePathSubject;
     }
 }

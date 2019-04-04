@@ -50,12 +50,7 @@ public class UserServiceImpl implements UserService {
 
     // 根据类别获取短信验证码
     public String getMessageCode(String phone,int type) throws Exception {
-        /*if(redisUtil.get(phone + SMSEnum.getName(type)) == null){
-            return smsSerivce.sendSMS(SMSEnum.getName(type),phone).toString();
-        }else{
-            return null;
-        }*/
-        return smsSerivce.sendSMS(SMSEnum.getName(type),phone).toString();
+        return smsSerivce.sendSMS(SMSEnum.getName(type),phone) == 1?"发送成功":"发送失败，请稍后重试";
     }
 
     // 用户注册

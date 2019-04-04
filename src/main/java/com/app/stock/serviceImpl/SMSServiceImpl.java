@@ -48,7 +48,7 @@ public class SMSServiceImpl implements SMSSerivce {
 
     // 阿里云短信发送
     @Override
-    public Object sendSMS(String templateCode,String phone) throws Exception {
+    public int sendSMS(String templateCode,String phone) throws Exception {
         SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss'Z'");
         df.setTimeZone(new java.util.SimpleTimeZone(0, "GMT"));// 这里一定要设置GMT时区
         Map<String, String> paras = new HashMap<String, String>();
@@ -69,7 +69,7 @@ public class SMSServiceImpl implements SMSSerivce {
         paras.put("SignName",SIGN_NAME);
         paras.put("TemplateCode", templateCode);
         // 生成6位随机数
-        String code = ((Math.random()*9+1)*100000) + "";
+        String code = (int)((Math.random()*9+1)*100000) + "";
         paras.put("TemplateParam", "{\"code\":"+ code +"}");
         // 3. 去除签名关键字Key
         if (paras.containsKey("Signature"))
@@ -95,7 +95,12 @@ public class SMSServiceImpl implements SMSSerivce {
         String url = SMSURL + "?Signature=" + signature + sortQueryStringTmp;
         String response =  HttpClientRequest.Get(url);
         logger.info(response);
-        redisUtil.set(phone + templateCode,code,5L, TimeUnit.MINUTES);
-        return code;
+        String result = response.substring(response.indexOf("<Message>") + 9,response.indexOf("</Message>"));
+        if("OK".equals(result)){
+            redisUtil.set(phone + templateCode,code,5L, TimeUnit.MINUTES);
+            return 1;
+        }else{
+            return -1;
+        }
     }
 }

@@ -7,5 +7,5 @@ package com.app.stock.service;
  */
 public interface SMSSerivce {
 
-    public Object sendSMS(String templateCode,String phone) throws Exception;
+    public int sendSMS(String templateCode,String phone) throws Exception;
 }

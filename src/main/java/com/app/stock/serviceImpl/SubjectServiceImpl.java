@@ -7,13 +7,17 @@ import com.app.stock.model.Subject;
 import com.app.stock.model.User;
 import com.app.stock.model.request.PrimarykeyIdRequest;
 import com.app.stock.model.request.SubjectListRequest;
+import com.app.stock.service.AdvertiseService;
 import com.app.stock.service.SubjectService;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
+import org.apache.commons.lang3.StringUtils;
+import org.apache.tomcat.util.http.fileupload.FileUpload;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import javax.servlet.http.HttpServletRequest;
+import java.io.IOException;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
@@ -37,6 +41,9 @@ public class SubjectServiceImpl implements SubjectService {
 
     @Autowired
     private SubjectDetailSelfMapper subjectDetailSelfMapper;
+
+    @Autowired
+    private AdvertiseService advertiseService;
 
     @Override
     public List<Map<String, Object>> list(SubjectListRequest subjectListRequest) {
@@ -68,13 +75,21 @@ public class SubjectServiceImpl implements SubjectService {
     }
 
     @Override
-    public void addSubject(Subject subject) {
+    public void addSubject(Subject subject) throws IOException {
+        if(StringUtils.isNotBlank(subject.getSmallImg())){
+            Map<String,Object> map = advertiseService.uploadImage(3,subject.getSmallImg());
+            subject.setSmallImg(map.get("url").toString());
+        }
         subject.setCreateTime(new Date());
         subjectSelfMapper.insertSelective(subject);
     }
 
     @Override
-    public int editSubject(Subject subject) {
+    public int editSubject(Subject subject) throws IOException {
+        if(StringUtils.isNotBlank(subject.getSmallImg())){
+            Map<String,Object> map = advertiseService.uploadImage(3,subject.getSmallImg());
+            subject.setSmallImg(map.get("url").toString());
+        }
         return subjectSelfMapper.updateByPrimaryKeySelective(subject);
     }
 }

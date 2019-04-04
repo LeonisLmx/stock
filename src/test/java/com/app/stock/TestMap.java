@@ -50,4 +50,10 @@ public class TestMap {
         Long end = System.currentTimeMillis();
         System.out.println(end - start);
     }
+
+    public static void main(String[] args) {
+        String response = "<?xml version='1.0' encoding='UTF-8'?><SendSmsResponse><Message>OK</Message><RequestId>BFD77D59-1433-46DC-AF5F-1B283D38B3B5</RequestId><Code>isv.BUSINESS_LIMIT_CONTROL</Code></SendSmsResponse>";
+        String result = response.substring(response.indexOf("<Message>") + 9,response.indexOf("</Message>"));
+        System.out.println(result);
+    }
 }

@@ -7,9 +7,9 @@ package com.app.stock.common.commonEnum;
  */
 public enum SMSEnum {
 
-    REGISTER(1,"SMS_162465758"),
-    RESET_PASSWORD(2,"SMS_162522032"),
-    CODE_LOGIN(3,"SMS_162199739");
+    REGISTER(0,"SMS_162465758"),
+    CODE_LOGIN(1,"SMS_162199739"),
+    RESET_PASSWORD(2,"SMS_162522032");
 
     private int order;
     private String code;

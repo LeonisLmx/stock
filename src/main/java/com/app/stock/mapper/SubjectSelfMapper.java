@@ -17,7 +17,7 @@ public interface SubjectSelfMapper extends SubjectMapper {
 
     @Select({
             "<script>",
-            "select a.id,c.name as type,a.content,a.title,a.small_img,a.detail,a.common_price,a.vip_price,DATE_FORMAT(a.create_time,'%Y-%m-%d %T') as create_time,",
+            "select a.id,a.subject_type_id as type_id,a.teacher_id,c.name as type,a.content,a.title,a.small_img,a.detail,a.common_price,a.vip_price,DATE_FORMAT(a.create_time,'%Y-%m-%d %T') as create_time,",
             "b.name as teacher_name,b.description,b.avatar from subject a left join teacher b on a.teacher_id = b.id",
             "left join subject_type c on a.subject_type_id = c.id",
             "where a.is_delete = 0 and b.is_delete = 0 and c.is_delete = 0",

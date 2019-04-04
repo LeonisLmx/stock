@@ -6,6 +6,7 @@ import com.app.stock.model.request.SubjectListRequest;
 import org.apache.ibatis.annotations.Param;
 
 import javax.servlet.http.HttpServletRequest;
+import java.io.IOException;
 import java.util.List;
 import java.util.Map;
 
@@ -21,7 +22,7 @@ public interface SubjectService {
 
     public Map<String,Object> detail(PrimarykeyIdRequest isPayRequest);
 
-    public void addSubject(Subject subject);
+    public void addSubject(Subject subject) throws IOException;
 
-    public int editSubject(Subject subject);
+    public int editSubject(Subject subject) throws IOException;
 }

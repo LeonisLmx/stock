@@ -45,11 +45,7 @@ public class UserController {
         if(bindingResult.hasErrors()){
             return Response.ok(bindingResult.getFieldError().getDefaultMessage());
         }
-        userService.getMessageCode(request.getPhone(),request.getType());
-        /*Map<String,Object> map = new HashMap<>();
-        map.put("code",messageCode);*/
-        //return StringUtils.isNotBlank(messageCode) ? Response.ok(map,"获取成功"):Response.ok("获取太过频繁");
-        return Response.ok("获取成功");
+        return Response.ok(userService.getMessageCode(request.getPhone(),request.getType()));
     }
 
     // 用户注册

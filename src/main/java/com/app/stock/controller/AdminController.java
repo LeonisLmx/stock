@@ -62,7 +62,7 @@ public class AdminController {
 
     // 新增课程
     @RequestMapping(value = "/add_subject",method = RequestMethod.POST)
-    public Response newSubject(@RequestBody @Valid Subject subject, BindingResult bindingResult){
+    public Response newSubject(@RequestBody @Valid Subject subject, BindingResult bindingResult) throws IOException {
         if(bindingResult.hasErrors()){
             return Response.ok(bindingResult.getFieldError().getDefaultMessage());
         }
@@ -72,7 +72,7 @@ public class AdminController {
 
     // 修改课程主体信息
     @RequestMapping(value = "/edit_subject",method = RequestMethod.POST)
-    public Response editSubject(@RequestBody Subject subject){
+    public Response editSubject(@RequestBody Subject subject) throws IOException {
         if(subject.getId() == null){
             return Response.ok("修改主键不能为空");
         }
@@ -106,7 +106,7 @@ public class AdminController {
     }
 
     // 获取现有老师的列表
-    @RequestMapping(value = "/teacher_list",method = RequestMethod.POST)
+    @RequestMapping(value = "/teacher_list",method = {RequestMethod.GET,RequestMethod.POST})
     public Response teacherList(){
         return Response.ok(teacherService.teacherList(),"操作成功");
     }
