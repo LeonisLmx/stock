@@ -34,6 +34,7 @@ public class MyInterceptor implements HandlerInterceptor {
             "/api/alipay/alipayNotify",
             "/api/advertise/list",
             "/api/advertise/publish",
+            "/api/advertise/delete",
             "/api/comment/get_comment",
             "/api/subject/type_list",
             "/api/subject/list",
@@ -41,7 +42,13 @@ public class MyInterceptor implements HandlerInterceptor {
             "/api/admin/upload_video",
             "/api/admin/edit_vedio",
             "/api/admin/teacher_list",
-            "/admin/edit_subject",
+            "/api/admin/delete_teacher",
+            "/api/admin/new_teacher",
+            "/api/admin/edit_teacher",
+            "/api/admin/add_subject",
+            "/api/admin/edit_subject",
+            "/api/news/search",
+            "/api/stock/getSinaData",
             "/api/http/test",
             "/error"
     };

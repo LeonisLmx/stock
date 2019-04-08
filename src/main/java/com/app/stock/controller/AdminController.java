@@ -113,7 +113,7 @@ public class AdminController {
 
     // 新增老师信息
     @RequestMapping(value = "/new_teacher",method = RequestMethod.POST)
-    public Response newTeacher(@RequestBody @Valid Teacher teacher,BindingResult bindingResult){
+    public Response newTeacher(@RequestBody @Valid Teacher teacher,BindingResult bindingResult) throws IOException {
         if(bindingResult.hasErrors()) {
             return Response.ok(bindingResult.getFieldError().getDefaultMessage());
         }
@@ -123,7 +123,7 @@ public class AdminController {
 
     // 修改老师主体信息
     @RequestMapping(value = "/edit_teacher",method = RequestMethod.POST)
-    public Response editTeacher(@RequestBody Teacher teacher){
+    public Response editTeacher(@RequestBody Teacher teacher) throws IOException {
         if(teacher.getId() == null){
             return Response.ok("主键ID不能为空");
         }

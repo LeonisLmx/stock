@@ -43,7 +43,7 @@ public class AdvertiseController {
         return Response.ok(advertiseService.list(),"操作成功");
     }
 
-    @RequestMapping(value = "/delete",method = {RequestMethod.POST})
+    @RequestMapping(value = "/delete",method = RequestMethod.POST)
     public Response deleteAdvertise(@RequestBody Advertise advertise){
         if(advertise.getId() == null){
             return Response.ok("id不能为空");

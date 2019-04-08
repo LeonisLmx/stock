@@ -93,6 +93,9 @@ public class StockServiceImpl implements StockService {
             }else if(entity.equals("13")){
                 // 红三兵
                 redisList = gson.fromJson(redisExecutor.getMap("CALC","THREEARMY"),List.class);
+            }else if(entity.equals("14")){
+                // 红三兵
+                redisList = gson.fromJson(redisExecutor.getMap("CALC","MACD"),List.class);
             }
             if(list == null || list.size() == 0){
                 list = redisList;
