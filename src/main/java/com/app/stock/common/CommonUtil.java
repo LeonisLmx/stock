@@ -28,9 +28,11 @@ import static io.netty.util.internal.StringUtil.byteToHexString;
 /**
  * Created by lmx
  * Date 2018/12/24
+ * 公用类方法
  */
 public class CommonUtil {
 
+    // 用于解析参数验证
     public static String byteArrayToHexString(byte[] b){
         StringBuffer resultSb = new StringBuffer();
         for(int i=0;i<b.length;i++){
@@ -39,6 +41,7 @@ public class CommonUtil {
         return resultSb.toString();
     }
 
+    // 将实体类转为map类
     public static Map<String, Object> beanToMap(Object obj) {
         Map<String, Object> params = new HashMap<String, Object>(0);
         try {
@@ -56,6 +59,7 @@ public class CommonUtil {
         return params;
     }
 
+    // post请求
     public static String doPost(String url,Map<String,String> map){
         String result = null;
         CloseableHttpClient httpClient = HttpClients.createDefault();
@@ -116,6 +120,7 @@ public class CommonUtil {
         return result;
     }
 
+    // 将map排序
     public static StringBuilder sortMap(Map<String,Object> map){
         if(map == null || map.isEmpty()){
             return null;

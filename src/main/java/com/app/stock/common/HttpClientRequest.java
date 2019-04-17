@@ -28,6 +28,7 @@ import static org.springframework.http.HttpHeaders.USER_AGENT;
 /**
  * @author 刘明新
  * @date 2019/1/8 下午5:42
+ * http请求类
  */
 public class HttpClientRequest {
 

@@ -2,6 +2,7 @@ package com.app.stock.mapper;
 
 import com.app.stock.mapper.auto_generate.StockMapper;
 import com.app.stock.model.Stock;
+import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.Select;
 
@@ -39,4 +40,15 @@ public interface StockSelfMapper extends StockMapper {
             "</script>"
     })
     List<String> selectStockCodes(@Param("list")List<String> list);
+
+    @Insert({
+            "<script>",
+            "insert into stock (stock_code,stock_name,market)",
+            "values",
+            "<foreach collection='list' item='entity' index='index' separator=','>",
+            "(#{entity.stockCode},#{entity.stockName},#{entity.market})",
+            "</foreach>",
+            "</script>"
+    })
+    int batchInsertStocks(@Param("list") List<Stock> list);
 }

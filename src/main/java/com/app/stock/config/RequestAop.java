@@ -21,6 +21,7 @@ import java.util.Map;
 /**
  * Created by lmx
  * Date 2019/1/7
+ * 定义切面，用于验证方法参数以及返回格式统一
  */
 @Aspect
 @Component
@@ -68,6 +69,7 @@ public class RequestAop {
                 return object.toString();
             }
         }catch (VerifyException e){
+            // 拦截指定异常
             response.setReason("校验失败");
             response.setError_code(1);
         }catch (Exception e){

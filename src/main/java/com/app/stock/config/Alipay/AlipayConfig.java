@@ -3,6 +3,7 @@ package com.app.stock.config.Alipay;
 /**
  * Created by lmx
  * Date 2019/1/15
+ * 支付宝支付配置类
  */
 public class AlipayConfig {
 

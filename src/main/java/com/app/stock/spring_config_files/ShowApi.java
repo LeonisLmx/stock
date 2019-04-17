@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 /**
  * @Author mingxin Liu
  * @Date 2019-03-24 10:17
- * @Description //showApi 相关的spring配置文件读取
+ * @Description //showApi 相关的获取第三方api的配置
  */
 @Component
 public class ShowApi {
@@ -26,6 +26,9 @@ public class ShowApi {
 
     @Value("${showapi.stock.url}")
     private String stockUrl;
+
+    @Value("${showapi.stockData.url}")
+    private String stockDataUrl;
 
     public String getKey() {
         return key;
@@ -65,5 +68,13 @@ public class ShowApi {
 
     public void setStockUrl(String stockUrl) {
         this.stockUrl = stockUrl;
+    }
+
+    public String getStockDataUrl() {
+        return stockDataUrl;
+    }
+
+    public void setStockDataUrl(String stockDataUrl) {
+        this.stockDataUrl = stockDataUrl;
     }
 }

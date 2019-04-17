@@ -2,11 +2,12 @@ package com.app.stock;
 
 import org.junit.Test;
 
-import java.util.HashMap;
 import java.util.Map;
-import java.util.Random;
 import java.util.UUID;
-import java.util.concurrent.*;
+import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.ExecutionException;
+import java.util.concurrent.Executor;
+import java.util.concurrent.Executors;
 
 /**
  * @Author mingxin Liu
@@ -14,13 +15,6 @@ import java.util.concurrent.*;
  * @Description //TODO
  */
 public class TestMap {
-
-    public void testMap(Map map){
-        Object result = map.put("1","2");
-        Object result2 = map.put("1","3");
-        System.out.println(result);
-        System.out.println(result2);
-    }
 
     @Test
     public void moreThread() throws ExecutionException, InterruptedException {
@@ -38,17 +32,6 @@ public class TestMap {
         Thread.sleep(1000);
         System.out.println(map.toString());
         System.out.println(map.size());
-    }
-
-    @Test
-    public void printMap(){
-        Long start = System.currentTimeMillis();
-        Map<String,Object> map = new HashMap<>();
-        for(int i=0;i<12;i++){
-            map.put(i + "",UUID.randomUUID().toString());
-        }
-        Long end = System.currentTimeMillis();
-        System.out.println(end - start);
     }
 
     public static void main(String[] args) {

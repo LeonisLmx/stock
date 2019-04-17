@@ -11,6 +11,7 @@ import org.springframework.stereotype.Component;
 /**
  * Created by lmx
  * Date 2019/1/18
+ * 工厂模式区分订单支付宝，分别用于课程支付以及VIP支付
  */
 @Component
 public class UserDetailFactory {

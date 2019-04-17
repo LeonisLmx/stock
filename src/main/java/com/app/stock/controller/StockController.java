@@ -23,6 +23,7 @@ import java.util.concurrent.Executors;
 /**
  * Created by lmx
  * Date 2019/1/7
+ * 股票相关controller
  */
 @RestController
 @RequestMapping("/api/stock")
@@ -70,6 +71,8 @@ public class StockController {
         return Response.ok(stockService.getFormualData(map),"操作成功");
     }
 
+    // 获取单个股票的详细数据
+    // 调用第三方api获取
     @RequestMapping(value = "/getStockDetail",method = RequestMethod.POST)
     public Response getStockDetail(@RequestBody StockDetailRequest stockDetailRequest, BindingResult bindingResult) throws UnsupportedEncodingException {
         if(bindingResult.hasErrors()){
@@ -78,6 +81,7 @@ public class StockController {
         return Response.ok(stockService.getStockDetails(stockDetailRequest),"操纵成功");
     }
 
+    // 获取新浪相关概念板块股票数据
     @RequestMapping(value = "/getSinaData",method = {RequestMethod.POST})
     public Response getSinaData(@RequestBody Map<String,Object> map) throws Exception {
         return Response.ok(stockService.getSinaData(map.get("page") == null?1:Integer.valueOf(map.get("page") + ""),
@@ -86,6 +90,7 @@ public class StockController {
                 map.get("asc") == null?0:Integer.valueOf(map.get("asc") + "")),"操作成功");
     }
 
+    // 测试方法
     @RequestMapping("/yangLine")
     public Response yangLine(){
         Executor executor = Executors.newFixedThreadPool(1);
@@ -93,7 +98,7 @@ public class StockController {
             @Override
             public void run() {
                 try {
-                    //smsSerivce.sendSMS();
+                    stockService.sychornizedStockData();
                 } catch (Exception e) {
                     e.printStackTrace();
                 }

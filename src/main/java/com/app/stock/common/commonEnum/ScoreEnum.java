@@ -3,6 +3,7 @@ package com.app.stock.common.commonEnum;
 /**
  * Created by lmx
  * Date 2018/12/28
+ * 会员积分修改枚举类型
  */
 public enum ScoreEnum {
 

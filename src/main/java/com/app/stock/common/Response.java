@@ -1,8 +1,9 @@
 package com.app.stock.common;
 
-import org.omg.CORBA.INTERNAL;
-import org.springframework.http.HttpStatus;
-
+/**
+ * 数据统一格式返回类
+ * @param <T>
+ */
 public class Response<T> {
     private T data;
     private String reason;

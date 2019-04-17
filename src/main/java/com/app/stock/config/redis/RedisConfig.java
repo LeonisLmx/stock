@@ -14,6 +14,9 @@ import org.springframework.stereotype.Component;
 
 import java.time.Duration;
 
+/**
+ * redis配置类
+ */
 @Configuration
 @Component
 public class RedisConfig {

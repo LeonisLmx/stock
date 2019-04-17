@@ -17,6 +17,7 @@ import java.util.Map;
 /**
  * Created by lmx
  * Date 2018/12/28
+ * 股票言论相关controller
  */
 @RestController
 @RequestMapping("/api/comment")

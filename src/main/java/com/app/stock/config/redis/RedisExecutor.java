@@ -12,6 +12,9 @@ import java.util.List;
 import java.util.Map;
 import java.util.concurrent.TimeUnit;
 
+/**
+ * redis相关操作类
+ */
 @Component
 public class RedisExecutor {
 

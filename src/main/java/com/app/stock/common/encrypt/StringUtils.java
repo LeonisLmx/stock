@@ -8,6 +8,7 @@ import java.util.regex.Pattern;
 /**
  * Created by lmx
  * Date 2019/1/10
+ * 和MD5Utils类一起用于验证前端参数
  */
 public class StringUtils {
 

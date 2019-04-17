@@ -55,7 +55,7 @@ public interface SubjectSelfMapper extends SubjectMapper {
     int batchUpdateSubjectTeacher(@Param("list")List<Long> list);
 
     @Select({
-            "select * from subject_detail where subject_id = #{subjectId}"
+            "select * from subject_detail where subject_id = #{subjectId} and is_delete = 0"
     })
     List<SubjectDetail> selectAllInfos(@Param("subjectId")Long subjectId);
 }

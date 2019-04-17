@@ -18,6 +18,7 @@ import java.util.Map;
 /**
  * Created by lmx
  * Date 2018/12/24
+ * 广告相关操作信息
  */
 @RequestMapping("/api/advertise")
 @RestController
@@ -43,6 +44,7 @@ public class AdvertiseController {
         return Response.ok(advertiseService.list(),"操作成功");
     }
 
+    // 删除制定ID的广告
     @RequestMapping(value = "/delete",method = RequestMethod.POST)
     public Response deleteAdvertise(@RequestBody Advertise advertise){
         if(advertise.getId() == null){

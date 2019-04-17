@@ -6,11 +6,14 @@ import com.app.stock.model.Teacher;
 import com.app.stock.service.*;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.ibatis.annotations.Param;
+import org.omg.CORBA.OBJ_ADAPTER;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
+import org.springframework.web.multipart.MultipartHttpServletRequest;
 
+import javax.servlet.http.HttpServletRequest;
 import javax.validation.Valid;
 import java.io.IOException;
 import java.util.HashMap;
@@ -20,6 +23,7 @@ import java.util.Map;
 /**
  * Created by lmx
  * Date 2019/1/23
+ * 管理员相关操作
  */
 @RestController
 @RequestMapping("/api/admin")
@@ -82,8 +86,8 @@ public class AdminController {
 
     // 删除课程下的视频信息
     @RequestMapping(value = "/edit_vedio",method = RequestMethod.POST)
-    public Response editVedio(@RequestBody List<Long> list){
-        subjectDetailService.deleteVideo(list);
+    public Response editVedio(@RequestBody Map<String,Object> map){
+        subjectDetailService.deleteVideo(Long.valueOf(map.get("id") + ""));
         return Response.ok("操作成功");
     }
 
@@ -91,11 +95,11 @@ public class AdminController {
     @RequestMapping(value = "/upload_video",method = RequestMethod.POST)
     public Response uploadVideo(@RequestParam(value = "file",required = false) MultipartFile file,
                                 @RequestParam(value = "id",required = false) Long id,
-                                @RequestParam("title") String title,
-                                @RequestParam("subjectId") Long subjectId) throws IOException {
+                                @RequestParam(value = "subjectId",required = false) Long subjectId,
+                                @RequestParam(value = "title",required = false) String title) throws IOException {
         Map<String,String> map = new HashMap<>();
         map.put("id",id==null?null:id + "");
-        map.put("subject_id",subjectId==null?null:subjectId + "");
+        map.put("subject_id",subjectId + "");
         map.put("title",title);
         Map<String,Object> resultMap = subjectDetailService.uploadVideo(file,map);
         if((Boolean) resultMap.get("status")) {

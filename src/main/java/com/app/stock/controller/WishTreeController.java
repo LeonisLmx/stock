@@ -18,6 +18,7 @@ import java.util.Map;
 /**
  * Created by lmx
  * Date 2019/2/24
+ * 许愿树相关controller
  */
 @RequestMapping("/api/wish")
 @RestController

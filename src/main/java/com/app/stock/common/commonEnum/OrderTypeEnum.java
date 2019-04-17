@@ -3,6 +3,7 @@ package com.app.stock.common.commonEnum;
 /**
  * Created by lmx
  * Date 2019/1/17
+ * 订单类型枚举类型
  */
 public enum OrderTypeEnum {
 

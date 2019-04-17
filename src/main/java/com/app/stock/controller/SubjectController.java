@@ -19,6 +19,7 @@ import javax.validation.Valid;
 /**
  * Created by lmx
  * Date 2019/1/15
+ * 课程相关controller
  */
 @RestController
 @RequestMapping("/api/subject")
@@ -63,6 +64,7 @@ public class SubjectController {
         return Response.ok(subjectService.detail(primarykeyIdRequest),"查询成功");
     }
 
+    // 视频列表
     @RequestMapping(value = "/video_list",method = {RequestMethod.GET,RequestMethod.POST})
     public Response videoList(){
         return Response.ok(subjectDetailService.videoList(),"操作成功");

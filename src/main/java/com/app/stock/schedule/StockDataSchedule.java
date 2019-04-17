@@ -44,6 +44,7 @@ public class StockDataSchedule {
     }
 
 
+    // 十字星计算
     @Scheduled(cron = "0 0 18 * * ?")
     public void calcCross(){
         logger.info("开始计算十字星");
@@ -55,6 +56,7 @@ public class StockDataSchedule {
         logger.info("十字星计算结束");
     }
 
+    // 阳线计算
     @Scheduled(cron = "0 0 18 * * ?")
     public void calcYangLine(){
         logger.info("开始计算阳线");
@@ -66,6 +68,7 @@ public class StockDataSchedule {
         logger.info("阳线计算结束");
     }
 
+    // 长下影线计算
     @Scheduled(cron = "0 0 18 * * ?")
     public void longUnderLine(){
         logger.info("开始计算长下影线");
@@ -77,6 +80,7 @@ public class StockDataSchedule {
         logger.info("长下影线计算结束");
     }
 
+    // 锤子线计算
     @Scheduled(cron = "0 0 18 * * ?")
     public void hammerLine(){
         logger.info("开始计算锤子线");
@@ -88,6 +92,7 @@ public class StockDataSchedule {
         logger.info("锤子线计算结束");
     }
 
+    // KDJ计算
     @Scheduled(cron = "0 20 18 * * ?")
     public void KDJ(){
         logger.info("开始计算KDJ");
@@ -99,6 +104,7 @@ public class StockDataSchedule {
         logger.info("KDJ计算结束");
     }
 
+    // MACD计算
     @Scheduled(cron = "0 25 18 * * ?")
     public void MACD(){
         logger.info("开始计算MACD");
@@ -110,6 +116,7 @@ public class StockDataSchedule {
         logger.info("MACD计算结束");
     }
 
+    // BOLL计算
     @Scheduled(cron = "0 30 18 * * ?")
     public void BOLL(){
         logger.info("开始计算BOLL");
@@ -121,6 +128,7 @@ public class StockDataSchedule {
         logger.info("BOLL计算结束");
     }
 
+    // WR计算
     @Scheduled(cron = "0 35 18 * * ?")
     public void WR(){
         logger.info("开始计算WR");
@@ -132,6 +140,7 @@ public class StockDataSchedule {
         logger.info("WR计算结束");
     }
 
+    // V 计算
     @Scheduled(cron = "0 40 18 * * ?")
     public void V(){
         logger.info("开始计算V");
@@ -143,6 +152,7 @@ public class StockDataSchedule {
         logger.info("V计算结束");
     }
 
+    // 海底捞月计算
     @Scheduled(cron = "0 45 18 * * ?")
     public void SEA(){
         logger.info("开始计算海底捞月");
@@ -154,6 +164,7 @@ public class StockDataSchedule {
         logger.info("海底捞月计算结束");
     }
 
+    // 均线多头计算
     @Scheduled(cron = "0 50 18 * * ?")
     public void MORE(){
         logger.info("开始计算均线多头");
@@ -165,6 +176,7 @@ public class StockDataSchedule {
         logger.info("均线多头计算结束");
     }
 
+    // 三红兵计算
     @Scheduled(cron = "0 55 18 * * ?")
     public void THREEARMY(){
         logger.info("开始计算三红兵");

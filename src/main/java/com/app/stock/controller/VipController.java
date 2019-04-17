@@ -16,6 +16,7 @@ import java.util.Map;
 /**
  * Created by lmx
  * Date 2019/1/31
+ * vip相关controller
  */
 @RequestMapping("/api/vip")
 @RestController

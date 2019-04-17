@@ -13,6 +13,9 @@ import java.util.Map;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
+/**
+ * redis对应的操作类
+ */
 @SuppressWarnings("unchecked")
 @Component
 public class RedisUtil {

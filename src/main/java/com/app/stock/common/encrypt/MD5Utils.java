@@ -9,6 +9,7 @@ import java.util.Map;
 /**
  * Created by lmx
  * Date 2019/1/10
+ * 验证参数
  */
 public class MD5Utils {
 

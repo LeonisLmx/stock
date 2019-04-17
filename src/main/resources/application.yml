@@ -5,9 +5,9 @@ spring:
     active: dev
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://101.132.137.156:3306/stock?multiStatement=true&useUnicode=true&characterEncoding=utf8&allowMultiQueries=true&zeroDateTimeBehavior=convertToNull&autoReconnect=true&serverTimezone=CTT
+    url: jdbc:mysql://rm-2zea089gtq9s1hu69.mysql.rds.aliyuncs.com:3306/stock?multiStatement=true&useUnicode=true&characterEncoding=utf8&allowMultiQueries=true&zeroDateTimeBehavior=convertToNull&autoReconnect=true&serverTimezone=CTT
     username: root
-    password: lmx@123456
+    password: Xkw100*-
     initialSize: 5
     minIdle: 5
     maxActive: 20
@@ -37,7 +37,7 @@ spring:
     timeout: 10000s
     database: 1
   server:
-    url: http://101.132.137.156:8999
+    url: http://39.97.172.32:8999
   servlet:
     multipart:
       max-file-size: -1
@@ -70,3 +70,5 @@ showapi:
     channelId: 5572a108b3cdc86cf39001d0
   stock:
     url: http://route.showapi.com/131-46
+  stockData:
+    url: http://route.showapi.com/1529-4

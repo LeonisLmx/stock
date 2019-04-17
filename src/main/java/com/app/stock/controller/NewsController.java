@@ -22,12 +22,14 @@ public class NewsController {
     @Autowired
     private NewsService newsService;
 
+    // 拉取新闻
     @RequestMapping("pullNews")
     public Response pullNews() throws UnsupportedEncodingException {
         newsService.pullNews();
         return Response.ok("操作成功");
     }
 
+    // 查询相关新闻信息
     @RequestMapping("/search")
     public Response searchNews(@RequestBody Map<String,Object> map){
         return Response.ok(newsService.searchNews(map),"操作成功");

@@ -21,6 +21,7 @@ import java.util.Map;
 /**
  * Created by lmx
  * Date 2018/12/28
+ * 定义拦截器
  */
 @Component
 public class MyInterceptor implements HandlerInterceptor {
@@ -56,6 +57,7 @@ public class MyInterceptor implements HandlerInterceptor {
     @Autowired
     private UserSelfMapper userMapper;
 
+    // 判断白名单
     private boolean isWhiteUrl(String url){
         for(String str:whiteUrl){
             if(url.contains(str)){
@@ -111,6 +113,7 @@ public class MyInterceptor implements HandlerInterceptor {
     public void afterCompletion(HttpServletRequest request, HttpServletResponse response, Object handler, Exception ex) throws Exception {
     }
 
+    // 拦截返回异常参数，统一个事返回给前端
     protected void returnJson(HttpServletResponse response,String json,Integer code){
         PrintWriter writer = null;
         response.setCharacterEncoding("UTF-8");

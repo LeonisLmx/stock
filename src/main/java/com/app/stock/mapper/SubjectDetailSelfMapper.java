@@ -30,7 +30,7 @@ public interface SubjectDetailSelfMapper extends SubjectDetailMapper {
 
 
     @Select({
-            "select id,subject_id,title,duration,play_count,vedio_url,date_format(create_time,'%Y-%m-%d %h:%i:%s') as create_time from subject_detail order by create_time asc"
+            "select id,subject_id,title,duration,play_count,vedio_url,date_format(create_time,'%Y-%m-%d %h:%i:%s') as create_time from subject_detail where is_delete = 0 order by create_time asc"
     })
     List<Map<String,Object>> selectAllVideos();
 }

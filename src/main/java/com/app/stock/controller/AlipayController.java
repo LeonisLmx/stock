@@ -19,6 +19,7 @@ import javax.validation.Valid;
 /**
  * Created by lmx
  * Date 2019/1/16
+ * 支付宝相关controller
  */
 @RestController
 @RequestMapping("/api/alipay")
@@ -30,6 +31,7 @@ public class AlipayController {
     private AlipayService alipayService;
 
 
+    // 生成支付订单信息
     @RequestMapping(value="/alipayOrder")
     public Response getAlipayOrder(@Valid @RequestBody AlipayRequest alipayRequest, BindingResult bindingResult,
                                    HttpServletResponse httpResponse, HttpServletRequest request){
@@ -44,6 +46,7 @@ public class AlipayController {
     }
 
 
+    // 接收支付宝回调信息，用于验证是否付款成功
     @RequestMapping("/alipayNotify")
     public String notifyApp(HttpServletRequest request) throws AlipayApiException{
         return alipayService.notifyAlipay(request);

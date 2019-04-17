@@ -23,6 +23,7 @@ import java.util.Map;
 /**
  * Created by lmx
  * Date 2019/1/4
+ * 账单类型相关操作controller
  */
 @RestController
 @RequestMapping("/api/account")

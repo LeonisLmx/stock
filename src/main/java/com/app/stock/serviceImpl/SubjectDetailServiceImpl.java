@@ -34,7 +34,9 @@ public class SubjectDetailServiceImpl implements SubjectDetailService {
     private ImagePath imagePath;
 
     @Override
-    public int deleteVideo(List<Long> list) {
+    public int deleteVideo(Long id) {
+        List<Long> list = new ArrayList<>();
+        list.add(id);
         return subjectDetailSelfMapper.batchUpdate(list);
     }
 
@@ -50,7 +52,7 @@ public class SubjectDetailServiceImpl implements SubjectDetailService {
             }
             File source = new File(imagePath.getImagePathVedio() + uploadMap.get("name"));
             timeLength = ReadVideoTime(source);
-        }else if(map.get("id") == null && file == null){
+        }else if(StringUtils.isBlank(map.get("id")) && file == null){
             resultMap.put("status",false);
             return resultMap;
         }

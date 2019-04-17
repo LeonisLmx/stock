@@ -6,6 +6,7 @@ import org.springframework.stereotype.Component;
 /**
  * Created by lmx
  * Date 2018/12/24
+ * 静态资源文件上传相关配置
  */
 @Component
 public class ImagePath {

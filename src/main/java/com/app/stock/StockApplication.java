@@ -15,7 +15,7 @@ import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
 
 @SpringBootApplication
-@EnableScheduling
+@EnableScheduling    // 开启定时任务注解
 public class StockApplication extends WebMvcConfigurerAdapter {
 
     public static void main(String[] args) {
@@ -25,6 +25,7 @@ public class StockApplication extends WebMvcConfigurerAdapter {
     @Autowired
     private MyInterceptor myInterceptor;
 
+    // 解决跨域问题
     @Override
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/**")

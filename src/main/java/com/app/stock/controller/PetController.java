@@ -21,6 +21,7 @@ import java.util.Map;
 /**
  * Created by lmx
  * Date 2018/12/29
+ * 宠物相关操作controller
  */
 @RestController
 @RequestMapping("/api/pet")

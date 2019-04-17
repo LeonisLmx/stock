@@ -24,6 +24,7 @@ import java.util.Map;
 /**
  * Created by lmx
  * Date 2018/12/24
+ * 用户相关操作controller
  */
 @RequestMapping("/api/user")
 @RestController

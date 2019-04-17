@@ -11,6 +11,7 @@ import com.app.stock.model.result.StockResult;
 import com.app.stock.service.StockService;
 import com.app.stock.spring_config_files.ShowApi;
 import com.google.gson.Gson;
+import com.google.gson.reflect.TypeToken;
 import org.apache.commons.codec.digest.DigestUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -217,5 +218,50 @@ public class StockServiceImpl implements StockService {
         response = response.substring(response.indexOf("["),response.indexOf("]") + 1);
         List<Object> list = new Gson().fromJson(response,List.class);
         return list;
+    }
+
+    @Override
+    public void sychornizedStockData() throws UnsupportedEncodingException {
+        Map<String, Object> conditionMap = new HashMap<>();
+        conditionMap.put("showapi_appid", showApi.getAppId());
+        conditionMap.put("market","sh");
+        StringBuilder sb = CommonUtil.sortMap(conditionMap);
+        sb.append(showApi.getKey());
+        String sign = DigestUtils.md5Hex(sb.toString().getBytes("utf-8"));
+        conditionMap.put("showapi_sign", sign);
+        String result = HttpClientRequest.doPost(showApi.getStockDataUrl(), conditionMap);
+        Map<String,Object> map = new Gson().fromJson(result,Map.class);
+        Integer pageTotal = Double.valueOf(((Map)map.get("showapi_res_body")).get("allPages").toString()).intValue();
+        result = result.substring(result.indexOf("["),result.lastIndexOf("]") + 1);
+        List<Map<String,Object>> list = new Gson().fromJson(result,new TypeToken<List>(){}.getType());
+        insertIntoStocks(list);
+        for(int i=2;i<pageTotal;i++){
+            achieveData(conditionMap,i);
+        }
+    }
+
+    protected void achieveData(Map<String,Object> conditionMap,int i) throws UnsupportedEncodingException {
+        conditionMap.remove("showapi_sign");
+        conditionMap.put("page",i);
+        StringBuilder sb = CommonUtil.sortMap(conditionMap);
+        sb.append(showApi.getKey());
+        String sign = DigestUtils.md5Hex(sb.toString().getBytes("utf-8"));
+        conditionMap.put("showapi_sign", sign);
+        String result = HttpClientRequest.doPost(showApi.getStockDataUrl(), conditionMap);
+        result = result.substring(result.indexOf("["),result.lastIndexOf("]") + 1);
+        List<Map<String,Object>> list = new Gson().fromJson(result,new TypeToken<List>(){}.getType());
+        insertIntoStocks(list);
+    }
+
+    protected void insertIntoStocks(List<Map<String,Object>> list){
+        List<Stock> stocks = new ArrayList<>();
+        for(Map<String,Object> entity:list){
+            Stock stock = new Stock();
+            stock.setMarket(entity.get("market").equals("sz")?"zh":"sh");
+            stock.setStockCode(entity.get("code").toString());
+            stock.setStockName(entity.get("name").toString());
+            stocks.add(stock);
+        }
+        stockSelfMapper.batchInsertStocks(stocks);
     }
 }

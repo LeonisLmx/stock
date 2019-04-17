@@ -12,7 +12,7 @@ import java.util.Map;
  */
 public interface SubjectDetailService {
 
-    public int deleteVideo(List<Long> list);
+    public int deleteVideo(Long id);
 
     public Map<String,Object> uploadVideo(MultipartFile file,Map<String,String> map) throws IOException;
 

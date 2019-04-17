@@ -28,6 +28,7 @@ public class AppVersionController {
     @Autowired
     private AppVersionService appVersionService;
 
+    // 添加app版本号
     @RequestMapping(value = "/add",method = {RequestMethod.POST})
     @PostVerify
     public Response addVersion(@Valid @RequestBody AppVersionAddRequest appVersion, BindingResult bindingResult){
@@ -38,6 +39,7 @@ public class AppVersionController {
         return Response.ok(reason);
     }
 
+    // 修改app版本号
     @RequestMapping(value = "/edit",method = {RequestMethod.POST})
     public Response editVersion(@RequestBody AppVersion appVersion){
         if(appVersion.getId() == null){
@@ -47,6 +49,7 @@ public class AppVersionController {
         return Response.ok(reason);
     }
 
+    // 查询app版本号
     @RequestMapping(value = "/search",method = {RequestMethod.POST,RequestMethod.GET})
     public Response searchVersion(@RequestBody AppVersionSearchRequest appVersion){
         return Response.ok(appVersionService.searchList(appVersion),"操作成功");
