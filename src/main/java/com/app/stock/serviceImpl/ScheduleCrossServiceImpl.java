@@ -44,11 +44,13 @@ public class ScheduleCrossServiceImpl implements ScheduleCrossService {
 
     @Override
     public void achieveTradingDate() {
+        logger.info("开始调用神箭手接口");
         String response = null;
             // 获得最近的60个交易日
             String url = "https://api.shenjian.io/?appid=25a308aa0f9fe382bbfad6b40e922cc8&code=000001&index=true&k_type=day&fq_type=qfq";
             try {
                 response = HttpClientRequest.Get(url);
+                System.out.println(response);
             } catch (Exception e) {
                 e.printStackTrace();
             }

@@ -1,477 +1,65 @@
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [8f05f3f8b7d469beeac30e4d2b7261a5]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [97354f85847ec09bc5fbf939c582b2e1]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [9c2c71346a7fffb33e196254729d6f68]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [9c4f122d94a5da044c3c64c63a2691e6]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [a10b2ab673dcc6f32b7bfe61c03fdbba]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [a40808fee84afc2de1956a0a59def42b]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [aaaa4860ee4828f52e29d4bb2660d43d]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [aaf13579a01f582b59f4323496534829]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [ab27e6ba14935d161cfd35a5f1129025]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [add6e5486a42fda5fb8586ef58d6cd18]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [adf7abc55c7e97fa4033268d2cc4f792]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [aebb1ae7d12b09a85ef7db0a23d3a208]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [b1c63765f07b755e4a5ecef7f4174c82]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [b1d910503288539b70bc85091cf6b847]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [b273e7534a788373d1a7e2744d737cd5]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [b4033344ef24ca965ec4718b853bba58]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [b433addad217030c0ff5dd292f998dbf]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [b58a75b6dc1b20806494b3467856c737]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [b73e28824102cfb523281e3e9f69ec97]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [b75e76dec3d1c13638432b61e3feb916]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [b85d0baf3d847ebe5afd8c90b56db7c2]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [bc140ca236354981caf04a9c7a7e98c9]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [bedf079e04d4c290e3b5aa4eddff6752]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [c579cebf03bfb1c14709710667a7964b]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [c7dada99bd054353c662c7760577b26d]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [c9105a8a250a8f1ef9d7887692c925ee]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [cbf7aec2da6ca25593fc5ad866b4ff5a]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [ce82706f955f0dcda57be2b911f936fd]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [d1058c0449247d7e6687c291d845d78d]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [d124749b3ab832e3de68d7e71e185c40]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [d4322b09bc72e28640b08a0ec64416fc]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [d448e5614dbccd1814de2f794e3aae07]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [de1b2ebd492cd4ae66418bce26a70abe]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [e89e4add7a4f09b5465139b6e0c1e903]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [eb7c57dcedbf164aeec7a58ec2929f39]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [eda586366bcaf23a74d70ec58effb428]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [ee03038b68d8d4a145b2aa623c34b712]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [ef6feb314e57ff9998d688356e69ee3c]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [ef9e66c28f1e05802ce49c003311cda5]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [f2cd3c5c7af3c9394f2fc2db3b7d311b]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [f4ce0938d478cc334e98e233e9e3bd81]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [f576211e3a9743980cb0b71aa94bbb47]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [fd6c52e02b60783fbc1a8bec569234d9]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [00e9cb1d2d6be420dc7976ecd8e54471]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [05972a05f43c1feeb2202896790adb1b]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [062cd9e0fb268e48466865f604adef34]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [0731a802d9f5979b138587e836c395b7]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [079d2b1b579b91a0d5aefddb0e5afd53]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [0a29ca5d1ccf1542875a564f0a93a344]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [0b32def38c185eb7f2179f382f3cc2a4]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [0e26b20341883df98ca5526875cef34d]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [107a47157436785d2bfc08bc6b16562e]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [11c261ac5d5a4c02a0a03622ed9313df]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [12e69dd39c7e22537ec6b42a7a606088]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [146974531d548c886fc298a79ed900e1]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [152ec63b5ba84287828c0a42167932b5]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [1895e4b7c3272508e45fdcf1c3e9b14a]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [1aaf85d5644f6e4ac47bae2555161e54]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [1b164222d25d3ee2ff7ccb4c2061b028]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [1be1c4b43c849993b18e42f8e91b0b9e]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [1d70cedcfe632fad2dd0f63cc7d22301]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [21024239603914c4c9995cb97715178d]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [282e3aac7e4def690261e0830e5d4837]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [29bef0c826c7b8b53179b185970adedf]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [2ab8ff83a6dfa76ac51f1096ac2797ca]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [35204e13c0549e3623ba0e2ce291e57a]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [393960fdc12a90aa4e73a148f4f3675c]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [3d9de4d0ffc98e834b62f858bd729832]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [3e84b4d004b4fa025b59f4bc30951e80]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [440c9169042b0a486659b13daeeb179e]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [453edc99fbf5bb077a1a9a3ca578b2fd]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [46c9cfa601853078315194045b63f88a]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [491a421bd88216d4f9093fb752c9c192]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [49b56807364f3c15e3478215c31e923f]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [4e0ad85dcf7db5475b8f1e3279054351]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [4ec561ce4280a5e5dd50c89c7cc84d69]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [5110c68e632c086cdab1db567e5bc342]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [555b704b7d9232189085a0148ea1a97a]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [55e31365db06fdca4b7a0bcff576ba6c]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [59e642dfac054a62d86a1f6273739ff2]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [5e0a8e3fe04b3f4b8bc22f0c47bb51fb]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [616d6ed7422ea1bd3910a15c7b5f1b78]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [63c1eab1e95bee5d911ac45f92cb0253]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [6407d33ecdc93977bc5c14a6ad230d5e]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [640a8e1395898f5032e262d00a56b4b8]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [65512ba63372f650d557343887254a48]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [673940ebf4734debd03adc1e5c959da6]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [6bca6e9fa1e147bfc5995082ba66964b]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [71251b34a44608ea7db0a97b11f212ac]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [7147b94613ffb99a20f04ec2c33c4a9c]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [74181d7336f6137ce44a419bcdda3119]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [758969102bfcd2bc917bedf5e17cdd87]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [77cea4f8268ecb83792b8b5dc232a38a]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [79a168e1bec9b29e781ed48ba6c14569]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [7d6983c4f03f4e767d40d81ebc795d11]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [8132193f68e1ce0691164dcbb147a743]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [83dae9faa656d1cf581986cb76ebff55]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [85daea14d6592dccecbd16df002ec79b]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [860a62267c7a533bb435239f6c8c8318]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [8734bee1601db328950ce5204c4f6e13]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [910aa81c428fceabd9242b32927462e5]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [91d8c5b34fdf0240d2f54e32d6432db4]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [97eff55da45b9e41129d40147d0abfef]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [986ed1ead16f66bc5aae340583ec37c6]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [9b2e7fdda4dce8b955249c05db064cf2]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [9c0710ef0cfb77b2df72d47c2fcae068]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [9d17166454e1f7d75e7be28743acdab2]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [9fede7ac2c18ec28fad78bbf216e9397]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [a3c496a1b931f868fb0ad559d60cc57d]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [a5ddb9d7fcc9d02d996fc321d29aa749]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [b033644388a76c770fc7b37f7bc057f5]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [b1bab29a5e4e129c49dd79c1cda8588c]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [b640d922ec8dd9e817316ef53cb338b5]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [b9f5bdfb692427bbc485f0d8e80e5758]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [ba2fb0cc8c38e055968e757860131d1c]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [bf271416ed42e5fdce60f39a9d8be966]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [c0fbf8138f49d30e768854ad401624c8]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [c150965408a07eafc593309c78b9172c]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [c44c40990e970751b1ce9d1cfb946525]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [c4dd4f79017fdf1931c8830ea16b8c9b]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [c4f8237457d04021cdd2b7fa19638c47]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [c5081c6141bd645776c6382d8787c816]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [c6b0d8b653591c9309d9b260c53b25b0]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [c94ae975e57c26f3f070047a048725d7]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [ca9001ccb43ce4cf2b2546a402ac4f8b]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [d0ef5b31beede5973517eaff2baca6f3]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [d1b467a9868025514f6ed2f1ecb731ef]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [d61ea6d81e5325864c045c1915f3c385]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [d8780f12d7a0926ec70f990ebb0be76a]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [d8f94679b706ce07bad5b4b45b12474e]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [d962eb927a87e6bf414f4bb56643e3e3]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [da11781a560328dccaf35354b71e09c4]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [dd68ee103dffdfd21487701cf75eea39]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [e16aad67ff0a6538232b4f0844fcc7d6]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [e6e4620fec788abca3f5b591e3f3afce]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [e95a68c620cd3e4e8b087389211fbe0a]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [ec6b8be2c1dc0df92110f44cb12135f6]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [ef79b371f8758b56e5ce61e3933d6d73]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [f2421e8c36a7eea490667f666ce601f4]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [fa6976536c1aaeb2a6930859fdc320b7]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [fd4811ce633177bf2312ed1003b5a864]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [fea5a240c11016e93d8c671b54a21120]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [fef6a69479d7f460837b9d37bd378349]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [05c010343fc7e68a1eaab9de509c3bcc]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [093119155d983187a420433f6c2b60f9]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [0eb4e1af598142bf78649303c9189d5a]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [0f60ed3ce30d2322d05599d2bd356f22]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [11db329a51bcee7b3411f84ca177b17e]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [1a3e0c01f122e25e01405b15eed14f25]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [1dff9c812fe01d8651a65a04ca936a7f]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [29d51766fcd4b477c3bc33dcedec5ff7]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [2c136eb4b806791da4d10fc0243dbb3a]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [381ae6e6b2bf729434cc7be455b6485d]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [3c89053f6e1259dff75ef05be59ad665]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [417532f1a479cc9ee228d4fea7f4198b]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [52b4dfddbeb22c1ef8df9437d1220dd6]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [53f0a707fe4e83eb2cad27f4ebb77be4]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [54e18e8262b9434d3bb52a2e58bb049c]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [54e211de732bc97ef1c5883b7880fcb5]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [55c937726a511a4d6e3936fc2ef970f0]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [56a62e33dde1216a559686251c71ea51]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [58c31a7ac586733641c4e8fff434bd14]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [5a871b827dd81f3531c4be3686f05cc6]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [5c94e5c49b4d5f430a48b97fc11c9809]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [5e6d470152474814902a1af0aa895771]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [6013968d67a4f3e5765a8b6e9f638f83]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [60a7db15e62570ef281dd3d797d5c587]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [6417c30156f797c4ca1a573ec840c046]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [673e670f369c2d301f5552c878973d13]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [6d38f5628366ae05405317994e043613]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [6e94138159e0565e30af32c01ec39fa6]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [7248389f9da56a44bc452fe92e643a33]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [786dc199ec53d2455208e31c64d1fce7]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [8043c92f508de24c252869f54dd2eb6a]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [80bf6bcd816e8d6add10d88b227734a5]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [8de2af06e725dd694fe83b562476ff70]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [8f7e765c675f7ea25a9bea2689222d25]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [930c6ea7a4cefc6088306f26a0ca8fbd]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [957fe6d9211b13de8cb48c53273019ea]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [99b9e149c5981250aef775a44880a0f7]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [9a73dccf46bfbc21aaa72492e5e01079]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [a4b2310632c9e430072f385257535a83]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [af055c2bcc12849fdbd85730e6c67030]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [b221dda6d8eff47c03fea9c0c53b2471]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [b2e69a54f746de6525d28f1fc335e6a0]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [b5cb39d096d8f79119b4654c1b563e5b]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [ba8fb9a5b606fc612cbd57ee7f8cea9c]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [bc1b0555eb704c7fc690e815e8f9d4b2]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [bc42a3f0a5f8908549d9ce4720a27d56]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [bc86b63be13a97034c81f5d12af1e2bc]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [be16c9de7ca699182a8aececdeab0e36]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [c1b511c2541397ca0857b7d9d962002a]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [c36abfc92144320278b1748d512c759c]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [c3da8d611c3dac3e5677d16cfb7b6577]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [d1403de9da6448b5941bf8038b1bb883]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [d5a28e193a819bde88e085910f65321d]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [db371a94d4aa187ad1f0045535c04d35]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [ddbb15746a33497260f95534237df0a4]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [e6cd1c2bc4447399adcbc983f67cb9e3]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [eb0a4060d9f04a68e2a74fab6042dc63]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [f4470628bfbe52cfe1b6e13240036fb5]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [fca2f6b5acda0fcf4e9b819970279525]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [097230a8a1c9745afcaf0a26a2eff3de]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [10ecff6261266333475c0559920fba3c]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [1829ad17e890c8f204997ecbfa53c031]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [196d74c1238de92b161f088d26cf84f5]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [1a48cae0e5e758dbd87d22186f6c705a]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [1f9ba6738d95fc1702a525933dc81d0d]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [20eedd2756eeb06863356bba69ba181b]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [26a3b5c7ed9a03d48751229c7d12295a]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [2f92164c3464c37b6d669aaf3c4c00a5]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [371c14980744ff3b52a2dfb887b65af4]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [38d5e06ba1ce785e06346341f0fc32f6]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [3c4d8df8d207ba4c38fe4c4f0ca2a914]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [3f16c470a810ab0ab90d05d48a6996da]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [464547cb67918618bb042bf285408741]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [478ced7e41da25d70285c5b5095a5401]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [4ca06e5228562c67e346ae8ba984c467]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [4f8983ae86e2ec62974a66bf6662a02f]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [5b83fafc15a6ae2062f1ab27de272339]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [5b8d87235e357cd8c54e6d3513032c1e]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [62b38cf54664c70da3971500c409dd45]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [6b0ca05bf53a80b2e0c9310061d2f29b]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [753542634bd6ce004cd2115590919688]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [8c1c18c01442dc5db4ebbf3d4492af23]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [94cf4dc7d27600e92948c34e6cdd8a4e]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [9b03d2225a3bdb7063d19f13fef2473c]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [9fd5fd784c522c9638049e35899b9308]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [a5b4b36338adf09180ed35afb99fdc60]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [ac9a49e0d671ac3b9927e87c6ec21f1f]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [b52801e5f94f45eb6bb30af397bd899c]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [b9f8bddd311ef51183d569627a72297b]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [c92782323f1229626af57e81c44e9634]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [cfe696eaf4c983a8fd33a33d1444f14b]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [e3a39e3872acd97968c9a149d94fca45]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [e54a1ae6b8671f9e4664f6957c47d040]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [e9e1e9c582ced2528e4bf57cf04c698b]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [fa12ce878a8ef256abfdc0dc2a2f35ff]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [fbea4a2d42ae5ac05f6bd470030b1f1c]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [fc126a8b91eda8adb512d3bd895e7d35]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [fd9e50eaf5108873011d513029be2b00]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [04350206f95d19970e41fb88f1de7968]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [04d0650ebda82861e7c247435518ba1a]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [0ea0b7fd27d6c6746335357daf7ddbad]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [1c05b8a8894953cfb9d6ba99ffefe73b]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [28c27cbb9d2751ce92ff543b6eb9453e]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [3316b30cb88e5ca21174999cb279e5e2]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [3afc87b0baf7b2933fdb39af91cad417]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [3b0704dd98b4036ad89f385629b08e66]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [3f76a4747379c78f0fa786dc6f3fa287]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [4127453cf7109923204ce0a29c6b5fc3]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [4a746a5ae8fe20c9f3020dcd91c1393a]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [5fef41a1a0c7cebd673eb155cda25960]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [782c527a779ecd6e9da138fbf607ad3e]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [7f12595cbf53aeb0421ff0f766934d72]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [7f4d7c5888ea7e6a2ac667424edcf6c1]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [8064c42c6b66fe7cde8f9c01511a6254]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [8ac6b58eba082be0775d435bfefd6070]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [8e29152c214a2200541436357764f436]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [8ef7fb2900538392ad38208679b3388d]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [8f116bc3b00f07d1f2d76f61ef39ad6a]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [903f1bd5a4d10b877f95d611bbc520e5]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [96f8200d8e376dcc19ff65bf1066f2bc]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [a45d770683344e73980912b1b86727b5]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [a6e1176ccf77d711ddf6e4907489e792]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [b0da30283466c0eea87ba88886c66a24]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [bc168b794c971ba157b1969368be339e]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [c17fa8acf6e8045160f5a7cad58c6c92]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [d4304fe862d3c9aea637f785e3f07072]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [dd0f60cc347eaf6309d9c4412759a47f]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [ed7c008d076270011bbeb0cc1792cb9d]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [f62cf3876cd36d86d84f9a19a085a606]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [fd4b2be833649ee31d1c57b296c3428e]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [fdade964f9d33cbaa1892ec7d9ada1b7]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [02ad3a2c5ae36eaa81810d17a3c357a1]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [0680f352ea4114a90dadfc797060597d]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [1e6c1982099bf439d7d87b5172c8bd74]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [1e96e53e15dfc9c248298a94db4604a6]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [27eea05b9f46d1c0fae82bde79c93cfd]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [36cc0e95d2e5a839b659e3515f6cccc7]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [38df113b81a913306b0d125a70ebe6e9]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [3ce7fea4665cdc29da214d152f69eebb]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [42fb08a54b82619b94d63a86ab573950]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [47c6c38903c8b7dccdad0baba6a69541]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [48f0951b03c0a69f20ca4d36036b158f]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [4c2f0f5837dbd7a8822cc784615178fd]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [4c46a578aa76d207f5f626c0f8e8a780]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [50747816b3037eaa1a7a6a19bad2e902]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [63ca510f9300d71a4dbe9b63d770bc87]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [69a084d8e9931fbbcac9693568a45d3d]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [6a8edde523df53338dfed5bf6dd95865]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [769b6072a8e28f09869afcb98aca5235]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [777875f238fa8d7549d4371f3a974321]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [81b7f6fad4e018b737da473ab7da6249]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [82b455c4d37fbab87a872fe0fc0b49c6]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [905f427a69528bfb12312f7b0f535e63]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [a2ea18cf451e6215f16519b2910363c1]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [ab3d50e22d3b7f1b6daf8a52dc5d6fef]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [ab6c66411ee46c996cf9403ca4fec6ed]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [adba08be24c3f063f6902c4d3c07053b]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [b542d20f378d9dd8ecae2be84bc7928a]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [b85f6ac1af7545ad790e1ef71af8637b]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [c6c996dc479b80a4dfe0c6bc96a63267]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [d22ad43a0a0c3157ff8bc0a8b296a3ee]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [d70bf308198a0078da5c36f89435b9c3]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [dc0a895e92b20b3386203f1145acea46]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [dec8e141119b27b490625a0d3ee4ff03]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [df10eb19167ad1578aad393166b61d5d]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [e5f06a2b9b91cce644779474246048d8]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [ff24200daac40bd08215b65718365123]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [01e72f76344cafe2644d8904e4dd1a2d]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [1e490a84287ad0cbac671e5725e1a224]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [343d8f9ebcda95086f8b4e9e16d4eb9d]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [38a3226339bf2671b3330c3c024dd9c1]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [38d958b8d23d2397120401988acded04]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [3ad1ba8ca60bc3b330538b33f6b91460]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [3f92417224ab4bf4eb4a4619ba2aa7b2]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [461ce442c9097c6758b76baea3746455]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [4837e5727bc358db760af822212d2b90]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [49930e0bb79607f9203b634864e276a5]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [535af74daa0d68796a3195b36b639c4f]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [5411be931b2130d57b5ec39c0ac4115f]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [5c39e266879e5867ad21788f73e29cde]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [5db0c11a0a9486c211328f706cc0f3c2]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [6b26f3f44603fa6ce944343395d1bfcf]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [6b5e0bc1e61c48cfd4dc94ca1af0118d]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [6c5d351066aaf72651d1b142b49c7818]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [75d0b1a2f001f2205bb255ce627ce18d]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [76a3347f830bce169a72d9e738f75e6b]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [89823ee14b021c38dca8fba274249a18]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [8e2516802b2501f172588b1ac82850fd]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [93a75ddba4b4d5f8a8d8a1fc042e500b]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [944f0f24f70be106249a7bb0e5eee7c3]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [aaef4e57be69143a66037e70da951f3d]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [b264b2993d7bf67bff2af29f8a4bdce4]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [db35f65e09d8700f4ab8c752b5d2d18a]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [ecb2169607ff45814682d5bb7263ec04]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [f0ae5e4199b5b7131d07b198199585ca]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [f9239209683787c1afd51f7eb59f2876]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [059d81fb6ba8e6bfd16a2c155c0035e8]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [08cc257a32ba0ced59c60debe144ba17]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [112d16239783c4ed5193431d8ca82a32]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [1208f526381f4bd8069abb8e20be0b9b]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [159219072c8c4068255f72cdd8fc78b4]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [18f37d2d795396c9304cbce7e37ecd60]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [1a99c71968681e7ee196c79c86b93489]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [20da07726cf9671fe5ae0cd9a8708a6a]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [306bd2d9d15036198058e07e01152870]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [38b5c344447ef9906fd5f38f874ccfc6]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [3f359f9373edfd8f563af5b89fa2d09f]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [43c468506a8ee6dfa24aaede28efe5f3]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [45a1ff278cd85656f787d639bc3b475f]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [45bc67797e3d4dd0ea56d3d5a08a15f5]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [467512dcf0ad410a33bdf16c8ebc53ca]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [47332e0136ead8ca986957731f10b9be]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [51fd88adb95a4f71013cb15977bb5eb6]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [58dc487ade59ac63660ddbd4fb20eeef]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [5a42eb74eaa7aaf82ed28899743a259e]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [5b707d957366c4785dec56ab8671f896]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [5cd8358bd515d2fabefe943dfe035875]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [6590ad1539a77821a6c830b95b9d39c3]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [68dc94e019ff1510fa7599b59ff154d3]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [69479d1ed80b6e4f2671beaa1fc48601]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [69597bd1e5a2d0e7f79eecdc5788d858]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [69a47feaf2dbd0007415f8a8b25ca148]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [7374f9a21ab17366789f28c0e8c10e78]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [7432820b6b0e0dc37593b16d2398f7c6]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [75e831b817eeef1b1cfa50fd0cfea35f]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [789968d1ad3e8a0e7eaebce7750c6f2a]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [8030907f578f2773bee0513c52532b29]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [8240c9bc975ffb225e19962d4f862439]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [846369ab4faf8af521812deb25fdef5e]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [86961d56305b246e116ae0e9658046c6]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [9023e68be89bc8faca26564bef491d3a]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [92604051c77f531c143c3ce8ac2e2072]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [965890e287f35097651a1d63df5f5b1b]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [a08f02cef79b368aa4047e08ff49a8a9]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [a0f9ee0bbbb0c7a4e45474133ace36a1]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [a2eb438136a02a425d9aef2f305afe85]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [a47aebaaae3d655e0223eb64eda0f118]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [ac71cfd6c36e1ab3dbbd113c6470f944]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [ba80e1152a915963a99e86a8e08d7510]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [c23ca45953ed13ed26b42ca6245729e6]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [c99e323c2891533a5e427a06d8684df9]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [cd3b2738f175538152c152194ff41c30]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [cd71d715008b66b7b76f9d5c71ca4fbc]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [cecd5bab1fc9e94753091cdcfc6100e1]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [cf0110ba6eb8339f7085a77486b42512]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [dd4ace1135d6d7f941fb72f507f02a70]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [e00f6fc22e9d32e267b47a7c3381ca24]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [e4578beb7dbfd3e49df11002843cc8a6]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [e5f8a5fb6c1182736354c5c4f2cb4a44]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [ea26aafae57e52b7ca430e89c0163205]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [f56ca065fe4ddda94f04370c4f4322db]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [f946623baf5c228270e3c1150b1955a8]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} Result: [fb06884bc6857c084cbfce00dd82e33f]
-DEBUG scheduling-1 druid.sql.ResultSet - {conn-10005, pstmt-20001, rs-50001} closed
-DEBUG scheduling-1 druid.sql.Statement - {conn-10005, pstmt-20001} closed
-DEBUG scheduling-1 druid.sql.Connection - {conn-10005} pool-recycle
-DEBUG scheduling-1 druid.sql.Connection - {conn-10005} pool-connect
-DEBUG scheduling-1 druid.sql.Statement - {conn-10005, pstmt-20002} created. insert into news (id,pub_date,channel_name,tag,description,channel_id,nid, link,have_pic,title,image_url,source,create_time) values    (?,?,?,?,?,?, ?,?,?,?,?,?,?)  ,  (?,?,?,?,?,?, ?,?,?,?,?,?,?)  ,  (?,?,?,?,?,?, ?,?,?,?,?,?,?)  ,  (?,?,?,?,?,?, ?,?,?,?,?,?,?)  ,  (?,?,?,?,?,?, ?,?,?,?,?,?,?)  ,  (?,?,?,?,?,?, ?,?,?,?,?,?,?)  ,  (?,?,?,?,?,?, ?,?,?,?,?,?,?)  ,  (?,?,?,?,?,?, ?,?,?,?,?,?,?)  ,  (?,?,?,?,?,?, ?,?,?,?,?,?,?)  ,  (?,?,?,?,?,?, ?,?,?,?,?,?,?)  ,  (?,?,?,?,?,?, ?,?,?,?,?,?,?)  ,  (?,?,?,?,?,?, ?,?,?,?,?,?,?)  ,  (?,?,?,?,?,?, ?,?,?,?,?,?,?)  ,  (?,?,?,?,?,?, ?,?,?,?,?,?,?)  ,  (?,?,?,?,?,?, ?,?,?,?,?,?,?)  ,  (?,?,?,?,?,?, ?,?,?,?,?,?,?)  ,  (?,?,?,?,?,?, ?,?,?,?,?,?,?)  ,  (?,?,?,?,?,?, ?,?,?,?,?,?,?)  ,  (?,?,?,?,?,?, ?,?,?,?,?,?,?)  ,  (?,?,?,?,?,?, ?,?,?,?,?,?,?)  ,  (?,?,?,?,?,?, ?,?,?,?,?,?,?)  ,  (?,?,?,?,?,?, ?,?,?,?,?,?,?)  ,  (?,?,?,?,?,?, ?,?,?,?,?,?,?)  ,  (?,?,?,?,?,?, ?,?,?,?,?,?,?)  ,  (?,?,?,?,?,?, ?,?,?,?,?,?,?)  ,  (?,?,?,?,?,?, ?,?,?,?,?,?,?)  ,  (?,?,?,?,?,?, ?,?,?,?,?,?,?)  ,  (?,?,?,?,?,?, ?,?,?,?,?,?,?)  ,  (?,?,?,?,?,?, ?,?,?,?,?,?,?)  ,  (?,?,?,?,?,?, ?,?,?,?,?,?,?)  ,  (?,?,?,?,?,?, ?,?,?,?,?,?,?)  ,  (?,?,?,?,?,?, ?,?,?,?,?,?,?)  ,  (?,?,?,?,?,?, ?,?,?,?,?,?,?)  ,  (?,?,?,?,?,?, ?,?,?,?,?,?,?)  ,  (?,?,?,?,?,?, ?,?,?,?,?,?,?)  ,  (?,?,?,?,?,?, ?,?,?,?,?,?,?)  ,  (?,?,?,?,?,?, ?,?,?,?,?,?,?)  ,  (?,?,?,?,?,?, ?,?,?,?,?,?,?)  ,  (?,?,?,?,?,?, ?,?,?,?,?,?,?)  ,  (?,?,?,?,?,?, ?,?,?,?,?,?,?)  ,  (?,?,?,?,?,?, ?,?,?,?,?,?,?)  ,  (?,?,?,?,?,?, ?,?,?,?,?,?,?)  ,  (?,?,?,?,?,?, ?,?,?,?,?,?,?)  ,  (?,?,?,?,?,?, ?,?,?,?,?,?,?)  ,  (?,?,?,?,?,?, ?,?,?,?,?,?,?)  ,  (?,?,?,?,?,?, ?,?,?,?,?,?,?)  ,  (?,?,?,?,?,?, ?,?,?,?,?,?,?)  ,  (?,?,?,?,?,?, ?,?,?,?,?,?,?)  ,  (?,?,?,?,?,?, ?,?,?,?,?,?,?)  ,  (?,?,?,?,?,?, ?,?,?,?,?,?,?)  ,  (?,?,?,?,?,?, ?,?,?,?,?,?,?)  ,  (?,?,?,?,?,?, ?,?,?,?,?,?,?)  ,  (?,?,?,?,?,?, ?,?,?,?,?,?,?)  ,  (?,?,?,?,?,?, ?,?,?,?,?,?,?)  ,  (?,?,?,?,?,?, ?,?,?,?,?,?,?)  ,  (?,?,?,?,?,?, ?,?,?,?,?,?,?)  ,  (?,?,?,?,?,?, ?,?,?,?,?,?,?)  ,  (?,?,?,?,?,?, ?,?,?,?,?,?,?)  ,  (?,?,?,?,?,?, ?,?,?,?,?,?,?)  ,  (?,?,?,?,?,?, ?,?,?,?,?,?,?)  ,  (?,?,?,?,?,?, ?,?,?,?,?,?,?)  ,  (?,?,?,?,?,?, ?,?,?,?,?,?,?)
-DEBUG scheduling-1 druid.sql.Statement - {conn-10005, pstmt-20002} Parameters : [e1d998696a6622e0153b1e36119dfe38, 2019-04-11 20:46:11.0, 财经最新, 万达集团,万达, 其中，超大型文化旅游项目即兰州万达城，总投资约300亿元，是万达在丝绸之路上的首个超大型文旅项目。, 5572a109b3cdc86cf39001e0, 9351608120870100382, http://baijiahao.baidu.com/s?id=1630520996054482466&wfr=newsapp, 1, 300亿投资兰州万达城 王健林在文旅上杀了个回马枪, https://pics5.baidu.com/feed/d058ccbf6c81800a6d3418a75a359bfe838b474f.jpeg?token=5b33162eb53731a3abfa4a01de43e2b7&s=9BC0468402619B4F5827748F0300B080, 经济观察报, 2019-04-11 21:00:00.933, dd6b7e5d9136cb97bad9723325b75666, 2019-04-11 20:46:11.0, 财经最新, 市场营销,蒙牛, 通过这些数据，不管是总营收还是净利润都比伊利相差不少，尤其是净利润，伊利竟然超出蒙牛30多亿元..., 5572a109b3cdc86cf39001e0, 9391094310860879464, http://baijiahao.baidu.com/s?id=1630520818695993087&wfr=newsapp, 1, 龙头企业的富人思维：一个强大的竞争对手 可能是最有利的资源, http://pics7.baidu.com/feed/c2fdfc039245d688210275db9bc2d51ad21b2456.jpeg?token=1fbd211c0f9b06e051c5fad30ae8bf2a&s=F8FB6FD846C31B4D10F9DE3C0300F057, 聚富财经, 2019-04-11 21:00:00.934, 4a5c10d954c639f383e0bf55b6f2d643, 2019-04-11 20:43:07.0, 财经最新, null, 　　中新网西宁4月11日电 (孙睿 张晓昕 关却吉)“虽然企业目前存在困境，但随着增值税税率的下调，企业的税负成本有所降低，这就意味着企业的利润会有所增加，企业就有了一定的修养生息的空间。”对于面临产业升级转型瓶颈的藏羊地毯集团来说，该集团企业财务总监张蕾11日在国家税务总局青海省税务局组织的“税收体验日”活动中表示。, 5572a109b3cdc86cf39001e0, null, http://www.chinanews.com/cj/2019/04-11/8806649.shtml, 1, 青海高原文化产业迎来减税降费“红包雨”, http://i2.chinanews.com/simg/2019/190411//97735050.JPG, 中国新闻网, 2019-04-11 21:00:00.934, d5fbdfa3535e265cd75f0cadf1c5fd4d, 2019-04-11 20:42:36.0, 财经最新, null, 　　中新网北京4月11日电  随着数字经济的体量不断扩大，线下广告的份额逐渐被线上“蚕食”。不过，基于流量线上营销体系中，异常流量却成为毒草，对整个生态造成威胁。, 5572a109b3cdc86cf39001e0, null, http://www.chinanews.com/cj/2019/04-11/8806652.shtml, 0, 报告：流量造假威胁线上营销生态, null, 中国新闻网, 2019-04-11 21:00:00.934, deea0b6ee7c580224b0a5b209016ad93, 2019-04-11 20:41:22.0, 财经最新, null, 　　中新社武汉4月11日电 (王遥遥 梁婷)“广西东盟—华中冷链快速干线卡班”(以下简称冷链快速干线卡班)11日从广西南宁发车，打通以武汉为中心的华中地区消费市场与广西东盟水果、生鲜产地之间的冷链通道。, 5572a109b3cdc86cf39001e0, null, http://www.chinanews.com/cj/2019/04-11/8806629.shtml, 0, 广西东盟—华中冷链快速干线卡班发车, null, 中国新闻网, 2019-04-11 21:00:00.934, b6e3b91778297b6f7d0b5b317a0a7040, 2019-04-11 20:40:46.0, 财经最新, null, 　　中新网杭州4月11日电(钱晨菲)11日，浙江召开污染防治攻坚战和美丽浙江建设进展情况新闻发布会。记者获悉，经国务院批准，今年的联合国世界环境日全球主场活动将于6月5日在浙江杭州举办。目前该省已成立筹备工作领导小组，各项筹备工作已全面展开。, 5572a109b3cdc86cf39001e0, null, http://www.chinanews.com/cj/2019/04-11/8806646.shtml, 0, 浙江公布联合国世界环境日全球主场活动筹备情况, null, 中国新闻网, 2019-04-11 21:00:00.934, 865da462e2e606e29aa0c5de183937d6, 2019-04-11 20:40:39.0, 财经最新, 金融,区块, 8、比特币期货涨近4%突破5400美元，创近五个月新高。, 5572a109b3cdc86cf39001e0, 8951610459218455058, http://baijiahao.baidu.com/s?id=1630520727808755217&wfr=newsapp, 1, 声讯晚班车：日本数字货币交易业协会大幅抬升征收费用, http://pics2.baidu.com/feed/09fa513d269759eea48453ef5f04e4126f22dfc6.jpeg?token=845de8558a27513f447503ab4f6aa1e8&s=6C263C7203C1694B0E54C0EC00007033, 链得得APP, 2019-04-11 21:00:00.934, 05f25ef4bf61c1868c09cc2669aa464d, 2019-04-11 20:40:39.0, 财经最新, 股票,投资, 行业分析师人数增幅14.15%。, 5572a109b3cdc86cf39001e0, 9580921982577524934, http://baijiahao.baidu.com/s?id=1630520426692983549&wfr=newsapp, 1, 去年至今证券业从业者流失1.1万人 经纪减员最多, http://pics6.baidu.com/feed/500fd9f9d72a60593d2a6c59f1ca939f023bbaba.jpeg?token=93ee909431899f3a900eece3f04f6889&s=7D0AA75755FCC1CA14C3BBEF0300C03C, 金融界, 2019-04-11 21:00:00.934, f3798fd120c8a370a5fa381072371b23, 2019-04-11 20:40:39.0, 财经最新, 医疗,科技, 平安的“AI+医疗”。, 5572a109b3cdc86cf39001e0, 8522508089037767623, http://baijiahao.baidu.com/s?id=1630520551317676112&wfr=newsapp, 1, 平安医疗AI模型惠及约8亿潜在患者 影像领域屡获世界级大奖, http://pics4.baidu.com/feed/342ac65c10385343f8e0d937deec177acb8088f8.jpeg?token=63fa4547f3a7d31388bb094d71052276&s=A133CF341F934CC00CC5E0D9030050B3, 界面新闻, 2019-04-11 21:00:00.934, 638d28df827cfa34b922691cfb24f7c9, 2019-04-11 20:40:39.0, 财经最新, 种植业,巴塘, 图据双流援藏工作队。, 5572a109b3cdc86cf39001e0, 8958061285277343017, http://baijiahao.baidu.com/s?id=1630520463576663420&wfr=newsapp, 1, 巴塘特色农产品进入高端消费市场, https://pics6.baidu.com/feed/d058ccbf6c81800a752323dc48cb94fe808b4725.jpeg?token=47558774c3bb2b959a7e84f64c6fbd68&s=DA874386D65735C846A7D8410300C0B8, 四川在线, 2019-04-11 21:00:00.934, 8307527db2a915fc5afa1c2a5d71cfd6, 2019-04-11 20:40:39.0, 财经最新, 市场营销,客户, 08一季度流失降级客户再营销。, 5572a109b3cdc86cf39001e0, 9333001141339317957, http://baijiahao.baidu.com/s?id=1630520699546318821&wfr=newsapp, 0, 四月银行营销11条：20%的银行享用的蛋糕, null, 惜才金融研训院, 2019-04-11 21:00:00.934, abee85cdb6155b1f094d1c0ae9638c50, 2019-04-11 20:40:39.0, 财经最新, 工业,工业互联网, 4月11日下午，记者在现场看到，各展台还在努力布置中，但洋气的造型已经初露端倪。, 5572a109b3cdc86cf39001e0, 8886369180098483387, http://baijiahao.baidu.com/s?id=1630520403602905649&wfr=newsapp, 1, 剧透！明天桐乡这场国际盛会有这些亮点, http://pics5.baidu.com/feed/242dd42a2834349b4653fb080114b2ca34d3beed.jpeg?token=6554e27a66c1138781b44286b3f799cf&s=972AF30548E6EECA5EA155CC03005030, 浙江新闻, 2019-04-11 21:00:00.935, c5843d59a8b1add9de45111b4a1b6f09, 2019-04-11 20:40:39.0, 财经最新, 隆基,股东, 01。, 5572a109b3cdc86cf39001e0, 9114840004181241960, http://baijiahao.baidu.com/s?id=1630520804220803998&wfr=newsapp, 1, 13万股东请注意：配股时间窗只剩2天 错过最高将亏19%, http://pics0.baidu.com/feed/500fd9f9d72a6059be2b03a01e349c9f033bba52.jpeg?token=41a0a754679ded747a79823de64b7314&s=2C4AF6168EE844011EF278740300803A, 金融界, 2019-04-11 21:00:00.935, c9d8a8e7fcbbb8aa94624a9110fd543e, 2019-04-11 20:40:39.0, 财经最新, 讯息,主管, 互联网不断迭代，管理方式与获得资源信息的通路也在不断更新。, 5572a109b3cdc86cf39001e0, 9042739696586833314, http://baijiahao.baidu.com/s?id=1630520653216822675&wfr=newsapp, 1, 迭代互联深推：走动式管理，只有1%的高管做得好，如何更有效下沉, http://pics5.baidu.com/feed/ac6eddc451da81cb22b3d8e5fb99771208243140.jpeg?token=1bfd9c88f0f4b55f3459e64603231db8&s=8190ED307F065AC8046925D10100C0B2, 品牌刀客, 2019-04-11 21:00:00.935, d429e09104664792f3ffde7bb79cf5c8, 2019-04-11 20:40:39.0, 财经最新, 环境保护,环境污染, span class=, 5572a109b3cdc86cf39001e0, 8808602230295669716, http://baijiahao.baidu.com/s?id=1630520730731379379&wfr=newsapp, 1, 助推川南经济区一体化发展 川南节能环保产业联盟在自贡成立, http://pics0.baidu.com/feed/0dd7912397dda144000ea386afb678a60cf48681.jpeg?token=74144afc10a864428dcdfdab802f0c21&s=F2135B8428630A802E8CB1550300C0E8, 封面新闻, 2019-04-11 21:00:00.935, bf6f809e513f5aca03724c42fd757ef3, 2019-04-11 20:40:39.0, 财经最新, 经济,宏观经济, 新华社记者安蓓、陈炜伟。, 5572a109b3cdc86cf39001e0, 8648250863141888241, http://baijiahao.baidu.com/s?id=1630520614207551297&wfr=newsapp, 1, 新华时评：以优质供给激活消费大市场, http://pics0.baidu.com/feed/79f0f736afc37931e07955c5693b104141a911c9.jpeg?token=c7ccd8521869eb52dd8424a80256aae9&s=F8A8BF56C4345A30526342660300107A, 新华社新媒体, 2019-04-11 21:00:00.935, b472a3419cd0bd6f014541737428bede, 2019-04-11 20:36:48.0, 财经最新, null, 　　新华社北京4月11日电(记者王立彬)统计数据显示，2018年我国海洋经济总量再上新台阶，全国海洋生产总值超过8.3万亿元。, 5572a109b3cdc86cf39001e0, null, http://www.chinanews.com/cj/2019/04-11/8806650.shtml, 0, 自然资源部：2018年中国海洋生产总值超过8.3万亿元, null, 中国新闻网, 2019-04-11 21:00:00.935, 0559d471bec910e02d87a0102663e56f, 2019-04-11 20:34:22.0, 财经最新, 农村,三农, 湖南省全力实施乡村振兴战略规划。, 5572a109b3cdc86cf39001e0, 8929721536287543884, http://baijiahao.baidu.com/s?id=1630520248671326621&wfr=newsapp, 1, 湖南首个“乡村振兴产业特色小镇”落户衡阳县岣嵝乡 总投资30亿, http://pics3.baidu.com/feed/5d6034a85edf8db165a4508939dd7a50544e7453.jpeg?token=75aaedb462297accb23f11e1ec229e91&s=FF90698B4DE1388C613410200300E0E2, 红网, 2019-04-11 21:00:00.935, e8dbac515142b428b2a542d8b450e541, 2019-04-11 20:34:22.0, 财经最新, 银行,外汇, 周四欧市盘中，欧元兑美元维持窄幅震荡之势，现转为下跌交投于1.1266一线。, 5572a109b3cdc86cf39001e0, 8773843497919002908, http://baijiahao.baidu.com/s?id=1630520159924160118&wfr=newsapp, 1, 欧美货币当局相继放鸽，欧元延续震荡行情，后市期待一大新猛料, http://pics5.baidu.com/feed/caef76094b36acaf71c633269c242a1403e99ccc.jpeg?token=47046b73a55ef43e71ca1919c7e2ea3c&s=BA03A14E1F0324C007BE98810300E09B, 汇通财经, 2019-04-11 21:00:00.935, f34edc970eca5a423cba544347043a04, 2019-04-11 20:34:22.0, 财经最新, 鸡汤,查理, 在这漫长的一生中，我一直都在期待麻烦的到来。, 5572a109b3cdc86cf39001e0, 8792677204401387476, http://baijiahao.baidu.com/s?id=1630520026150383673&wfr=newsapp, 0, 好的人生不要一帆风顺！查理·芒格：“我总是期待麻烦的到来…”, null, 老方说, 2019-04-11 21:00:00.935, 9f28c1f587c64f823f1c15805fd5287e, 2019-04-11 20:34:22.0, 财经最新, 风投,创业, 。, 5572a109b3cdc86cf39001e0, 8733688633198885077, http://baijiahao.baidu.com/s?id=1630520106046368168&wfr=newsapp, 1, Wework Labs 高调登陆中国，共享办公钱景仍存疑, http://pics2.baidu.com/feed/241f95cad1c8a7860aa8dbaacbf46e3972cf5092.jpeg?token=081ba1354955545e28103c31da09d8e1&s=ECDB21D77AB208924B85C007030070E1, 经济观察报, 2019-04-11 21:00:00.935, d1590aa8dcff57c745dd00680694fb96, 2019-04-11 20:34:22.0, 财经最新, 奢侈品,巴宝莉, 1、营收下滑，中国逆势增长。, 5572a109b3cdc86cf39001e0, 9085738332140665889, http://baijiahao.baidu.com/s?id=1630519961929131203&wfr=newsapp, 1, 还原巴宝莉上海大撤退真相, http://pics7.baidu.com/feed/a1ec08fa513d2697fe0081167d0615ff4116d8a8.jpeg?token=f5acf0f4892285b0d52ec6a229c4f754&s=F9A15B7CD4034B5B06B3BDEE0200703B, 深几度, 2019-04-11 21:00:00.935, 7f096f0719bab2a12054259756178433, 2019-04-11 20:34:22.0, 财经最新, 库存,螺纹, 图2：主要城市库存变化情况。, 5572a109b3cdc86cf39001e0, 8988320626990238995, http://baijiahao.baidu.com/s?id=1630520290963538670&wfr=newsapp, 1, 京津冀建筑钢材市场库存周度报告（4月11日）, http://pics2.baidu.com/feed/a71ea8d3fd1f4134a69eb50172e132ced0c85e22.jpeg?token=36028bfdb6a68469f5322bbdcce59a1b&s=01D66C322F104DC012D00DCE000070B2, 同花顺财经, 2019-04-11 21:00:00.935, a9331a722b49243da9fcef92e5b4540d, 2019-04-11 20:34:22.0, 财经最新, 法律,黑社会, 公司实际控制人未在公司任职，相关事项不会对公司的生产经营产生重大影响。, 5572a109b3cdc86cf39001e0, 9059709430185688219, http://baijiahao.baidu.com/s?id=1630520065392025764&wfr=newsapp, 1, 实际控制人涉黑被捕 中科新材市值蒸发超2亿元, http://pics6.baidu.com/feed/aa18972bd40735fa44e6692c19aca8b70e240816.jpeg?token=3a4cff0fe781a2814daca02c307ce175&s=0DD0EC1319FEC4CC1E414CDE0000C0B1, 手机中国网, 2019-04-11 21:00:00.935, 4cb9adab7a2132e78f213addc570c04d, 2019-04-11 20:34:22.0, 财经最新, null, 关注百家号乐居财经，洞悉房产市场风云变化。, 5572a109b3cdc86cf39001e0, 9407175771912163410, http://baijiahao.baidu.com/s?id=1630518063628513535&wfr=newsapp, 1, 年报风云 ｜ 中交地产2018归母净利8.1亿元 同比增长36.7%, http://pics4.baidu.com/feed/cf1b9d16fdfaaf51dc4d1c439eae33eaf21f7a9a.png?token=909b52e024b2958863871d1e5c44cfaa&s=B5906833399F60CA50D0C1D30300C0B3, 乐居财经, 2019-04-11 21:00:00.935, e2e2d832ae3c55011d02f5a92fd2e431, 2019-04-11 20:34:22.0, 财经最新, 三农,畜牧业, ——3点思考——。, 5572a109b3cdc86cf39001e0, 9811459677968315775, http://baijiahao.baidu.com/s?id=1630512588671355859&wfr=newsapp, 1, 重磅｜大北农、温氏、网易、正大、德康如何玩转种养结合, http://pics3.baidu.com/feed/79f0f736afc3793135d252c0d93a104141a911a7.jpeg?token=083b118f5abd50da3cf4db2fdba1fa8c&s=00B17C9772BE338CF680E504030060E3, 农业行业观察, 2019-04-11 21:00:00.936, 81ea0b1942298f7330c1b946b06f747e, 2019-04-11 20:34:22.0, 财经最新, 企业,林乐, 冯俏彬认为，最终形成的结局，还是看供给弹性，看谈判能力。, 5572a109b3cdc86cf39001e0, 9409580227899948592, http://baijiahao.baidu.com/s?id=1630520258859951780&wfr=newsapp, 1, 制造企业“叫苦”：国家降税的“奶酪”，被沃尔玛们拿走了, http://pics0.baidu.com/feed/4ec2d5628535e5dd6db38d724c3800ebcc1b6286.jpeg?token=4fa612b4a65313d87e2025981cc356a1, 中国经济周刊, 2019-04-11 21:00:00.936, 2f96f8d10b8fb57bcc6052e183201bcf, 2019-04-11 20:27:34.0, 财经最新, 种植业,通江银耳, 农产品变身护肤品，这不是忽悠，而是有着实实在在的科技含量。, 5572a109b3cdc86cf39001e0, 8829386955436563702, http://baijiahao.baidu.com/s?id=1630505054129803131&wfr=newsapp, 1, 农产品变身护肤品 通江银耳家族新增成员“润耳面膜”, http://pics3.baidu.com/feed/8c1001e93901213f250741f4ab1b91d52e2e95e7.jpeg?token=86dee2724fc2b9bf7ae7646b2ce02620&s=3B21E0013C26121F4EB8F0C30300E080, 大四川, 2019-04-11 21:00:00.936, a19a2d870ac341b278d4dc88c8349db4, 2019-04-11 20:27:34.0, 财经最新, 奢侈品,lvmh, 公司财报显示，2019年1季度LVMH集团实现营收125亿欧元，同比增长16%，扣除汇率及并购..., 5572a109b3cdc86cf39001e0, 9914040638234675589, http://baijiahao.baidu.com/s?id=1630519907776258718&wfr=newsapp, 1, 业绩大超预期 奢侈品巨头LVMH股价创历史新高, http://pics7.baidu.com/feed/622762d0f703918f7f8dbbcca4c1819358eec45e.png?token=85b187e7ada530dc11b68a13d6a4af84&s=8190CD32114A554F18DCC0DA030050B0, 华尔街见闻, 2019-04-11 21:00:00.936, 817e083bb907695a8533d160879f05fc, 2019-04-11 20:27:34.0, 财经最新, 投资,贾跃亭, 贾跃亭造车让整个乐视崩溃，也让自己陷入了舆论的嘲笑之中。, 5572a109b3cdc86cf39001e0, 9836168221005635800, http://baijiahao.baidu.com/s?id=1630518973729695901&wfr=newsapp, 1, 贾跃亭新底牌，卖了就能赚到二十多亿！造车梦说不好真的能实现, http://pics7.baidu.com/feed/267f9e2f070828384eaa7ebf32600e054e08f1f0.jpeg?token=f8609a2d6136d7fa46b30ad9dd75fcd1&s=B7986A2308908696A7A8F8F703005020, 聚富财经, 2019-04-11 21:00:00.936, b3bfdac1e967543de31b117d1473e847, 2019-04-11 20:27:34.0, 财经最新, 特斯拉,lyft, 盘前：。, 5572a109b3cdc86cf39001e0, 9926806341838610066, http://baijiahao.baidu.com/s?id=1630519975118897465&wfr=newsapp, 1, 美股前瞻 ｜ 三大期指微涨 特斯拉(TSLA)盘前跌超3%, http://pics0.baidu.com/feed/2934349b033b5bb560e9c64e052e723db700bc42.jpeg?token=706f02c10344d05ecfba5da376b452a3, 智通财经, 2019-04-11 21:00:00.936, 68311c40ea5a1f4e27c15708846880b5, 2019-04-11 20:27:34.0, 财经最新, 毛利率,华培, 报告期内，公司毛利率为41%，较上年降低6.0个百分点，净利率为15.3%，较上年降低7.0个..., 5572a109b3cdc86cf39001e0, 9868994462816653660, http://baijiahao.baidu.com/s?id=1630519576864576750&wfr=newsapp, 1, 华培动力：2018年毛利率下滑，增收不增利, http://pics3.baidu.com/feed/023b5bb5c9ea15ce6912475d76fb9df73887b2e2.png?token=d5e90c4f6cff1e21d1f5d05a5d977860&s=21D0126EBD29BE5D1CDD45BD0300D002, 东方财富网, 2019-04-11 21:00:00.936, a1ed919dc3cc8c0df49518846c091af6, 2019-04-11 20:27:34.0, 财经最新, 药品,股票, “超级真菌”。, 5572a109b3cdc86cf39001e0, 10395565450761476936, http://baijiahao.baidu.com/s?id=1630519949976197949&wfr=newsapp, 1, 超级真菌概念来袭，医药鲁股“迎风就涨”, http://pics0.baidu.com/feed/9825bc315c6034a8680028d2d1eeee500b237680.jpeg?token=1a0cb221f5fc0e46aa4fa55b3d6acb29&s=DFB7A5444013DDD64B1AAD1A0300509B, 齐鲁壹点, 2019-04-11 21:00:00.936, c0e8e565a4897a0d2b8a6fe2d3aa0dab, 2019-04-11 20:27:34.0, 财经最新, 畜牧业,三农, 中国羊奶产业要发展，源头是关键。, 5572a109b3cdc86cf39001e0, 8737295752766781090, http://baijiahao.baidu.com/s?id=1630519742105342101&wfr=newsapp, 1, 践行产业升级应从源头起，助推“陕西千亿羊奶产业”发展, http://pics0.baidu.com/feed/bd3eb13533fa828b7aca7bb0a7e3e630950a5afd.jpeg?token=2aa9a00478fafd902901008a85ec0601&s=FE006B8DDE334E847119E9320300E0B1, 新华网客户端, 2019-04-11 21:00:00.936, 85267dbc0b8bb8125f79a124fae1ebd0, 2019-04-11 20:27:34.0, 财经最新, 数字货币,货币, 2019-04-1119:07|浙江新闻客户端|记者、袁华明。, 5572a109b3cdc86cf39001e0, 9622030828076275597, http://baijiahao.baidu.com/s?id=1630519494778604014&wfr=newsapp, 1, 虚拟货币“挖矿”活动拟被列入淘汰产业 币圈还能淡定吗？, http://pics5.baidu.com/feed/38dbb6fd5266d016feb46768e4d0730337fa35c5.jpeg?token=8dbbc2a659ba900326380f1ff8a9d9fa&s=BB7D66867042D0F61CBB733D0300705B, 浙江新闻, 2019-04-11 21:00:00.936, c5653f85c1ebe5f979e8657fadd01ba9, 2019-04-11 20:24:10.0, 财经最新, 贵金属,威廉姆斯, 周四亚盘时段，黄金今开于1308.08美元/盎司，开盘后小幅下跌。, 5572a109b3cdc86cf39001e0, 9269822627809145197, http://baijiahao.baidu.com/s?id=1630520359752183598&wfr=newsapp, 1, 今夜美联储4位官员讲话 黄金价格走势如何？, http://pics1.baidu.com/feed/32fa828ba61ea8d36e859e8e0ef4974a271f589c.jpeg?token=f3de2d4f42e852b8e9bb6625835ce9b2&s=179FD6A60C8080C048D6B3A80300E00A, 金投网, 2019-04-11 21:00:00.936, 1dfda48a7720a07dc6f2fcbb2e3bc4f9, 2019-04-11 20:21:59.0, 财经最新, IPO,募资, 香港IPO首季继续活跃。, 5572a109b3cdc86cf39001e0, 9296816016068652787, http://baijiahao.baidu.com/s?id=1630519542166442155&wfr=newsapp, 1, 港交所首季IPO募资达204亿港元 全球也能排第二, http://pics2.baidu.com/feed/5366d0160924ab18a5adb330aa0141c97a890b79.jpeg?token=ed056e804eddcbdb7280bb4b8c4a1b4d&s=16D658964EC0444976B7BFEB0300D02D, 金融界, 2019-04-11 21:00:00.936, 329159a68e7b7a8e501a71427229fb86, 2019-04-11 20:21:59.0, 财经最新, 股票,投资, 走势——。, 5572a109b3cdc86cf39001e0, 9779033276066528238, http://baijiahao.baidu.com/s?id=1630519466006965387&wfr=newsapp, 1, 股市遭遇“黑色星期四”，股民：又有抄底机会了, http://pics7.baidu.com/feed/c75c10385343fbf29f3dbee6d2856d8467388fe5.jpeg?token=d304d4a8c27e0f4178699c09fd96a4d1&s=D9CC02C247812D45242C962303007055, 上游新闻, 2019-04-11 21:00:00.936, 30e7667c62be9bdf6a8b9d26e780609b, 2019-04-11 20:21:59.0, 财经最新, 金融,反洗钱, 中国互联网金融发展迅速，在提高金融市场活力、促进普惠金融的同时，也伴随着风险。, 5572a109b3cdc86cf39001e0, 8817810846170400907, http://baijiahao.baidu.com/s?id=1630519510115088452&wfr=newsapp, 1, 互金协会与公认反洗钱师协会合作 提升反洗钱水平, http://pics3.baidu.com/feed/6609c93d70cf3bc7082df8ef53fb1da5cc112a87.jpeg?token=1b5ebee9737a3a30073e422dff834dc7&s=99B86995CAB9598C3BB9B8E30300C035, 中国新闻网, 2019-04-11 21:00:00.936, 9d6c36eefac5a17baf0201470de2b9b9, 2019-04-11 20:21:59.0, 财经最新, 水果, 对于零售行业来说，近两年也是炒的火热。, 5572a109b3cdc86cf39001e0, 9714421939923504996, http://baijiahao.baidu.com/s?id=1630518854840613668&wfr=newsapp, 1, 水果开出连锁店！余惠勇潜心研究，悟出其中商机, http://pics2.baidu.com/feed/ac345982b2b7d0a2cb59d690d016d10d4a369a2d.jpeg?token=3cf98e71247f5d31cf2bf67488c80107&s=D202AEE116F0F3CE1E15D6140300D0D7, 聚富财经, 2019-04-11 21:00:00.936, d38dd74f7fd3db15d47ac58d060c949a, 2019-04-11 20:21:59.0, 财经最新, 电子商务,创新, 国际零售协会亦将在本次大会期间在中国首次召开年中董事会。, 5572a109b3cdc86cf39001e0, 9818821977697179026, http://baijiahao.baidu.com/s?id=1630519488491335157&wfr=newsapp, 1, 零售创新在上海：手机支付11步，刷脸只需1步, http://pics5.baidu.com/feed/a50f4bfbfbedab640ba7ad8d87cd08c77b311ea1.png?token=1e5bcb033d233ef13a63671a587c35b2&s=9F3646875E113ACC00BA7DA60300C01A, 第一财经, 2019-04-11 21:00:00.936, 5d0d52524e5b1422a1ac108ce2cbc340, 2019-04-11 20:21:59.0, 财经最新, 股票,股东, 然而，在减持公告披露之前，机构资金却在流出。, 5572a109b3cdc86cf39001e0, 9935724162913965355, http://baijiahao.baidu.com/s?id=1630518748867983393&wfr=newsapp, 1, 同花顺涨得连股东都怕了？四大股东竟要减持50亿, http://pics2.baidu.com/feed/a5c27d1ed21b0ef4259c9a7c653cf6de80cb3e9c.jpeg?token=fec96020848600fa7933c31369065a4c&s=F5117A990881C8D00CB0C9820100E0B1, 环球老虎财经, 2019-04-11 21:00:00.936, c03c4638beed6275b262ad66a7325c6d, 2019-04-11 20:21:59.0, 财经最新, 投资,股票, 话题6：如何看待外资的影响。, 5572a109b3cdc86cf39001e0, 9199863550320948131, http://baijiahao.baidu.com/s?id=1630519550433607373&wfr=newsapp, 1, 申万策略：A股全年震荡市 7月可能出现最大幅度回调, http://pics7.baidu.com/feed/9c16fdfaaf51f3de537fd9383a15571b38297999.jpeg?token=2e2293da8b9a29a6ed9ec6420e11f616&s=8FC1C51219DE74C8427518D9020080B1, 同花顺财经, 2019-04-11 21:00:00.937, 49973c63b2a991aa882baded1c1046eb, 2019-04-11 20:21:59.0, 财经最新, 股票,投资, 而CPI的上升将有两方面的影响，一是股票的吸引力下降，二是降准的倾向会变低。, 5572a109b3cdc86cf39001e0, 9834111146375124177, http://baijiahao.baidu.com/s?id=1630519387725134827&wfr=newsapp, 1, 通胀发力，股市跳水？, http://pics1.baidu.com/feed/50da81cb39dbb6fd26c5647905df0c1c952b37d6.jpeg?token=57375c8740ba7f9b6a522d895e5a5ce3&s=3991E91342217D0344ED817203005073, 环球老虎财经, 2019-04-11 21:00:00.937, 6cab188c49b97c7ff1d050839215d6df, 2019-04-11 20:21:59.0, 财经最新, 基金,社会保险, 征求意见稿提出：。, 5572a109b3cdc86cf39001e0, 9806678546111037627, http://baijiahao.baidu.com/s?id=1630519424691965139&wfr=newsapp, 1, 国家医保局：医保监管拟纳入社会信用体系，骗保将惩戒, http://pics0.baidu.com/feed/94cad1c8a786c917f60b3ef0fbc6d7cb39c757ea.jpeg?token=21e1c28c71f7e1e50f0e71e87cda1705&s=F912C818C630799212075DDC0300F0B0, 人民日报, 2019-04-11 21:00:00.937, 2b0bdca4bb551b615c92daafd55788d3, 2019-04-11 20:21:59.0, 财经最新, 电子商务,互联网电商, 果琳的线下门店叫果琳仓储式会员店。, 5572a109b3cdc86cf39001e0, 9504588039737892973, http://baijiahao.baidu.com/s?id=1630519489845317202&wfr=newsapp, 1, 中小生鲜品牌流量观：平台电商，客是他的；社区电商，客是你的？, http://pics4.baidu.com/feed/b7003af33a87e950e654b3697fc3f447faf2b470.jpeg?token=04894600e6ef6283726ecf176589ea2f&s=3186E7B64A3AF2DCDA24D62D03002055, 每日经济新闻, 2019-04-11 21:00:00.937, 61acdaf1eb1db277db804a590e2eec54, 2019-04-11 20:21:59.0, 财经最新, 股票,柴继军, 记者|张艺。, 5572a109b3cdc86cf39001e0, 9502674060719766285, http://baijiahao.baidu.com/s?id=1630519609571276661&wfr=newsapp, 1, 快看｜引起版权争议的视觉中国百亿市值限售股将解禁，柴继军、李学凌等10名股东收益超四倍, http://pics1.baidu.com/feed/ca1349540923dd5476586e6d0ef214da9d824888.jpeg?token=616cacff7c99a586d270de4c5b8111f7&s=F2B1E168EEEEBF744E6C5B12030050DC, 界面新闻, 2019-04-11 21:00:00.937, 4eadb707c853380ce8029419a661276a, 2019-04-11 20:21:59.0, 财经最新, null, 值得一提的是，虽然大资金获利回吐，市场震荡幅度加剧，但依旧无法阻挡市场炒作的热情。, 5572a109b3cdc86cf39001e0, 9633401182733008406, http://baijiahao.baidu.com/s?id=1630519486084818101&wfr=newsapp, 0, 沪指失守3200关口！黑洞概念股半日游，东南网架2.5亿遭闷杀！, null, 牛熊交易室, 2019-04-11 21:00:00.937, d84eacfae702a389b460c781a086812a, 2019-04-11 20:21:59.0, 财经最新, 中欧关系,英国, 据介绍，2017年6月，英国河南商会在全英河南同乡联谊会的支持下在伦敦成立。, 5572a109b3cdc86cf39001e0, 9548128618626801700, http://baijiahao.baidu.com/s?id=1630519472629796450&wfr=newsapp, 1, 人在郑州 畅购英国 首届“进博会”这项成果正式落地郑州, http://pics3.baidu.com/feed/4afbfbedab64034ff4da93edf138de3508551dc1.jpeg?token=ca830b9e749e0b6d660f76f3ab05d6f0&s=D78244AD081B9AC608BC09BE03008002, 河南日报客户端, 2019-04-11 21:00:00.937, 70f3e64fbbc8fd21ae97be189b2859f5, 2019-04-11 20:21:59.0, 财经最新, 股票,投资, 技术分析：周四两市高开低走，沪指跌破3200点整数关口，深市跌逾2%，尽管银行、保险一度拉升，但证券板块始终未表现，反而是带动其他板块震荡走低，直至带动所有板块下行，这就使得市场做空动能进一步释放，回踩得以继续。, 5572a109b3cdc86cf39001e0, 9838618319480619012, http://baijiahao.baidu.com/s?id=1630519616148737775&wfr=newsapp, 1, 缩量下杀破3200点，最佳出击点在这里！, http://pics3.baidu.com/feed/8c1001e93901213ff82ecd93b41c91d52e2e9564.jpeg?token=cb51282dde059bbd0d978eca5557c98d&s=89343E9E6932588C1AED80F503005033, 二月财眼, 2019-04-11 21:00:00.937, 4fb70f5075fd23d75c1059f724b91514, 2019-04-11 20:21:59.0, 财经最新, 燃气,大众公用, 港股解码，香港财华社原创王牌专栏，金融名家齐聚。, 5572a109b3cdc86cf39001e0, 9370746151542964428, http://baijiahao.baidu.com/s?id=1630519522771396246&wfr=newsapp, 1, 「现场直击」大众公用：主营毛利率峰回路转？科创板增未来想象, https://pics2.baidu.com/feed/8601a18b87d6277f2f5128b5a7c3b834eb24fcf8.jpeg?token=85e3cac8927e228a506b22ecba15eb23&s=0A3341878EDB3ACC6ABE1DB303005002, 香港财华社, 2019-04-11 21:00:00.937, 8991df3b4b6105f9894c032f93084adf, 2019-04-11 20:21:59.0, 财经最新, 网络安全,btt, 1小时损失85万。, 5572a109b3cdc86cf39001e0, 10249386908684498320, http://baijiahao.baidu.com/s?id=1630519297689445478&wfr=newsapp, 1, 1.7亿枚BTT被盗只是开始 波场还将面临更高强度攻击？, http://pics7.baidu.com/feed/f2deb48f8c5494ee7d8a997c900f47fa98257e2e.jpeg?token=9d6e912615abb2954dac59f390298b19&s=32D7216497A0B54B12EDDC12030080DB, 金色财经, 2019-04-11 21:00:00.937, de7da8d242e5e2bcd340802229714ff6, 2019-04-11 20:21:59.0, 财经最新, 股票,股份, e公司记者注意到，在10余家发布减持预告公告的公司当中，不乏一些二级市场当中的热门品种。, 5572a109b3cdc86cf39001e0, 9310647395622158236, http://baijiahao.baidu.com/s?id=1630519575503827172&wfr=newsapp, 1, 多家公司披露减持预告公告有股东欲清仓式减持, http://pics1.baidu.com/feed/960a304e251f95cafb46aca115ecd83a66095271.png?token=14457a14b269bedc4437f8950da75c8f&s=3EAA7C230B585DCA5E45B8CE000050B2, 东方财富网, 2019-04-11 21:00:00.937, 46d3794b99448b4133965b8f3cf8660e, 2019-04-11 20:21:59.0, 财经最新, 业务收入,收入, 来源：人民网。, 5572a109b3cdc86cf39001e0, 9233114371108659071, http://baijiahao.baidu.com/s?id=1630506137864991111&wfr=newsapp, 1, 国家邮政局：2019年全国快递业务收入预计超过7000亿元, http://pics7.baidu.com/feed/4b90f603738da977be104c606a9b5f1d8718e38a.jpeg?token=ff7d542d194cecb1f08e2e0ae3dd8b82&s=6A9353861762A74B487B3A810300F08C, 中国经济网, 2019-04-11 21:00:00.937, 62b9539a3466cfd9588c3a8d580ba909, 2019-04-11 20:21:59.0, 财经最新, 股票,华灿, 此外，同样的情况也发生在顶固集创、蓝思科技、神州泰岳等公司的身上。, 5572a109b3cdc86cf39001e0, 9511912273331353789, http://baijiahao.baidu.com/s?id=1630519662611564892&wfr=newsapp, 1, A股一季度近300家公司预亏，频现股东提前减持“抢跑”, http://pics7.baidu.com/feed/c8ea15ce36d3d5395445f8a5357b4e54342ab059.png?token=efaa94ef6de0eea303e9ad84078ff5c1&s=AD98E5138DB04C0148D455DE0300C0B1, 格隆汇, 2019-04-11 21:00:00.937, 1b31eb154ed767df7740cd9723bd1c8a, 2019-04-11 20:21:59.0, 财经最新, 法律,专利诉讼, 监管层对专利诉讼态度转变。, 5572a109b3cdc86cf39001e0, 9852738050247220760, http://baijiahao.baidu.com/s?id=1630519586260491881&wfr=newsapp, 1, 鸿合科技IPO“负案过会”大逆转 专利诉讼不再“一刀切”避免恶性竞争, http://pics2.baidu.com/feed/94cad1c8a786c9170f26bc4d00c6d7cb3ac75799.png?token=03e491fb2f72601a1335879aae956bc4&s=48208D53FCE41A9447C9F82E0300A063, 华夏时报, 2019-04-11 21:00:00.937, 4e5ac37d60a21037b95b93d397928fd7, 2019-04-11 20:21:59.0, 财经最新, 天然气,贡献, 报告期内，公司毛利率为10%，较上年降低0.9个百分点，净利率为3.1%，较上年降低0.6个百分点。, 5572a109b3cdc86cf39001e0, 10016373851830565050, http://baijiahao.baidu.com/s?id=1630519576012859698&wfr=newsapp, 1, 广州发展：2018年归母净利润小幅增长3.3%，天然气业务贡献利润, http://pics2.baidu.com/feed/8694a4c27d1ed21b236a24b06d957ac053da3fc7.png?token=ac1b076e1584bde2455f9010f24b2125&s=A5D082661D8DBA592E5D41BD03001006, 东方财富网, 2019-04-11 21:00:00.937, c031128569a6cf0e6c52c38d1f119af2, 2019-04-11 20:21:59.0, 财经最新, 贵金属,投资, 阻力：1312.35；1315.20；1320.48；1324.52；。, 5572a109b3cdc86cf39001e0, 9516151710880914028, http://baijiahao.baidu.com/s?id=1630519136829918530&wfr=newsapp, 1, 汇通网 ｜ 4月11日现货黄金、白银、原油、外汇短线交易策略, http://pics0.baidu.com/feed/3801213fb80e7beccbf922360ad41e3c99506bc0.jpeg?token=af839b0c5a590f6c63ac3409ae384694&s=69E8A3460A8A005F8865381C030050D3, 汇通财经, 2019-04-11 21:00:00.937, e18680390cac534317b9419dcfe170bd, 2019-04-11 20:20:42.0, 财经最新, null, 　　中新社广州4月11日电 (唐贵江 关悦)广州海关4月11日消息，中智自贸协定升级实施首月，广州海关辖区进出口企业获惠约2300万元(人民币，下同)。, 5572a109b3cdc86cf39001e0, null, http://www.chinanews.com/cj/2019/04-11/8806626.shtml, 0, 中智自贸协定升级首月 家电和纺织等多行业粤企受惠, null, 中国新闻网, 2019-04-11 21:00:00.937, 3489a7fd7cdc1964979883c28892a984, 2019-04-11 20:18:26.0, 财经最新, 价值,信用, 合规自律诚信经营。, 5572a109b3cdc86cf39001e0, 10318685901095158402, http://baijiahao.baidu.com/s?id=1630519799080284828&wfr=newsapp, 1, 秉持“思利及人”价值观 无限极助力2019“为爱攀登”, http://pics0.baidu.com/feed/0823dd54564e92580043dad95f7e765ccdbf4e97.jpeg?token=7159b0c7213e87e3d8e43164c29e218b&s=DEB304C56008B0E650819D3503005050, 封面新闻, 2019-04-11 21:00:00.937, 928f223734833d26d68d67e410196dd6, 2019-04-11 20:15:49.0, 财经最新, 电子商务,余额宝, 在4月9日的时候，官方宣布，将会在4月10的时候，取消余额宝的相关限购。, 5572a109b3cdc86cf39001e0, 9241587564169494197, http://baijiahao.baidu.com/s?id=1630515059918268414&wfr=newsapp, 1, 马云急了？支付宝开始放大招，余额宝的这一改变，真能挽回用户吗, http://pics6.baidu.com/feed/b64543a98226cffcb129b36ec8f9ed94f403eaec.png?token=d928e34a216e4922f1531672f5cdc122&s=522BB8444CEA389C840415970300C088, 科技信息源, 2019-04-11 21:00:00.937, 104c3c02ed121dec1d1afe175389607a, 2019-04-11 20:15:40.0, 财经最新, 信用卡, 在最近的一年多时间里，信用卡的多种问题备受大家关注。, 5572a109b3cdc86cf39001e0, 9403487692210728943, http://baijiahao.baidu.com/s?id=1630519109303570596&wfr=newsapp, 1, 又一大消息 信用卡申请将越来越难 关注这两点 你将受益匪浅, http://pics0.baidu.com/feed/a08b87d6277f9e2fe689afc517ca4e20ba99f3ba.png?token=63db9dac1b62811e39b301868204bc56&s=5D82DD1B54B17390B61515E50300C020, 聚富财经, 2019-04-11 21:00:00.938]
-DEBUG scheduling-1 druid.sql.Statement - {conn-10005, pstmt-20002} Types : [VARCHAR, TIMESTAMP, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, INTEGER, VARCHAR, VARCHAR, VARCHAR, TIMESTAMP, VARCHAR, TIMESTAMP, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, INTEGER, VARCHAR, VARCHAR, VARCHAR, TIMESTAMP, VARCHAR, TIMESTAMP, VARCHAR, OTHER, VARCHAR, VARCHAR, OTHER, VARCHAR, INTEGER, VARCHAR, VARCHAR, VARCHAR, TIMESTAMP, VARCHAR, TIMESTAMP, VARCHAR, OTHER, VARCHAR, VARCHAR, OTHER, VARCHAR, INTEGER, VARCHAR, OTHER, VARCHAR, TIMESTAMP, VARCHAR, TIMESTAMP, VARCHAR, OTHER, VARCHAR, VARCHAR, OTHER, VARCHAR, INTEGER, VARCHAR, OTHER, VARCHAR, TIMESTAMP, VARCHAR, TIMESTAMP, VARCHAR, OTHER, VARCHAR, VARCHAR, OTHER, VARCHAR, INTEGER, VARCHAR, OTHER, VARCHAR, TIMESTAMP, VARCHAR, TIMESTAMP, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, INTEGER, VARCHAR, VARCHAR, VARCHAR, TIMESTAMP, VARCHAR, TIMESTAMP, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, INTEGER, VARCHAR, VARCHAR, VARCHAR, TIMESTAMP, VARCHAR, TIMESTAMP, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, INTEGER, VARCHAR, VARCHAR, VARCHAR, TIMESTAMP, VARCHAR, TIMESTAMP, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, INTEGER, VARCHAR, VARCHAR, VARCHAR, TIMESTAMP, VARCHAR, TIMESTAMP, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, INTEGER, VARCHAR, OTHER, VARCHAR, TIMESTAMP, VARCHAR, TIMESTAMP, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, INTEGER, VARCHAR, VARCHAR, VARCHAR, TIMESTAMP, VARCHAR, TIMESTAMP, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, INTEGER, VARCHAR, VARCHAR, VARCHAR, TIMESTAMP, VARCHAR, TIMESTAMP, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, INTEGER, VARCHAR, VARCHAR, VARCHAR, TIMESTAMP, VARCHAR, TIMESTAMP, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, INTEGER, VARCHAR, VARCHAR, VARCHAR, TIMESTAMP, VARCHAR, TIMESTAMP, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, INTEGER, VARCHAR, VARCHAR, VARCHAR, TIMESTAMP, VARCHAR, TIMESTAMP, VARCHAR, OTHER, VARCHAR, VARCHAR, OTHER, VARCHAR, INTEGER, VARCHAR, OTHER, VARCHAR, TIMESTAMP, VARCHAR, TIMESTAMP, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, INTEGER, VARCHAR, VARCHAR, VARCHAR, TIMESTAMP, VARCHAR, TIMESTAMP, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, INTEGER, VARCHAR, VARCHAR, VARCHAR, TIMESTAMP, VARCHAR, TIMESTAMP, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, INTEGER, VARCHAR, OTHER, VARCHAR, TIMESTAMP, VARCHAR, TIMESTAMP, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, INTEGER, VARCHAR, VARCHAR, VARCHAR, TIMESTAMP, VARCHAR, TIMESTAMP, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, INTEGER, VARCHAR, VARCHAR, VARCHAR, TIMESTAMP, VARCHAR, TIMESTAMP, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, INTEGER, VARCHAR, VARCHAR, VARCHAR, TIMESTAMP, VARCHAR, TIMESTAMP, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, INTEGER, VARCHAR, VARCHAR, VARCHAR, TIMESTAMP, VARCHAR, TIMESTAMP, VARCHAR, OTHER, VARCHAR, VARCHAR, VARCHAR, VARCHAR, INTEGER, VARCHAR, VARCHAR, VARCHAR, TIMESTAMP, VARCHAR, TIMESTAMP, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, INTEGER, VARCHAR, VARCHAR, VARCHAR, TIMESTAMP, VARCHAR, TIMESTAMP, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, INTEGER, VARCHAR, VARCHAR, VARCHAR, TIMESTAMP, VARCHAR, TIMESTAMP, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, INTEGER, VARCHAR, VARCHAR, VARCHAR, TIMESTAMP, VARCHAR, TIMESTAMP, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, INTEGER, VARCHAR, VARCHAR, VARCHAR, TIMESTAMP, VARCHAR, TIMESTAMP, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, INTEGER, VARCHAR, VARCHAR, VARCHAR, TIMESTAMP, VARCHAR, TIMESTAMP, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, INTEGER, VARCHAR, VARCHAR, VARCHAR, TIMESTAMP, VARCHAR, TIMESTAMP, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, INTEGER, VARCHAR, VARCHAR, VARCHAR, TIMESTAMP, VARCHAR, TIMESTAMP, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, INTEGER, VARCHAR, VARCHAR, VARCHAR, TIMESTAMP, VARCHAR, TIMESTAMP, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, INTEGER, VARCHAR, VARCHAR, VARCHAR, TIMESTAMP, VARCHAR, TIMESTAMP, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, INTEGER, VARCHAR, VARCHAR, VARCHAR, TIMESTAMP, VARCHAR, TIMESTAMP, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, INTEGER, VARCHAR, VARCHAR, VARCHAR, TIMESTAMP, VARCHAR, TIMESTAMP, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, INTEGER, VARCHAR, VARCHAR, VARCHAR, TIMESTAMP, VARCHAR, TIMESTAMP, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, INTEGER, VARCHAR, VARCHAR, VARCHAR, TIMESTAMP, VARCHAR, TIMESTAMP, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, INTEGER, VARCHAR, VARCHAR, VARCHAR, TIMESTAMP, VARCHAR, TIMESTAMP, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, INTEGER, VARCHAR, VARCHAR, VARCHAR, TIMESTAMP, VARCHAR, TIMESTAMP, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, INTEGER, VARCHAR, VARCHAR, VARCHAR, TIMESTAMP, VARCHAR, TIMESTAMP, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, INTEGER, VARCHAR, VARCHAR, VARCHAR, TIMESTAMP, VARCHAR, TIMESTAMP, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, INTEGER, VARCHAR, VARCHAR, VARCHAR, TIMESTAMP, VARCHAR, TIMESTAMP, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, INTEGER, VARCHAR, VARCHAR, VARCHAR, TIMESTAMP, VARCHAR, TIMESTAMP, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, INTEGER, VARCHAR, VARCHAR, VARCHAR, TIMESTAMP, VARCHAR, TIMESTAMP, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, INTEGER, VARCHAR, VARCHAR, VARCHAR, TIMESTAMP, VARCHAR, TIMESTAMP, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, INTEGER, VARCHAR, VARCHAR, VARCHAR, TIMESTAMP, VARCHAR, TIMESTAMP, VARCHAR, OTHER, VARCHAR, VARCHAR, VARCHAR, VARCHAR, INTEGER, VARCHAR, OTHER, VARCHAR, TIMESTAMP, VARCHAR, TIMESTAMP, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, INTEGER, VARCHAR, VARCHAR, VARCHAR, TIMESTAMP, VARCHAR, TIMESTAMP, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, INTEGER, VARCHAR, VARCHAR, VARCHAR, TIMESTAMP, VARCHAR, TIMESTAMP, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, INTEGER, VARCHAR, VARCHAR, VARCHAR, TIMESTAMP, VARCHAR, TIMESTAMP, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, INTEGER, VARCHAR, VARCHAR, VARCHAR, TIMESTAMP, VARCHAR, TIMESTAMP, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, INTEGER, VARCHAR, VARCHAR, VARCHAR, TIMESTAMP, VARCHAR, TIMESTAMP, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, INTEGER, VARCHAR, VARCHAR, VARCHAR, TIMESTAMP, VARCHAR, TIMESTAMP, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, INTEGER, VARCHAR, VARCHAR, VARCHAR, TIMESTAMP, VARCHAR, TIMESTAMP, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, INTEGER, VARCHAR, VARCHAR, VARCHAR, TIMESTAMP, VARCHAR, TIMESTAMP, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, INTEGER, VARCHAR, VARCHAR, VARCHAR, TIMESTAMP, VARCHAR, TIMESTAMP, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, INTEGER, VARCHAR, VARCHAR, VARCHAR, TIMESTAMP, VARCHAR, TIMESTAMP, VARCHAR, OTHER, VARCHAR, VARCHAR, OTHER, VARCHAR, INTEGER, VARCHAR, OTHER, VARCHAR, TIMESTAMP, VARCHAR, TIMESTAMP, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, INTEGER, VARCHAR, VARCHAR, VARCHAR, TIMESTAMP, VARCHAR, TIMESTAMP, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, INTEGER, VARCHAR, VARCHAR, VARCHAR, TIMESTAMP, VARCHAR, TIMESTAMP, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, VARCHAR, INTEGER, VARCHAR, VARCHAR, VARCHAR, TIMESTAMP]
-DEBUG scheduling-1 druid.sql.Statement - {conn-10005, pstmt-20002} executed. 92.740702 millis. insert into news (id,pub_date,channel_name,tag,description,channel_id,nid, link,have_pic,title,image_url,source,create_time) values    (?,?,?,?,?,?, ?,?,?,?,?,?,?)  ,  (?,?,?,?,?,?, ?,?,?,?,?,?,?)  ,  (?,?,?,?,?,?, ?,?,?,?,?,?,?)  ,  (?,?,?,?,?,?, ?,?,?,?,?,?,?)  ,  (?,?,?,?,?,?, ?,?,?,?,?,?,?)  ,  (?,?,?,?,?,?, ?,?,?,?,?,?,?)  ,  (?,?,?,?,?,?, ?,?,?,?,?,?,?)  ,  (?,?,?,?,?,?, ?,?,?,?,?,?,?)  ,  (?,?,?,?,?,?, ?,?,?,?,?,?,?)  ,  (?,?,?,?,?,?, ?,?,?,?,?,?,?)  ,  (?,?,?,?,?,?, ?,?,?,?,?,?,?)  ,  (?,?,?,?,?,?, ?,?,?,?,?,?,?)  ,  (?,?,?,?,?,?, ?,?,?,?,?,?,?)  ,  (?,?,?,?,?,?, ?,?,?,?,?,?,?)  ,  (?,?,?,?,?,?, ?,?,?,?,?,?,?)  ,  (?,?,?,?,?,?, ?,?,?,?,?,?,?)  ,  (?,?,?,?,?,?, ?,?,?,?,?,?,?)  ,  (?,?,?,?,?,?, ?,?,?,?,?,?,?)  ,  (?,?,?,?,?,?, ?,?,?,?,?,?,?)  ,  (?,?,?,?,?,?, ?,?,?,?,?,?,?)  ,  (?,?,?,?,?,?, ?,?,?,?,?,?,?)  ,  (?,?,?,?,?,?, ?,?,?,?,?,?,?)  ,  (?,?,?,?,?,?, ?,?,?,?,?,?,?)  ,  (?,?,?,?,?,?, ?,?,?,?,?,?,?)  ,  (?,?,?,?,?,?, ?,?,?,?,?,?,?)  ,  (?,?,?,?,?,?, ?,?,?,?,?,?,?)  ,  (?,?,?,?,?,?, ?,?,?,?,?,?,?)  ,  (?,?,?,?,?,?, ?,?,?,?,?,?,?)  ,  (?,?,?,?,?,?, ?,?,?,?,?,?,?)  ,  (?,?,?,?,?,?, ?,?,?,?,?,?,?)  ,  (?,?,?,?,?,?, ?,?,?,?,?,?,?)  ,  (?,?,?,?,?,?, ?,?,?,?,?,?,?)  ,  (?,?,?,?,?,?, ?,?,?,?,?,?,?)  ,  (?,?,?,?,?,?, ?,?,?,?,?,?,?)  ,  (?,?,?,?,?,?, ?,?,?,?,?,?,?)  ,  (?,?,?,?,?,?, ?,?,?,?,?,?,?)  ,  (?,?,?,?,?,?, ?,?,?,?,?,?,?)  ,  (?,?,?,?,?,?, ?,?,?,?,?,?,?)  ,  (?,?,?,?,?,?, ?,?,?,?,?,?,?)  ,  (?,?,?,?,?,?, ?,?,?,?,?,?,?)  ,  (?,?,?,?,?,?, ?,?,?,?,?,?,?)  ,  (?,?,?,?,?,?, ?,?,?,?,?,?,?)  ,  (?,?,?,?,?,?, ?,?,?,?,?,?,?)  ,  (?,?,?,?,?,?, ?,?,?,?,?,?,?)  ,  (?,?,?,?,?,?, ?,?,?,?,?,?,?)  ,  (?,?,?,?,?,?, ?,?,?,?,?,?,?)  ,  (?,?,?,?,?,?, ?,?,?,?,?,?,?)  ,  (?,?,?,?,?,?, ?,?,?,?,?,?,?)  ,  (?,?,?,?,?,?, ?,?,?,?,?,?,?)  ,  (?,?,?,?,?,?, ?,?,?,?,?,?,?)  ,  (?,?,?,?,?,?, ?,?,?,?,?,?,?)  ,  (?,?,?,?,?,?, ?,?,?,?,?,?,?)  ,  (?,?,?,?,?,?, ?,?,?,?,?,?,?)  ,  (?,?,?,?,?,?, ?,?,?,?,?,?,?)  ,  (?,?,?,?,?,?, ?,?,?,?,?,?,?)  ,  (?,?,?,?,?,?, ?,?,?,?,?,?,?)  ,  (?,?,?,?,?,?, ?,?,?,?,?,?,?)  ,  (?,?,?,?,?,?, ?,?,?,?,?,?,?)  ,  (?,?,?,?,?,?, ?,?,?,?,?,?,?)  ,  (?,?,?,?,?,?, ?,?,?,?,?,?,?)  ,  (?,?,?,?,?,?, ?,?,?,?,?,?,?)  ,  (?,?,?,?,?,?, ?,?,?,?,?,?,?)
-DEBUG scheduling-1 druid.sql.Statement - {conn-10005, pstmt-20002} closed
-DEBUG scheduling-1 druid.sql.Connection - {conn-10005} pool-recycle
-DEBUG scheduling-1 druid.sql.Connection - {conn-10005} pool-connect
-DEBUG scheduling-1 druid.sql.Statement - {conn-10005, pstmt-20003} created. delete from news where create_time <= now() - INTERVAL '3' day
-DEBUG scheduling-1 druid.sql.Statement - {conn-10005, pstmt-20003} Parameters : []
-DEBUG scheduling-1 druid.sql.Statement - {conn-10005, pstmt-20003} Types : []
-DEBUG scheduling-1 druid.sql.Statement - {conn-10005, pstmt-20003} executed. 23.231211 millis. delete from news where create_time <= now() - INTERVAL '3' day
-DEBUG scheduling-1 druid.sql.Statement - {conn-10005, pstmt-20003} closed
-DEBUG scheduling-1 druid.sql.Connection - {conn-10005} pool-recycle
-DEBUG http-nio-8999-exec-9 druid.sql.Connection - {conn-10005} pool-connect
-DEBUG http-nio-8999-exec-9 druid.sql.Statement - {conn-10005, pstmt-20004} created. select id, subject_id, title, duration, vedio_url, file_name, play_count, is_delete,  create_time, modify_time from subject_detail where id = ?
-DEBUG http-nio-8999-exec-9 druid.sql.Statement - {conn-10005, pstmt-20004} Parameters : [6]
-DEBUG http-nio-8999-exec-9 druid.sql.Statement - {conn-10005, pstmt-20004} Types : [BIGINT]
-DEBUG http-nio-8999-exec-9 druid.sql.Statement - {conn-10005, pstmt-20004} executed. 7.574587 millis. select id, subject_id, title, duration, vedio_url, file_name, play_count, is_delete,  create_time, modify_time from subject_detail where id = ?
-DEBUG http-nio-8999-exec-9 druid.sql.ResultSet - {conn-10005, pstmt-20004, rs-50002} open
-DEBUG http-nio-8999-exec-9 druid.sql.ResultSet - {conn-10005, pstmt-20004, rs-50002} Header: [id, subject_id, title, duration, vedio_url, file_name, play_count, is_delete, create_time, modify_time]
-DEBUG http-nio-8999-exec-9 druid.sql.ResultSet - {conn-10005, pstmt-20004, rs-50002} Result: [6, 1, dear, 00:36, /video/523f55a0-8d6e-4aff-9eb6-6b9bfe13e4cb1551326637245.mp4, 2af3799def43b8d79f06bac399c07f0d.mp4, null, 0, 2019-02-28 12:03:57.0, 2019-04-03 09:15:32.0]
-DEBUG http-nio-8999-exec-9 druid.sql.ResultSet - {conn-10005, pstmt-20004, rs-50002} closed
-DEBUG http-nio-8999-exec-9 druid.sql.Statement - {conn-10005, pstmt-20004} closed
-DEBUG http-nio-8999-exec-9 druid.sql.Connection - {conn-10005} pool-recycle
-DEBUG http-nio-8999-exec-9 druid.sql.Connection - {conn-10005} pool-connect
-DEBUG http-nio-8999-exec-9 druid.sql.Statement - {conn-10005, pstmt-20005} created. UPDATE subject_detail
-SET subject_id = ?, title = ?, duration = ?, vedio_url = ?, file_name = ?, is_delete = ?, create_time = ?, modify_time = ?
-WHERE (id = ?)
-DEBUG http-nio-8999-exec-9 druid.sql.Statement - {conn-10005, pstmt-20005} Parameters : [1, 22dear, 00:36, /video/523f55a0-8d6e-4aff-9eb6-6b9bfe13e4cb1551326637245.mp4, 2af3799def43b8d79f06bac399c07f0d.mp4, 0, 2019-02-28 12:03:57.0, 2019-04-11 21:02:40.592, 6]
-DEBUG http-nio-8999-exec-9 druid.sql.Statement - {conn-10005, pstmt-20005} Types : [BIGINT, VARCHAR, VARCHAR, VARCHAR, VARCHAR, INTEGER, TIMESTAMP, TIMESTAMP, BIGINT]
-DEBUG http-nio-8999-exec-9 druid.sql.Statement - {conn-10005, pstmt-20005} executed. 15.381094 millis. UPDATE subject_detail
-SET subject_id = ?, title = ?, duration = ?, vedio_url = ?, file_name = ?, is_delete = ?, create_time = ?, modify_time = ?
-WHERE (id = ?)
-DEBUG http-nio-8999-exec-9 druid.sql.Statement - {conn-10005, pstmt-20005} closed
-DEBUG http-nio-8999-exec-9 druid.sql.Connection - {conn-10005} pool-recycle
-DEBUG http-nio-8999-exec-10 druid.sql.Connection - {conn-10005} pool-connect
-DEBUG http-nio-8999-exec-10 druid.sql.Statement - {conn-10005, pstmt-20006} created. select id, subject_id, title, duration, vedio_url, file_name, play_count, is_delete,  create_time, modify_time from subject_detail where id = ?
-DEBUG http-nio-8999-exec-10 druid.sql.Statement - {conn-10005, pstmt-20006} Parameters : [6]
-DEBUG http-nio-8999-exec-10 druid.sql.Statement - {conn-10005, pstmt-20006} Types : [BIGINT]
-DEBUG http-nio-8999-exec-10 druid.sql.Statement - {conn-10005, pstmt-20006} executed. 6.605967 millis. select id, subject_id, title, duration, vedio_url, file_name, play_count, is_delete,  create_time, modify_time from subject_detail where id = ?
-DEBUG http-nio-8999-exec-10 druid.sql.ResultSet - {conn-10005, pstmt-20006, rs-50003} open
-DEBUG http-nio-8999-exec-10 druid.sql.ResultSet - {conn-10005, pstmt-20006, rs-50003} Header: [id, subject_id, title, duration, vedio_url, file_name, play_count, is_delete, create_time, modify_time]
-DEBUG http-nio-8999-exec-10 druid.sql.ResultSet - {conn-10005, pstmt-20006, rs-50003} Result: [6, 1, 22dear, 00:36, /video/523f55a0-8d6e-4aff-9eb6-6b9bfe13e4cb1551326637245.mp4, 2af3799def43b8d79f06bac399c07f0d.mp4, null, 0, 2019-02-28 12:03:57.0, 2019-04-11 21:02:41.0]
-DEBUG http-nio-8999-exec-10 druid.sql.ResultSet - {conn-10005, pstmt-20006, rs-50003} closed
-DEBUG http-nio-8999-exec-10 druid.sql.Statement - {conn-10005, pstmt-20006} closed
-DEBUG http-nio-8999-exec-10 druid.sql.Connection - {conn-10005} pool-recycle
-DEBUG http-nio-8999-exec-10 druid.sql.Connection - {conn-10005} pool-connect
-DEBUG http-nio-8999-exec-10 druid.sql.Statement - {conn-10005, pstmt-20007} created. UPDATE subject_detail
-SET subject_id = ?, title = ?, duration = ?, vedio_url = ?, file_name = ?, is_delete = ?, create_time = ?, modify_time = ?
-WHERE (id = ?)
-DEBUG http-nio-8999-exec-10 druid.sql.Statement - {conn-10005, pstmt-20007} Parameters : [1, dear, 00:36, /video/523f55a0-8d6e-4aff-9eb6-6b9bfe13e4cb1551326637245.mp4, 2af3799def43b8d79f06bac399c07f0d.mp4, 0, 2019-02-28 12:03:57.0, 2019-04-11 21:03:29.069, 6]
-DEBUG http-nio-8999-exec-10 druid.sql.Statement - {conn-10005, pstmt-20007} Types : [BIGINT, VARCHAR, VARCHAR, VARCHAR, VARCHAR, INTEGER, TIMESTAMP, TIMESTAMP, BIGINT]
-DEBUG http-nio-8999-exec-10 druid.sql.Statement - {conn-10005, pstmt-20007} executed. 17.790593 millis. UPDATE subject_detail
-SET subject_id = ?, title = ?, duration = ?, vedio_url = ?, file_name = ?, is_delete = ?, create_time = ?, modify_time = ?
-WHERE (id = ?)
-DEBUG http-nio-8999-exec-10 druid.sql.Statement - {conn-10005, pstmt-20007} closed
-DEBUG http-nio-8999-exec-10 druid.sql.Connection - {conn-10005} pool-recycle
-DEBUG http-nio-8999-exec-2 druid.sql.Connection - {conn-10005} pool-connect
-DEBUG http-nio-8999-exec-2 druid.sql.Statement - {conn-10005, pstmt-20008} created. INSERT INTO subject_detail
- (subject_id, title, duration, vedio_url, file_name, create_time)
-VALUES (?, ?, ?, ?, ?, ?)
-DEBUG http-nio-8999-exec-2 druid.sql.Statement - {conn-10005, pstmt-20008} Parameters : [1, 测试视频名称, , /video/null, 1553507448619299_1553596784014399.mp4, 2019-04-11 21:03:46.28]
-DEBUG http-nio-8999-exec-2 druid.sql.Statement - {conn-10005, pstmt-20008} Types : [BIGINT, VARCHAR, VARCHAR, VARCHAR, VARCHAR, TIMESTAMP]
-DEBUG http-nio-8999-exec-2 druid.sql.Statement - {conn-10005, pstmt-20008} executed. 15.373285 millis. INSERT INTO subject_detail
- (subject_id, title, duration, vedio_url, file_name, create_time)
-VALUES (?, ?, ?, ?, ?, ?)
-DEBUG http-nio-8999-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20008, rs-50004} open
-DEBUG http-nio-8999-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20008, rs-50004} Header: [GENERATED_KEY]
-DEBUG http-nio-8999-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20008, rs-50004} Result: [14]
-DEBUG http-nio-8999-exec-2 druid.sql.ResultSet - {conn-10005, pstmt-20008, rs-50004} closed
-DEBUG http-nio-8999-exec-2 druid.sql.Statement - {conn-10005, pstmt-20008} closed
-DEBUG http-nio-8999-exec-2 druid.sql.Connection - {conn-10005} pool-recycle
-DEBUG Thread-14 druid.sql.Connection - {conn-10001} closed
-DEBUG Thread-14 druid.sql.Connection - {conn-10002} closed
-DEBUG Thread-14 druid.sql.Connection - {conn-10003} closed
-DEBUG Thread-14 druid.sql.Connection - {conn-10004} closed
-DEBUG Thread-14 druid.sql.Connection - {conn-10005} closed
+DEBUG scheduling-1 druid.sql.Statement - {conn-10009, pstmt-94259} closed
+DEBUG scheduling-1 druid.sql.Connection - {conn-10009} pool-recycle
+DEBUG scheduling-1 druid.sql.Connection - {conn-10009} pool-connect
+DEBUG scheduling-1 druid.sql.Statement - {conn-10009, pstmt-94260} created. insert into news (id,pub_date,channel_name,tag,description,channel_id,nid, link,have_pic,title,image_url,source,create_time) values    (?,?,?,?,?,?, ?,?,?,?,?,?,?)  ,  (?,?,?,?,?,?, ?,?,?,?,?,?,?)  ,  (?,?,?,?,?,?, ?,?,?,?,?,?,?)  ,  (?,?,?,?,?,?, ?,?,?,?,?,?,?)  ,  (?,?,?,?,?,?, ?,?,?,?,?,?,?)  ,  (?,?,?,?,?,?, ?,?,?,?,?,?,?)
+DEBUG scheduling-1 druid.sql.Statement - {conn-10009, pstmt-94260} Parameters : [da6c967028254a4b6812909af1a73861, 2019-04-20 20:56:09.0, 财经最新, null, 　　《中国式养娃：2019天猫亲子消费报告》显示, 5572a109b3cdc86cf39001e0, null, http://www.chinanews.com/cj/2019/04-20/8815104.shtml, 0, “带娃神器”销量一年增长16倍, null, 中国新闻网, 2019-04-20 21:00:01.701, 6569fa2ab80f46b2c641d8ccfee8388a, 2019-04-20 20:27:15.0, 财经最新, null, 　　中新社南宁4月20日电 (黄艳梅 黄译锐)中国3D打印领先企业国千科技集团有限公司董事长宗贵升20日接受媒体采访称，将在广西南宁市实施两期项目，一期落地3D打印智造创新中心，二期将深入3D打印在康复医疗中的应用，建设3D打印康复医疗生产基地和国千科技研究院相关成果转化基地等。, 5572a109b3cdc86cf39001e0, null, http://www.chinanews.com/cj/2019/04-20/8815086.shtml, 0, 南宁打造面向东盟创新高地 产业洼地效应凸显, null, 中国新闻网, 2019-04-20 21:00:01.701, ed97b77a812ae47b52f0c8e6b022d0c5, 2019-04-20 20:26:07.0, 财经最新, null, 　　中新网银川4月20日电(于翔 李佩珊 刘香君) 4月20日，中国首个葡萄酒品牌集群联合秘书处在世界优质葡萄酿酒产区之一的宁夏贺兰山东麓正式设立。宁夏回族自治区党委副书记姜志刚和国务院原参事、原国家质检总局副局长、中国葡萄酒品牌集群主席葛志荣为中国葡萄酒品牌集群揭牌。当天，贺兰山东麓葡萄酒教育学院正式开班。, 5572a109b3cdc86cf39001e0, null, http://www.chinanews.com/cj/2019/04-20/8815085.shtml, 0, 中国首个葡萄酒品牌集群联合秘书处在宁夏成立, null, 中国新闻网, 2019-04-20 21:00:01.701, 2f65950211a04088506239edd68d673f, 2019-04-20 20:25:28.0, 财经最新, null, 　　中新社北京4月20日电 (夏守智)“区块链技术有助于推动中小民营企业从粗放型向集约高效型发展模式转变。”全国工商联并购公会常务理事、太一云技术股份有限公司董事长邓迪20日在北京一场活动上讲述了区块链的应用前景。, 5572a109b3cdc86cf39001e0, null, http://www.chinanews.com/cj/2019/04-20/8815075.shtml, 0, 专家：区块链技术可为中国中小民企发展赋能, null, 中国新闻网, 2019-04-20 21:00:01.701, beceb63463f8f48dca4b830f9a925ef7, 2019-04-20 20:25:04.0, 财经最新, null, 　　中新网郑州4月20日电(记者 韩章云)迟日江山丽，春风花草香。4月20日，“生态人文之旅：从老家河南到多彩贵州”2019贵州文化旅游主题推介活动在河南省会郑州举行。, 5572a109b3cdc86cf39001e0, null, http://www.chinanews.com/cj/2019/04-20/8815083.shtml, 1, “多彩贵州”赴“老家河南”推介山水人文风光, http://i2.chinanews.com/simg/2019/190420//98167050.jpg, 中国新闻网, 2019-04-20 21:00:01.701, 31fbc812e4d143c06a392f5c30a7fe9f, 2019-04-20 20:22:48.0, 财经最新, null, 　　新华社郑州4月20日电(记者刘高阳、史林静)近日，北京邮电大学网络与交换技术国家重点实验室许昌基地和森源集团联合开展的5G自动驾驶清扫车智能化作业试验在河南省许昌市取得成功，标志着5G自动驾驶技术成功运用于特种车辆。, 5572a109b3cdc86cf39001e0, null, http://www.chinanews.com/cj/2019/04-20/8815089.shtml, 0, 5G自动驾驶技术成功运用于特种车辆, null, 中国新闻网, 2019-04-20 21:00:01.701]
+DEBUG scheduling-1 druid.sql.Statement - {conn-10009, pstmt-94260} Types : [VARCHAR, TIMESTAMP, VARCHAR, OTHER, VARCHAR, VARCHAR, OTHER, VARCHAR, INTEGER, VARCHAR, OTHER, VARCHAR, TIMESTAMP, VARCHAR, TIMESTAMP, VARCHAR, OTHER, VARCHAR, VARCHAR, OTHER, VARCHAR, INTEGER, VARCHAR, OTHER, VARCHAR, TIMESTAMP, VARCHAR, TIMESTAMP, VARCHAR, OTHER, VARCHAR, VARCHAR, OTHER, VARCHAR, INTEGER, VARCHAR, OTHER, VARCHAR, TIMESTAMP, VARCHAR, TIMESTAMP, VARCHAR, OTHER, VARCHAR, VARCHAR, OTHER, VARCHAR, INTEGER, VARCHAR, OTHER, VARCHAR, TIMESTAMP, VARCHAR, TIMESTAMP, VARCHAR, OTHER, VARCHAR, VARCHAR, OTHER, VARCHAR, INTEGER, VARCHAR, VARCHAR, VARCHAR, TIMESTAMP, VARCHAR, TIMESTAMP, VARCHAR, OTHER, VARCHAR, VARCHAR, OTHER, VARCHAR, INTEGER, VARCHAR, OTHER, VARCHAR, TIMESTAMP]
+ERROR scheduling-1 druid.sql.Statement - {conn-10009, pstmt-94260} execute error. insert into news (id,pub_date,channel_name,tag,description,channel_id,nid, link,have_pic,title,image_url,source,create_time) values    (?,?,?,?,?,?, ?,?,?,?,?,?,?)  ,  (?,?,?,?,?,?, ?,?,?,?,?,?,?)  ,  (?,?,?,?,?,?, ?,?,?,?,?,?,?)  ,  (?,?,?,?,?,?, ?,?,?,?,?,?,?)  ,  (?,?,?,?,?,?, ?,?,?,?,?,?,?)  ,  (?,?,?,?,?,?, ?,?,?,?,?,?,?)
+java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '6569fa2ab80f46b2c641d8ccfee8388a' for key 'id_unique'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:117)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:974)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:391)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3409)
+	at com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(FilterEventAdapter.java:440)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3407)
+	at com.alibaba.druid.filter.FilterEventAdapter.preparedStatement_execute(FilterEventAdapter.java:440)
+	at com.alibaba.druid.filter.FilterChainImpl.preparedStatement_execute(FilterChainImpl.java:3407)
+	at com.alibaba.druid.proxy.jdbc.PreparedStatementProxyImpl.execute(PreparedStatementProxyImpl.java:167)
+	at com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(DruidPooledPreparedStatement.java:498)
+	at sun.reflect.GeneratedMethodAccessor88.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59)
+	at com.sun.proxy.$Proxy135.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:46)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at sun.reflect.GeneratedMethodAccessor124.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:63)
+	at com.sun.proxy.$Proxy133.update(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:198)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:185)
+	at sun.reflect.GeneratedMethodAccessor128.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433)
+	at com.sun.proxy.$Proxy74.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:278)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:58)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:59)
+	at com.sun.proxy.$Proxy106.batchInsert(Unknown Source)
+	at com.app.stock.serviceImpl.NewsServiceImpl.pullNews(NewsServiceImpl.java:101)
+	at com.app.stock.schedule.NewsSchedule.newsPull(NewsSchedule.java:23)
+	at sun.reflect.GeneratedMethodAccessor125.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:93)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+DEBUG scheduling-1 druid.sql.Statement - {conn-10009, pstmt-94260} closed
+DEBUG scheduling-1 druid.sql.Connection - {conn-10009} pool-recycle
+DEBUG Thread-12 druid.sql.Connection - {conn-10009} closed

@@ -8,6 +8,7 @@ spring:
     url: jdbc:mysql://rm-2zea089gtq9s1hu69.mysql.rds.aliyuncs.com:3306/stock?multiStatement=true&useUnicode=true&characterEncoding=utf8&allowMultiQueries=true&zeroDateTimeBehavior=convertToNull&autoReconnect=true&serverTimezone=CTT
     username: root
     password: Xkw100*-
+    #password: lmx@123456
     initialSize: 5
     minIdle: 5
     maxActive: 20
@@ -27,9 +28,9 @@ spring:
   resources:
     staticLocations:classpath:/META-INF/resources/,classpath:/resources/,classpath:/static/,classpath:/public/
   redis:
-    host: 101.132.137.156
+    host: 39.97.172.32
     port: 6379
-    password: lmx123456@
+    password: Xkw100*-
     jedis:
       pool:
         max-active: 20
@@ -37,7 +38,7 @@ spring:
     timeout: 10000s
     database: 1
   server:
-    url: http://39.97.172.32:8999
+    url: http://101.132.137.156:8999
   servlet:
     multipart:
       max-file-size: -1

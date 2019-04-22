@@ -98,7 +98,10 @@ public class StockController {
             @Override
             public void run() {
                 try {
-                    stockService.sychornizedStockData();
+                    Long start = System.currentTimeMillis();
+                    scheduleCrossService.achieveTradingDate();
+                    Long end  = System.currentTimeMillis();
+                    System.out.println((end - start)/100);
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
